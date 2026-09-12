@@ -1,13 +1,13 @@
 {
   "application": "MaleCNS Micro Habitat",
-  "schema": "habitat3d/1",
+  "schema": "habitat3d/2",
   "saved_at": "2026-09-13T00:00:00Z",
   "runtime": {
     "paused": true,
     "speed": 1
   },
   "simulation": {
-    "schema": "habitat3d/1",
+    "schema": "habitat3d/2",
     "world": {
       "seed": 20260913,
       "count": 12,
@@ -152,14 +152,14 @@
           "color": "#e4b66c",
           "x": -12.955487073880354,
           "z": -3.537839178437581,
-          "y": 1.8,
+          "y": 0.31468456311305854,
           "heading": -2.572239681374295,
           "energy": 0.8218831683925755,
           "hydration": 0.6539456933342441,
           "fatigue": 0.17137144323089942,
           "age": 1.450698318969917,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -177,21 +177,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F02",
           "color": "#7fc7b1",
           "x": 9.797158815095084,
           "z": -4.984597661783676,
-          "y": 1.8,
+          "y": 0.47857812778525155,
           "heading": 2.782702197742587,
           "energy": 0.5520950611029255,
           "hydration": 0.600814074120931,
           "fatigue": 0.259251066568139,
           "age": 1.7835112567052624,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -209,21 +227,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F03",
           "color": "#92b7e6",
           "x": 2.1499764089957205,
           "z": 5.015863429747926,
-          "y": 1.8,
+          "y": 0.4298713113175184,
           "heading": -0.4701699071244061,
           "energy": 0.8473014756090338,
           "hydration": 0.5687968605900956,
           "fatigue": 0.11556032184374139,
           "age": 0.17740439053440826,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -241,21 +277,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F04",
           "color": "#c79dd7",
           "x": -7.912262414771064,
           "z": -7.523982642603195,
-          "y": 1.8,
+          "y": 0.40146252787072945,
           "heading": -3.0490055397407225,
           "energy": 0.8556219979991684,
           "hydration": 0.5657628801336388,
           "fatigue": 0.16691429096787114,
           "age": 0.13602086698586136,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -273,21 +327,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F05",
           "color": "#d99685",
           "x": 7.753174705729691,
           "z": -6.414480546011147,
-          "y": 1.8,
+          "y": 0.4349592329048849,
           "heading": 1.6973851247210767,
           "energy": 0.6313841835613432,
           "hydration": 0.6229535593720438,
           "fatigue": 0.2802053994305293,
           "age": 0.6022826060483837,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -305,21 +377,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F06",
           "color": "#c6ce87",
           "x": -1.9884288407368036,
           "z": 7.225354963486032,
-          "y": 1.8,
+          "y": 0.3970042346563833,
           "heading": -2.746785947226192,
           "energy": 0.5119241561605459,
           "hydration": 0.6105049633502254,
           "fatigue": 0.16288202231795368,
           "age": 0.6978303085781219,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -337,21 +427,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F07",
           "color": "#79bcc5",
           "x": -7.150722767527853,
           "z": -8.691134002172365,
-          "y": 1.8,
+          "y": 0.43864849927803945,
           "heading": -1.7907309538101186,
           "energy": 0.569625549900964,
           "hydration": 0.7991486514673162,
           "fatigue": 0.10932680211336505,
           "age": 1.2463742841532146,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -369,21 +477,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F08",
           "color": "#c1a482",
           "x": 8.730639831821204,
           "z": -3.4475774629066045,
-          "y": 1.8,
+          "y": 0.5198668438307642,
           "heading": 1.5127328409870886,
           "energy": 0.7395948841225493,
           "hydration": 0.6089754828260882,
           "fatigue": 0.0723436605654096,
           "age": 0.48319564308914154,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -401,21 +527,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F09",
           "color": "#e3c893",
           "x": 0.5201046485857184,
           "z": 9.51873770632874,
-          "y": 1.8,
+          "y": 0.39379012145837244,
           "heading": 2.192042738105558,
           "energy": 0.6489226280889923,
           "hydration": 0.6818678097542548,
           "fatigue": 0.1934676818850261,
           "age": 0.7823982035447428,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -433,21 +577,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F10",
           "color": "#89b992",
           "x": -12.501654572277996,
           "z": -7.679017697330577,
-          "y": 1.8,
+          "y": 0.40520066261184906,
           "heading": -2.4879426074717697,
           "energy": 0.822892586058823,
           "hydration": 0.4924365610408641,
           "fatigue": 0.10117628677230649,
           "age": 1.2504281336606629,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -465,21 +627,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F11",
           "color": "#a5a2d8",
           "x": 9.704632189547782,
           "z": -3.8048505987918313,
-          "y": 1.8,
+          "y": 0.5098611447281272,
           "heading": 2.069052575894607,
           "energy": 0.5883767416026097,
           "hydration": 0.6260749858089977,
           "fatigue": 0.17071625117280836,
           "age": 1.4510271069961367,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -497,21 +677,39 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "id": "F12",
           "color": "#d6a7ba",
           "x": -2.856829184781116,
           "z": 8.702724178172893,
-          "y": 1.8,
+          "y": 0.41998646483767305,
           "heading": 2.080567023375359,
           "energy": 0.7127082919746099,
           "hydration": 0.7485246692421308,
           "fatigue": 0.2735135286076789,
           "age": 1.3681061409867123,
           "alive": true,
-          "state": "探索",
+          "state": "静止",
           "target": null,
           "memory": {},
           "hint": null,
@@ -529,7 +727,25 @@
           "sheltered": false,
           "speed": 0.0,
           "last_reward": 0.0,
-          "failure_wait": 0.0
+          "failure_wait": 0.0,
+          "vx": 0.0,
+          "vz": 0.0,
+          "vy": 0.0,
+          "touch": 0.0,
+          "signal": [
+            0.0,
+            0.0
+          ],
+          "motors": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       ]
     },
@@ -538,8 +754,8 @@
         "id": 1,
         "t": 0.0,
         "kind": "system",
-        "title": "微境开始运行",
-        "detail": "昼夜、资源与个体经验将持续变化。"
+        "title": "神经自主世界初始化",
+        "detail": "动作仅来自神经输出；感觉与身体模型未生理校准。"
       }
     ],
     "history": [],
@@ -903,7 +1119,8 @@
           0.0
         ]
       ]
-    }
+    },
+    "controller": "neural-only-actuation-v1"
   },
-  "limitations": "Complete published structural segment graph, not physiological weights; hybrid controller and artificial I/O."
+  "limitations": "Complete published structural segment graph, not physiological weights; neural-only actuation and artificial I/O."
 }

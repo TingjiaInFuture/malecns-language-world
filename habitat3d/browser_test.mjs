@@ -13,6 +13,9 @@ try{
  check('production full graph',state.provenance.nodes===88384522&&state.provenance.edges===151856684);
  check('all twelve individuals use full graph',state.flies.length===12&&state.neural_enabled);
  check('initial world paused and clean',state.t===0&&state.tick===0&&state.runtime.paused&&Object.values(state.metrics).every(v=>v===0));
+ check('neural-only controller',state.schema==='habitat3d/2'&&state.provenance.controller==='neural-only-actuation-v1');
+ check('semantic command disabled',await page.locator('#message-input').isDisabled());
+ check('zero initial motors and no targets',state.flies.every(f=>f.motors.every(v=>v===0)&&f.target===null));
  check('twelve visible 3D bodies',await page.evaluate(()=>window.__habitatView.flies.size===12));
  check('weight mutation disabled',!state.plasticity&&await page.locator('#plasticity-toggle').isDisabled());
  check('full graph shown separately from probes',await page.locator('#graph-size').textContent()==='全图 · 1.52 亿边');

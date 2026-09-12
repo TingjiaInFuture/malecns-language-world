@@ -56,7 +56,7 @@ class Runtime:
     def export(self):
         return {'application':'MaleCNS Micro Habitat','schema':SCHEMA,'saved_at':time.strftime('%Y-%m-%dT%H:%M:%S%z'),
                 'runtime':{'paused':self.paused,'speed':self.speed},'simulation':self.world.dump(),
-                'limitations':'Structural connectome, artificial dynamics, symbolic protocol and hybrid controller; not physiological weights or language evidence.'}
+                'limitations':'Neural-only actuation with artificial sensory/motor ports and body physics; not physiological equivalence or language evidence.'}
 
     def save(self):
         data=self.export()
@@ -107,7 +107,10 @@ class Runtime:
                 raise ValueError('Invalid seed or population')
             archived=self.path/f'archive-{time.time_ns()}.json'
             archived.write_text(json.dumps(self.export(),ensure_ascii=False,allow_nan=False),encoding='utf-8')
-            self.world=Habitat(seed,count,self.world.brains.mode);self.paused=False;self.speed=1;self.save()
+            old_world=self.world
+            self.world=Habitat(seed,count,old_world.brains.mode)
+            if old_world.brains.mode=='full':old_world.brains.close()
+            self.paused=False;self.speed=1;self.save()
         else:self.world.control(action,value)
         self.flush_events()
         self.publish()

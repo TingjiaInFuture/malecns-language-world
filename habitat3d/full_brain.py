@@ -8,7 +8,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from scipy import sparse
-from brain import Brains as MBON,INPUTS,OUTPUTS,LAB
+from brain import Brains as MBON,INPUTS,LAB
+OUTPUTS = ('left_thrust','right_thrust','lift','proboscis','pump','signal_a','signal_b','brake')
 
 _GRAPH=None
 def graph():

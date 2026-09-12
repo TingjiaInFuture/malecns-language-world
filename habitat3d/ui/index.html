@@ -22,7 +22,7 @@
       <div id="resource-list" class="resource-list"></div>
       <div class="section-title population-title"><span>观察个体</span><span><b id="alive-count">—</b> / <span id="total-count">—</span></span></div>
       <div id="population-list" class="population-list"></div>
-      <div class="panel-foot"><span class="tiny-dot"></span>独立记忆 · 独立神经状态<br><small>同一来源的真实连接子图</small></div>
+      <div class="panel-foot"><span class="tiny-dot"></span>独立神经状态 · 无行为脚本<br><small>全量公开结构连接图</small></div>
     </aside>
     <section class="world-panel" aria-label="可交互 3D 世界">
       <div id="viewport"></div><div id="labels" aria-hidden="true"></div>
@@ -42,17 +42,17 @@
       <div class="neural-head"><span>连接组活动</span><span><span id="graph-size">正在核验计算范围</span></span></div>
       <canvas id="neural-canvas" width="540" height="200" aria-label="选中个体的实际神经活动"></canvas>
       <div class="neural-meta"><span>活动 RMS <b id="neural-rms">—</b></span><span>增益变化 <b id="gain-change">—</b></span></div>
-      <div class="memory-line"><span>本地记忆 <b id="known-count">—</b></span><span>有效帮助 <b id="helped-count">—</b></span><span>模型年龄 <b id="age">—</b></span></div>
+      <div class="memory-line"><span>目标记忆（禁用） <b id="known-count">—</b></span><span>语义验证（禁用） <b id="helped-count">—</b></span><span>模型年龄 <b id="age">—</b></span></div>
       <div class="section-title diary-title"><span>正在发生</span><span id="event-filter">LIVE JOURNAL</span></div>
-      <div class="tabs" role="tablist"><button id="tab-all" class="active" role="tab" aria-selected="true">全部观察</button><button id="tab-signal" role="tab" aria-selected="false">词符交流</button></div>
-      <div class="signal-stats"><span><b id="sent-count">0</b> 发出</span><span><b id="followed-count">0</b> 调查</span><span><b id="verified-count">0</b> 验证</span></div>
+      <div class="tabs" role="tablist"><button id="tab-all" class="active" role="tab" aria-selected="true">全部观察</button><button id="tab-signal" role="tab" aria-selected="false">神经信号</button></div>
+      <div class="signal-stats"><span>A 振幅 <b id="sent-count">0</b></span><span>B 振幅 <b id="followed-count">0</b></span><span>推进 <b id="verified-count">0</b></span></div>
       <div id="event-list" class="event-list" aria-live="off"></div>
-      <form id="message-form" class="message-form"><label for="message-input">向世界发送有限词符</label><div><input id="message-input" maxlength="80" placeholder="例如：水在东侧" autocomplete="off"><button type="submit" aria-label="发送词符">↑</button></div><p>只发送线索，不提供精确坐标。</p></form>
+      <form id="message-form" class="message-form"><label for="message-input">神经自主模式</label><div><input id="message-input" maxlength="80" placeholder="无预设词义或行为指令" autocomplete="off"><button type="submit" aria-label="发送词符">↑</button></div><p>通过下方环境干预观察神经响应。</p></form>
     </aside>
   </main>
   <footer class="bottom-bar"><div class="experiment-controls"><span class="micro-label">观察干预</span><button id="rain-button">☂ 引入阵雨</button><button id="dry-button">◌ 蒸干露水</button><button id="fruit-button">＋ 补充果实</button><span class="separator">/</span><label><input type="checkbox" id="communication-toggle" checked>交流</label><label><input type="checkbox" id="plasticity-toggle" checked>可塑性</label></div><div class="technical-status"><span id="save-status">自动保存每 20 秒</span><span class="separator">·</span><span id="step-ms">— ms / tick</span><button id="new-world-button" class="quiet">新世界 ↗</button></div></footer>
   <div id="toast" role="status" class="toast"></div>
-  <dialog id="about-dialog"><button class="dialog-close" aria-label="关闭说明">×</button><span class="micro-label">ABOUT THIS MODEL</span><h2>看见行为，也看见边界。</h2><p>这里运行的是<strong>真实 MaleCNS 结构连接驱动的混合工程模型</strong>。每只个体具有独立神经活动、局部记忆与线索信任；全量模式固定结构权重。</p><div class="about-grid"><div><b>真实数据</b><p><span id="about-graph">计算范围以实际后端为准。</span>结构计数不是实测生理权重；未知递质采用明确的工程符号假设。</p></div><div><b>人工模型</b><p>身体运动、稳态需求、天气、导航和词符协议由程序定义，未做生理校准。</p></div><div><b>交流如何发生</b><p>个体依据附近资源发送「糖 / 水 / 荫 / 险」与方位；接收者调查并接触资源后，才计入有效线索。不会生成虚构对白。</p></div><div><b>随时间变化什么</b><p>昼夜、露水、资源消耗、经验、信任和模型年龄；不冒充自然语言或遗传进化。</p></div></div><p class="muted">观察窗口关闭后，本机服务继续运行并自动存档。所有图表、计数和神经活动来自实际仿真。原四格实验的成绩不能当作此世界的语言能力证据。</p><button class="dialog-close button-outline">继续观察</button></dialog>
+  <dialog id="about-dialog"><button class="dialog-close" aria-label="关闭说明">×</button><span class="micro-label">ABOUT THIS MODEL</span><h2>看见行为，也看见边界。</h2><p>这里运行的是<strong>真实 MaleCNS 结构连接驱动的神经自主动作模型</strong>。每只个体具有独立神经活动；没有目标规划、随机探索、规则避障或自动进食。全量模式固定结构权重。</p><div class="about-grid"><div><b>真实数据</b><p><span id="about-graph">计算范围以实际后端为准。</span>结构计数不是实测生理权重；未知递质采用明确的工程符号假设。</p></div><div><b>人工模型</b><p>感觉编码、神经动力学、动作端口及身体物理仍是模型假设，未做生理校准。神经输出独占主动动作通路。</p></div><div><b>交流如何发生</b><p>神经输出直接产生两路连续信号，随距离衰减后刺激其他个体；没有预设词义、方位或发送时机。尚无语言证据。</p></div><div><b>随时间变化什么</b><p>昼夜、露水、资源消耗、神经状态和模型年龄。静止、碰壁、饥饿都是可能结果，没有行为兜底。</p></div></div><p class="muted">观察窗口关闭后，本机服务继续运行并自动存档。所有图表、计数和神经活动来自实际仿真。原四格实验的成绩不能当作此世界的语言能力证据。</p><button class="dialog-close button-outline">继续观察</button></dialog>
   <dialog id="reset-dialog"><button class="reset-close dialog-close" aria-label="关闭">×</button><span class="micro-label">A NEW HABITAT</span><h2>开始一个新的世界</h2><p>当前世界将先完整归档，再用下面的种子初始化。不会自动让死亡个体复活。</p><label>世界种子 <input id="reset-seed" type="number" min="0" max="4294967295" value="20260913"></label><label>初始个体 <input id="reset-count" type="number" min="1" max="24" value="12"></label><button id="confirm-reset" class="button-outline">归档并新建</button></dialog>
   <script type="module" src="/app.js"></script>
 </body>

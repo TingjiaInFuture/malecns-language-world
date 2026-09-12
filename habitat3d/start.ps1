@@ -10,6 +10,7 @@ try {
     $HabitatHealth = Invoke-RestMethod "$HabitatUrl/api/health" -TimeoutSec 2
     if ($HabitatHealth.app -ne 'malecns-habitat') { throw 'Port 8765 belongs to another application.' }
     if (-not $HabitatHealth.ok) { throw 'Existing habitat has an error. Inspect state/server.log.' }
+    if ($HabitatHealth.schema -ne 'habitat3d/2') { throw 'Existing server uses an obsolete controller.' }
     if ($HabitatHealth.mode -ne 'full') { throw 'Existing service is not the required full graph mode.' }
     $HabitatReady = $true
 } catch {

@@ -7,7 +7,7 @@ import tempfile
 import time
 import unittest
 import numpy as np
-from ecology import Habitat, DT, sector
+from legacy_ecology import Habitat, DT, sector
 from server import Runtime
 
 

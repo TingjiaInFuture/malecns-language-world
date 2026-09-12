@@ -2,6 +2,7 @@
   "exact_init_match": true,
   "all_individuals": 12,
   "mode": "full",
+  "controller": "neural-only-actuation-v1",
   "t": 0.0,
-  "sha256": "0475598a6764fe4b61e067ea4dbad75ad16b3b22db4eaa2d0254b4a23e2b59b9"
+  "sha256": "5fb5c71bdc7962cc7cb255610db8154aa859e4769cac1ccf689e1ad88f326af5"
 }

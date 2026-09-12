@@ -31,7 +31,7 @@ function drawDay(phase){const c=$('day-arc'),ctx=c.getContext('2d');ctx.clearRec
 function renderEvents(events,force=false){
   if(lastEvent===state.tick&& !force)return;lastEvent=state.tick;
   const list=events.filter(e=>filter==='all'||['signal','follow','verified','miss','human'].includes(e.kind)).slice(-25).reverse();
-  const fragment=document.createDocumentFragment();for(const e of list){const row=node('div',`event ${e.kind}`);const icon=node('span','event-icon',({signal:'↗',follow:'↝',verified:'✓',miss:'·',weather:'☂',death:'−',human:'↑'})[e.kind]||'○');const copy=node('div');copy.append(node('h3','',e.title),node('p','',e.detail),node('time','',shortTime(e.t)));row.append(icon,copy);fragment.append(row)}if(!list.length)fragment.append(node('p','muted','尚无交流记录。观察附近个体的发现。'));$('event-list').replaceChildren(fragment);
+  const fragment=document.createDocumentFragment();for(const e of list){const row=node('div',`event ${e.kind}`);const icon=node('span','event-icon',({signal:'↗',follow:'↝',verified:'✓',miss:'·',weather:'☂',death:'−',human:'↑'})[e.kind]||'○');const copy=node('div');copy.append(node('h3','',e.title),node('p','',e.detail),node('time','',shortTime(e.t)));row.append(icon,copy);fragment.append(row)}if(!list.length)fragment.append(node('p','muted','无语义对白。信号振幅来自选中个体的神经输出。'));$('event-list').replaceChildren(fragment);
 }
 function render(s){
   state=s;if(!s.flies.some(f=>f.id===selected))selected=s.flies[0].id;
@@ -50,14 +50,14 @@ function render(s){
   $('communication-toggle').checked=s.communication;$('plasticity-toggle').checked=s.plasticity;
   const full=s.provenance.mode==='full';$('plasticity-toggle').disabled=full;
   if(full&&!s.runtime.paused)$('run-state').textContent=`目标 ${s.runtime.speed}× · 实际约 ${(.25/Math.max(.25,s.runtime.step_ms/1000)).toFixed(3)}×`;
-  $('plasticity-toggle').parentElement.title=full?'全量模式固定公开结构权重；经验和信任仍更新':'';
+  $('plasticity-toggle').parentElement.title=full?'固定结构权重；无规则目标和语义信任':'';
   $('graph-size').textContent=full?'全图 · 1.52 亿边':'97 节点 / 1,606 边';
   $('graph-size').title=`实际计算 ${s.provenance.nodes.toLocaleString()} 分割单元、${s.provenance.edges.toLocaleString()} 条连接；图中仅显示 97 个探针节点`;
   $('about-graph').textContent=full?'完整公开连接表：88,384,522 个分割单元，151,856,684 条边；包含大量碎片，非同等数量完整神经元。图中只显示 97 个探针。':'当前为旧版 MBON 子图：97 节点、1,606 条边。';
-  $('message-input').disabled=!s.communication;$('message-form').querySelector('button').disabled=!s.communication;
+  $('message-input').disabled=true;$('message-form').querySelector('button').disabled=true;
   $('neural-rms').textContent=full?s.brain.rms.toExponential(2):s.brain.rms.toFixed(3);$('gain-change').textContent=full?'固定权重':s.brain.gain_change.toFixed(5);
   $('known-count').textContent=f.known;$('helped-count').textContent=f.helped;$('age').textContent=`${f.age.toFixed(1)} 日`;
-  $('sent-count').textContent=s.metrics.sent;$('followed-count').textContent=s.metrics.followed;$('verified-count').textContent=s.metrics.verified;
+  $('sent-count').textContent=(f.signal?.[0]||0).toExponential(2);$('followed-count').textContent=(f.signal?.[1]||0).toExponential(2);$('verified-count').textContent=((Math.max(0,f.motors?.[0]||0)+Math.max(0,f.motors?.[1]||0))/2).toExponential(2);
   $('save-status').textContent=s.runtime.saved_at?'已存档 '+s.runtime.saved_at.slice(11,19):full?'全图每 120 秒自动保存':'自动保存每 20 秒';$('step-ms').textContent=`${s.runtime.step_ms.toFixed(1)} ms / tick`;
   drawDay(s.day_phase);drawHistory(s.history);drawBrain(s);renderEvents(s.events);
   if(view){if(view.state?.tick!==s.tick)view.stateReceived=performance.now();view.selected=selected;view.setState(s)}
@@ -83,7 +83,7 @@ function follow(){view.follow(selected);$('follow-button').classList.add('active
 $('trails-toggle').onchange=e=>view.trails=e.target.checked;$('sense-toggle').onchange=e=>view.sense=e.target.checked;
 $('communication-toggle').onchange=safe(e=>command('communication',{value:e.target.checked}));$('plasticity-toggle').onchange=safe(e=>command('plasticity',{value:e.target.checked}));
 for(const [id,action,text]of [['rain-button','rain','已引入阵雨，观察个体如何寻找庇护。'],['dry-button','dry','露水已暂时蒸干，旧线索可能失效。'],['fruit-button','fruit','果实已补充，个体仍需自行发现。']])$(id).onclick=safe(async()=>{await command(action);toast(text)});
-$('save-button').onclick=safe(async()=>{await command('save');toast('当前世界、个体记忆与神经状态已保存。')});
+$('save-button').onclick=safe(async()=>{await command('save');toast('当前世界、身体与神经状态已保存。')});
 $('export-button').onclick=safe(async()=>{const res=await fetch('/api/export');if(!res.ok)throw new Error('导出失败');const b=await res.blob(),url=URL.createObjectURL(b),a=node('a');a.href=url;a.download=`micro-habitat-${state.seed}-day${state.day}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('完整观察存档已导出。')});
 $('message-form').onsubmit=safe(async e=>{e.preventDefault();const text=$('message-input').value.trim();if(!text)return;await command('message',{text,recipient:'all'});$('message-input').value='';toast('词符已发送，后续行为由个体状态和局部信息决定。')});
 $('message-form').addEventListener('submit',e=>e.preventDefault());

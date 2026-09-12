@@ -3,6 +3,9 @@
     "production full graph",
     "all twelve individuals use full graph",
     "initial world paused and clean",
+    "neural-only controller",
+    "semantic command disabled",
+    "zero initial motors and no targets",
     "twelve visible 3D bodies",
     "weight mutation disabled",
     "full graph shown separately from probes",
@@ -13,7 +16,7 @@
     "runtime uses no external web requests",
     "no browser runtime errors"
   ],
-  "passed": 12,
+  "passed": 15,
   "errors": [],
   "external": [],
   "browser": "153.0.8010.36"

@@ -1,4 +1,28 @@
 {
+  "implementation_sha256": {
+    "habitat3d/accept_full.py": "64a5cf1d7acddd828911ca141fd8fba72ebf9aa3f85e265105a9a42da6e9dde4",
+    "habitat3d/ecology.py": "49a42b93fdfd8b1c2a34a0eb7aff1414474d833895ebdbb689492e77826f1217",
+    "habitat3d/environment.py": "efc6794df34121505a3fcf4d4f7e520e95edf6d16c8023320208f7b13d184021",
+    "habitat3d/full_brain.py": "adc5d2876df0c7089b45d2d73ac3b4554c20fc60dbfa7c5fb5da7ff7d2ec9337"
+  },
+  "controller": "neural-only-actuation-v1",
+  "world_steps": 16,
+  "neural_state_steps": 16,
+  "diagnostic_forward_calls": 5,
+  "sensory_ablation_max_abs_change_by_fly": [
+    0.007421272806823254,
+    0.008181307464838028,
+    0.00617747288197279,
+    0.008802227675914764,
+    0.006930742412805557,
+    0.00789851974695921,
+    0.003960857167840004,
+    0.006956442259252071,
+    0.006907898932695389,
+    0.009216748178005219,
+    0.007372211664915085,
+    0.005804440006613731
+  ],
   "checks": [
     "complete published graph and zero excluded rows",
     "immutable shared structural matrix",
@@ -8,15 +32,17 @@
     "all twelve individuals updated through full graph",
     "finite and distinct individual activity",
     "independent full-column multiplication agrees with batch computation",
-    "compressed mapped state restores exact neural continuation"
+    "actual full-graph two-step sensory ablation changes motor output",
+    "compressed mapped state restores exact neural continuation",
+    "sixteen full-graph world steps without targets or scripted memory"
   ],
-  "passed": 9,
+  "passed": 11,
   "nodes": 88384522,
   "edges": 151856684,
   "flies": 12,
   "step_seconds": [
-    17.860149200001615,
-    22.737256699998397
+    11.255655799999658,
+    10.805638999998337
   ],
   "state_bytes": 4242457056,
   "graph_source_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
@@ -27,11 +53,10 @@
     "unknown_or_modulatory": 1
   },
   "unknown_or_modulatory_positive_nodes": 88228690,
-  "init_sha256": "0475598a6764fe4b61e067ea4dbad75ad16b3b22db4eaa2d0254b4a23e2b59b9",
-  "init_bytes": 22752,
+  "init_sha256": "5fb5c71bdc7962cc7cb255610db8154aa859e4769cac1ccf689e1ad88f326af5",
+  "init_bytes": 26919,
   "not_proven": [
     "physiological equivalence",
-    "exclusive neural control",
     "learned language",
     "survival improvement"
   ]

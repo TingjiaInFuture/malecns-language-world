@@ -1,30 +1,44 @@
-# Validation scope
+# Validation scope: neural-only actuation v1
 
-- `graph_audit.json`: complete official segment graph, 88,384,522 endpoints,
-  151,856,684 edges, 311,833,243 summed structural counts, zero excluded rows.
-- `full-acceptance.json`: 9 full-graph checks. Twelve individuals performed two
-  actual world steps, followed by independent-reference and exact restoration
-  checks of neural updates. This is a short correctness test, not a long-running
-  biological or language experiment.
-- The measured world steps took **17.86 and 22.74 seconds** on the local machine
-  under the acceptance workload. Earlier warm measurements were around 11 seconds.
-  Each step advances only 0.25 model seconds. Rendering FPS is a separate metric.
-- Twelve complete float32 states occupy **4,242,457,056 bytes** in temporary
-  memory-mapped storage. Checkpoint compression and restoration also take time.
-- `gui.json` and `gui-initial.png`: 12 actual Chrome checks of the full-mode
-  observation window, including clean init, disabled structural-weight mutation,
-  real graph scope, twelve bodies, selection, camera, export, and local-only loads.
-- `live-init.json`: Python verified exact production/init equality, preserving
-  integer RNG states without JavaScript numeric rounding.
-- `small-model-tests.txt`: 8 fast regression tests, deliberately using the legacy
-  MBON fixture. Their 10-model-day test is **not** a full-graph endurance test.
+Production uses the complete official structural graph: 88,384,522 endpoints,
+151,856,684 edges, 311,833,243 summed structural counts, zero additional excluded
+rows. See `graph_audit.json` for graph hashes and `DATA_PROVENANCE.md` for sources.
 
-The matrix is built from all published structural counts, with an explicit
-normalization and sign model. **88,228,690 segment nodes** do not have one of the
-model's supported fast-transmitter consensus labels and receive the documented
-positive structural-propagation assumption. Many are fragments. This is a major
-limitation, not evidence that those segments are biologically excitatory.
+- `controller-tests.txt`: 18 local tests, comprising 10 new neural-control tests
+  and 8 explicitly historical MBON regression tests. New tests cover zero-output
+  clamping under hunger/rain/resource contact, separate motor stimulation,
+  mouth/pump gating, local anonymous signals, absence of semantic/planning entry
+  points, exact restart, collision without steering, and no random exploration.
+  These mechanism tests deliberately use a small graph fixture or clamped outputs;
+  they are not full-graph biological experiments.
+- `full-acceptance.json`: actual complete-graph numerical checks for all twelve
+  individuals, independent reference multiplication, exact neural-state resume,
+  two-step sensory ablation for each fly, and 16 unassisted world steps (4 model
+  seconds). Diagnostic neural calls are restored before the closed loop resumes;
+  they do not advance world time. The report includes tested implementation hashes.
+- `neural-trajectory.json`: per-fly positions, traveled distance, all eight neural
+  motor outputs and both signal amplitudes for world steps 3 through 16. No target
+  planner, random exploration, semantic hints or rescue action is active.
+- `gui.json` and `gui-initial.png`: actual Chrome verification and screenshot of
+  the full-mode observer. Text commands are disabled and neural amplitudes shown.
+- `live-init.json`: Python exact comparison of the running simulation and the
+  committed clean initial checkpoint, including integer RNG states.
+- `small-model-tests.txt`: historical evidence only; its old hybrid-controller
+  survival/navigation behavior does not describe the new production controller.
 
-No physiological equivalence, exclusive neural control, learned natural language,
-or survival advantage has been established. The engineering navigation/need and
-symbolic protocol components are retained explicitly.
+Twelve complete float32 neural states occupy 4,242,457,056 bytes. All graph edges
+are included in each individual's recurrence; the 97 displayed nodes are probes.
+Actual timing is reported in the JSON artifacts, separately from rendering FPS.
+
+This acceptance establishes the software's neural-only active-control boundary
+and short numerical correctness. It does not establish biological equivalence,
+long-term survival, effective navigation, learned communication or language.
+The 88,228,690 unknown/modulatory nodes assigned positive propagation, unvalidated
+MBON sensory/motor mapping, rate-model dynamics and simplified body remain major
+limitations. Small biased motion is an experimental result, not evidence of a
+realistic fly policy. See `NEURAL_CONTROL.md` for the complete model contract.
+
+The accepted clean run lasted 4 model seconds. All twelve individuals remained
+alive during that short interval; traveled distances ranged from 0.089123 to 0.188763
+model units. This weak movement does not establish purposeful navigation or
+feeding. Closed-loop steps 3-16 took 10.55-15.58 wall seconds each on this machine.
