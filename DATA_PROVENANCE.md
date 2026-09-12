@@ -29,4 +29,3 @@ are recorded in `selection.json`; full recurrence uses every published row.
 See `validation/graph_audit.json` for the generated graph inventory and checksums.
 Neurotransmitter signs, normalization, model kinetics, sensory encoding and motor
 interfaces are assumptions, not measured physiological synaptic parameters.
-

@@ -33,4 +33,3 @@ Third-party notices:
   Biology, and Google Research. See `DATA_PROVENANCE.md`.
 - Python/npm dependencies retain their respective licenses and are not vendored
   except the explicitly listed Three.js runtime files.
-
