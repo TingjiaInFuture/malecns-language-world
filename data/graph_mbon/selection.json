@@ -1,0 +1,53 @@
+{
+  "rule": "type starts MBON, status Traced, consensus_nt in explicitly modelled fast transmitters",
+  "candidate_nodes": 97,
+  "retained_nodes": 97,
+  "excluded_nodes": 0,
+  "sign_assumptions": {
+    "acetylcholine": 1,
+    "gaba": -1,
+    "glutamate": -1
+  },
+  "consensus_nt_counts": {
+    "acetylcholine": 50,
+    "glutamate": 26,
+    "gaba": 21
+  },
+  "not_whole_brain": true,
+  "not_physiological_IO": true,
+  "source_receipts": {
+    "annotations": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "md5": "UKdxh3DFciDxYLpPQxq4ng==",
+      "etag": "\"50a7718770c57220f160ba4f431ab89e\"",
+      "file": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "server_md5_verified": true,
+      "retrieved_utc": "2026-09-12T15:10:18.408675+00:00",
+      "status": "verified"
+    },
+    "neurotransmitters": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "md5": "PYQrEv5cSe763lKNfdJKHw==",
+      "etag": "\"3d842b12fe5c49eefade528d7dd24a1f\"",
+      "file": "body-neurotransmitters-male-cns-v1.0.feather",
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "server_md5_verified": true,
+      "retrieved_utc": "2026-09-12T15:10:21.284576+00:00",
+      "status": "verified"
+    },
+    "weights": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 1051241946,
+      "md5": "8w6dzKJc/QIb8eez2XVZng==",
+      "etag": "\"f30e9dcca25cfd021bf1e7b3d975599e\"",
+      "file": "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "server_md5_verified": true,
+      "retrieved_utc": "2026-09-12T15:10:36.024757+00:00",
+      "status": "verified"
+    }
+  }
+}

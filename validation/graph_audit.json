@@ -1,0 +1,19 @@
+{
+  "scope": "ALL rows and endpoints of official full segment graph",
+  "nodes": 88384522,
+  "edges": 151856684,
+  "excluded_rows": 0,
+  "source_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+  "synapse_count_sum": 311833243,
+  "orientation": "C[post,pre]",
+  "duplicates_checked": true,
+  "weight_threshold_applied": false,
+  "seconds": 94.69384329999593,
+  "warning": "Segments include fragments and unannotated bodies; counts are structural, not physiological weights.",
+  "files": {
+    "body_ids.npy": "debe142c46aabbd78e9c11d6207a14b007abc6bd8284cbe2ea43b05bd22813bc",
+    "indptr.npy": "bd64ef7a9e02e347250006ec5da89ae6ecd64f4a0b395fc1421f43148cc977c3",
+    "indices.npy": "307a57388b33f1ad74229dac34c6bdcf8684e664696f6e9bf30ba4496c511374",
+    "counts.npy": "5e520b3525dabeb2607072382981b1e43744631d64827818062d4e0f0b0166e6"
+  }
+}

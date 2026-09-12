@@ -1,0 +1,35 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+const url=process.env.HABITAT_URL||'http://127.0.0.1:8765';
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1600,height:1000},acceptDownloads:true});
+const errors=[],external=[];page.on('pageerror',e=>errors.push(String(e)));
+page.on('request',r=>{if(!r.url().startsWith(url)&&!r.url().startsWith('data:'))external.push(r.url())});
+const checks=[];const check=(name,value)=>{assert.ok(value,name);checks.push(name)};
+try{
+ await page.goto(url);await page.waitForFunction(()=>window.__habitatState?.provenance.mode==='full',null,{timeout:60000});
+ const state=await page.evaluate(()=>window.__habitatState);
+ check('production full graph',state.provenance.nodes===88384522&&state.provenance.edges===151856684);
+ check('all twelve individuals use full graph',state.flies.length===12&&state.neural_enabled);
+ check('initial world paused and clean',state.t===0&&state.tick===0&&state.runtime.paused&&Object.values(state.metrics).every(v=>v===0));
+ check('twelve visible 3D bodies',await page.evaluate(()=>window.__habitatView.flies.size===12));
+ check('weight mutation disabled',!state.plasticity&&await page.locator('#plasticity-toggle').isDisabled());
+ check('full graph shown separately from probes',await page.locator('#graph-size').textContent()==='全图 · 1.52 亿边');
+ await page.locator('#population-list button').nth(1).click();await page.waitForFunction(()=>window.__habitatState.selected==='F02');
+ check('individual selection reads real state',await page.locator('#selected-id').textContent()==='F02');
+ await page.locator('#focus-button').click();check('follow camera works',await page.evaluate(()=>window.__habitatView.following));
+ await page.locator('#overview-button').click();await page.locator('#about-button').click();
+ check('scope and assumptions visible',(await page.locator('#about-graph').textContent()).includes('88,384,522'));
+ await page.locator('#about-dialog .dialog-close').first().click();
+ await fs.mkdir('../validation',{recursive:true});await page.waitForTimeout(700);
+ await page.screenshot({path:'../validation/gui-initial.png'});
+ const downloading=page.waitForEvent('download');await page.locator('#export-button').click();const file=await downloading;
+ await file.saveAs('../validation/gui-export.json');const exported=JSON.parse(await fs.readFile('../validation/gui-export.json','utf8'));
+ const initial=JSON.parse(await fs.readFile('../init/world_state.json','utf8'));
+ check('live world exactly equals committed init',JSON.stringify(exported.simulation)===JSON.stringify(initial.simulation));
+ check('runtime uses no external web requests',external.length===0);
+ check('no browser runtime errors',errors.length===0);
+ await fs.writeFile('../validation/gui.json',JSON.stringify({checks,passed:checks.length,errors,external,browser:browser.version()},null,2));
+ console.log(JSON.stringify({passed:checks.length,errors}));
+}finally{await browser.close()}

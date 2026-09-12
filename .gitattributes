@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.npy binary
+*.npz binary
+*.png binary
+init/world_state.json -text

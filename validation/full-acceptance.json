@@ -1,0 +1,38 @@
+{
+  "checks": [
+    "complete published graph and zero excluded rows",
+    "immutable shared structural matrix",
+    "twelve independent zero neural states",
+    "clean init: zero time, experience, metrics and memory",
+    "no neural bypass or weight mutation",
+    "all twelve individuals updated through full graph",
+    "finite and distinct individual activity",
+    "independent full-column multiplication agrees with batch computation",
+    "compressed mapped state restores exact neural continuation"
+  ],
+  "passed": 9,
+  "nodes": 88384522,
+  "edges": 151856684,
+  "flies": 12,
+  "step_seconds": [
+    17.860149200001615,
+    22.737256699998397
+  ],
+  "state_bytes": 4242457056,
+  "graph_source_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+  "assumptions": {
+    "acetylcholine": 1,
+    "gaba": -1,
+    "glutamate": -1,
+    "unknown_or_modulatory": 1
+  },
+  "unknown_or_modulatory_positive_nodes": 88228690,
+  "init_sha256": "0475598a6764fe4b61e067ea4dbad75ad16b3b22db4eaa2d0254b4a23e2b59b9",
+  "init_bytes": 22752,
+  "not_proven": [
+    "physiological equivalence",
+    "exclusive neural control",
+    "learned language",
+    "survival improvement"
+  ]
+}

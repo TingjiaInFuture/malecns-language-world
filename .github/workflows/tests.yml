@@ -1,0 +1,13 @@
+name: Small-model regression
+on: [push, pull_request]
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s habitat3d -p test_model.py
+      - run: python -m py_compile habitat3d/full_brain.py habitat3d/server.py build_full_graph.py

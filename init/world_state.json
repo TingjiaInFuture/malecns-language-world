@@ -1,0 +1,909 @@
+{
+  "application": "MaleCNS Micro Habitat",
+  "schema": "habitat3d/1",
+  "saved_at": "2026-09-13T00:00:00Z",
+  "runtime": {
+    "paused": true,
+    "speed": 1
+  },
+  "simulation": {
+    "schema": "habitat3d/1",
+    "world": {
+      "seed": 20260913,
+      "count": 12,
+      "t": 0.0,
+      "tick": 0,
+      "communication": true,
+      "plasticity": false,
+      "neural_enabled": true,
+      "event_id": 1,
+      "metrics": {
+        "sent": 0,
+        "received": 0,
+        "followed": 0,
+        "verified": 0,
+        "failed": 0,
+        "meals": 0,
+        "drinks": 0,
+        "shelter_visits": 0,
+        "deaths": 0
+      },
+      "weather_override": null,
+      "weather": {
+        "rain": 0.0,
+        "light": 0.7,
+        "heat": 0.65,
+        "wind": [
+          0.3,
+          0.1
+        ],
+        "label": "晴 · 微风"
+      },
+      "last_weather": "",
+      "resources": [
+        {
+          "id": "R1",
+          "kind": "food",
+          "x": -18.0,
+          "z": -8.0,
+          "radius": 3.0,
+          "protected": false,
+          "label": "发酵无花果",
+          "amount": 0.85,
+          "ripeness": 0.85,
+          "phase": 80.0,
+          "suppressed_until": 0.0
+        },
+        {
+          "id": "R2",
+          "kind": "water",
+          "x": 16.0,
+          "z": -7.0,
+          "radius": 2.3,
+          "protected": false,
+          "label": "石面露水",
+          "amount": 0.85,
+          "ripeness": 0.85,
+          "phase": 117.0,
+          "suppressed_until": 0.0
+        },
+        {
+          "id": "R3",
+          "kind": "shade",
+          "x": -12.0,
+          "z": 9.0,
+          "radius": 4.4,
+          "protected": true,
+          "label": "卷叶庇护",
+          "amount": 1.0,
+          "ripeness": 0.85,
+          "phase": 154.0,
+          "suppressed_until": 0.0
+        },
+        {
+          "id": "R4",
+          "kind": "food",
+          "x": 17.0,
+          "z": 10.0,
+          "radius": 2.7,
+          "protected": false,
+          "label": "熟落果",
+          "amount": 0.85,
+          "ripeness": 0.85,
+          "phase": 191.0,
+          "suppressed_until": 0.0
+        },
+        {
+          "id": "R5",
+          "kind": "water",
+          "x": -19.0,
+          "z": 3.0,
+          "radius": 1.8,
+          "protected": true,
+          "label": "叶下积水",
+          "amount": 0.85,
+          "ripeness": 0.85,
+          "phase": 228.0,
+          "suppressed_until": 0.0
+        },
+        {
+          "id": "R6",
+          "kind": "shade",
+          "x": 12.0,
+          "z": -12.0,
+          "radius": 4.0,
+          "protected": true,
+          "label": "蕨叶阴影",
+          "amount": 1.0,
+          "ripeness": 0.85,
+          "phase": 265.0,
+          "suppressed_until": 0.0
+        }
+      ],
+      "rocks": [
+        {
+          "x": -2.0,
+          "z": -8.0,
+          "r": 2.4,
+          "height": 2.2
+        },
+        {
+          "x": 4.0,
+          "z": 8.0,
+          "r": 2.0,
+          "height": 1.8
+        },
+        {
+          "x": 22.0,
+          "z": -1.0,
+          "r": 1.8,
+          "height": 1.4
+        },
+        {
+          "x": -22.0,
+          "z": -12.0,
+          "r": 1.6,
+          "height": 1.2
+        }
+      ],
+      "flies": [
+        {
+          "id": "F01",
+          "color": "#e4b66c",
+          "x": -12.955487073880354,
+          "z": -3.537839178437581,
+          "y": 1.8,
+          "heading": -2.572239681374295,
+          "energy": 0.8218831683925755,
+          "hydration": 0.6539456933342441,
+          "fatigue": 0.17137144323089942,
+          "age": 1.450698318969917,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 3.0,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F02",
+          "color": "#7fc7b1",
+          "x": 9.797158815095084,
+          "z": -4.984597661783676,
+          "y": 1.8,
+          "heading": 2.782702197742587,
+          "energy": 0.5520950611029255,
+          "hydration": 0.600814074120931,
+          "fatigue": 0.259251066568139,
+          "age": 1.7835112567052624,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 4.7,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F03",
+          "color": "#92b7e6",
+          "x": 2.1499764089957205,
+          "z": 5.015863429747926,
+          "y": 1.8,
+          "heading": -0.4701699071244061,
+          "energy": 0.8473014756090338,
+          "hydration": 0.5687968605900956,
+          "fatigue": 0.11556032184374139,
+          "age": 0.17740439053440826,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 6.4,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F04",
+          "color": "#c79dd7",
+          "x": -7.912262414771064,
+          "z": -7.523982642603195,
+          "y": 1.8,
+          "heading": -3.0490055397407225,
+          "energy": 0.8556219979991684,
+          "hydration": 0.5657628801336388,
+          "fatigue": 0.16691429096787114,
+          "age": 0.13602086698586136,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 8.1,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F05",
+          "color": "#d99685",
+          "x": 7.753174705729691,
+          "z": -6.414480546011147,
+          "y": 1.8,
+          "heading": 1.6973851247210767,
+          "energy": 0.6313841835613432,
+          "hydration": 0.6229535593720438,
+          "fatigue": 0.2802053994305293,
+          "age": 0.6022826060483837,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 9.8,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F06",
+          "color": "#c6ce87",
+          "x": -1.9884288407368036,
+          "z": 7.225354963486032,
+          "y": 1.8,
+          "heading": -2.746785947226192,
+          "energy": 0.5119241561605459,
+          "hydration": 0.6105049633502254,
+          "fatigue": 0.16288202231795368,
+          "age": 0.6978303085781219,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 11.5,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F07",
+          "color": "#79bcc5",
+          "x": -7.150722767527853,
+          "z": -8.691134002172365,
+          "y": 1.8,
+          "heading": -1.7907309538101186,
+          "energy": 0.569625549900964,
+          "hydration": 0.7991486514673162,
+          "fatigue": 0.10932680211336505,
+          "age": 1.2463742841532146,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 13.2,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F08",
+          "color": "#c1a482",
+          "x": 8.730639831821204,
+          "z": -3.4475774629066045,
+          "y": 1.8,
+          "heading": 1.5127328409870886,
+          "energy": 0.7395948841225493,
+          "hydration": 0.6089754828260882,
+          "fatigue": 0.0723436605654096,
+          "age": 0.48319564308914154,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 14.9,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F09",
+          "color": "#e3c893",
+          "x": 0.5201046485857184,
+          "z": 9.51873770632874,
+          "y": 1.8,
+          "heading": 2.192042738105558,
+          "energy": 0.6489226280889923,
+          "hydration": 0.6818678097542548,
+          "fatigue": 0.1934676818850261,
+          "age": 0.7823982035447428,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 16.6,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F10",
+          "color": "#89b992",
+          "x": -12.501654572277996,
+          "z": -7.679017697330577,
+          "y": 1.8,
+          "heading": -2.4879426074717697,
+          "energy": 0.822892586058823,
+          "hydration": 0.4924365610408641,
+          "fatigue": 0.10117628677230649,
+          "age": 1.2504281336606629,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 18.299999999999997,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F11",
+          "color": "#a5a2d8",
+          "x": 9.704632189547782,
+          "z": -3.8048505987918313,
+          "y": 1.8,
+          "heading": 2.069052575894607,
+          "energy": 0.5883767416026097,
+          "hydration": 0.6260749858089977,
+          "fatigue": 0.17071625117280836,
+          "age": 1.4510271069961367,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 20.0,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        },
+        {
+          "id": "F12",
+          "color": "#d6a7ba",
+          "x": -2.856829184781116,
+          "z": 8.702724178172893,
+          "y": 1.8,
+          "heading": 2.080567023375359,
+          "energy": 0.7127082919746099,
+          "hydration": 0.7485246692421308,
+          "fatigue": 0.2735135286076789,
+          "age": 1.3681061409867123,
+          "alive": true,
+          "state": "探索",
+          "target": null,
+          "memory": {},
+          "hint": null,
+          "directive": null,
+          "trust": {},
+          "next_decision": 0.0,
+          "next_signal": 21.7,
+          "next_explore": 0.0,
+          "trail": [],
+          "experience": 0,
+          "helped": 0,
+          "last_word": null,
+          "last_signal_t": -100.0,
+          "travel": 0.0,
+          "sheltered": false,
+          "speed": 0.0,
+          "last_reward": 0.0,
+          "failure_wait": 0.0
+        }
+      ]
+    },
+    "events": [
+      {
+        "id": 1,
+        "t": 0.0,
+        "kind": "system",
+        "title": "微境开始运行",
+        "detail": "昼夜、资源与个体经验将持续变化。"
+      }
+    ],
+    "history": [],
+    "messages": [],
+    "rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 292491840523290192755153831318906310345,
+        "inc": 206626655146693110357859960913985110555
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    "move_rng": [
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 2705036948820831306966961922975639745,
+          "inc": 14490907958225732736554097955340821415
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 173348027023439926939908553107022400919,
+          "inc": 229708098555791544045930594247486407447
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 253354387804405412809983493052853158913,
+          "inc": 149862017173280860884868860553266700671
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 257163396767511827559797292290301761689,
+          "inc": 73889416276469086770046738503637943673
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 86820380893325861655906473165095320182,
+          "inc": 339073828695452663138097989157423397219
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 166881501412726417534429039259199651261,
+          "inc": 210389796171751453621005622636398300713
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 147808951996011458760082957967817546683,
+          "inc": 79178634270410217388650705422519931647
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 184594909088181253559116980453524984539,
+          "inc": 285803461155422947311243864953826560483
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 329945853854986099016615928054489077184,
+          "inc": 172117316251532722642434870076244657573
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 198080095626209730226562684801712298028,
+          "inc": 90790133918557955906908615537644421019
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 312792164357562563722893513065602691369,
+          "inc": 69206353513731353694380993419820489939
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 93845955846109087163868541315446585602,
+          "inc": 77783729154260113383888751000587256023
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      }
+    ],
+    "social_rng": [
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 49934913177738237182601456000347490517,
+          "inc": 329150905150192790998444975322012007915
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 28034875800056011523198216162819296308,
+          "inc": 273036719103474086918260279714274618363
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 48106621133780961827682120634882958989,
+          "inc": 1231999941568442827637711354223804213
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 276274566022307560340172446140330222712,
+          "inc": 122961789731831934944755890687351000441
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 222120911702507087840877147329852018280,
+          "inc": 163196118890639524192583898640159908637
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 297198685881551971791808499769558706772,
+          "inc": 129092661536822342441534002793681277321
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 172856496049310011534037947955135650801,
+          "inc": 207944754688700446529133948717628013219
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 269184240784165488794906927910741785831,
+          "inc": 247958375138730107770471018377496040773
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 259161611629639560740588425385142677813,
+          "inc": 291299835870947665791237026474155541873
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 138618565627646695210567046159295764882,
+          "inc": 185483103893620723345282293526098311475
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 239846712165932652438892337305394139152,
+          "inc": 179667717316808785790997177010082522575
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 57750321323199616586179294419053812024,
+          "inc": 274392138861147852109442963806260282473
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      }
+    ],
+    "brains": {
+      "mode": "full",
+      "sha": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "n": 88384522,
+      "count": 12,
+      "steps": 0,
+      "h_encoding": "zeros",
+      "h": null,
+      "last_output": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  },
+  "limitations": "Complete published structural segment graph, not physiological weights; hybrid controller and artificial I/O."
+}
