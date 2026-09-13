@@ -1,0 +1,327 @@
+{
+  "scope": "body-only engineering baseline; not MaleCNS neuromuscular validation",
+  "flygym": "2.1.0",
+  "mujoco": "3.9.0",
+  "xml_sha256": "04f6070d6733940357be005ca72c02ba0d9455538ff018da70c74de7458e9531",
+  "joint_names": [
+    "joint_LFCoxa_yaw",
+    "joint_LFCoxa_pitch",
+    "joint_LFCoxa_roll",
+    "joint_LFTrochanter_yaw",
+    "joint_LFTrochanter_pitch",
+    "joint_LFTrochanter_roll",
+    "joint_LFTibia_pitch"
+  ],
+  "muscle_names": [
+    "LFC_tergopleural_promotor_a",
+    "LFC_tergopleural_promotor_b",
+    "LFC_pleural_remotor_and_abductor",
+    "LFC_pleural_promotor",
+    "LFC_sternal_anterior_rotator",
+    "LFC_sternal_posterior_rotator",
+    "LFC_sternal_adductor",
+    "LFF_trochanter_flexor_b",
+    "LFF_sterno-tergo-trochanter_extensor_a",
+    "LFF_sterno-tergo-trochanter_extensor_b",
+    "LFF_accesory_trochanter_flexor",
+    "LFF_trochanter_extensor",
+    "LFF_trochanter_flexor_a",
+    "LFTibia_flex_93434",
+    "LFTibia_extensor_93932"
+  ],
+  "stimuli": [
+    {
+      "muscle": "LFC_tergopleural_promotor_a",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        -0.04681946768909481,
+        -0.056380681331518856,
+        0.04481749871515012,
+        -0.0006935201762724996,
+        -0.0003110125049388124,
+        -0.0009445351246539224,
+        0.00023940651021492343
+      ],
+      "force_model_units": -3.431528226779346
+    },
+    {
+      "muscle": "LFC_tergopleural_promotor_b",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        -0.2762082387548035,
+        -0.35872695500532864,
+        0.1796198902926301,
+        -0.005255373144106623,
+        -0.004516131581920213,
+        -0.00768514712706031,
+        0.0017713229840832234
+      ],
+      "force_model_units": -31.661317904936553
+    },
+    {
+      "muscle": "LFC_pleural_remotor_and_abductor",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        0.17953276803508406,
+        0.20232368951070823,
+        -0.12364526124079811,
+        0.004729089750861393,
+        0.00113164112836861,
+        0.005760721642221578,
+        -0.0013504084343336498
+      ],
+      "force_model_units": -15.739033561403847
+    },
+    {
+      "muscle": "LFC_pleural_promotor",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        -0.07554036510186316,
+        -0.06627613229761875,
+        -0.03287158644057914,
+        -0.001735109552267522,
+        -0.0012337512376592308,
+        -0.0025434581009062124,
+        0.000249808990565592
+      ],
+      "force_model_units": -8.558763919345761
+    },
+    {
+      "muscle": "LFC_sternal_anterior_rotator",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        -0.04076400920156664,
+        0.005193561173773897,
+        0.022680774219821898,
+        -9.052725630459557e-05,
+        -0.00032296713451485104,
+        -0.00019990620636048395,
+        -0.0001409135296555064
+      ],
+      "force_model_units": -0.9548178059951263
+    },
+    {
+      "muscle": "LFC_sternal_posterior_rotator",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        -0.01163643570098985,
+        0.15787778398479702,
+        0.2664958771624177,
+        0.0031113258977359393,
+        0.0010103607915143975,
+        0.004378556022975877,
+        -0.0014116767039993317
+      ],
+      "force_model_units": -45.131399510277845
+    },
+    {
+      "muscle": "LFC_sternal_adductor",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        -0.015530349825979506,
+        0.06323917369764454,
+        -0.02708075069996957,
+        -0.00010596770203374906,
+        -0.000577685386879967,
+        -0.00023079889999484682,
+        -0.0005241401558990777
+      ],
+      "force_model_units": -4.289569738380858
+    },
+    {
+      "muscle": "LFF_trochanter_flexor_b",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        0.0005399876555064187,
+        -0.0001468823324809465,
+        0.0007025050174804259,
+        -0.05927572948542503,
+        -0.4452854020993664,
+        0.24431429310104683,
+        0.0045934098545499236
+      ],
+      "force_model_units": -18.19974978070948
+    },
+    {
+      "muscle": "LFF_sterno-tergo-trochanter_extensor_a",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        -0.0006531309745711616,
+        -0.00255623697062779,
+        0.0010889805248003315,
+        -0.06357104611003012,
+        0.6905935578741638,
+        -0.11169102693270101,
+        -0.008600519308266996
+      ],
+      "force_model_units": -33.55007406599074
+    },
+    {
+      "muscle": "LFF_sterno-tergo-trochanter_extensor_b",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        0.002832191172346718,
+        -0.0018199318078295779,
+        -0.0005715036035062182,
+        -0.5707138458666143,
+        0.6684284980178765,
+        0.20805017778025528,
+        -0.008277236716565328
+      ],
+      "force_model_units": -40.98010863175368
+    },
+    {
+      "muscle": "LFF_accesory_trochanter_flexor",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        0.00016665874668569947,
+        9.852761600503968e-05,
+        0.00037130179437300237,
+        -0.15006989788217884,
+        -0.17382843668127457,
+        0.1327440379822373,
+        0.001582994622135514
+      ],
+      "force_model_units": -7.9040845656952605
+    },
+    {
+      "muscle": "LFF_trochanter_extensor",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        -0.0006431320186800898,
+        -0.000448393688242954,
+        0.0010580328435002007,
+        0.2429140092818047,
+        0.1957135845922604,
+        -0.22947708793806254,
+        -0.0017951567004694802
+      ],
+      "force_model_units": -14.895588683656637
+    },
+    {
+      "muscle": "LFF_trochanter_flexor_a",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        0.00020289105733981017,
+        -6.77750663459209e-05,
+        0.0010087164497133427,
+        -0.04891071747658571,
+        -0.3832788779527654,
+        0.14848606437629128,
+        0.003990221840961983
+      ],
+      "force_model_units": -16.226199052484297
+    },
+    {
+      "muscle": "LFTibia_flex_93434",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        -0.001018871989578965,
+        -0.002243351984601072,
+        0.0015065324679758296,
+        0.000538045052908831,
+        -0.006140268128032922,
+        0.00030544765339556024,
+        0.45552762150579373
+      ],
+      "force_model_units": -33.2128209790597
+    },
+    {
+      "muscle": "LFTibia_extensor_93932",
+      "activation_command": 0.5,
+      "joint_delta_vs_passive_rad": [
+        0.0002276660186401186,
+        0.0024806009190350142,
+        -0.0005016777699714536,
+        -0.0013427398437668714,
+        0.008425319997222847,
+        0.0004471414453322692,
+        -0.5734834867600525
+      ],
+      "force_model_units": -29.1589276078008
+    }
+  ],
+  "passive_qpos_rad": [
+    -0.12214079591698782,
+    0.3868973470312408,
+    0.45941163912153044,
+    -0.30712537938279266,
+    -2.456988936700921,
+    0.1088361020398286,
+    1.5945850314248677
+  ],
+  "restart_max_abs_rad": 0.0,
+  "dt_comparison": [
+    {
+      "dt_s": 0.0001,
+      "qpos_rad": [
+        -0.16515595634146274,
+        0.45669165317619886,
+        0.5509354465220334,
+        -0.6247754843340452,
+        -2.1890957680569567,
+        0.2704608937463634,
+        1.371305584850067
+      ]
+    },
+    {
+      "dt_s": 5e-05,
+      "qpos_rad": [
+        -0.16574588357095082,
+        0.4577940048350371,
+        0.55091800840682,
+        -0.6224793931611212,
+        -2.1913364283778844,
+        0.26992040749281576,
+        1.374399332154028
+      ]
+    },
+    {
+      "dt_s": 2.5e-05,
+      "qpos_rad": [
+        -0.16565338971703794,
+        0.45781384158025795,
+        0.550837640263586,
+        -0.6224047681536897,
+        -2.191440090691507,
+        0.26990662533297743,
+        1.3745720822562353
+      ]
+    }
+  ],
+  "dt_errors_rad": [
+    0.0030937473039609475,
+    0.00017275010220729747
+  ],
+  "decreasing_dt_error": true,
+  "finite_smoke_pass": true,
+  "mocap_replay": {
+    "clip": "0002",
+    "frames": 225,
+    "kind": "imposed-angle forward kinematics only",
+    "coordinate": "MuJoCo xpos body-frame origin, matching upstream ImitationEnv",
+    "wrong_inertial_origin_rmse_mm": 0.12093127200116453,
+    "position_rmse_mm": 0.01960204149333498,
+    "max_abs_position_error_mm": 0.06500345281069403,
+    "source_sha256": {
+      "qpos": "aa7e3e72325d7d76a17863057cbaba9259a346d66e41b7d820411570d5e00a42",
+      "qvel": "c472a3e03ed25a614efcb90e54641e41a031d23024092d99f44b4448b581dd12",
+      "xipos": "3f73c47ee4692b0ebf9a760869d1ea05af6c8bbd5795320fb2edb38f53c5c20c",
+      "xivel": "3eb99125864b8ecdf05286c72301eb1954ae9d9e2e113b350b6ca1c02f6e8d61"
+    }
+  },
+  "biological_acceptance": false,
+  "wall_seconds": 1.5648606000031577,
+  "process_peak_wset_bytes": 413773824,
+  "limitations": [
+    "Only left-front muscles; tethered original model",
+    "No male-specific mass/force calibration",
+    "No reviewed motor or proprioceptor IDs",
+    "Convergence is reported, no biological tolerance is invented",
+    "No held-out animal intervention data"
+  ],
+  "executed_source_sha256": {
+    "body/benchmark.py": "0c5be7272617fb8716c4801a70492b37b387cc96582da48847de4b70a7d866b0",
+    "body/flygym_adapter.py": "f58456e9e464dc94b37784115c866f9e6b07b4ff691708b1cc4aa7c9d1e91721"
+  }
+}

@@ -1,5 +1,10 @@
 # Validation scope: neural-only actuation v1
 
+The reports below are historical and retain their original hashes. They do not
+validate the changed source. Current roadmap evidence and open scientific gates
+are described in `../REALISM_STATUS.md`; full-segment mode is an engineering
+sandbox. The current renderer no longer fabricates leg or wing motion.
+
 Production uses the complete official structural graph: 88,384,522 endpoints,
 151,856,684 edges, 311,833,243 summed structural counts, zero additional excluded
 rows. See `graph_audit.json` for graph hashes and `DATA_PROVENANCE.md` for sources.

@@ -1,8 +1,11 @@
 .venv/
+.venv-body/
+data/graph_neurons/
 **/node_modules/
 **/__pycache__/
 *.pyc
 data/raw/
+data/physiology_raw/
 data/graph_full/
 habitat3d/state/
 habitat3d/evidence/

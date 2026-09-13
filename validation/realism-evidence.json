@@ -1,0 +1,3839 @@
+{
+  "scope": "software and local structural audit only",
+  "biological_acceptance": false,
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "habitat3d",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "seconds": 11.09378939999442,
+      "stdout": "Resumed saved world without changing simulation state.\n",
+      "stderr": "test_controls_and_strict_vocabulary (test_model.ModelTests.test_controls_and_strict_vocabulary) ... ok\ntest_determinism_and_exact_resume (test_model.ModelTests.test_determinism_and_exact_resume) ... ok\ntest_false_hint_reduces_trust (test_model.ModelTests.test_false_hint_reduces_trust) ... ok\ntest_independent_neural_state_and_frozen_gains (test_model.ModelTests.test_independent_neural_state_and_frozen_gains) ... ok\ntest_locality_and_no_hidden_coordinates (test_model.ModelTests.test_locality_and_no_hidden_coordinates) ... ok\ntest_long_run_bounds (test_model.ModelTests.test_long_run_bounds) ... ok\ntest_runtime_save_archive_and_single_step (test_model.ModelTests.test_runtime_save_archive_and_single_step) ... ok\ntest_signal_investigation_and_contact_validation (test_model.ModelTests.test_signal_investigation_and_contact_validation) ... ok\ntest_closed_loop_and_exact_resume (test_neural_control.NeuralControlTests.test_closed_loop_and_exact_resume) ... ok\ntest_contact_requires_neural_mouth_and_pump (test_neural_control.NeuralControlTests.test_contact_requires_neural_mouth_and_pump) ... ok\ntest_environment_cannot_actuate_when_neural_output_clamped (test_neural_control.NeuralControlTests.test_environment_cannot_actuate_when_neural_output_clamped) ... ok\ntest_neural_motor_interventions (test_neural_control.NeuralControlTests.test_neural_motor_interventions) ... ok\ntest_no_behavioral_or_semantic_entry_points (test_neural_control.NeuralControlTests.test_no_behavioral_or_semantic_entry_points) ... ok\ntest_sensing_contains_no_identity_memory (test_neural_control.NeuralControlTests.test_sensing_contains_no_identity_memory) ... ok\ntest_signal_is_delayed_local_scalar_without_semantics (test_neural_control.NeuralControlTests.test_signal_is_delayed_local_scalar_without_semantics) ... ok\ntest_solid_boundary_does_not_steer (test_neural_control.NeuralControlTests.test_solid_boundary_does_not_steer) ... ok\ntest_stepping_does_not_draw_behavioral_randomness (test_neural_control.NeuralControlTests.test_stepping_does_not_draw_behavioral_randomness) ... ok\ntest_zero_output_cannot_choose_move_eat_or_signal (test_neural_control.NeuralControlTests.test_zero_output_cannot_choose_move_eat_or_signal) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 10.281s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "validation",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "seconds": 1.6739157999982126,
+      "stdout": "",
+      "stderr": "test_calibration_recovers_analytic_fixture (test_integration.IntegrationTests.test_calibration_recovers_analytic_fixture) ... ok\ntest_heterogeneous_membrane_analytic (test_integration.IntegrationTests.test_heterogeneous_membrane_analytic) ... ok\ntest_missing_metric_cannot_pass (test_integration.IntegrationTests.test_missing_metric_cannot_pass) ... ok\ntest_parameter_prior_provenance_and_reproducibility (test_integration.IntegrationTests.test_parameter_prior_provenance_and_reproducibility) ... ok\ntest_preregistration_and_leakage (test_integration.IntegrationTests.test_preregistration_and_leakage) ... ok\ntest_retroactive_registration_rejected (test_integration.IntegrationTests.test_retroactive_registration_rejected) ... ok\ntest_rewiring_degrees_and_uniqueness (test_integration.IntegrationTests.test_rewiring_degrees_and_uniqueness) ... ok\ntest_animal_split_order_invariant_and_disjoint (test_public_data.PublicDataTests.test_animal_split_order_invariant_and_disjoint) ... ok\ntest_crosswalk_preserves_conflicts_missing_and_unknown_confidence (test_public_data.PublicDataTests.test_crosswalk_preserves_conflicts_missing_and_unknown_confidence) ... ok\ntest_filter_direction_and_source_convolution (test_public_data.PublicDataTests.test_filter_direction_and_source_convolution) ... ok\ntest_measured_target_only (test_public_data.PublicDataTests.test_measured_target_only) ... ok\ntest_clock_and_physical_stimuli (test_realism.ReferenceTests.test_clock_and_physical_stimuli) ... ok\ntest_convergence (test_realism.ReferenceTests.test_convergence) ... ok\ntest_delay_and_restart (test_realism.ReferenceTests.test_delay_and_restart) ... ok\ntest_historical_full_dt_without_loading_large_graph (test_realism.ReferenceTests.test_historical_full_dt_without_loading_large_graph) ... ok\ntest_identity_rule_preserves_untyped (test_realism.ReferenceTests.test_identity_rule_preserves_untyped) ... ok\ntest_local_plasticity_mask (test_realism.ReferenceTests.test_local_plasticity_mask) ... ok\ntest_mass_balance_and_contact (test_realism.ReferenceTests.test_mass_balance_and_contact) ... ok\ntest_measurement_and_leakage (test_realism.ReferenceTests.test_measurement_and_leakage) ... ok\ntest_missing_receptor_rejected (test_realism.ReferenceTests.test_missing_receptor_rejected) ... ok\ntest_no_unreviewed_ports (test_realism.ReferenceTests.test_no_unreviewed_ports) ... ok\ntest_passive_analytic (test_realism.ReferenceTests.test_passive_analytic) ... ok\ntest_receptor_polarity (test_realism.ReferenceTests.test_receptor_polarity) ... ok\ntest_rest_and_individual_independence (test_realism.ReferenceTests.test_rest_and_individual_independence) ... ok\ntest_wrong_clock_checkpoint_rejected (test_realism.ReferenceTests.test_wrong_clock_checkpoint_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.109s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "habitat3d/ui/scene.js"
+      ],
+      "returncode": 0,
+      "seconds": 0.04311210000014398,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "graph": {
+    "dataset": "male-cns:v1.0",
+    "status": "PROVISIONAL_NOT_PRODUCTION",
+    "neurons": 165122,
+    "review_candidates": 46455,
+    "source_rows": 151856684,
+    "partition": {
+      "internal": {
+        "rows": 25563197,
+        "structural_count": 124025046
+      },
+      "incoming_boundary": {
+        "rows": 4802106,
+        "structural_count": 6388721
+      },
+      "outgoing_boundary": {
+        "rows": 112538237,
+        "structural_count": 170769707
+      },
+      "unmapped": {
+        "rows": 8953144,
+        "structural_count": 10649769
+      }
+    },
+    "sources": {
+      "body-annotations-male-cns-v1.0-minconf-0.5.feather": {
+        "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+        "receipt": {
+          "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+          "bytes": 14483314,
+          "md5": "UKdxh3DFciDxYLpPQxq4ng==",
+          "etag": "\"50a7718770c57220f160ba4f431ab89e\"",
+          "file": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+          "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+          "server_md5_verified": true,
+          "retrieved_utc": "2026-09-12T15:10:18.408675+00:00",
+          "status": "verified"
+        }
+      },
+      "connectome-weights-male-cns-v1.0-minconf-0.5.feather": {
+        "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+        "receipt": {
+          "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+          "bytes": 1051241946,
+          "md5": "8w6dzKJc/QIb8eez2XVZng==",
+          "etag": "\"f30e9dcca25cfd021bf1e7b3d975599e\"",
+          "file": "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+          "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+          "server_md5_verified": true,
+          "retrieved_utc": "2026-09-12T15:10:36.024757+00:00",
+          "status": "verified"
+        }
+      },
+      "body-neurotransmitters-male-cns-v1.0.feather": {
+        "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+        "receipt": {
+          "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+          "bytes": 43282834,
+          "md5": "PYQrEv5cSe763lKNfdJKHw==",
+          "etag": "\"3d842b12fe5c49eefade528d7dd24a1f\"",
+          "file": "body-neurotransmitters-male-cns-v1.0.feather",
+          "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+          "server_md5_verified": true,
+          "retrieved_utc": "2026-09-12T15:10:21.284576+00:00",
+          "status": "verified"
+        }
+      }
+    },
+    "seconds": 52.440703100000974,
+    "orientation": "pre_body_id -> post_body_id",
+    "merges": [],
+    "unresolved_representation": "unresolved.parquet enumerates every unique raw endpoint outside the provisional set; original rows remain in immutable raw source",
+    "limitations": [
+      "Non-Traced peripheral/boundary identities require expert adjudication",
+      "No independent official query comparison yet",
+      "No synaptic ROI/confidence data in source weight table"
+    ],
+    "files": {
+      "body_ids.npy": "999cc5adce7a5ab23177ea8d1386138ec26790e94822d937c937b3b2f6e5a684",
+      "coverage.parquet": "1eb2502e97318968a59fa412bc1e8aac67bda96cfbfa8fccd871ed3ad1540bcd",
+      "coverage_by_soma_neuromere.csv": "84b024cc3fb5bbf0727d04fe97c197f7c4635382518e31efb9053e40efb36502",
+      "edges.parquet": "00187df576644325d26128bcb1e13f84fe758eac9328b32d3dd4897cb17041b9",
+      "identity_review.parquet": "52495f0ed761fb3ac950db6f7581a0c003faecae3e127c085d54fad3c276b7ba",
+      "neurons.parquet": "b6b3486069792b7e3025a159e09f08e9631dd79d26bbc5d2e25b39dd477bc1a8",
+      "unresolved.parquet": "489bc922ee01e7097e83ef9497ea1da933847708332c26e39498499e76a9c1a1"
+    },
+    "unique_unresolved_segments": 88219733,
+    "duplicates_checked": true,
+    "duplicate_pairs": 0,
+    "segment_inventory_sha256": "debe142c46aabbd78e9c11d6207a14b007abc6bd8284cbe2ea43b05bd22813bc"
+  },
+  "body": {
+    "scope": "body-only engineering baseline; not MaleCNS neuromuscular validation",
+    "flygym": "2.1.0",
+    "mujoco": "3.9.0",
+    "xml_sha256": "04f6070d6733940357be005ca72c02ba0d9455538ff018da70c74de7458e9531",
+    "joint_names": [
+      "joint_LFCoxa_yaw",
+      "joint_LFCoxa_pitch",
+      "joint_LFCoxa_roll",
+      "joint_LFTrochanter_yaw",
+      "joint_LFTrochanter_pitch",
+      "joint_LFTrochanter_roll",
+      "joint_LFTibia_pitch"
+    ],
+    "muscle_names": [
+      "LFC_tergopleural_promotor_a",
+      "LFC_tergopleural_promotor_b",
+      "LFC_pleural_remotor_and_abductor",
+      "LFC_pleural_promotor",
+      "LFC_sternal_anterior_rotator",
+      "LFC_sternal_posterior_rotator",
+      "LFC_sternal_adductor",
+      "LFF_trochanter_flexor_b",
+      "LFF_sterno-tergo-trochanter_extensor_a",
+      "LFF_sterno-tergo-trochanter_extensor_b",
+      "LFF_accesory_trochanter_flexor",
+      "LFF_trochanter_extensor",
+      "LFF_trochanter_flexor_a",
+      "LFTibia_flex_93434",
+      "LFTibia_extensor_93932"
+    ],
+    "stimuli": [
+      {
+        "muscle": "LFC_tergopleural_promotor_a",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          -0.04681946768909481,
+          -0.056380681331518856,
+          0.04481749871515012,
+          -0.0006935201762724996,
+          -0.0003110125049388124,
+          -0.0009445351246539224,
+          0.00023940651021492343
+        ],
+        "force_model_units": -3.431528226779346
+      },
+      {
+        "muscle": "LFC_tergopleural_promotor_b",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          -0.2762082387548035,
+          -0.35872695500532864,
+          0.1796198902926301,
+          -0.005255373144106623,
+          -0.004516131581920213,
+          -0.00768514712706031,
+          0.0017713229840832234
+        ],
+        "force_model_units": -31.661317904936553
+      },
+      {
+        "muscle": "LFC_pleural_remotor_and_abductor",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          0.17953276803508406,
+          0.20232368951070823,
+          -0.12364526124079811,
+          0.004729089750861393,
+          0.00113164112836861,
+          0.005760721642221578,
+          -0.0013504084343336498
+        ],
+        "force_model_units": -15.739033561403847
+      },
+      {
+        "muscle": "LFC_pleural_promotor",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          -0.07554036510186316,
+          -0.06627613229761875,
+          -0.03287158644057914,
+          -0.001735109552267522,
+          -0.0012337512376592308,
+          -0.0025434581009062124,
+          0.000249808990565592
+        ],
+        "force_model_units": -8.558763919345761
+      },
+      {
+        "muscle": "LFC_sternal_anterior_rotator",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          -0.04076400920156664,
+          0.005193561173773897,
+          0.022680774219821898,
+          -9.052725630459557e-05,
+          -0.00032296713451485104,
+          -0.00019990620636048395,
+          -0.0001409135296555064
+        ],
+        "force_model_units": -0.9548178059951263
+      },
+      {
+        "muscle": "LFC_sternal_posterior_rotator",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          -0.01163643570098985,
+          0.15787778398479702,
+          0.2664958771624177,
+          0.0031113258977359393,
+          0.0010103607915143975,
+          0.004378556022975877,
+          -0.0014116767039993317
+        ],
+        "force_model_units": -45.131399510277845
+      },
+      {
+        "muscle": "LFC_sternal_adductor",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          -0.015530349825979506,
+          0.06323917369764454,
+          -0.02708075069996957,
+          -0.00010596770203374906,
+          -0.000577685386879967,
+          -0.00023079889999484682,
+          -0.0005241401558990777
+        ],
+        "force_model_units": -4.289569738380858
+      },
+      {
+        "muscle": "LFF_trochanter_flexor_b",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          0.0005399876555064187,
+          -0.0001468823324809465,
+          0.0007025050174804259,
+          -0.05927572948542503,
+          -0.4452854020993664,
+          0.24431429310104683,
+          0.0045934098545499236
+        ],
+        "force_model_units": -18.19974978070948
+      },
+      {
+        "muscle": "LFF_sterno-tergo-trochanter_extensor_a",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          -0.0006531309745711616,
+          -0.00255623697062779,
+          0.0010889805248003315,
+          -0.06357104611003012,
+          0.6905935578741638,
+          -0.11169102693270101,
+          -0.008600519308266996
+        ],
+        "force_model_units": -33.55007406599074
+      },
+      {
+        "muscle": "LFF_sterno-tergo-trochanter_extensor_b",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          0.002832191172346718,
+          -0.0018199318078295779,
+          -0.0005715036035062182,
+          -0.5707138458666143,
+          0.6684284980178765,
+          0.20805017778025528,
+          -0.008277236716565328
+        ],
+        "force_model_units": -40.98010863175368
+      },
+      {
+        "muscle": "LFF_accesory_trochanter_flexor",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          0.00016665874668569947,
+          9.852761600503968e-05,
+          0.00037130179437300237,
+          -0.15006989788217884,
+          -0.17382843668127457,
+          0.1327440379822373,
+          0.001582994622135514
+        ],
+        "force_model_units": -7.9040845656952605
+      },
+      {
+        "muscle": "LFF_trochanter_extensor",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          -0.0006431320186800898,
+          -0.000448393688242954,
+          0.0010580328435002007,
+          0.2429140092818047,
+          0.1957135845922604,
+          -0.22947708793806254,
+          -0.0017951567004694802
+        ],
+        "force_model_units": -14.895588683656637
+      },
+      {
+        "muscle": "LFF_trochanter_flexor_a",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          0.00020289105733981017,
+          -6.77750663459209e-05,
+          0.0010087164497133427,
+          -0.04891071747658571,
+          -0.3832788779527654,
+          0.14848606437629128,
+          0.003990221840961983
+        ],
+        "force_model_units": -16.226199052484297
+      },
+      {
+        "muscle": "LFTibia_flex_93434",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          -0.001018871989578965,
+          -0.002243351984601072,
+          0.0015065324679758296,
+          0.000538045052908831,
+          -0.006140268128032922,
+          0.00030544765339556024,
+          0.45552762150579373
+        ],
+        "force_model_units": -33.2128209790597
+      },
+      {
+        "muscle": "LFTibia_extensor_93932",
+        "activation_command": 0.5,
+        "joint_delta_vs_passive_rad": [
+          0.0002276660186401186,
+          0.0024806009190350142,
+          -0.0005016777699714536,
+          -0.0013427398437668714,
+          0.008425319997222847,
+          0.0004471414453322692,
+          -0.5734834867600525
+        ],
+        "force_model_units": -29.1589276078008
+      }
+    ],
+    "passive_qpos_rad": [
+      -0.12214079591698782,
+      0.3868973470312408,
+      0.45941163912153044,
+      -0.30712537938279266,
+      -2.456988936700921,
+      0.1088361020398286,
+      1.5945850314248677
+    ],
+    "restart_max_abs_rad": 0.0,
+    "dt_comparison": [
+      {
+        "dt_s": 0.0001,
+        "qpos_rad": [
+          -0.16515595634146274,
+          0.45669165317619886,
+          0.5509354465220334,
+          -0.6247754843340452,
+          -2.1890957680569567,
+          0.2704608937463634,
+          1.371305584850067
+        ]
+      },
+      {
+        "dt_s": 5e-05,
+        "qpos_rad": [
+          -0.16574588357095082,
+          0.4577940048350371,
+          0.55091800840682,
+          -0.6224793931611212,
+          -2.1913364283778844,
+          0.26992040749281576,
+          1.374399332154028
+        ]
+      },
+      {
+        "dt_s": 2.5e-05,
+        "qpos_rad": [
+          -0.16565338971703794,
+          0.45781384158025795,
+          0.550837640263586,
+          -0.6224047681536897,
+          -2.191440090691507,
+          0.26990662533297743,
+          1.3745720822562353
+        ]
+      }
+    ],
+    "dt_errors_rad": [
+      0.0030937473039609475,
+      0.00017275010220729747
+    ],
+    "decreasing_dt_error": true,
+    "finite_smoke_pass": true,
+    "mocap_replay": {
+      "clip": "0002",
+      "frames": 225,
+      "kind": "imposed-angle forward kinematics only",
+      "coordinate": "MuJoCo xpos body-frame origin, matching upstream ImitationEnv",
+      "wrong_inertial_origin_rmse_mm": 0.12093127200116453,
+      "position_rmse_mm": 0.01960204149333498,
+      "max_abs_position_error_mm": 0.06500345281069403,
+      "source_sha256": {
+        "qpos": "aa7e3e72325d7d76a17863057cbaba9259a346d66e41b7d820411570d5e00a42",
+        "qvel": "c472a3e03ed25a614efcb90e54641e41a031d23024092d99f44b4448b581dd12",
+        "xipos": "3f73c47ee4692b0ebf9a760869d1ea05af6c8bbd5795320fb2edb38f53c5c20c",
+        "xivel": "3eb99125864b8ecdf05286c72301eb1954ae9d9e2e113b350b6ca1c02f6e8d61"
+      }
+    },
+    "biological_acceptance": false,
+    "wall_seconds": 1.5648606000031577,
+    "process_peak_wset_bytes": 413773824,
+    "limitations": [
+      "Only left-front muscles; tethered original model",
+      "No male-specific mass/force calibration",
+      "No reviewed motor or proprioceptor IDs",
+      "Convergence is reported, no biological tolerance is invented",
+      "No held-out animal intervention data"
+    ],
+    "executed_source_sha256": {
+      "body/benchmark.py": "0c5be7272617fb8716c4801a70492b37b387cc96582da48847de4b70a7d866b0",
+      "body/flygym_adapter.py": "f58456e9e464dc94b37784115c866f9e6b07b4ff691708b1cc4aa7c9d1e91721"
+    }
+  },
+  "source_samples": {
+    "samples": 256,
+    "id_direction_count_match": true,
+    "source": "frozen official local Arrow table; not a neuPrint API cross-check"
+  },
+  "closed_loop": {
+    "scope": "software_fixture_with_FlyGym_body",
+    "biological_acceptance": false,
+    "conditions": "No animal sex/age/strain attribution; uncalibrated fixture parameters",
+    "records": [
+      {
+        "control": "intact",
+        "seed": 37,
+        "simulated_seconds": 0.1,
+        "wall_seconds": 0.19403310000780039,
+        "wall_seconds_per_simulated_second": 1.9403310000780039,
+        "subsystem_wall_seconds": {
+          "brain": 0.062304000079166144,
+          "body": 0.1249408000294352,
+          "exchange": 0.00417729998298455,
+          "slow": 9.159999899566174e-05
+        },
+        "events": {
+          "brain": 1000,
+          "body": 1000,
+          "exchange": 100,
+          "slow": 10
+        },
+        "rewire": {},
+        "trajectory": [
+          {
+            "time_ms": 10.0,
+            "qpos_rad": [
+              0.092087876505065,
+              0.44443772219360594,
+              0.28176508196161865,
+              -0.4001878240300536,
+              -2.393848863948719,
+              0.16559181148768812,
+              1.836952124986998
+            ],
+            "voltage_mv": [
+              [
+                -37.926793299331194,
+                -60.138870346332695,
+                -48.267551385624316,
+                -48.267551385624316,
+                -56.46444184594014,
+                -56.46444184594014
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.034487070103377565,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 20.0,
+            "qpos_rad": [
+              -0.0494977843730521,
+              0.46931895345373215,
+              0.3353173069533561,
+              -0.38120299792574897,
+              -2.4074291400827095,
+              0.15452589674743109,
+              1.7621313113971264
+            ],
+            "voltage_mv": [
+              [
+                -19.649411160649557,
+                -42.036246003016196,
+                -26.551191708979484,
+                -26.551191708979484,
+                -22.255970269527836,
+                -22.255970269527836
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.700985708914836
+            ]
+          },
+          {
+            "time_ms": 30.0,
+            "qpos_rad": [
+              -0.13099591576025887,
+              0.48400133840003734,
+              0.4103324438829484,
+              -0.3568980038262365,
+              -2.4238365229695162,
+              0.14014722100675087,
+              1.6171173957868032
+            ],
+            "voltage_mv": [
+              [
+                -12.097356082090288,
+                -27.98272267828416,
+                -16.680009854596612,
+                -16.680009854596612,
+                -15.68593773953618,
+                -15.68593773953618
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9742496533123752
+            ]
+          },
+          {
+            "time_ms": 40.0,
+            "qpos_rad": [
+              -0.11267693554976951,
+              0.43625003596767575,
+              0.4593660514097318,
+              -0.33143833232472486,
+              -2.439835287305005,
+              0.12447698644628169,
+              1.4658835146917484
+            ],
+            "voltage_mv": [
+              [
+                -12.19937636044507,
+                -25.771929674492796,
+                -15.39872689404815,
+                -15.39872689404815,
+                -15.21618610073039,
+                -15.21618610073039
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9939508228996221
+            ]
+          },
+          {
+            "time_ms": 50.0,
+            "qpos_rad": [
+              -0.122843677370932,
+              0.38779754086600077,
+              0.4590847284448396,
+              -0.30747693825081296,
+              -2.4545814690922483,
+              0.1089184014053121,
+              1.3146267149697015
+            ],
+            "voltage_mv": [
+              [
+                -13.389381085191118,
+                -25.564198935433712,
+                -15.328802872239772,
+                -15.328802872239772,
+                -15.192772874112805,
+                -15.192772874112805
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.995218264379468
+            ]
+          },
+          {
+            "time_ms": 60.0,
+            "qpos_rad": [
+              -0.1429953709243811,
+              0.3856560790317326,
+              0.48801838373039036,
+              -0.28670596253528935,
+              -2.46618169324955,
+              0.09545685182249873,
+              1.1604093265378788
+            ],
+            "voltage_mv": [
+              [
+                -14.71110118478546,
+                -25.645689490151454,
+                -15.385925075711098,
+                -15.385925075711098,
+                -15.207924310214048,
+                -15.207924310214048
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.99488145772319
+            ]
+          },
+          {
+            "time_ms": 70.0,
+            "qpos_rad": [
+              -0.18040238143562892,
+              0.3857500794830556,
+              0.48688713284649665,
+              -0.27048613662372184,
+              -2.4739986487587675,
+              0.08425344541909567,
+              0.9975230234191969
+            ],
+            "voltage_mv": [
+              [
+                -16.07704547044623,
+                -25.798784846816694,
+                -15.452897173635943,
+                -15.452897173635943,
+                -15.220748761864515,
+                -15.220748761864515
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9945330940621805
+            ]
+          },
+          {
+            "time_ms": 80.0,
+            "qpos_rad": [
+              -0.19557888492183104,
+              0.3855001312554242,
+              0.501122693927156,
+              -0.2588695422448278,
+              -2.477208509205446,
+              0.07609340086492024,
+              0.8150403088558331
+            ],
+            "voltage_mv": [
+              [
+                -17.53576481903899,
+                -26.032943197766134,
+                -15.51541413816317,
+                -15.51541413816317,
+                -15.22724544948331,
+                -15.22724544948331
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9943387366434898
+            ]
+          },
+          {
+            "time_ms": 90.0,
+            "qpos_rad": [
+              -0.19615505643076175,
+              0.36959203417994324,
+              0.5020191070538903,
+              -0.2518546451376683,
+              -2.4768187809049365,
+              0.0706661360751864,
+              0.6204640031768525
+            ],
+            "voltage_mv": [
+              [
+                -19.165616663351035,
+                -26.22789817959327,
+                -15.572118279344512,
+                -15.572118279344512,
+                -15.227693432562598,
+                -15.227693432562598
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9942986034269504
+            ]
+          },
+          {
+            "time_ms": 100.0,
+            "qpos_rad": [
+              -0.21318213842984862,
+              0.3763839633918668,
+              0.5057112029370575,
+              -0.24847100092790564,
+              -2.4756096525826967,
+              0.06764226003536755,
+              0.6416400960794657
+            ],
+            "voltage_mv": [
+              [
+                -20.105243688838396,
+                -24.576697652618808,
+                -15.623333071301154,
+                -15.623333071301154,
+                -15.222751188480188,
+                -15.222751188480188
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9943964849381776
+            ]
+          }
+        ],
+        "max_efficacy_change": 0.07789288777767744
+      },
+      {
+        "control": "no_connectome",
+        "seed": 37,
+        "simulated_seconds": 0.1,
+        "wall_seconds": 0.19393229999695905,
+        "wall_seconds_per_simulated_second": 1.9393229999695905,
+        "subsystem_wall_seconds": {
+          "brain": 0.06241040020540822,
+          "body": 0.12444559986761305,
+          "exchange": 0.004304400063119829,
+          "slow": 9.610000415705144e-05
+        },
+        "events": {
+          "brain": 1000,
+          "body": 1000,
+          "exchange": 100,
+          "slow": 10
+        },
+        "rewire": {},
+        "trajectory": [
+          {
+            "time_ms": 10.0,
+            "qpos_rad": [
+              0.09208760867314317,
+              0.4444382952372526,
+              0.2817649733644908,
+              -0.40018783316186535,
+              -2.3938484412612997,
+              0.16559179193246698,
+              1.836824487764447
+            ],
+            "voltage_mv": [
+              [
+                -38.0185590858928,
+                -60.27996803103107,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 20.0,
+            "qpos_rad": [
+              -0.04945982814858526,
+              0.46925092633714865,
+              0.3353321717455088,
+              -0.38120118783158247,
+              -2.407483331928877,
+              0.1545266246460885,
+              1.7780853378499222
+            ],
+            "voltage_mv": [
+              [
+                -29.147621158457657,
+                -60.82288401335897,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 30.0,
+            "qpos_rad": [
+              -0.1309161778715389,
+              0.4837508223724351,
+              0.410289646080158,
+              -0.3568751149130311,
+              -2.4242361856010826,
+              0.14012761779895672,
+              1.7081229409709373
+            ],
+            "voltage_mv": [
+              [
+                -26.87943506622579,
+                -61.17849779143791,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 40.0,
+            "qpos_rad": [
+              -0.11252262941117125,
+              0.4357985162415643,
+              0.4592859542943289,
+              -0.3313210509538344,
+              -2.440992735900759,
+              0.12443254696286635,
+              1.6438230556247808
+            ],
+            "voltage_mv": [
+              [
+                -27.079067444727567,
+                -61.24345892524634,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 50.0,
+            "qpos_rad": [
+              -0.12214079591698782,
+              0.3868973470312408,
+              0.45941163912153044,
+              -0.30712537938279266,
+              -2.456988936700921,
+              0.1088361020398286,
+              1.5945850314248677
+            ],
+            "voltage_mv": [
+              [
+                -28.040200152078533,
+                -61.07695360133471,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 60.0,
+            "qpos_rad": [
+              -0.14122433658355082,
+              0.38378405967714135,
+              0.4888790762636031,
+              -0.2860238665730141,
+              -2.470379863014513,
+              0.09527253376966376,
+              1.564094490604755
+            ],
+            "voltage_mv": [
+              [
+                -29.04531201792188,
+                -60.77528711684638,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 70.0,
+            "qpos_rad": [
+              -0.17677832771749322,
+              0.3819948622378149,
+              0.4881927995773816,
+              -0.26919333780271343,
+              -2.48050031609049,
+              0.08383036625026366,
+              1.5513987464474785
+            ],
+            "voltage_mv": [
+              [
+                -29.812682943848795,
+                -60.43469967651925,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 80.0,
+            "qpos_rad": [
+              -0.19992166538577988,
+              0.3877675247198286,
+              0.5017606197266651,
+              -0.25678159855225413,
+              -2.48678169414748,
+              0.07527101283348753,
+              1.5527798027896744
+            ],
+            "voltage_mv": [
+              [
+                -30.27123409003847,
+                -60.12768121909866,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 90.0,
+            "qpos_rad": [
+              -0.1946977689389859,
+              0.3665631655021044,
+              0.5011058987810362,
+              -0.2486629506785276,
+              -2.4895911030567817,
+              0.06920343676058979,
+              1.5635013426727635
+            ],
+            "voltage_mv": [
+              [
+                -30.450771526531973,
+                -59.89331890653699,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 100.0,
+            "qpos_rad": [
+              -0.20679305801363906,
+              0.3733936960007,
+              0.5092820486798668,
+              -0.24400295578922312,
+              -2.490185421818762,
+              0.06547785580549947,
+              1.5785100168322754
+            ],
+            "voltage_mv": [
+              [
+                -30.429414466440953,
+                -59.75187856187103,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "max_efficacy_change": 0.0
+      },
+      {
+        "control": "rewired",
+        "seed": 37,
+        "simulated_seconds": 0.1,
+        "wall_seconds": 0.19476909999502823,
+        "wall_seconds_per_simulated_second": 1.9476909999502823,
+        "subsystem_wall_seconds": {
+          "brain": 0.06277710029098671,
+          "body": 0.12504920028732158,
+          "exchange": 0.00427160004619509,
+          "slow": 9.21999744605273e-05
+        },
+        "events": {
+          "brain": 1000,
+          "body": 1000,
+          "exchange": 100,
+          "slow": 10
+        },
+        "rewire": {
+          "requested_swaps": 50,
+          "accepted_swaps": 50,
+          "changed_edges": 8,
+          "fully_mixed": false
+        },
+        "trajectory": [
+          {
+            "time_ms": 10.0,
+            "qpos_rad": [
+              0.09209174243247292,
+              0.44442940765367855,
+              0.28176669121164555,
+              -0.400187685714926,
+              -2.39385502687495,
+              0.1655920662654541,
+              1.8388338727063138
+            ],
+            "voltage_mv": [
+              [
+                -38.0170432890851,
+                -60.19797317755783,
+                -58.141203450534235,
+                -46.803821547157824,
+                -46.803821547157824,
+                -59.92894857570568
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.2690868433452886,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 20.0,
+            "qpos_rad": [
+              -0.04929761322852697,
+              0.46893631219328963,
+              0.33540551793130674,
+              -0.38119114767270956,
+              -2.4077388743719594,
+              0.15452627177288233,
+              1.8525073244208046
+            ],
+            "voltage_mv": [
+              [
+                -27.15442031951698,
+                -45.95872579967005,
+                -32.70156801359623,
+                -18.9235562932774,
+                -18.9235562932774,
+                -43.896328480114306
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.1028508394403973
+            ]
+          },
+          {
+            "time_ms": 30.0,
+            "qpos_rad": [
+              -0.1306660217861134,
+              0.4833584186816755,
+              0.41070537767072546,
+              -0.3568409985250543,
+              -2.4247025076606716,
+              0.14010599029488183,
+              1.775066956343997
+            ],
+            "voltage_mv": [
+              [
+                -13.70092276338615,
+                -28.55538920868598,
+                -17.463404049505314,
+                -15.502325600711679,
+                -15.502325600711679,
+                -18.448276326343155
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.8587700786186776
+            ]
+          },
+          {
+            "time_ms": 40.0,
+            "qpos_rad": [
+              -0.11298514986757162,
+              0.435613273686376,
+              0.4596509746553723,
+              -0.33126136945023804,
+              -2.441593607938561,
+              0.12443014697904084,
+              1.624224273165435
+            ],
+            "voltage_mv": [
+              [
+                -11.294739914667137,
+                -25.777144251040628,
+                -15.44093235031198,
+                -15.28510214492669,
+                -15.28510214492669,
+                -15.432628672527217
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9849958534722557
+            ]
+          },
+          {
+            "time_ms": 50.0,
+            "qpos_rad": [
+              -0.12360003123583316,
+              0.38712491385907905,
+              0.459466713856678,
+              -0.3070907859611266,
+              -2.457388419328046,
+              0.10886340292520354,
+              1.472620182070723
+            ],
+            "voltage_mv": [
+              [
+                -12.15497765342652,
+                -25.357384395688292,
+                -15.308412666265882,
+                -15.331464100807969,
+                -15.331464100807969,
+                -15.198597661257638
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9947337821807157
+            ]
+          },
+          {
+            "time_ms": 60.0,
+            "qpos_rad": [
+              -0.14365341443429325,
+              0.3847120546057878,
+              0.48869120802401317,
+              -0.28612120913338507,
+              -2.469986611065037,
+              0.09535224085864757,
+              1.3214233161958637
+            ],
+            "voltage_mv": [
+              [
+                -13.429340814979401,
+                -25.263302214752038,
+                -15.360613529243322,
+                -15.401784951572278,
+                -15.401784951572278,
+                -15.19478709230459
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9951919872458928
+            ]
+          },
+          {
+            "time_ms": 70.0,
+            "qpos_rad": [
+              -0.18039056975576442,
+              0.38442667618318177,
+              0.4880615672842554,
+              -0.2696687044048997,
+              -2.4786121011445608,
+              0.08402710087892225,
+              1.167456554922354
+            ],
+            "voltage_mv": [
+              [
+                -14.75181571352343,
+                -25.225068479038498,
+                -15.429138586742297,
+                -15.469019464141217,
+                -15.469019464141217,
+                -15.209596718366173
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9948301763068124
+            ]
+          },
+          {
+            "time_ms": 80.0,
+            "qpos_rad": [
+              -0.19712884745306278,
+              0.38500136767793186,
+              0.5019694059978329,
+              -0.2578383995612149,
+              -2.482462383796616,
+              0.07568468156860673,
+              1.0052231045949742
+            ],
+            "voltage_mv": [
+              [
+                -16.106780420782446,
+                -25.22399154281578,
+                -15.493847728283605,
+                -15.530210214460464,
+                -15.530210214460464,
+                -15.2201273894089
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9945369054262004
+            ]
+          },
+          {
+            "time_ms": 90.0,
+            "qpos_rad": [
+              -0.19759332068660782,
+              0.36832298009735154,
+              0.5022943557616905,
+              -0.25061467878948407,
+              -2.482263452700877,
+              0.0699919065717098,
+              0.823841823544161
+            ],
+            "voltage_mv": [
+              [
+                -17.55019355813395,
+                -25.2984645244171,
+                -15.55263735956682,
+                -15.585505362340843,
+                -15.585505362340843,
+                -15.224403968602099
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9943991706367602
+            ]
+          },
+          {
+            "time_ms": 100.0,
+            "qpos_rad": [
+              -0.2137065279911409,
+              0.3755401792094073,
+              0.5067908078009912,
+              -0.2471394647640199,
+              -2.4794031891802937,
+              0.06683291807398761,
+              0.6270671360158758
+            ],
+            "voltage_mv": [
+              [
+                -19.167323903279673,
+                -25.357789243192414,
+                -15.605748888037194,
+                -15.635419695478179,
+                -15.635419695478179,
+                -15.22288247833036
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9944095140463012
+            ]
+          }
+        ],
+        "max_efficacy_change": 0.07209496900474432
+      },
+      {
+        "control": "shuffled_io",
+        "seed": 37,
+        "simulated_seconds": 0.1,
+        "wall_seconds": 0.19383150000066962,
+        "wall_seconds_per_simulated_second": 1.9383150000066962,
+        "subsystem_wall_seconds": {
+          "brain": 0.06225129995436873,
+          "body": 0.12459919991670176,
+          "exchange": 0.004217400128254667,
+          "slow": 9.050000517163426e-05
+        },
+        "events": {
+          "brain": 1000,
+          "body": 1000,
+          "exchange": 100,
+          "slow": 10
+        },
+        "rewire": {},
+        "trajectory": [
+          {
+            "time_ms": 10.0,
+            "qpos_rad": [
+              0.09208700384446866,
+              0.4444395885320195,
+              0.28176473332298907,
+              -0.40018785315497823,
+              -2.3938474901053834,
+              0.1655917433483056,
+              1.8365410084609914
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -48.267551037265235,
+                -58.20346963465245,
+                -58.20346963465245,
+                -37.9265343294815,
+                -60.138671645098704
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.03346303848414163
+            ]
+          },
+          {
+            "time_ms": 20.0,
+            "qpos_rad": [
+              -0.04961987926927427,
+              0.46954127491640846,
+              0.3352557128030488,
+              -0.3812112581155979,
+              -2.407235448548236,
+              0.15453149240817748,
+              1.709727458371129
+            ],
+            "voltage_mv": [
+              [
+                -55.015191441418835,
+                -28.541861033757215,
+                -34.7722602944185,
+                -34.7722602944185,
+                -17.6558941705729,
+                -37.957714634604976
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0718117826675163,
+              0.609787387983074
+            ]
+          },
+          {
+            "time_ms": 30.0,
+            "qpos_rad": [
+              -0.13045598050434498,
+              0.48388737851192143,
+              0.4102673816610474,
+              -0.3569338119761702,
+              -2.4233692642671447,
+              0.14018207539096456,
+              1.5448455015635219
+            ],
+            "voltage_mv": [
+              [
+                -31.02653763651357,
+                -24.78583134026387,
+                -19.403598406072245,
+                -19.403598406072245,
+                -8.020990450055159,
+                -17.800335768688882
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7483515789505286
+            ]
+          },
+          {
+            "time_ms": 40.0,
+            "qpos_rad": [
+              -0.11244711200371252,
+              0.43609132747149876,
+              0.4588379290335525,
+              -0.3315390735533335,
+              -2.4390218990356582,
+              0.12451561330762345,
+              1.4057853809481944
+            ],
+            "voltage_mv": [
+              [
+                -25.11622825761175,
+                -24.370967943005866,
+                -15.650188719285307,
+                -15.650188719285307,
+                -8.036538090748666,
+                -16.007437926862053
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7652814668332973
+            ]
+          },
+          {
+            "time_ms": 50.0,
+            "qpos_rad": [
+              -0.12323834185387794,
+              0.3885642076124345,
+              0.4590083551172949,
+              -0.30766991007080974,
+              -2.4534110744998854,
+              0.10897654662429976,
+              1.2667050896696102
+            ],
+            "voltage_mv": [
+              [
+                -24.391013268644816,
+                -24.408080333938592,
+                -15.325390105245312,
+                -15.325390105245312,
+                -8.717013967649669,
+                -15.880031880976214
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7651815367653627
+            ]
+          },
+          {
+            "time_ms": 60.0,
+            "qpos_rad": [
+              -0.14390345747227815,
+              0.38715369696041907,
+              0.4882763445498823,
+              -0.2869730693895863,
+              -2.464740663303932,
+              0.09553912447479637,
+              1.1247277541537881
+            ],
+            "voltage_mv": [
+              [
+                -24.389492700384707,
+                -24.496240402917792,
+                -15.355438635955815,
+                -15.355438635955815,
+                -9.455514822597303,
+                -15.89942567092645
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7630440651588752
+            ]
+          },
+          {
+            "time_ms": 70.0,
+            "qpos_rad": [
+              -0.181942656612592,
+              0.38684509015618146,
+              0.4859934992181351,
+              -0.2708114922491038,
+              -2.472435193706986,
+              0.0843563922656958,
+              0.9756887624542645
+            ],
+            "voltage_mv": [
+              [
+                -24.474646953790753,
+                -24.582991920782064,
+                -15.421765242919403,
+                -15.421765242919403,
+                -10.21267268336921,
+                -15.94813806300126
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7608447629003665
+            ]
+          },
+          {
+            "time_ms": 80.0,
+            "qpos_rad": [
+              -0.19423768715229986,
+              0.3849300616713724,
+              0.5019794396967857,
+              -0.2592026437861732,
+              -2.475656135989428,
+              0.07622889584418413,
+              0.813793258323508
+            ],
+            "voltage_mv": [
+              [
+                -24.56288831596763,
+                -24.66214419958075,
+                -15.486827629162208,
+                -15.486827629162208,
+                -11.008328434849583,
+                -16.020118935095976
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7588263367325143
+            ]
+          },
+          {
+            "time_ms": 90.0,
+            "qpos_rad": [
+              -0.19672057426443665,
+              0.36932646458949947,
+              0.5018785896003676,
+              -0.2521392464234678,
+              -2.4755762965941015,
+              0.07077404111340291,
+              0.6530494029499966
+            ],
+            "voltage_mv": [
+              [
+                -24.643942627822263,
+                -24.733598545381554,
+                -15.546251940532748,
+                -15.546251940532748,
+                -11.842406194397471,
+                -16.000313565600578
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7570026452123061
+            ]
+          },
+          {
+            "time_ms": 100.0,
+            "qpos_rad": [
+              -0.2130673416044702,
+              0.3757167423438802,
+              0.505990814097509,
+              -0.24867588274328106,
+              -2.4742268940566157,
+              0.06774437601777013,
+              0.6350796449019369
+            ],
+            "voltage_mv": [
+              [
+                -24.717185964229813,
+                -24.798001766512762,
+                -15.599979181375765,
+                -15.599979181375765,
+                -12.28925165577958,
+                -15.183363845879734
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7553587044696393
+            ]
+          }
+        ],
+        "max_efficacy_change": 0.07625454519706443
+      },
+      {
+        "control": "no_proprioception",
+        "seed": 37,
+        "simulated_seconds": 0.1,
+        "wall_seconds": 0.1932912999909604,
+        "wall_seconds_per_simulated_second": 1.932912999909604,
+        "subsystem_wall_seconds": {
+          "brain": 0.06196630001068115,
+          "body": 0.12460039999859873,
+          "exchange": 0.0040124999795807526,
+          "slow": 0.00010009999095927924
+        },
+        "events": {
+          "brain": 1000,
+          "body": 1000,
+          "exchange": 100,
+          "slow": 10
+        },
+        "rewire": {},
+        "trajectory": [
+          {
+            "time_ms": 10.0,
+            "qpos_rad": [
+              0.09208760867314317,
+              0.4444382952372526,
+              0.2817649733644908,
+              -0.40018783316186535,
+              -2.3938484412612997,
+              0.16559179193246698,
+              1.836824487764447
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 20.0,
+            "qpos_rad": [
+              -0.04945982814858526,
+              0.46925092633714865,
+              0.3353321717455088,
+              -0.38120118783158247,
+              -2.407483331928877,
+              0.1545266246460885,
+              1.7780853378499222
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 30.0,
+            "qpos_rad": [
+              -0.1309161778715389,
+              0.4837508223724351,
+              0.410289646080158,
+              -0.3568751149130311,
+              -2.4242361856010826,
+              0.14012761779895672,
+              1.7081229409709373
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 40.0,
+            "qpos_rad": [
+              -0.11252262941117125,
+              0.4357985162415643,
+              0.4592859542943289,
+              -0.3313210509538344,
+              -2.440992735900759,
+              0.12443254696286635,
+              1.6438230556247808
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 50.0,
+            "qpos_rad": [
+              -0.12214079591698782,
+              0.3868973470312408,
+              0.45941163912153044,
+              -0.30712537938279266,
+              -2.456988936700921,
+              0.1088361020398286,
+              1.5945850314248677
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 60.0,
+            "qpos_rad": [
+              -0.14122433658355082,
+              0.38378405967714135,
+              0.4888790762636031,
+              -0.2860238665730141,
+              -2.470379863014513,
+              0.09527253376966376,
+              1.564094490604755
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 70.0,
+            "qpos_rad": [
+              -0.17677832771749322,
+              0.3819948622378149,
+              0.4881927995773816,
+              -0.26919333780271343,
+              -2.48050031609049,
+              0.08383036625026366,
+              1.5513987464474785
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 80.0,
+            "qpos_rad": [
+              -0.19992166538577988,
+              0.3877675247198286,
+              0.5017606197266651,
+              -0.25678159855225413,
+              -2.48678169414748,
+              0.07527101283348753,
+              1.5527798027896744
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 90.0,
+            "qpos_rad": [
+              -0.1946977689389859,
+              0.3665631655021044,
+              0.5011058987810362,
+              -0.2486629506785276,
+              -2.4895911030567817,
+              0.06920343676058979,
+              1.5635013426727635
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 100.0,
+            "qpos_rad": [
+              -0.20679305801363906,
+              0.3733936960007,
+              0.5092820486798668,
+              -0.24400295578922312,
+              -2.490185421818762,
+              0.06547785580549947,
+              1.5785100168322754
+            ],
+            "voltage_mv": [
+              [
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0,
+                -60.0
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "max_efficacy_change": 0.0
+      },
+      {
+        "control": "motor_clamp",
+        "seed": 37,
+        "simulated_seconds": 0.1,
+        "wall_seconds": 0.19821889999730047,
+        "wall_seconds_per_simulated_second": 1.9821889999730047,
+        "subsystem_wall_seconds": {
+          "brain": 0.06268229961278848,
+          "body": 0.12866869993740693,
+          "exchange": 0.004212599989841692,
+          "slow": 9.349999891128391e-05
+        },
+        "events": {
+          "brain": 1000,
+          "body": 1000,
+          "exchange": 100,
+          "slow": 10
+        },
+        "rewire": {},
+        "trajectory": [
+          {
+            "time_ms": 10.0,
+            "qpos_rad": [
+              0.09208760867314317,
+              0.4444382952372526,
+              0.2817649733644908,
+              -0.40018783316186535,
+              -2.3938484412612997,
+              0.16559179193246698,
+              1.836824487764447
+            ],
+            "voltage_mv": [
+              [
+                -37.92680779500012,
+                -60.13909634988198,
+                -48.26755139755295,
+                -48.26755139755295,
+                -56.46444184594014,
+                -56.46444184594014
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.034487070103377565,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 20.0,
+            "qpos_rad": [
+              -0.04945982814858526,
+              0.46925092633714865,
+              0.3353321717455088,
+              -0.38120118783158247,
+              -2.407483331928877,
+              0.1545266246460885,
+              1.7780853378499222
+            ],
+            "voltage_mv": [
+              [
+                -19.640280756438866,
+                -41.902508084497825,
+                -26.556667533768877,
+                -26.556667533768877,
+                -22.255972202056174,
+                -22.255972202056174
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7009856437629648
+            ]
+          },
+          {
+            "time_ms": 30.0,
+            "qpos_rad": [
+              -0.1309161778715389,
+              0.4837508223724351,
+              0.410289646080158,
+              -0.3568751149130311,
+              -2.4242361856010826,
+              0.14012761779895672,
+              1.7081229409709373
+            ],
+            "voltage_mv": [
+              [
+                -11.688557294258436,
+                -27.398122187357238,
+                -16.675095744087777,
+                -16.675095744087777,
+                -15.685937931157614,
+                -15.685937931157614
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9742496455856667
+            ]
+          },
+          {
+            "time_ms": 40.0,
+            "qpos_rad": [
+              -0.11252262941117125,
+              0.4357985162415643,
+              0.4592859542943289,
+              -0.3313210509538344,
+              -2.440992735900759,
+              0.12443254696286635,
+              1.6438230556247808
+            ],
+            "voltage_mv": [
+              [
+                -11.160177580716695,
+                -25.08289931479911,
+                -15.398101325842006,
+                -15.398101325842006,
+                -15.216186120104947,
+                -15.216186120104947
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9939508221374252
+            ]
+          },
+          {
+            "time_ms": 50.0,
+            "qpos_rad": [
+              -0.12214079591698782,
+              0.3868973470312408,
+              0.45941163912153044,
+              -0.30712537938279266,
+              -2.456988936700921,
+              0.1088361020398286,
+              1.5945850314248677
+            ],
+            "voltage_mv": [
+              [
+                -11.613006466085158,
+                -24.75896066090843,
+                -15.328732868718525,
+                -15.328732868718525,
+                -15.192772875527533,
+                -15.192772875527533
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9952182643128309
+            ]
+          },
+          {
+            "time_ms": 60.0,
+            "qpos_rad": [
+              -0.14122433658355082,
+              0.38378405967714135,
+              0.4888790762636031,
+              -0.2860238665730141,
+              -2.470379863014513,
+              0.09527253376966376,
+              1.564094490604755
+            ],
+            "voltage_mv": [
+              [
+                -12.049969720246452,
+                -24.673067621119916,
+                -15.385925640822304,
+                -15.385925640822304,
+                -15.207924309771997,
+                -15.207924309771997
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9948814577320712
+            ]
+          },
+          {
+            "time_ms": 70.0,
+            "qpos_rad": [
+              -0.17677832771749322,
+              0.3819948622378149,
+              0.4881927995773816,
+              -0.26919333780271343,
+              -2.48050031609049,
+              0.08383036625026366,
+              1.5513987464474785
+            ],
+            "voltage_mv": [
+              [
+                -12.34283845960972,
+                -24.62004156790174,
+                -15.452906238851158,
+                -15.452906238851158,
+                -15.220748761522124,
+                -15.220748761522124
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9945330940720603
+            ]
+          },
+          {
+            "time_ms": 80.0,
+            "qpos_rad": [
+              -0.19992166538577988,
+              0.3877675247198286,
+              0.5017606197266651,
+              -0.25678159855225413,
+              -2.48678169414748,
+              0.07527101283348753,
+              1.5527798027896744
+            ],
+            "voltage_mv": [
+              [
+                -12.496759153475441,
+                -24.59154186523945,
+                -15.515423480055402,
+                -15.515423480055402,
+                -15.227245449448416,
+                -15.227245449448416
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9943387366459269
+            ]
+          },
+          {
+            "time_ms": 90.0,
+            "qpos_rad": [
+              -0.1946977689389859,
+              0.3665631655021044,
+              0.5011058987810362,
+              -0.2486629506785276,
+              -2.4895911030567817,
+              0.06920343676058979,
+              1.5635013426727635
+            ],
+            "voltage_mv": [
+              [
+                -12.544235625308815,
+                -24.592808655683196,
+                -15.572126868231901,
+                -15.572126868231901,
+                -15.22769343282577,
+                -15.22769343282577
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.994298603421801
+            ]
+          },
+          {
+            "time_ms": 100.0,
+            "qpos_rad": [
+              -0.20679305801363906,
+              0.3733936960007,
+              0.5092820486798668,
+              -0.24400295578922312,
+              -2.490185421818762,
+              0.06547785580549947,
+              1.5785100168322754
+            ],
+            "voltage_mv": [
+              [
+                -12.526990808982557,
+                -24.626747143780708,
+                -15.623340844351999,
+                -15.623340844351999,
+                -15.222751189010296,
+                -15.222751189010296
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9943964849261976
+            ]
+          }
+        ],
+        "max_efficacy_change": 0.07789288722457366
+      },
+      {
+        "control": "no_modulation",
+        "seed": 37,
+        "simulated_seconds": 0.1,
+        "wall_seconds": 0.19906249998894054,
+        "wall_seconds_per_simulated_second": 1.9906249998894054,
+        "subsystem_wall_seconds": {
+          "brain": 0.06410660008259583,
+          "body": 0.12765770002442878,
+          "exchange": 0.004492800057050772,
+          "slow": 9.509996743872762e-05
+        },
+        "events": {
+          "brain": 1000,
+          "body": 1000,
+          "exchange": 100,
+          "slow": 10
+        },
+        "rewire": {},
+        "trajectory": [
+          {
+            "time_ms": 10.0,
+            "qpos_rad": [
+              0.09208787650505991,
+              0.44443772219361666,
+              0.2817650819616167,
+              -0.40018782403005393,
+              -2.393848863948711,
+              0.16559181148768776,
+              1.8369521249846177
+            ],
+            "voltage_mv": [
+              [
+                -37.92679330240777,
+                -60.13887035113686,
+                -48.26755138562544,
+                -48.26755138562544,
+                -56.46444397233466,
+                -56.46444397233466
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.03448706876684156,
+              0.0
+            ]
+          },
+          {
+            "time_ms": 20.0,
+            "qpos_rad": [
+              -0.04949778214382655,
+              0.4693189494309032,
+              0.3353173078570802,
+              -0.3812029978111326,
+              -2.407429143351234,
+              0.1545258967810745,
+              1.762132240960919
+            ],
+            "voltage_mv": [
+              [
+                -19.64944864325364,
+                -42.0363165912233,
+                -26.55120220551585,
+                -26.55120220551585,
+                -22.261438409365482,
+                -22.261438409365482
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.7009117868010656
+            ]
+          },
+          {
+            "time_ms": 30.0,
+            "qpos_rad": [
+              -0.13099589350667912,
+              0.4840013040907292,
+              0.4103324547883757,
+              -0.35689800080584927,
+              -2.423836579432487,
+              0.1401472187177478,
+              1.6171304408565048
+            ],
+            "voltage_mv": [
+              [
+                -12.097321148236007,
+                -27.982646992299507,
+                -16.680016229255955,
+                -16.680016229255955,
+                -15.71428735854856,
+                -15.71428735854856
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9736932693483684
+            ]
+          },
+          {
+            "time_ms": 40.0,
+            "qpos_rad": [
+              -0.11267685497335697,
+              0.43624990971665245,
+              0.4593661069241369,
+              -0.3314383054504928,
+              -2.4398355801471676,
+              0.12447697415696721,
+              1.4659366269941476
+            ],
+            "voltage_mv": [
+              [
+                -12.199147113974893,
+                -25.771622238518567,
+                -15.398727604460113,
+                -15.398727604460113,
+                -15.285005121118049,
+                -15.285005121118049
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9924596883880572
+            ]
+          },
+          {
+            "time_ms": 50.0,
+            "qpos_rad": [
+              -0.12284325289509579,
+              0.38779700584329135,
+              0.45908493110406723,
+              -0.3074768217922647,
+              -2.4545823867508254,
+              0.10891834861715782,
+              1.3147705054906709
+            ],
+            "voltage_mv": [
+              [
+                -13.388658114799226,
+                -25.56349686888647,
+                -15.328802931587795,
+                -15.328802931587795,
+                -15.312149918874796,
+                -15.312149918874796
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.992497990497978
+            ]
+          },
+          {
+            "time_ms": 60.0,
+            "qpos_rad": [
+              -0.1429941206944171,
+              0.3856547178510171,
+              0.48801890622389454,
+              -0.2867056435258905,
+              -2.4661838818057693,
+              0.0954566723636536,
+              1.1607197414588561
+            ],
+            "voltage_mv": [
+              [
+                -14.709397631474133,
+                -25.64439505317568,
+                -15.385925055733003,
+                -15.385925055733003,
+                -15.381900196580773,
+                -15.381900196580773
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9908091744843359
+            ]
+          },
+          {
+            "time_ms": 70.0,
+            "qpos_rad": [
+              -0.1803994072242306,
+              0.3857471708257606,
+              0.4868882972755101,
+              -0.27048525112423777,
+              -2.4740031225097816,
+              0.0842528529158306,
+              0.9981304792528727
+            ],
+            "voltage_mv": [
+              [
+                -16.073591552064503,
+                -25.7964776965951,
+                -15.452897145763343,
+                -15.452897145763343,
+                -15.4507428445698,
+                -15.4507428445698
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9890646447544201
+            ]
+          },
+          {
+            "time_ms": 80.0,
+            "qpos_rad": [
+              -0.19552180801740787,
+              0.3855156260743301,
+              0.5012359648259073,
+              -0.25886679220735187,
+              -2.4772161603968472,
+              0.07609278433119541,
+              0.8162485200000906
+            ],
+            "voltage_mv": [
+              [
+                -17.52900515388077,
+                -26.0282835805116,
+                -15.515414111673211,
+                -15.515414111673211,
+                -15.513670376041283,
+                -15.513670376041283
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9874605084130922
+            ]
+          },
+          {
+            "time_ms": 90.0,
+            "qpos_rad": [
+              -0.1956135340452921,
+              0.36884499569941526,
+              0.5018422330474174,
+              -0.25185386974824536,
+              -2.4768218350246975,
+              0.07066264975819231,
+              0.6222135121898236
+            ],
+            "voltage_mv": [
+              [
+                -19.152673047653145,
+                -26.222903527912173,
+                -15.57211825525553,
+                -15.57211825525553,
+                -15.570571752149855,
+                -15.570571752149855
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9860087170969147
+            ]
+          },
+          {
+            "time_ms": 100.0,
+            "qpos_rad": [
+              -0.2131632719702388,
+              0.3762546336567538,
+              0.5058802356595332,
+              -0.2484617029017381,
+              -2.475611339390088,
+              0.06763786832758659,
+              0.6403031123488929
+            ],
+            "voltage_mv": [
+              [
+                -20.10384256494132,
+                -24.6007068768903,
+                -15.623333049535766,
+                -15.623333049535766,
+                -15.621941003734026,
+                -15.621941003734026
+              ]
+            ],
+            "muscle_commands": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.9846979007048985
+            ]
+          }
+        ],
+        "max_efficacy_change": 0.0
+      }
+    ],
+    "restart_errors": {
+      "voltage_mv": 0.0,
+      "joint_rad": 0.0,
+      "efficacy": 0.0
+    },
+    "observer_read_only": true,
+    "peak_wset_bytes": 468512768,
+    "software_pass": true,
+    "executed_source_sha256": {
+      "experiments/embodied.py": "94352f2526d996102992eff133ef4556a63fbbc7cef3252ca1eda18c63be3b0a",
+      "experiments/closed_loop_benchmark.py": "e01d7f8c02b196066837722629c00211ef9641a1d29c1f7ab1bcde5018f576ad",
+      "experiments/controls.py": "3bdd3404befe3e06acd8a544e085d354acf94b32e1732099d16c0f1413418cca",
+      "physiology/reference.py": "9b56c127ee23ac230e93210fd2fb3a037969b46010fbd69cf79ef87e441d145b",
+      "physiology/plasticity.py": "5beea7f272c2abb966f27936d10379e186eb3dc966028a13cf3586fbdea2b2c0",
+      "body/flygym_adapter.py": "f58456e9e464dc94b37784115c866f9e6b07b4ff691708b1cc4aa7c9d1e91721"
+    }
+  },
+  "full_neuron_benchmark": {
+    "scope": "full compiled topology numerical fixture, NOT a calibrated physiological model",
+    "neurons": 165122,
+    "edges": 25563197,
+    "dt_ms": 0.1,
+    "steps": 5,
+    "simulated_seconds": 0.0005,
+    "construction_seconds": 2.0992246999958297,
+    "neural_seconds": 3.670112000007066,
+    "seconds_per_simulated_second": 7340.224000014132,
+    "edge_evaluations": 127815985,
+    "state_array_bytes": 412974080,
+    "topology_array_bytes": 1022527880,
+    "voltage_min_mv": -60.00158886314799,
+    "voltage_max_mv": -58.53688857989194,
+    "parameters": "uniform -80 mV receptor extreme; 0.001 nS/count, default uncalibrated membrane fixture",
+    "finite_pass": true,
+    "biological_acceptance": false,
+    "executed_source_sha256": {
+      "physiology/reference.py": "9b56c127ee23ac230e93210fd2fb3a037969b46010fbd69cf79ef87e441d145b",
+      "validation/full_neuron_benchmark.py": "608fc0702e5fceff815476030d506740c60f1cda22c00f14385f3abd2eb9de17"
+    }
+  },
+  "interface_research": {
+    "candidate_count": 7,
+    "production_ports_added": 0,
+    "ids": [
+      800636,
+      807165,
+      809912,
+      815344,
+      818057,
+      819384,
+      909831
+    ],
+    "sources": [
+      "https://male-cns.janelia.org/download/",
+      "https://github.com/gizemozd/FlyMimic",
+      "https://github.com/NeLy-EPFL/flygym/issues/276"
+    ],
+    "reason_not_approved": "No independently reviewed body-to-muscle mapping or recruitment curves. Numeric suffixes in muscle names are not MaleCNS IDs."
+  },
+  "public_data": {
+    "created_at": "2026-09-13T05:08:28.615671+00:00",
+    "biological_acceptance": false,
+    "datasets": [
+      {
+        "key": "feco",
+        "doi": "10.5061/dryad.gqnk98t16",
+        "files": 25,
+        "version": 5,
+        "status": "metadata_retrieved"
+      },
+      {
+        "key": "motor",
+        "doi": "10.5061/dryad.76hdr7stb",
+        "files": 60,
+        "version": 6,
+        "status": "metadata_retrieved"
+      }
+    ],
+    "assets": [
+      {
+        "url": "https://datadryad.org/downloads/file_stream/4330030",
+        "local_path": null,
+        "status": "download_failed",
+        "retrieved_at": "2026-09-13T05:08:36.899813+00:00",
+        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "dataset": "10.5061/dryad.gqnk98t16",
+        "publisher_metadata": {
+          "_links": {
+            "self": {
+              "href": "/api/v2/files/4330030"
+            },
+            "stash:dataset": {
+              "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+            },
+            "stash:version": {
+              "href": "/api/v2/versions/393607"
+            },
+            "stash:files": {
+              "href": "/api/v2/versions/393607/files"
+            },
+            "stash:download": {
+              "href": "/api/v2/files/4330030/download"
+            },
+            "curies": [
+              {
+                "name": "stash",
+                "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+                "templated": "true"
+              }
+            ]
+          },
+          "path": "hook_flexion_01_magnet.parquet",
+          "size": 14993835,
+          "mimeType": "",
+          "status": "copied",
+          "digest": "d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd",
+          "digestType": "sha-256"
+        }
+      },
+      {
+        "url": "https://datadryad.org/downloads/file_stream/4330045",
+        "local_path": null,
+        "status": "download_failed",
+        "retrieved_at": "2026-09-13T05:08:38.871885+00:00",
+        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "dataset": "10.5061/dryad.gqnk98t16",
+        "publisher_metadata": {
+          "_links": {
+            "self": {
+              "href": "/api/v2/files/4330045"
+            },
+            "stash:dataset": {
+              "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+            },
+            "stash:version": {
+              "href": "/api/v2/versions/393607"
+            },
+            "stash:files": {
+              "href": "/api/v2/versions/393607/files"
+            },
+            "stash:download": {
+              "href": "/api/v2/files/4330045/download"
+            },
+            "curies": [
+              {
+                "name": "stash",
+                "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+                "templated": "true"
+              }
+            ]
+          },
+          "path": "manc_v1_classifications.csv",
+          "size": 548135,
+          "mimeType": "text/csv",
+          "status": "copied",
+          "digest": "f81572490e571e69eeaa625383f348bd48fbb5f0f75b2c29195aca4aa911357c",
+          "digestType": "sha-256"
+        }
+      },
+      {
+        "url": "https://datadryad.org/downloads/file_stream/4330056",
+        "local_path": null,
+        "status": "download_failed",
+        "retrieved_at": "2026-09-13T05:08:40.535795+00:00",
+        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "dataset": "10.5061/dryad.gqnk98t16",
+        "publisher_metadata": {
+          "_links": {
+            "self": {
+              "href": "/api/v2/files/4330056"
+            },
+            "stash:dataset": {
+              "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+            },
+            "stash:version": {
+              "href": "/api/v2/versions/393607"
+            },
+            "stash:files": {
+              "href": "/api/v2/versions/393607/files"
+            },
+            "stash:download": {
+              "href": "/api/v2/files/4330056/download"
+            },
+            "curies": [
+              {
+                "name": "stash",
+                "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+                "templated": "true"
+              }
+            ]
+          },
+          "path": "README.md",
+          "size": 10086,
+          "mimeType": "text/markdown",
+          "status": "created",
+          "digest": "a4927a16b15524bf8342bf0109fe7188257be2eb1036f94493ae780f8fd7762a",
+          "digestType": "sha-256"
+        }
+      },
+      {
+        "url": "https://datadryad.org/downloads/file_stream/585475",
+        "local_path": null,
+        "status": "download_failed",
+        "retrieved_at": "2026-09-13T05:08:52.838579+00:00",
+        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "dataset": "10.5061/dryad.76hdr7stb",
+        "publisher_metadata": {
+          "_links": {
+            "self": {
+              "href": "/api/v2/files/585475"
+            },
+            "stash:dataset": {
+              "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.76hdr7stb"
+            },
+            "stash:version": {
+              "href": "/api/v2/versions/105831"
+            },
+            "stash:files": {
+              "href": "/api/v2/versions/105831/files"
+            },
+            "stash:download": {
+              "href": "/api/v2/files/585475/download"
+            },
+            "curies": [
+              {
+                "name": "stash",
+                "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+                "templated": "true"
+              }
+            ]
+          },
+          "path": "README.txt",
+          "size": 2484,
+          "mimeType": "text/plain",
+          "status": "created",
+          "digest": "2b4e81cbd8486f0c535f27f9bca6871f0633ce3ab5bae6b9d965530be907f90d",
+          "digestType": "sha-256"
+        }
+      },
+      {
+        "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp3-v1.csv",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\manc\\elife-96084-supp3-v1.csv",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-13T05:08:59.834667+00:00",
+        "sha256": "c46e3cec1a5114b8d981d5f0383012c8e7fcdebd6c4e3eaffe4ac3ba1def2e94",
+        "bytes": 67297,
+        "publisher_sha256_verified": false,
+        "title": "MN and efferent light-level matching in MANC.",
+        "dataset": "MANC; eLife 96084 supplement"
+      },
+      {
+        "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp6-v1.csv",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\manc\\elife-96084-supp6-v1.csv",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-13T05:09:02.348628+00:00",
+        "sha256": "b56b0563f6a6000b2a43fbc7ebec46297668e8e3b6c6d596843d5ad5aab83a65",
+        "bytes": 24898,
+        "publisher_sha256_verified": false,
+        "title": "Serial Leg MN groups.",
+        "dataset": "MANC; eLife 96084 supplement"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/data/README.md",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco-author\\data\\README.md",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-13T05:09:04.276864+00:00",
+        "sha256": "0d7b24633d02bd06a5900ef2bb371a75609169f386a33766dea64941a399321d",
+        "bytes": 3444,
+        "publisher_sha256_verified": false,
+        "dataset": "feco-inhibition author repository"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/code/utils/imaging_predict_gcamp.m",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco-author\\code\\utils\\imaging_predict_gcamp.m",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-13T05:09:05.394431+00:00",
+        "sha256": "8ac8c133195570d44311437c46e6e10a939404b1258f5df45e307bd7ffaa742b",
+        "bytes": 2558,
+        "publisher_sha256_verified": false,
+        "dataset": "feco-inhibition author repository"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/code/imaging_config.toml",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco-author\\code\\imaging_config.toml",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-13T05:09:06.624391+00:00",
+        "sha256": "46245ab2999b8117d2031d27d0e4c080d9fc8c51408eff374d13a18f466b9c56",
+        "bytes": 885,
+        "publisher_sha256_verified": false,
+        "dataset": "feco-inhibition author repository"
+      },
+      {
+        "url": "https://zenodo.org/api/records/4527659/files/README.txt/content",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor-author\\README.txt",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-13T05:15:56.911558+00:00",
+        "sha256": "2b4e81cbd8486f0c535f27f9bca6871f0633ce3ab5bae6b9d965530be907f90d",
+        "bytes": 2484,
+        "publisher_sha256_verified": false,
+        "dataset": "Zenodo 4527659; motor analysis code only",
+        "publisher_checksum": "md5:8bdb59e4e038d5dbb64fdf9fae4775c1",
+        "publisher_md5_verified": true
+      },
+      {
+        "url": "https://zenodo.org/api/records/4527659/files/Methods_ForceProbeCalibration.m/content",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor-author\\Methods_ForceProbeCalibration.m",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-13T05:15:56.921598+00:00",
+        "sha256": "ee5ff14fc3b8c987b8f9adc6392c4fed039a9c1d0039de3ab9c4d06bdd2c8689",
+        "bytes": 2823,
+        "publisher_sha256_verified": false,
+        "dataset": "Zenodo 4527659; motor analysis code only",
+        "publisher_checksum": "md5:9b4dd296960cace3868869f5acbea578",
+        "publisher_md5_verified": true
+      },
+      {
+        "url": "https://zenodo.org/api/records/4527659/files/Dataset3_SlowInterFast_ForcePerSpike.m/content",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor-author\\Dataset3_SlowInterFast_ForcePerSpike.m",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-13T05:15:56.931373+00:00",
+        "sha256": "0601cf950ba8e07734d100f6c4e111e9c555b8f5ae8948d5d5590be11185af42",
+        "bytes": 8942,
+        "publisher_sha256_verified": false,
+        "dataset": "Zenodo 4527659; motor analysis code only",
+        "publisher_checksum": "md5:a809aec32a089d17cd2798d6a61e605c",
+        "publisher_md5_verified": true
+      }
+    ]
+  },
+  "manc_crosswalk": {
+    "sources": {
+      "data\\graph_neurons\\interfaces\\lf_tibia_candidates.parquet": "f7d50cd32dab5ee11000d688ca3133923084142f6a33148a071102596b55df3f",
+      "data\\physiology_raw\\manc\\elife-96084-supp3-v1.csv": "c46e3cec1a5114b8d981d5f0383012c8e7fcdebd6c4e3eaffe4ac3ba1def2e94",
+      "data\\physiology_raw\\manc\\elife-96084-supp6-v1.csv": "b56b0563f6a6000b2a43fbc7ebec46297668e8e3b6c6d596843d5ad5aab83a65"
+    },
+    "rows": 7,
+    "counts": {
+      "candidate_type_agreement": 5,
+      "missing_supplement_identity": 1,
+      "type_conflict": 1
+    },
+    "production_ports_approved": 0,
+    "rows_for_review": [
+      {
+        "body_id": 800636,
+        "mancBodyid": 12704.0,
+        "neuron_type": "Ti extensor MN",
+        "manc_type": "Ti extensor MN",
+        "manc_target": "Ti extensor",
+        "manc_exit_nerve": "ProLN_L",
+        "manc_match_certainty(1-5)": null,
+        "crosswalk_status": "candidate_type_agreement"
+      },
+      {
+        "body_id": 807165,
+        "mancBodyid": 12134.0,
+        "neuron_type": "Ti flexor MN",
+        "manc_type": "Ti flexor MN",
+        "manc_target": "Ti flexor",
+        "manc_exit_nerve": "ProLN_L",
+        "manc_match_certainty(1-5)": null,
+        "crosswalk_status": "candidate_type_agreement"
+      },
+      {
+        "body_id": 809912,
+        "mancBodyid": 17133.0,
+        "neuron_type": "Ti flexor MN",
+        "manc_type": "Ti flexor MN",
+        "manc_target": "Ti flexor",
+        "manc_exit_nerve": "ProLN_L",
+        "manc_match_certainty(1-5)": null,
+        "crosswalk_status": "candidate_type_agreement"
+      },
+      {
+        "body_id": 815344,
+        "mancBodyid": 10256.0,
+        "neuron_type": "Ti extensor MN",
+        "manc_type": null,
+        "manc_target": null,
+        "manc_exit_nerve": null,
+        "manc_match_certainty(1-5)": null,
+        "crosswalk_status": "missing_supplement_identity"
+      },
+      {
+        "body_id": 818057,
+        "mancBodyid": 15321.0,
+        "neuron_type": "Ti flexor MN",
+        "manc_type": "Ti flexor MN",
+        "manc_target": "Ti flexor",
+        "manc_exit_nerve": "ProLN_L",
+        "manc_match_certainty(1-5)": null,
+        "crosswalk_status": "candidate_type_agreement"
+      },
+      {
+        "body_id": 819384,
+        "mancBodyid": 17885.0,
+        "neuron_type": "Ti flexor MN",
+        "manc_type": "Acc. ti flexor MN",
+        "manc_target": "Acc. ti flexor",
+        "manc_exit_nerve": "ProLN_L",
+        "manc_match_certainty(1-5)": null,
+        "crosswalk_status": "type_conflict"
+      },
+      {
+        "body_id": 909831,
+        "mancBodyid": 14798.0,
+        "neuron_type": "Ti flexor MN",
+        "manc_type": "Ti flexor MN",
+        "manc_target": "Ti flexor",
+        "manc_exit_nerve": "ProLN_L",
+        "manc_match_certainty(1-5)": null,
+        "crosswalk_status": "candidate_type_agreement"
+      }
+    ]
+  },
+  "source_hashes": {
+    "connectome\\audit.py": "d480393a629eca4b4d9fcad753b3c463a55562fcaef9c6a2d3646a5bfaef333d",
+    "connectome\\compiler.py": "4e49e4dd658e93a91cb64cf22dac5f315c9eaec677a23607316152d0939c7dcc",
+    "connectome\\__init__.py": "13a723e7dd1eb001cf26c3d555fd771e41c30da582189edbadfd4354359bb3b2",
+    "physiology\\clock.py": "596f977152f333ea847ad7a393045312a75311a19c5b81ae68f6c56d31a00d65",
+    "physiology\\homeostasis.py": "1671bba17fe6663d11680fb20f9985ed40a42dd08a23131b23fd37c6c42b4c3f",
+    "physiology\\parameter_tables.py": "c5befa663b1c07b120c37637e24e4a9281c62380d6027b4f7c9fead1a0c81320",
+    "physiology\\plasticity.py": "5beea7f272c2abb966f27936d10379e186eb3dc966028a13cf3586fbdea2b2c0",
+    "physiology\\reference.py": "9b56c127ee23ac230e93210fd2fb3a037969b46010fbd69cf79ef87e441d145b",
+    "physiology\\__init__.py": "91aa05c539da3688d8553fe774beba1542b24d4663f1704d40146c49acd78a2a",
+    "interfaces\\evidence_inventory.py": "681f5530d9ea920ed5c500feb4f8374a4f5b5018bd8e61987df20feaa32bd42d",
+    "interfaces\\manc_crosswalk.py": "f5b9c44cb1ce2f44a66e4b601bf4678bcee387376fdfa886580c2a4830930c58",
+    "interfaces\\registry.py": "732d68a148ca41cbff8f89aecceee68da655a2e5e70b2003be5ffeedd389b63d",
+    "interfaces\\__init__.py": "c2ebf954451e4e3b1f4230e98b5e9ccfdd0967fe225db872969fe7fce44d7e74",
+    "world\\stimuli.py": "78d8e79a095deaf2b2e788f39719132c3672009db217746d53aa6127a8330585",
+    "world\\__init__.py": "af77b5f8d8c433026a77b5e49690509fbafc0595cac58a9753dbbb9d2e33a443",
+    "experiments\\calibration.py": "febf66b6d8fa53bdb6ae6aa3ba451860d1d6d69335cbf67169dbabc93d9db015",
+    "experiments\\closed_loop_benchmark.py": "e01d7f8c02b196066837722629c00211ef9641a1d29c1f7ab1bcde5018f576ad",
+    "experiments\\controls.py": "3bdd3404befe3e06acd8a544e085d354acf94b32e1732099d16c0f1413418cca",
+    "experiments\\embodied.py": "94352f2526d996102992eff133ef4556a63fbbc7cef3252ca1eda18c63be3b0a",
+    "experiments\\feco.py": "8b28e3f1951b1a81309be90d27f60f105dad8535429bd3149ac44b2c0182ccdc",
+    "experiments\\measurement.py": "862cf9cad22e2913242e55bee0d786d4a442105f6719837e1a8e3a5cfd795dfe",
+    "experiments\\public_data.py": "200a2022577d3f5a9f256f5bd26c7914600b25d2f8f44ae584ce4e32085d3310",
+    "experiments\\__init__.py": "2094320073b9629f5c3cc1f0e7e0cda5f517a1fe8a2acec32964568d72de591b",
+    "body\\benchmark.py": "0c5be7272617fb8716c4801a70492b37b387cc96582da48847de4b70a7d866b0",
+    "body\\flygym_adapter.py": "f58456e9e464dc94b37784115c866f9e6b07b4ff691708b1cc4aa7c9d1e91721",
+    "body\\__init__.py": "dac605e06870d845d7648f93efd1c1aa08336fdb351b2591a19a58146f079d49",
+    "validation\\full_neuron_benchmark.py": "608fc0702e5fceff815476030d506740c60f1cda22c00f14385f3abd2eb9de17",
+    "validation\\run_realism.py": "822ab4e136a2e5c9f3bc254392e583dc2ab486900e3b68491b4559000522981a",
+    "validation\\test_integration.py": "f3ca3470c2f676b075c59746fecaa759077d8ad03cf9b64561d809ef810a4c45",
+    "validation\\test_public_data.py": "dcad23e6e5b690a996a83dcfa688c09b5206af025e896cc2a90df1372eb0d2ae",
+    "validation\\test_realism.py": "45115ca40ff62985c9d66c009fd1363106b288449ced446eb0575e655a19c989",
+    "habitat3d\\accept_full.py": "64a5cf1d7acddd828911ca141fd8fba72ebf9aa3f85e265105a9a42da6e9dde4",
+    "habitat3d\\brain.py": "4709f0df242f01d6b3c1517448f065cd03ed1b4121fe4c03be51dcb2a561e347",
+    "habitat3d\\ecology.py": "49a42b93fdfd8b1c2a34a0eb7aff1414474d833895ebdbb689492e77826f1217",
+    "habitat3d\\environment.py": "efc6794df34121505a3fcf4d4f7e520e95edf6d16c8023320208f7b13d184021",
+    "habitat3d\\full_brain.py": "9e22260734ee875c6e7c6deb72eff02a95c0c8c660a2f0623852b3dd35ad9024",
+    "habitat3d\\legacy_ecology.py": "130a3533e7ed9010eed47c69eb2e5e682131ed6ce4db510d219d6b3c705e5bd7",
+    "habitat3d\\server.py": "310f8ac4105fa140f5b190eb50cffbc5a3bbf6445dfccae5c27d93fef9375065",
+    "habitat3d\\test_model.py": "cb279b3eee365d458744c6f40d9cf2b20b9d8a50298cac5f96d7662b978291b5",
+    "habitat3d\\test_neural_control.py": "cfe552333e92dcd4d4593e5b9981690669f33f2fa4d3a068d5a7ee1b17d6be2a",
+    "habitat3d/ui/scene.js": "8094710ede286b67a2585d51f94f0ef7206bd0e85a3b89e8e2e603e18185ceac",
+    "habitat3d/start.ps1": "8bd3b341ca5320208be209204489389c4c360989b74d68fd1f0774677e66f820",
+    "requirements-body.lock.txt": "20bb60b87a9246f79e75bd554b3567421c39dd0b4d3829f6b273c8746cd82a61"
+  },
+  "software_pass": true
+}

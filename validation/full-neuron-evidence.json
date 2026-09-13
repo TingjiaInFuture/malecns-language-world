@@ -1,0 +1,23 @@
+{
+  "scope": "full compiled topology numerical fixture, NOT a calibrated physiological model",
+  "neurons": 165122,
+  "edges": 25563197,
+  "dt_ms": 0.1,
+  "steps": 5,
+  "simulated_seconds": 0.0005,
+  "construction_seconds": 2.0992246999958297,
+  "neural_seconds": 3.670112000007066,
+  "seconds_per_simulated_second": 7340.224000014132,
+  "edge_evaluations": 127815985,
+  "state_array_bytes": 412974080,
+  "topology_array_bytes": 1022527880,
+  "voltage_min_mv": -60.00158886314799,
+  "voltage_max_mv": -58.53688857989194,
+  "parameters": "uniform -80 mV receptor extreme; 0.001 nS/count, default uncalibrated membrane fixture",
+  "finite_pass": true,
+  "biological_acceptance": false,
+  "executed_source_sha256": {
+    "physiology/reference.py": "9b56c127ee23ac230e93210fd2fb3a037969b46010fbd69cf79ef87e441d145b",
+    "validation/full_neuron_benchmark.py": "608fc0702e5fceff815476030d506740c60f1cda22c00f14385f3abd2eb9de17"
+  }
+}

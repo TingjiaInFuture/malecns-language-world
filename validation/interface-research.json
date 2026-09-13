@@ -1,0 +1,19 @@
+{
+  "candidate_count": 7,
+  "production_ports_added": 0,
+  "ids": [
+    800636,
+    807165,
+    809912,
+    815344,
+    818057,
+    819384,
+    909831
+  ],
+  "sources": [
+    "https://male-cns.janelia.org/download/",
+    "https://github.com/gizemozd/FlyMimic",
+    "https://github.com/NeLy-EPFL/flygym/issues/276"
+  ],
+  "reason_not_approved": "No independently reviewed body-to-muscle mapping or recruitment curves. Numeric suffixes in muscle names are not MaleCNS IDs."
+}

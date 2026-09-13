@@ -65,13 +65,18 @@ class FullBrains:
         self._rms_valid=np.ones(count,bool)
     def forward(self,observations,dt,enabled=True):
         if not enabled:raise ValueError('Full-connectome production mode cannot bypass its neural core')
+        if not np.isfinite(dt) or dt<0:raise ValueError('dt must be finite, nonnegative seconds')
+        if dt==0:return self.last_output.copy()
+        # Historical engineering time constant: preserve alpha=.5 at dt=.25 s.
+        # This is not a measured physiological constant or the reference solver.
+        alpha=-np.expm1(-float(dt)/(0.25/np.log(2.)))
         # All 151,856,684 edges are included for each individual, every update.
         inputs=np.asarray(observations,dtype=np.float32)@self.input_map
         for i in range(self.count):
             recurrent=self.matrix@self.h[i]
             recurrent[self.display_indices]+=inputs[i]
-            np.tanh(recurrent,out=recurrent);recurrent*=.5
-            self.h[i]*=.5;self.h[i]+=recurrent
+            np.tanh(recurrent,out=recurrent);recurrent*=alpha
+            self.h[i]*=1-alpha;self.h[i]+=recurrent
         self.last_output=np.tanh(3*(self.h[:,self.display_indices]@self.output_map))
         self.steps+=1
         self._rms_valid[:]=False

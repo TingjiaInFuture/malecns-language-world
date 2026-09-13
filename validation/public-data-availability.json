@@ -1,0 +1,270 @@
+{
+  "created_at": "2026-09-13T05:08:28.615671+00:00",
+  "biological_acceptance": false,
+  "datasets": [
+    {
+      "key": "feco",
+      "doi": "10.5061/dryad.gqnk98t16",
+      "files": 25,
+      "version": 5,
+      "status": "metadata_retrieved"
+    },
+    {
+      "key": "motor",
+      "doi": "10.5061/dryad.76hdr7stb",
+      "files": 60,
+      "version": 6,
+      "status": "metadata_retrieved"
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://datadryad.org/downloads/file_stream/4330030",
+      "local_path": null,
+      "status": "download_failed",
+      "retrieved_at": "2026-09-13T05:08:36.899813+00:00",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "dataset": "10.5061/dryad.gqnk98t16",
+      "publisher_metadata": {
+        "_links": {
+          "self": {
+            "href": "/api/v2/files/4330030"
+          },
+          "stash:dataset": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+          },
+          "stash:version": {
+            "href": "/api/v2/versions/393607"
+          },
+          "stash:files": {
+            "href": "/api/v2/versions/393607/files"
+          },
+          "stash:download": {
+            "href": "/api/v2/files/4330030/download"
+          },
+          "curies": [
+            {
+              "name": "stash",
+              "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+              "templated": "true"
+            }
+          ]
+        },
+        "path": "hook_flexion_01_magnet.parquet",
+        "size": 14993835,
+        "mimeType": "",
+        "status": "copied",
+        "digest": "d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd",
+        "digestType": "sha-256"
+      }
+    },
+    {
+      "url": "https://datadryad.org/downloads/file_stream/4330045",
+      "local_path": null,
+      "status": "download_failed",
+      "retrieved_at": "2026-09-13T05:08:38.871885+00:00",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "dataset": "10.5061/dryad.gqnk98t16",
+      "publisher_metadata": {
+        "_links": {
+          "self": {
+            "href": "/api/v2/files/4330045"
+          },
+          "stash:dataset": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+          },
+          "stash:version": {
+            "href": "/api/v2/versions/393607"
+          },
+          "stash:files": {
+            "href": "/api/v2/versions/393607/files"
+          },
+          "stash:download": {
+            "href": "/api/v2/files/4330045/download"
+          },
+          "curies": [
+            {
+              "name": "stash",
+              "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+              "templated": "true"
+            }
+          ]
+        },
+        "path": "manc_v1_classifications.csv",
+        "size": 548135,
+        "mimeType": "text/csv",
+        "status": "copied",
+        "digest": "f81572490e571e69eeaa625383f348bd48fbb5f0f75b2c29195aca4aa911357c",
+        "digestType": "sha-256"
+      }
+    },
+    {
+      "url": "https://datadryad.org/downloads/file_stream/4330056",
+      "local_path": null,
+      "status": "download_failed",
+      "retrieved_at": "2026-09-13T05:08:40.535795+00:00",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "dataset": "10.5061/dryad.gqnk98t16",
+      "publisher_metadata": {
+        "_links": {
+          "self": {
+            "href": "/api/v2/files/4330056"
+          },
+          "stash:dataset": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+          },
+          "stash:version": {
+            "href": "/api/v2/versions/393607"
+          },
+          "stash:files": {
+            "href": "/api/v2/versions/393607/files"
+          },
+          "stash:download": {
+            "href": "/api/v2/files/4330056/download"
+          },
+          "curies": [
+            {
+              "name": "stash",
+              "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+              "templated": "true"
+            }
+          ]
+        },
+        "path": "README.md",
+        "size": 10086,
+        "mimeType": "text/markdown",
+        "status": "created",
+        "digest": "a4927a16b15524bf8342bf0109fe7188257be2eb1036f94493ae780f8fd7762a",
+        "digestType": "sha-256"
+      }
+    },
+    {
+      "url": "https://datadryad.org/downloads/file_stream/585475",
+      "local_path": null,
+      "status": "download_failed",
+      "retrieved_at": "2026-09-13T05:08:52.838579+00:00",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "dataset": "10.5061/dryad.76hdr7stb",
+      "publisher_metadata": {
+        "_links": {
+          "self": {
+            "href": "/api/v2/files/585475"
+          },
+          "stash:dataset": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.76hdr7stb"
+          },
+          "stash:version": {
+            "href": "/api/v2/versions/105831"
+          },
+          "stash:files": {
+            "href": "/api/v2/versions/105831/files"
+          },
+          "stash:download": {
+            "href": "/api/v2/files/585475/download"
+          },
+          "curies": [
+            {
+              "name": "stash",
+              "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+              "templated": "true"
+            }
+          ]
+        },
+        "path": "README.txt",
+        "size": 2484,
+        "mimeType": "text/plain",
+        "status": "created",
+        "digest": "2b4e81cbd8486f0c535f27f9bca6871f0633ce3ab5bae6b9d965530be907f90d",
+        "digestType": "sha-256"
+      }
+    },
+    {
+      "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp3-v1.csv",
+      "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\manc\\elife-96084-supp3-v1.csv",
+      "status": "downloaded_verified",
+      "retrieved_at": "2026-09-13T05:08:59.834667+00:00",
+      "sha256": "c46e3cec1a5114b8d981d5f0383012c8e7fcdebd6c4e3eaffe4ac3ba1def2e94",
+      "bytes": 67297,
+      "publisher_sha256_verified": false,
+      "title": "MN and efferent light-level matching in MANC.",
+      "dataset": "MANC; eLife 96084 supplement"
+    },
+    {
+      "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp6-v1.csv",
+      "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\manc\\elife-96084-supp6-v1.csv",
+      "status": "downloaded_verified",
+      "retrieved_at": "2026-09-13T05:09:02.348628+00:00",
+      "sha256": "b56b0563f6a6000b2a43fbc7ebec46297668e8e3b6c6d596843d5ad5aab83a65",
+      "bytes": 24898,
+      "publisher_sha256_verified": false,
+      "title": "Serial Leg MN groups.",
+      "dataset": "MANC; eLife 96084 supplement"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/data/README.md",
+      "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco-author\\data\\README.md",
+      "status": "downloaded_verified",
+      "retrieved_at": "2026-09-13T05:09:04.276864+00:00",
+      "sha256": "0d7b24633d02bd06a5900ef2bb371a75609169f386a33766dea64941a399321d",
+      "bytes": 3444,
+      "publisher_sha256_verified": false,
+      "dataset": "feco-inhibition author repository"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/code/utils/imaging_predict_gcamp.m",
+      "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco-author\\code\\utils\\imaging_predict_gcamp.m",
+      "status": "downloaded_verified",
+      "retrieved_at": "2026-09-13T05:09:05.394431+00:00",
+      "sha256": "8ac8c133195570d44311437c46e6e10a939404b1258f5df45e307bd7ffaa742b",
+      "bytes": 2558,
+      "publisher_sha256_verified": false,
+      "dataset": "feco-inhibition author repository"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/code/imaging_config.toml",
+      "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco-author\\code\\imaging_config.toml",
+      "status": "downloaded_verified",
+      "retrieved_at": "2026-09-13T05:09:06.624391+00:00",
+      "sha256": "46245ab2999b8117d2031d27d0e4c080d9fc8c51408eff374d13a18f466b9c56",
+      "bytes": 885,
+      "publisher_sha256_verified": false,
+      "dataset": "feco-inhibition author repository"
+    },
+    {
+      "url": "https://zenodo.org/api/records/4527659/files/README.txt/content",
+      "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor-author\\README.txt",
+      "status": "downloaded_verified",
+      "retrieved_at": "2026-09-13T05:15:56.911558+00:00",
+      "sha256": "2b4e81cbd8486f0c535f27f9bca6871f0633ce3ab5bae6b9d965530be907f90d",
+      "bytes": 2484,
+      "publisher_sha256_verified": false,
+      "dataset": "Zenodo 4527659; motor analysis code only",
+      "publisher_checksum": "md5:8bdb59e4e038d5dbb64fdf9fae4775c1",
+      "publisher_md5_verified": true
+    },
+    {
+      "url": "https://zenodo.org/api/records/4527659/files/Methods_ForceProbeCalibration.m/content",
+      "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor-author\\Methods_ForceProbeCalibration.m",
+      "status": "downloaded_verified",
+      "retrieved_at": "2026-09-13T05:15:56.921598+00:00",
+      "sha256": "ee5ff14fc3b8c987b8f9adc6392c4fed039a9c1d0039de3ab9c4d06bdd2c8689",
+      "bytes": 2823,
+      "publisher_sha256_verified": false,
+      "dataset": "Zenodo 4527659; motor analysis code only",
+      "publisher_checksum": "md5:9b4dd296960cace3868869f5acbea578",
+      "publisher_md5_verified": true
+    },
+    {
+      "url": "https://zenodo.org/api/records/4527659/files/Dataset3_SlowInterFast_ForcePerSpike.m/content",
+      "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor-author\\Dataset3_SlowInterFast_ForcePerSpike.m",
+      "status": "downloaded_verified",
+      "retrieved_at": "2026-09-13T05:15:56.931373+00:00",
+      "sha256": "0601cf950ba8e07734d100f6c4e111e9c555b8f5ae8948d5d5590be11185af42",
+      "bytes": 8942,
+      "publisher_sha256_verified": false,
+      "dataset": "Zenodo 4527659; motor analysis code only",
+      "publisher_checksum": "md5:a809aec32a089d17cd2798d6a61e605c",
+      "publisher_md5_verified": true
+    }
+  ]
+}

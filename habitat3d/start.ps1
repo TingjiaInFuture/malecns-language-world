@@ -18,7 +18,7 @@ try {
 }
 if (-not $HabitatReady) {
     if (-not (Test-Path -LiteralPath $HabitatPython)) { throw "Missing Python environment: $HabitatPython" }
-    $HabitatProcess = Start-Process -FilePath $HabitatPython -ArgumentList @('-u', ('"' + (Join-Path $HabitatRoot 'server.py') + '"'), '--port', '8765') -WorkingDirectory $HabitatRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $HabitatState 'server.log') -RedirectStandardError (Join-Path $HabitatState 'server.err.log') -PassThru
+    $HabitatProcess = Start-Process -FilePath $HabitatPython -ArgumentList @('-u', ('"' + (Join-Path $HabitatRoot 'server.py') + '"'), '--port', '8765', '--engineering-sandbox') -WorkingDirectory $HabitatRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $HabitatState 'server.log') -RedirectStandardError (Join-Path $HabitatState 'server.err.log') -PassThru
     $HabitatProcess.Id | Set-Content -LiteralPath (Join-Path $HabitatState 'launcher.pid')
     for ($HabitatAttempt = 0; $HabitatAttempt -lt 1200; $HabitatAttempt++) {
         Start-Sleep -Milliseconds 250
@@ -35,4 +35,4 @@ if (-not $NoBrowser) {
     if (Test-Path -LiteralPath $HabitatChrome) { Start-Process -FilePath $HabitatChrome -ArgumentList "--app=$HabitatUrl" }
     else { Start-Process $HabitatUrl }
 }
-Write-Output "Micro Habitat: $HabitatUrl"
+Write-Output "Historical engineering sandbox (not physiological production): $HabitatUrl"

@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/gizemozd/FlyMimic/main/flymimic/assets/mocap/qpos/0002.npy",
+    "local_path": ".venv-body\\Lib\\site-packages\\flygym_demo\\muscle_imitation\\assets\\mocap\\qpos\\0002.npy",
+    "remote_sha256": "aa7e3e72325d7d76a17863057cbaba9259a346d66e41b7d820411570d5e00a42",
+    "local_sha256": "aa7e3e72325d7d76a17863057cbaba9259a346d66e41b7d820411570d5e00a42",
+    "identical": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/gizemozd/FlyMimic/main/flymimic/assets/mocap/qvel/0002.npy",
+    "local_path": ".venv-body\\Lib\\site-packages\\flygym_demo\\muscle_imitation\\assets\\mocap\\qvel\\0002.npy",
+    "remote_sha256": "c472a3e03ed25a614efcb90e54641e41a031d23024092d99f44b4448b581dd12",
+    "local_sha256": "c472a3e03ed25a614efcb90e54641e41a031d23024092d99f44b4448b581dd12",
+    "identical": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/gizemozd/FlyMimic/main/flymimic/assets/mocap/xipos/0002.npy",
+    "local_path": ".venv-body\\Lib\\site-packages\\flygym_demo\\muscle_imitation\\assets\\mocap\\xipos\\0002.npy",
+    "remote_sha256": "3f73c47ee4692b0ebf9a760869d1ea05af6c8bbd5795320fb2edb38f53c5c20c",
+    "local_sha256": "3f73c47ee4692b0ebf9a760869d1ea05af6c8bbd5795320fb2edb38f53c5c20c",
+    "identical": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/gizemozd/FlyMimic/main/flymimic/assets/mocap/xivel/0002.npy",
+    "local_path": ".venv-body\\Lib\\site-packages\\flygym_demo\\muscle_imitation\\assets\\mocap\\xivel\\0002.npy",
+    "remote_sha256": "3eb99125864b8ecdf05286c72301eb1954ae9d9e2e113b350b6ca1c02f6e8d61",
+    "local_sha256": "3eb99125864b8ecdf05286c72301eb1954ae9d9e2e113b350b6ca1c02f6e8d61",
+    "identical": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/gizemozd/FlyMimic/main/flymimic/assets/models/best_combined_arm_damping_stiff_cvt3.xml",
+    "local_path": ".venv-body\\Lib\\site-packages\\flygym\\assets\\model\\musculoskeletal\\best_combined_arm_damping_stiff_cvt3.xml",
+    "remote_sha256": "04f6070d6733940357be005ca72c02ba0d9455538ff018da70c74de7458e9531",
+    "local_sha256": "04f6070d6733940357be005ca72c02ba0d9455538ff018da70c74de7458e9531",
+    "identical": true
+  }
+]

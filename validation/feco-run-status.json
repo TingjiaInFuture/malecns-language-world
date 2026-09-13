@@ -1,0 +1,6 @@
+{
+  "biological_acceptance": false,
+  "closed_loop_validation": false,
+  "status": "not_run_missing_experimental_file",
+  "error": "Measured FeCO file not downloaded: data\\physiology_raw\\feco\\hook_flexion_01_magnet.parquet"
+}

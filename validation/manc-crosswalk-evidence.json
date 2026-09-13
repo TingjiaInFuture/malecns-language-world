@@ -1,0 +1,86 @@
+{
+  "sources": {
+    "data\\graph_neurons\\interfaces\\lf_tibia_candidates.parquet": "f7d50cd32dab5ee11000d688ca3133923084142f6a33148a071102596b55df3f",
+    "data\\physiology_raw\\manc\\elife-96084-supp3-v1.csv": "c46e3cec1a5114b8d981d5f0383012c8e7fcdebd6c4e3eaffe4ac3ba1def2e94",
+    "data\\physiology_raw\\manc\\elife-96084-supp6-v1.csv": "b56b0563f6a6000b2a43fbc7ebec46297668e8e3b6c6d596843d5ad5aab83a65"
+  },
+  "rows": 7,
+  "counts": {
+    "candidate_type_agreement": 5,
+    "missing_supplement_identity": 1,
+    "type_conflict": 1
+  },
+  "production_ports_approved": 0,
+  "rows_for_review": [
+    {
+      "body_id": 800636,
+      "mancBodyid": 12704.0,
+      "neuron_type": "Ti extensor MN",
+      "manc_type": "Ti extensor MN",
+      "manc_target": "Ti extensor",
+      "manc_exit_nerve": "ProLN_L",
+      "manc_match_certainty(1-5)": null,
+      "crosswalk_status": "candidate_type_agreement"
+    },
+    {
+      "body_id": 807165,
+      "mancBodyid": 12134.0,
+      "neuron_type": "Ti flexor MN",
+      "manc_type": "Ti flexor MN",
+      "manc_target": "Ti flexor",
+      "manc_exit_nerve": "ProLN_L",
+      "manc_match_certainty(1-5)": null,
+      "crosswalk_status": "candidate_type_agreement"
+    },
+    {
+      "body_id": 809912,
+      "mancBodyid": 17133.0,
+      "neuron_type": "Ti flexor MN",
+      "manc_type": "Ti flexor MN",
+      "manc_target": "Ti flexor",
+      "manc_exit_nerve": "ProLN_L",
+      "manc_match_certainty(1-5)": null,
+      "crosswalk_status": "candidate_type_agreement"
+    },
+    {
+      "body_id": 815344,
+      "mancBodyid": 10256.0,
+      "neuron_type": "Ti extensor MN",
+      "manc_type": null,
+      "manc_target": null,
+      "manc_exit_nerve": null,
+      "manc_match_certainty(1-5)": null,
+      "crosswalk_status": "missing_supplement_identity"
+    },
+    {
+      "body_id": 818057,
+      "mancBodyid": 15321.0,
+      "neuron_type": "Ti flexor MN",
+      "manc_type": "Ti flexor MN",
+      "manc_target": "Ti flexor",
+      "manc_exit_nerve": "ProLN_L",
+      "manc_match_certainty(1-5)": null,
+      "crosswalk_status": "candidate_type_agreement"
+    },
+    {
+      "body_id": 819384,
+      "mancBodyid": 17885.0,
+      "neuron_type": "Ti flexor MN",
+      "manc_type": "Acc. ti flexor MN",
+      "manc_target": "Acc. ti flexor",
+      "manc_exit_nerve": "ProLN_L",
+      "manc_match_certainty(1-5)": null,
+      "crosswalk_status": "type_conflict"
+    },
+    {
+      "body_id": 909831,
+      "mancBodyid": 14798.0,
+      "neuron_type": "Ti flexor MN",
+      "manc_type": "Ti flexor MN",
+      "manc_target": "Ti flexor",
+      "manc_exit_nerve": "ProLN_L",
+      "manc_match_certainty(1-5)": null,
+      "crosswalk_status": "candidate_type_agreement"
+    }
+  ]
+}

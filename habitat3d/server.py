@@ -213,7 +213,10 @@ if __name__=='__main__':
     p.add_argument('--data-dir',type=Path,default=HERE/'state')
     p.add_argument('--no-resume',action='store_true')
     p.add_argument('--brain-mode',choices=['full','mbon'],default='full')
+    p.add_argument('--engineering-sandbox',action='store_true',help='Explicitly run the historical artificial-port/body controller')
     args=p.parse_args()
+    if not args.engineering_sandbox:
+        p.error('This server is an engineering sandbox. Use --engineering-sandbox explicitly; reviewed physiological I/O and a validated closed loop are not yet available. See REALISM_STATUS.md.')
     runtime=Runtime(args.data_dir,args.seed,args.flies,not args.no_resume,args.brain_mode)
     httpd=ThreadingHTTPServer(('127.0.0.1',args.port),make_handler(runtime))
     thread=threading.Thread(target=runtime.loop,daemon=True);thread.start()

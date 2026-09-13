@@ -189,9 +189,9 @@ export class HabitatView{
       this.sun.intensity=2.1+s.weather.light*2;this.sun.color.setHSL(.11,.25+.1*s.weather.light,.8);
       for(const [id,e] of this.flies){
         const f=e.state;e.group.position.lerp(e.target,1-Math.exp(-dt*10));const diff=Math.atan2(Math.sin(e.heading-e.group.rotation.y),Math.cos(e.heading-e.group.rotation.y));e.group.rotation.y+=diff*(1-Math.exp(-dt*10));e.group.rotation.z=f.alive?0:Math.PI;
-        const flying=f.alive&&Math.max(0,f.motors?.[2]||0)>0&&f.y>groundY(f.x,f.z)+.5;
-        e.wings.forEach(w=>w.pivot.rotation.z=w.sign*(flying?.28+Math.sin(time*85)*.55*Math.max(0,f.motors?.[2]||0):.12));
-        e.legs.forEach(l=>l.pivot.rotation.x=f.alive&&f.speed>.1?Math.sin(time*13+l.phase)*.2:0);
+        // Only supplied joint states may move appendages. Missing physics stays static.
+        e.wings.forEach((w,i)=>w.pivot.rotation.z=Number.isFinite(f.wing_angles_rad?.[i])?f.wing_angles_rad[i]:w.sign*.12);
+        e.legs.forEach((l,i)=>l.pivot.rotation.x=Number.isFinite(f.leg_angles_rad?.[i])?f.leg_angles_rad[i]:0);
         e.marker.position.set(e.group.position.x,groundY(f.x,f.z)+.02,e.group.position.z);e.marker.visible=id===this.selected;
         e.sense.position.copy(e.marker.position);e.sense.visible=this.sense&&id===this.selected;
         e.trail.visible=this.trails;

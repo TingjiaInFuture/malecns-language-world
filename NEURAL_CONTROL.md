@@ -1,5 +1,12 @@
 # Neural actuation contract v1
 
+Historical engineering sandbox only. The physiological reference in
+`physiology/reference.py` is separate and has not been validated against animal
+recordings. `FullBrains.forward` now uses alpha=1-exp(-dt/tau), with the explicitly
+engineering tau=0.25/log(2) seconds. Thus the old recurrence below holds only at
+dt=0.25 s; dt=0 is a no-op and negative/nonfinite dt is rejected. Existing report
+hashes describe the prior source and are not current-code acceptance evidence.
+
 ## Causal boundary
 
 `ecology.Habitat.step` samples all individuals before updating any body, calls the
