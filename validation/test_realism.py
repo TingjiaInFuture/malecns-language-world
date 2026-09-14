@@ -447,6 +447,25 @@ class ExpansionTests(unittest.TestCase):
         self.assertGreater(club.max(), 0.)      # rectified speed responds
         self.assertEqual(THRESHOLD['majority_of_test_trials'], .5)
 
+    def test_public_data_sealed_sources(self):
+        from experiments import public_data
+        for name in ['paper_quality_tables', 'dallmann_supplement', 'motor_selected_assets']:
+            self.assertTrue(callable(getattr(public_data, name)))
+        with self.assertRaises(ValueError):
+            public_data.motor_selected_assets(('no_such_file.zip',))
+        # Every committed evidence generator now has a repo entry.
+        from experiments import mn_anatomy
+        self.assertTrue(callable(mn_anatomy.summarize))
+        from body import male_calibration
+        self.assertTrue(callable(male_calibration.run))
+        summary = mn_anatomy.summarize(pd.DataFrame(
+            [[None, 7.1, 2.3, .63, .1, .69, .07], [None, 6, None, 8, None, 6, None],
+             [None, 11.4, 3.4, .9, .12, 1.3, .23], [None, 3, None, 8, None, 6, None],
+             [None, 15.8, 4.4, 1.45, .4, 2.45, .31], [None, 6, None, 7, None, 6, None]]))
+        self.assertEqual([c['class'] for c in summary], ['slow', 'intermediate', 'fast'])
+        self.assertEqual(summary[0]['n_soma'], 6)
+        self.assertAlmostEqual(summary[2]['soma_diameter_um_mean'], 15.8)
+
     def test_proprioceptive_channels(self):
         from body.proprioception import ProprioceptiveChannel, femoral_chordotonal_hypothesis
         channel = ProprioceptiveChannel('joint_LFTibia_pitch', 'position_rad', 100., 1.0, 'fixture evidence')

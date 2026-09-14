@@ -1,6 +1,7 @@
 {
   "scope": "per-class MN anatomy from the Azevedo confocal workbook (paper Fig 3A source)",
-  "source": "MN_anatomy_confocal_measurements.xlsx (Dryad 76hdr7stb, publisher SHA-256 verified)",
+  "created_at": "2026-09-14T16:04:28.787131+00:00",
+  "source": "data\\physiology_raw\\motor\\MN_anatomy_confocal_measurements.xlsx (Dryad 76hdr7stb, publisher SHA-256 verified)",
   "classes": [
     {
       "class": "slow",

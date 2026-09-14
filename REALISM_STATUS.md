@@ -121,6 +121,7 @@
 .venv/Scripts/python.exe -m validation.full_neuron_benchmark
 .venv/Scripts/python.exe -m interfaces.evidence_inventory
 # Dryad 原始数据（需免费 API token；见 PUBLIC_DATA_STATUS.md）
+# public_data 现同时获取：FeCO 资产、逐 ROI 质量 CSV、Dallmann 补充表 2、运动 xlsx/已选 zip
 $env:DRYAD_API_TOKEN = '<token>'; .venv/Scripts/python.exe -m experiments.public_data
 .venv/Scripts/python.exe -m experiments.feco
 # 前瞻预注册感觉编码测试（register 必须先于任何数据下载）
@@ -130,6 +131,8 @@ $env:DRYAD_API_TOKEN = '<token>'; .venv/Scripts/python.exe -m experiments.feco_p
 # FeCO 逐细胞身份与运动试次实测标定
 .venv/Scripts/python.exe -m interfaces.feco_identity
 .venv/Scripts/python.exe -m experiments.motor_trials
+.venv/Scripts/python.exe -m experiments.mn_anatomy          # 逐类解剖汇总（需已校验 xlsx）
+.venv-body/Scripts/python.exe -m body.male_calibration     # 雄性质量校准回执
 # 生产签核（具名人工审核者）与真实回路闭环
 .venv/Scripts/python.exe -m interfaces.review --approve "<姓名>"
 .venv/Scripts/python.exe -m experiments.lf_tibia_circuit prepare

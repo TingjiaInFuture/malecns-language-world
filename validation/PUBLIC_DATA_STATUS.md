@@ -34,6 +34,8 @@
 
 完整机器清单：`validation/public-data-availability.json`。下载失败项的 `local_path` 为 null。
 
+**v1.0.1 封口说明**：逐 ROI 质量 CSV、Dallmann 补充表 2、运动解剖 xlsx 与已选试次 zip 的获取已并入 `experiments.public_data` 单入口（幂等、回执校验）；既有本地 CSV 的回执由提交的交叉核对证据哈希回填（回执内注明 bootstrap 来源）。运动试次 zip 的单流下载受 Merritt 每连接限速影响，大包耗时以小时计。
+
 ## 实际发现的身份问题
 
 通过 MaleCNS 注释的 `mancBodyid` 字段关联，不把 MANC 数值 ID 当成 MaleCNS ID。所有结果保留为候选。

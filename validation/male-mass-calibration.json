@@ -4,7 +4,7 @@
     "strain": "Canton-S",
     "age_days": 2.0,
     "body_mass_mg": 0.81,
-    "source": "Zumstein et al. 2004, J Exp Biol 207:3515-3522 (doi:10.1242/jeb.01181); male 0.81+-0.03 mg"
+    "source": "Zumstein et al. 2004, J Exp Biol 207:3515-3522 (doi:10.1242/jeb.01181); male 0.81+-0.03 mg, 2 d, 25 C"
   },
   "model_total_mass_raw": 0.0024942714780000004,
   "model_mass_unit": "g",
@@ -12,11 +12,15 @@
   "uniform_scale_factor": 0.32474412153784005,
   "scope": "uniform mass scaling only; geometry/inertia/muscle force calibration is separate",
   "biological_acceptance": false,
-  "sha256": "e7069d1d509b3aceace0fe781c031095c451e95fa737ca8fdd7d64e0a532a7ff",
+  "sha256": "a6cb324aed3377b47280ad9831b8dffb1f1fdbcbbbade026dbd66971290d1526",
   "finding": "FlyMimic model total mass is 2.494 mg in its gram/mm/uN unit system, i.e. 2.2x the measured 1.13+-0.03 mg female and 3.1x the 0.81 mg male (Zumstein 2004). The upstream body is not mass-calibrated to either sex; any force/statement normalized to model weight inherits this bias until recalibrated.",
   "comparison": {
     "measured_female_mg": 1.13,
     "measured_male_mg": 0.81,
     "model_mg": 2.4942714780000004
+  },
+  "flygym_version": "2.1.0",
+  "executed_source_sha256": {
+    "body/male_calibration.py": "82b54bd0ba3bee29125c78a19e231ddf6d8b39827b4ba729e311c0a9a380b881"
   }
 }

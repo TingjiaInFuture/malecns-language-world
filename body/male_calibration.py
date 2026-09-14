@@ -4,6 +4,7 @@ The pinned FlyGym musculoskeletal model is not male-calibrated. This module
 turns an explicitly sourced male mass measurement into a uniform mass scaling
 factor with a receipt, or refuses to run. It never edits the upstream XML in
 place; callers apply the factor to their own derived model copy.
+Run (in .venv-body): python -m body.male_calibration
 """
 import hashlib
 import json
@@ -77,3 +78,38 @@ def apply_uniform_mass_scale(xml_path, factor, out_path):
         raise ValueError('Refusing to overwrite an existing calibrated model')
     out_path.write_text(out, encoding='utf-8')
     return {'scaled_bodies': len(changed), 'factor': factor, 'out': str(out_path)}
+
+
+def run():
+    """Regenerate validation/male-mass-calibration.json against the pinned body model.
+
+    Run inside .venv-body: python -m body.male_calibration
+    """
+    import json
+    from flygym.compose import build_musculoskeletal_simulation
+    from importlib.metadata import version
+    male = MassMeasurement('male', 'Canton-S', 2., 0.81,
+                           'Zumstein et al. 2004, J Exp Biol 207:3515-3522 (doi:10.1242/jeb.01181); '
+                           'male 0.81+-0.03 mg, 2 d, 25 C')
+    sim, _ = build_musculoskeletal_simulation()
+    factor, receipt = calibration_factor(sim.mj_model, male, 'g')
+    receipt['finding'] = (
+        'FlyMimic model total mass is %.3f mg in its gram/mm/uN unit system, i.e. %.1fx the '
+        'measured 1.13+-0.03 mg female and %.1fx the 0.81 mg male (Zumstein 2004). The upstream '
+        'body is not mass-calibrated to either sex; any force/statement normalized to model '
+        'weight inherits this bias until recalibrated.'
+        % (receipt['model_total_mass_mg'], receipt['model_total_mass_mg']/1.13,
+           receipt['model_total_mass_mg']/0.81))
+    receipt['comparison'] = {'measured_female_mg': 1.13, 'measured_male_mg': 0.81,
+                             'model_mg': receipt['model_total_mass_mg']}
+    receipt['flygym_version'] = version('flygym')
+    receipt['executed_source_sha256'] = {'body/male_calibration.py':
+        hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+    Path('validation/male-mass-calibration.json').write_text(json.dumps(receipt, indent=2),
+                                                             encoding='utf-8')
+    print(json.dumps({'model_mg': receipt['model_total_mass_mg'],
+                      'male_factor': receipt['uniform_scale_factor']}))
+
+
+if __name__ == '__main__':
+    run()

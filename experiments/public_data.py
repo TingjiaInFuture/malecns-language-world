@@ -104,6 +104,58 @@ def dryad_catalog(doi):
     return {'doi':doi,'version':version,'files':files}
 
 
+def paper_quality_tables():
+    """Per-ROI synapse quality CSVs from the MaleCNS paper repository (no token)."""
+    base = 'https://raw.githubusercontent.com/flyconnectome/2025malecns/main/supplemental_data/'
+    names = ['male-cns-v1.0-traced-synapse-capture-by-roi.csv',
+             'male-cns-v1.0-synapse-connection-precision-recall-by-roi.csv',
+             'male-cns-v1.0-synapse-tbar-precision-recall-by-roi.csv']
+    records = []
+    for name in names:
+        record = retrieve(base+name, Path('data/raw/quality')/name)
+        record.update(dataset='flyconnectome/2025malecns supplemental_data')
+        records.append(record)
+        print(name, record['status'], flush=True)
+    return records
+
+
+def dallmann_supplement():
+    """Dallmann 2025 Supplementary Table 2 (open Springer URL, no token)."""
+    url = ('https://media.springernature.com/original/springer-static/esm/'
+           'art%3A10.1038%2Fs41586-025-09554-2/MediaObjects/41586_2025_9554_MOESM4_ESM.xlsx')
+    target = ROOT/'feco-author/dallmann2025_supp_table2.xlsx'
+    record = retrieve(url, target)
+    record.update(dataset='Dallmann et al. 2025 Nature 647:445-453, Supplementary Table 2')
+    print(target.name, record['status'], flush=True)
+    return [record]
+
+
+def motor_selected_assets(names=('MN_anatomy_confocal_measurements.xlsx',)):
+    """Token-gated Dryad motor files by catalog name; single-stream and idempotent.
+
+    The Merritt asset host has shown ~12 KB/s per-connection throttling; large
+    zips may take hours. Existing publisher-verified receipts short-circuit.
+    """
+    catalog = json.loads((ROOT/'motor-catalog.json').read_text(encoding='utf-8'))
+    available = {f['path']: f for f in catalog['files']}
+    unknown = [name for name in names if name not in available]
+    if unknown:
+        raise ValueError('Unknown motor catalog file(s): '+','.join(unknown))
+    headers = dryad_auth_headers()
+    if not headers:
+        raise RuntimeError('DRYAD_API_TOKEN required for motor assets')
+    records = []
+    for name in names:
+        entry = available.get(name)
+        record = retrieve(DRYAD+entry['_links']['stash:download']['href'], ROOT/'motor'/name,
+                          entry['digest'] if entry['digestType'] == 'sha-256' else None,
+                          entry['size'], headers=headers)
+        record.update(dataset='10.5061/dryad.76hdr7stb (Azevedo et al. 2020)')
+        records.append(record)
+        print(name, record['status'], flush=True)
+    return records
+
+
 def motor_author_assets():
     """Official related Zenodo record: analysis code, not raw trial archives."""
     catalog=get_json('https://zenodo.org/api/records/4527659')
@@ -152,6 +204,16 @@ def main():
             record=retrieve(file['uri'],ROOT/'manc'/file['filename'])
             report['assets'].append(dict(record,title=file.get('title'),dataset='MANC; eLife 96084 supplement'))
             print(file['filename'],record['status'],flush=True)
+    try:report['assets'].extend(paper_quality_tables())
+    except Exception as error:report['datasets'].append({'key':'paper_quality','status':'failed','error':str(error)})
+    try:report['assets'].extend(dallmann_supplement())
+    except Exception as error:report['datasets'].append({'key':'dallmann_supplement','status':'failed','error':str(error)})
+    try:
+        motor_names=['MN_anatomy_confocal_measurements.xlsx']
+        if (ROOT/'motor/180222_F1_C1.zip').exists() or dryad_auth_headers():
+            motor_names.append('180222_F1_C1.zip')
+        report['assets'].extend(motor_selected_assets(tuple(motor_names)))
+    except Exception as error:report['datasets'].append({'key':'motor_selected','status':'failed','error':str(error)})
     for name in ['data/README.md','code/utils/imaging_predict_gcamp.m','code/imaging_config.toml']:
         url='https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/'+name
         record=retrieve(url,ROOT/'feco-author'/name)

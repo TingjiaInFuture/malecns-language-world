@@ -4,6 +4,8 @@
 > 27 份验证证据、6 个经签核的生产运动端口、含已发表身份 FeCO 链的真实回路五条件闭环。
 > 生理验收（biological_acceptance）按证据边界保持 false；剩余开放项见文末。
 > 未完成的批量选拉代码与部分下载已于定版前清除，工作树干净。
+> **v1.0.1 自包含封口**：全部提交证据现在都能由仓库入口重生成（含此前手动下载的
+> Dallmann 补充表、逐 ROI 质量 CSV、运动解剖 xlsx 与质量校准/逐类解剖回执）。
 
 ## 接手先读
 
@@ -61,9 +63,11 @@
 .venv/Scripts/python.exe -m physiology.literature_priors
 .venv/Scripts/python.exe -m connectome.receptor_hypotheses
 .venv/Scripts/python.exe -m experiments.motor_unit_prediction
-# Dryad 原始数据（免费 token 经环境变量；见 PUBLIC_DATA_STATUS.md）
+# 公共数据单入口：FeCO 资产 + 逐 ROI 质量 CSV + Dallmann 补充表 2 + 运动 xlsx/已选 zip
 $env:DRYAD_API_TOKEN = '<token>'; .venv/Scripts/python.exe -m experiments.public_data
 .venv/Scripts/python.exe -m experiments.feco
+.venv/Scripts/python.exe -m experiments.mn_anatomy          # 逐类解剖（需已校验 xlsx）
+.venv-body/Scripts/python.exe -m body.male_calibration     # 雄性质量校准回执
 # 生产签核与真实回路闭环（prepare 用 .venv，run 用 .venv-body）
 .venv/Scripts/python.exe -m interfaces.review            # 查看自动审核；--approve "姓名" 写生产端口
 .venv/Scripts/python.exe -m experiments.lf_tibia_circuit prepare
