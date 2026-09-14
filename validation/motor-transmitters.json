@@ -1,0 +1,828 @@
+{
+  "scope": "per-T-bar transmitter prediction profiles for the reviewed LF tibia motor circuit",
+  "created_at": "2026-09-13T18:28:34.096905+00:00",
+  "source": "tbar-neurotransmitters-male-cns-v1.0.feather (predictions, not measurements)",
+  "processed_tbars": 45656140,
+  "bodies": 51,
+  "profiles": {
+    "909056": {
+      "role": "input_partner",
+      "neuron_type": "IN04B031",
+      "tbar_count": 332,
+      "mean_conf": 0.9135993781937174,
+      "mean_probabilities": {
+        "acetylcholine": 0.9480987505381366,
+        "dopamine": 2.041068999838121e-07,
+        "gaba": 0.009805091765094885,
+        "glutamate": 0.031615282168874166,
+        "histamine": 0.0009935693156816101,
+        "octopamine": 0.009387854885303623,
+        "serotonin": 9.9261117594868e-05
+      },
+      "dominant": "acetylcholine"
+    },
+    "800256": {
+      "role": "output_partner",
+      "neuron_type": "IN08A002",
+      "tbar_count": 2720,
+      "mean_conf": 0.9275970432688209,
+      "mean_probabilities": {
+        "acetylcholine": 0.12446015180835007,
+        "dopamine": 1.6997493109434626e-05,
+        "gaba": 0.016942621855174794,
+        "glutamate": 0.8562603859340443,
+        "histamine": 0.0011048087940948522,
+        "octopamine": 0.0006801951505590362,
+        "serotonin": 0.0005348256458188751
+      },
+      "dominant": "glutamate"
+    },
+    "801026": {
+      "role": "output_partner",
+      "neuron_type": "IN21A012",
+      "tbar_count": 935,
+      "mean_conf": 0.9111786326622581,
+      "mean_probabilities": {
+        "acetylcholine": 0.9815272120868459,
+        "dopamine": 1.839460594571251e-06,
+        "gaba": 0.005801120624045797,
+        "glutamate": 0.004320475920962598,
+        "histamine": 0.001785280240247061,
+        "octopamine": 0.006354707263797312,
+        "serotonin": 0.00020937288063189218
+      },
+      "dominant": "acetylcholine"
+    },
+    "931203": {
+      "role": "input_partner",
+      "neuron_type": "IN08A007",
+      "tbar_count": 1048,
+      "mean_conf": 0.9267528389246409,
+      "mean_probabilities": {
+        "acetylcholine": 0.19359036277666802,
+        "dopamine": 2.3759991342917635e-05,
+        "gaba": 0.02804591048878568,
+        "glutamate": 0.7735006521448834,
+        "histamine": 0.004153183614413026,
+        "octopamine": 0.0005786182864106104,
+        "serotonin": 0.00010750871509304585
+      },
+      "dominant": "glutamate"
+    },
+    "904707": {
+      "role": "input_partner",
+      "neuron_type": "IN13A006",
+      "tbar_count": 1677,
+      "mean_conf": 0.9267758061364071,
+      "mean_probabilities": {
+        "acetylcholine": 0.1917481845423588,
+        "dopamine": 5.117374088161713e-06,
+        "gaba": 0.8004523342298694,
+        "glutamate": 0.003870084596054765,
+        "histamine": 0.0013564695541707658,
+        "octopamine": 0.0017653988165872777,
+        "serotonin": 0.0008024138844406166
+      },
+      "dominant": "gaba"
+    },
+    "909831": {
+      "role": "REVIEWED_MN",
+      "neuron_type": "Ti flexor MN",
+      "tbar_count": 1,
+      "mean_conf": 0.796999990940094,
+      "mean_probabilities": {
+        "acetylcholine": 0.6051486134529114,
+        "dopamine": 4.895405436400324e-05,
+        "gaba": 0.256022185087204,
+        "glutamate": 0.019343573600053787,
+        "histamine": 0.11223207414150238,
+        "octopamine": 0.00429085548967123,
+        "serotonin": 0.0029137020464986563
+      },
+      "dominant": "acetylcholine"
+    },
+    "800136": {
+      "role": "output_partner",
+      "neuron_type": "IN06B035",
+      "tbar_count": 2371,
+      "mean_conf": 0.8745727517945713,
+      "mean_probabilities": {
+        "acetylcholine": 0.05462317581090939,
+        "dopamine": 0.0006330682203663453,
+        "gaba": 0.9046804664608599,
+        "glutamate": 0.028409925893190847,
+        "histamine": 0.006708128784367353,
+        "octopamine": 0.0006980923927393357,
+        "serotonin": 0.004247143541515919
+      },
+      "dominant": "gaba"
+    },
+    "818057": {
+      "role": "REVIEWED_MN",
+      "neuron_type": "Ti flexor MN",
+      "tbar_count": 6,
+      "mean_conf": 0.7384999891122183,
+      "mean_probabilities": {
+        "acetylcholine": 0.17368299700319767,
+        "dopamine": 0.00017560255976907987,
+        "gaba": 0.24564523979400596,
+        "glutamate": 0.06966989471887548,
+        "histamine": 0.4947107632954915,
+        "octopamine": 0.005310297972755507,
+        "serotonin": 0.010805218519332508
+      },
+      "dominant": "histamine"
+    },
+    "806154": {
+      "role": "output_partner",
+      "neuron_type": "IN04B094",
+      "tbar_count": 322,
+      "mean_conf": 0.9247546455134517,
+      "mean_probabilities": {
+        "acetylcholine": 0.9616538200365461,
+        "dopamine": 2.2472953573466657e-06,
+        "gaba": 0.004690809904414038,
+        "glutamate": 0.023561196025173176,
+        "histamine": 0.003245465640626343,
+        "octopamine": 0.00642149765482025,
+        "serotonin": 0.00042495725664797284
+      },
+      "dominant": "acetylcholine"
+    },
+    "800270": {
+      "role": "input_partner",
+      "neuron_type": "IN13A002",
+      "tbar_count": 2370,
+      "mean_conf": 0.9290708922132661,
+      "mean_probabilities": {
+        "acetylcholine": 0.012633135275058606,
+        "dopamine": 4.825330294887506e-06,
+        "gaba": 0.9801637206902484,
+        "glutamate": 0.002332258910650018,
+        "histamine": 0.0043862291637580654,
+        "octopamine": 0.00032426901487093263,
+        "serotonin": 0.00015557442795382595
+      },
+      "dominant": "gaba"
+    },
+    "800527": {
+      "role": "input_partner",
+      "neuron_type": "IN19A005",
+      "tbar_count": 1769,
+      "mean_conf": 0.9180955396930399,
+      "mean_probabilities": {
+        "acetylcholine": 0.04919180726351342,
+        "dopamine": 1.2842012061741344e-05,
+        "gaba": 0.9331564004303979,
+        "glutamate": 0.007929999313126131,
+        "histamine": 0.0036056158729323353,
+        "octopamine": 0.005784756469573137,
+        "serotonin": 0.00031853862317519053
+      },
+      "dominant": "gaba"
+    },
+    "908560": {
+      "role": "input_partner",
+      "neuron_type": "IN04B031",
+      "tbar_count": 250,
+      "mean_conf": 0.9112399930953979,
+      "mean_probabilities": {
+        "acetylcholine": 0.9707449016571045,
+        "dopamine": 4.071827685407925e-07,
+        "gaba": 0.00357868610881269,
+        "glutamate": 0.007598496660590172,
+        "histamine": 0.0004796343940834049,
+        "octopamine": 0.01720736078475602,
+        "serotonin": 0.0003905323152466735
+      },
+      "dominant": "acetylcholine"
+    },
+    "525454": {
+      "role": "output_partner",
+      "neuron_type": "DNg74_b",
+      "tbar_count": 5319,
+      "mean_conf": 0.8955653316097435,
+      "mean_probabilities": {
+        "acetylcholine": 0.03737853308120565,
+        "dopamine": 0.0014841476243994585,
+        "gaba": 0.9454915393441551,
+        "glutamate": 0.007059152512934661,
+        "histamine": 0.004944913202304575,
+        "octopamine": 0.0013876430950515086,
+        "serotonin": 0.0022540777802568398
+      },
+      "dominant": "gaba"
+    },
+    "852122": {
+      "role": "input_partner",
+      "neuron_type": NaN,
+      "tbar_count": 1232,
+      "mean_conf": 0.9068344213165246,
+      "mean_probabilities": {
+        "acetylcholine": 0.9656973842337921,
+        "dopamine": 1.9068612427869032e-05,
+        "gaba": 0.013209574087069357,
+        "glutamate": 0.011507946535243422,
+        "histamine": 0.003998982469434472,
+        "octopamine": 0.005259259734081646,
+        "serotonin": 0.00030781384406828373
+      },
+      "dominant": "acetylcholine"
+    },
+    "800155": {
+      "role": "input_partner",
+      "neuron_type": "IN03A004",
+      "tbar_count": 1685,
+      "mean_conf": 0.9243436147268165,
+      "mean_probabilities": {
+        "acetylcholine": 0.977776292169837,
+        "dopamine": 3.2841412532740648e-06,
+        "gaba": 0.008745681462486107,
+        "glutamate": 0.006012867614587158,
+        "histamine": 0.0013123501567496902,
+        "octopamine": 0.005956248914849352,
+        "serotonin": 0.00019326840196844756
+      },
+      "dominant": "acetylcholine"
+    },
+    "903834": {
+      "role": "output_partner",
+      "neuron_type": "IN13A005",
+      "tbar_count": 1542,
+      "mean_conf": 0.9141809239925578,
+      "mean_probabilities": {
+        "acetylcholine": 0.0310352775527964,
+        "dopamine": 1.4767304001403365e-05,
+        "gaba": 0.9427277939792736,
+        "glutamate": 0.013604745659817145,
+        "histamine": 0.008756969294624932,
+        "octopamine": 0.002730045270663519,
+        "serotonin": 0.0011304048397512618
+      },
+      "dominant": "gaba"
+    },
+    "904989": {
+      "role": "output_partner",
+      "neuron_type": "IN08A003",
+      "tbar_count": 1802,
+      "mean_conf": 0.9281054389860469,
+      "mean_probabilities": {
+        "acetylcholine": 0.14212816819103102,
+        "dopamine": 7.882078329172533e-05,
+        "gaba": 0.03726261397244845,
+        "glutamate": 0.8178524331300293,
+        "histamine": 0.0009625248758139897,
+        "octopamine": 0.001572684789626267,
+        "serotonin": 0.00014275520606134805
+      },
+      "dominant": "glutamate"
+    },
+    "800286": {
+      "role": "input_partner",
+      "neuron_type": "INXXX464",
+      "tbar_count": 2444,
+      "mean_conf": 0.930170650397307,
+      "mean_probabilities": {
+        "acetylcholine": 0.9841038206692804,
+        "dopamine": 1.5564292508909627e-05,
+        "gaba": 0.0032050356954037413,
+        "glutamate": 0.004538394961831557,
+        "histamine": 0.0016844664075525795,
+        "octopamine": 0.006069813016125683,
+        "serotonin": 0.0003829151860156966
+      },
+      "dominant": "acetylcholine"
+    },
+    "903840": {
+      "role": "input_partner",
+      "neuron_type": "IN04B037",
+      "tbar_count": 472,
+      "mean_conf": 0.9023771159729715,
+      "mean_probabilities": {
+        "acetylcholine": 0.9446122767561573,
+        "dopamine": 1.943161406907156e-06,
+        "gaba": 0.024211281704345434,
+        "glutamate": 0.01308123076184637,
+        "histamine": 0.00816064340977977,
+        "octopamine": 0.009051260011909694,
+        "serotonin": 0.0008813672332708246
+      },
+      "dominant": "acetylcholine"
+    },
+    "800802": {
+      "role": "input_partner",
+      "neuron_type": "IN21A004",
+      "tbar_count": 641,
+      "mean_conf": 0.9092839217967065,
+      "mean_probabilities": {
+        "acetylcholine": 0.08534447349863658,
+        "dopamine": 2.80357160578368e-06,
+        "gaba": 0.8992187198536259,
+        "glutamate": 0.004525677912998687,
+        "histamine": 0.0006761610358035826,
+        "octopamine": 0.010053220676220885,
+        "serotonin": 0.00017896172994511295
+      },
+      "dominant": "gaba"
+    },
+    "812963": {
+      "role": "output_partner",
+      "neuron_type": "GFC4",
+      "tbar_count": 231,
+      "mean_conf": 0.9095108227812366,
+      "mean_probabilities": {
+        "acetylcholine": 0.9508869836340735,
+        "dopamine": 7.15913688184498e-05,
+        "gaba": 0.00793838583525609,
+        "glutamate": 0.015867491108083137,
+        "histamine": 0.02136516675264353,
+        "octopamine": 0.0018552567885603527,
+        "serotonin": 0.0020151134819346448
+      },
+      "dominant": "acetylcholine"
+    },
+    "800931": {
+      "role": "output_partner",
+      "neuron_type": "IN13A009",
+      "tbar_count": 1726,
+      "mean_conf": 0.9016755396631888,
+      "mean_probabilities": {
+        "acetylcholine": 0.02650792043664744,
+        "dopamine": 2.2236752661826895e-05,
+        "gaba": 0.9306161415052027,
+        "glutamate": 0.00472995754156525,
+        "histamine": 0.03677579047032941,
+        "octopamine": 0.00031523837310039684,
+        "serotonin": 0.0010326988803185545
+      },
+      "dominant": "gaba"
+    },
+    "800694": {
+      "role": "output_partner",
+      "neuron_type": "IN19A029",
+      "tbar_count": 852,
+      "mean_conf": 0.9183943503899193,
+      "mean_probabilities": {
+        "acetylcholine": 0.03227046947104271,
+        "dopamine": 3.366129188403015e-06,
+        "gaba": 0.9608057356776206,
+        "glutamate": 0.003531462456615633,
+        "histamine": 0.0028528333488896055,
+        "octopamine": 0.000455835463643878,
+        "serotonin": 8.027745382994208e-05
+      },
+      "dominant": "gaba"
+    },
+    "809912": {
+      "role": "REVIEWED_MN",
+      "neuron_type": "Ti flexor MN",
+      "tbar_count": 1,
+      "mean_conf": 0.7350000143051147,
+      "mean_probabilities": {
+        "acetylcholine": 0.003956930246204138,
+        "dopamine": 0.0019040261395275593,
+        "gaba": 0.009891659952700138,
+        "glutamate": 0.002391217276453972,
+        "histamine": 0.022123118862509727,
+        "octopamine": 0.049151644110679626,
+        "serotonin": 0.9105813503265381
+      },
+      "dominant": "serotonin"
+    },
+    "819384": {
+      "role": "output_partner",
+      "neuron_type": "Ti flexor MN",
+      "tbar_count": 3,
+      "mean_conf": 0.7883333365122477,
+      "mean_probabilities": {
+        "acetylcholine": 0.18164653579394022,
+        "dopamine": 0.0014987816988044262,
+        "gaba": 0.3383621374766032,
+        "glutamate": 0.04069301082442204,
+        "histamine": 0.34647703170776367,
+        "octopamine": 0.062329114822205156,
+        "serotonin": 0.02899341215379536
+      },
+      "dominant": "histamine"
+    },
+    "802361": {
+      "role": "output_partner",
+      "neuron_type": "Sternotrochanter MN",
+      "tbar_count": 39,
+      "mean_conf": 0.8360512669269855,
+      "mean_probabilities": {
+        "acetylcholine": 0.17629368340548796,
+        "dopamine": 0.01653573518289547,
+        "gaba": 0.11410619607434058,
+        "glutamate": 0.3348823969031517,
+        "histamine": 0.30977053560304624,
+        "octopamine": 0.020067152947003473,
+        "serotonin": 0.02834429779357332
+      },
+      "dominant": "glutamate"
+    },
+    "800701": {
+      "role": "output_partner",
+      "neuron_type": "IN13A008",
+      "tbar_count": 1179,
+      "mean_conf": 0.8966463008505293,
+      "mean_probabilities": {
+        "acetylcholine": 0.020724493271036926,
+        "dopamine": 0.00010563927803797327,
+        "gaba": 0.9400910979312188,
+        "glutamate": 0.023438156383946234,
+        "histamine": 0.014263300846645224,
+        "octopamine": 0.0009601286578564492,
+        "serotonin": 0.0004172100735197278
+      },
+      "dominant": "gaba"
+    },
+    "802041": {
+      "role": "input_partner",
+      "neuron_type": "IN14A004",
+      "tbar_count": 1394,
+      "mean_conf": 0.9281614191049825,
+      "mean_probabilities": {
+        "acetylcholine": 0.12979100522728185,
+        "dopamine": 4.079735286680436e-05,
+        "gaba": 0.04913495008538409,
+        "glutamate": 0.8079830881854896,
+        "histamine": 0.012409119675713598,
+        "octopamine": 0.00043367456147414284,
+        "serotonin": 0.0002073771172291531
+      },
+      "dominant": "glutamate"
+    },
+    "802888": {
+      "role": "output_partner",
+      "neuron_type": "IN17A028",
+      "tbar_count": 817,
+      "mean_conf": 0.9072680441956771,
+      "mean_probabilities": {
+        "acetylcholine": 0.9840165965414106,
+        "dopamine": 1.1932590803939934e-06,
+        "gaba": 0.0018750979417819311,
+        "glutamate": 0.008213211002404405,
+        "histamine": 0.0021946164798331423,
+        "octopamine": 0.003639168239262001,
+        "serotonin": 6.013141530852515e-05
+      },
+      "dominant": "acetylcholine"
+    },
+    "13130": {
+      "role": "input_partner",
+      "neuron_type": "DNg105",
+      "tbar_count": 4613,
+      "mean_conf": 0.9075441036672983,
+      "mean_probabilities": {
+        "acetylcholine": 0.03418542839574217,
+        "dopamine": 0.0026811844304188135,
+        "gaba": 0.9432673266788619,
+        "glutamate": 0.005435754617700185,
+        "histamine": 0.006469526863256881,
+        "octopamine": 0.004273247520111709,
+        "serotonin": 0.003687518216477205
+      },
+      "dominant": "gaba"
+    },
+    "800075": {
+      "role": "input_partner",
+      "neuron_type": "IN19B003",
+      "tbar_count": 2822,
+      "mean_conf": 0.9385868313885344,
+      "mean_probabilities": {
+        "acetylcholine": 0.9845739383168629,
+        "dopamine": 8.51126729947367e-05,
+        "gaba": 0.0023890300820536073,
+        "glutamate": 0.004492291031025144,
+        "histamine": 0.0020682313249846995,
+        "octopamine": 0.0055971227602027935,
+        "serotonin": 0.0007942719377827987
+      },
+      "dominant": "acetylcholine"
+    },
+    "806605": {
+      "role": "output_partner",
+      "neuron_type": "IN16B061",
+      "tbar_count": 267,
+      "mean_conf": 0.9108089833670341,
+      "mean_probabilities": {
+        "acetylcholine": 0.12737392290924374,
+        "dopamine": 2.895861661012674e-07,
+        "gaba": 0.022044330051392037,
+        "glutamate": 0.8452861230918084,
+        "histamine": 0.0044864658305274535,
+        "octopamine": 0.0007790372090613339,
+        "serotonin": 2.981420459321029e-05
+      },
+      "dominant": "glutamate"
+    },
+    "804941": {
+      "role": "output_partner",
+      "neuron_type": "Fe reductor MN",
+      "tbar_count": 13,
+      "mean_conf": 0.7593076825141907,
+      "mean_probabilities": {
+        "acetylcholine": 0.06646096881908867,
+        "dopamine": 0.001018049648057338,
+        "gaba": 0.07214616994874981,
+        "glutamate": 0.030072932704710044,
+        "histamine": 0.7694883782130021,
+        "octopamine": 0.006680496784750945,
+        "serotonin": 0.05413300215821856
+      },
+      "dominant": "histamine"
+    },
+    "905167": {
+      "role": "input_partner",
+      "neuron_type": "IN08A005",
+      "tbar_count": 1201,
+      "mean_conf": 0.9365761832432584,
+      "mean_probabilities": {
+        "acetylcholine": 0.1355367556216659,
+        "dopamine": 2.1827605731127464e-05,
+        "gaba": 0.0339514614159643,
+        "glutamate": 0.8248328789882517,
+        "histamine": 0.003859691732599137,
+        "octopamine": 0.0014588016917148367,
+        "serotonin": 0.00033858850340964927
+      },
+      "dominant": "glutamate"
+    },
+    "802638": {
+      "role": "output_partner",
+      "neuron_type": "IN19A016",
+      "tbar_count": 706,
+      "mean_conf": 0.9106133090537939,
+      "mean_probabilities": {
+        "acetylcholine": 0.035326616091273785,
+        "dopamine": 1.213207552748079e-05,
+        "gaba": 0.9398069277025822,
+        "glutamate": 0.02063407853346568,
+        "histamine": 0.003027542261236732,
+        "octopamine": 0.0007687108468971078,
+        "serotonin": 0.0004239877696112486
+      },
+      "dominant": "gaba"
+    },
+    "803803": {
+      "role": "output_partner",
+      "neuron_type": "Pleural remotor/abductor MN",
+      "tbar_count": 29,
+      "mean_conf": 0.8188620476887144,
+      "mean_probabilities": {
+        "acetylcholine": 0.16374916410683815,
+        "dopamine": 0.0031357988262843495,
+        "gaba": 0.3482448774678954,
+        "glutamate": 0.061509577652533814,
+        "histamine": 0.3982630033268939,
+        "octopamine": 0.013565467522437695,
+        "serotonin": 0.01153212033175115
+      },
+      "dominant": "histamine"
+    },
+    "10717": {
+      "role": "input_partner",
+      "neuron_type": "DNg93",
+      "tbar_count": 5113,
+      "mean_conf": 0.8835182902562555,
+      "mean_probabilities": {
+        "acetylcholine": 0.03593392015027519,
+        "dopamine": 0.0014896205983143617,
+        "gaba": 0.9488049080726885,
+        "glutamate": 0.00762456253889168,
+        "histamine": 0.0022065163701849005,
+        "octopamine": 0.0017159135376587017,
+        "serotonin": 0.002224554124818387
+      },
+      "dominant": "gaba"
+    },
+    "800863": {
+      "role": "input_partner",
+      "neuron_type": "INXXX466",
+      "tbar_count": 1492,
+      "mean_conf": 0.9229048100617232,
+      "mean_probabilities": {
+        "acetylcholine": 0.9911805471210633,
+        "dopamine": 4.067882161691687e-06,
+        "gaba": 0.0016899099528237718,
+        "glutamate": 0.0027228466542681116,
+        "histamine": 0.0017083558705882323,
+        "octopamine": 0.0026578965449911554,
+        "serotonin": 3.637914911339991e-05
+      },
+      "dominant": "acetylcholine"
+    },
+    "806368": {
+      "role": "input_partner",
+      "neuron_type": "IN04B031",
+      "tbar_count": 411,
+      "mean_conf": 0.9056666663093288,
+      "mean_probabilities": {
+        "acetylcholine": 0.9680760991544329,
+        "dopamine": 1.0926497136089976e-06,
+        "gaba": 0.008308207251385325,
+        "glutamate": 0.01458531486010972,
+        "histamine": 0.004319887424107083,
+        "octopamine": 0.004455369835792544,
+        "serotonin": 0.00025401636157058795
+      },
+      "dominant": "acetylcholine"
+    },
+    "800099": {
+      "role": "input_partner",
+      "neuron_type": "DNge079",
+      "tbar_count": 4860,
+      "mean_conf": 0.8927767544248958,
+      "mean_probabilities": {
+        "acetylcholine": 0.022412477624401406,
+        "dopamine": 0.0029321420981203066,
+        "gaba": 0.9618773095798391,
+        "glutamate": 0.003970123901702138,
+        "histamine": 0.00396751889969773,
+        "octopamine": 0.002013906501309631,
+        "serotonin": 0.0028265242741506453
+      },
+      "dominant": "gaba"
+    },
+    "801772": {
+      "role": "input_partner",
+      "neuron_type": "INXXX058",
+      "tbar_count": 1743,
+      "mean_conf": 0.8881795746255591,
+      "mean_probabilities": {
+        "acetylcholine": 0.047321289556446405,
+        "dopamine": 0.000617258259849387,
+        "gaba": 0.9314782551702965,
+        "glutamate": 0.009468621364826606,
+        "histamine": 0.006945694597247534,
+        "octopamine": 0.0010581400914740787,
+        "serotonin": 0.0031107500765083815
+      },
+      "dominant": "gaba"
+    },
+    "809452": {
+      "role": "input_partner",
+      "neuron_type": "IN01A063_a",
+      "tbar_count": 308,
+      "mean_conf": 0.8826558601546597,
+      "mean_probabilities": {
+        "acetylcholine": 0.9485355580781961,
+        "dopamine": 0.00016755603632362466,
+        "gaba": 0.007182362580304518,
+        "glutamate": 0.020637675132730963,
+        "histamine": 0.009130286859934651,
+        "octopamine": 0.012877145251062662,
+        "serotonin": 0.0014694421238707698
+      },
+      "dominant": "acetylcholine"
+    },
+    "803439": {
+      "role": "input_partner",
+      "neuron_type": "IN04B014",
+      "tbar_count": 846,
+      "mean_conf": 0.9096678391134203,
+      "mean_probabilities": {
+        "acetylcholine": 0.9546102398112593,
+        "dopamine": 2.3546547971690723e-05,
+        "gaba": 0.004101256224003138,
+        "glutamate": 0.007663225155129993,
+        "histamine": 0.003473366327786347,
+        "octopamine": 0.029534164662021554,
+        "serotonin": 0.0005941815344581956
+      },
+      "dominant": "acetylcholine"
+    },
+    "815344": {
+      "role": "REVIEWED_MN",
+      "neuron_type": "Ti extensor MN",
+      "tbar_count": 30,
+      "mean_conf": 0.8136999984582265,
+      "mean_probabilities": {
+        "acetylcholine": 0.3438943359690408,
+        "dopamine": 0.016645564536641663,
+        "gaba": 0.1097464778771003,
+        "glutamate": 0.2024720346244673,
+        "histamine": 0.3014087338000536,
+        "octopamine": 0.011567704802534233,
+        "serotonin": 0.01426518585261268
+      },
+      "dominant": "acetylcholine"
+    },
+    "807281": {
+      "role": "output_partner",
+      "neuron_type": "Tergopleural/Pleural promotor MN",
+      "tbar_count": 17,
+      "mean_conf": 0.7791764771237093,
+      "mean_probabilities": {
+        "acetylcholine": 0.07339947889832889,
+        "dopamine": 0.003788205346020678,
+        "gaba": 0.07735251525745672,
+        "glutamate": 0.032636690063073355,
+        "histamine": 0.7380625062129077,
+        "octopamine": 0.010857463269905351,
+        "serotonin": 0.06390316561138366
+      },
+      "dominant": "histamine"
+    },
+    "802546": {
+      "role": "input_partner",
+      "neuron_type": "IN13A014",
+      "tbar_count": 501,
+      "mean_conf": 0.914031935785107,
+      "mean_probabilities": {
+        "acetylcholine": 0.02264232148682167,
+        "dopamine": 4.519649352963273e-05,
+        "gaba": 0.9316798798338382,
+        "glutamate": 0.008174030185526537,
+        "histamine": 0.02793990311021368,
+        "octopamine": 0.008938554600626232,
+        "serotonin": 0.0005801067586462831
+      },
+      "dominant": "gaba"
+    },
+    "800374": {
+      "role": "output_partner",
+      "neuron_type": "IN19A007",
+      "tbar_count": 2064,
+      "mean_conf": 0.9193294658217319,
+      "mean_probabilities": {
+        "acetylcholine": 0.04398690093879032,
+        "dopamine": 3.008362352477346e-06,
+        "gaba": 0.9223700489184653,
+        "glutamate": 0.025220228034448847,
+        "histamine": 0.004780046309727107,
+        "octopamine": 0.003481812016292143,
+        "serotonin": 0.00015797629710632041
+      },
+      "dominant": "gaba"
+    },
+    "801017": {
+      "role": "input_partner",
+      "neuron_type": "IN21A002",
+      "tbar_count": 1354,
+      "mean_conf": 0.915935018125982,
+      "mean_probabilities": {
+        "acetylcholine": 0.23293426755246222,
+        "dopamine": 0.00022784153789928124,
+        "gaba": 0.04913393561583854,
+        "glutamate": 0.7025892468007003,
+        "histamine": 0.011785743296236413,
+        "octopamine": 0.0006879755374634166,
+        "serotonin": 0.002640985511548568
+      },
+      "dominant": "glutamate"
+    },
+    "800636": {
+      "role": "REVIEWED_MN",
+      "neuron_type": "Ti extensor MN",
+      "tbar_count": 31,
+      "mean_conf": 0.8344516061967419,
+      "mean_probabilities": {
+        "acetylcholine": 0.061508855872577234,
+        "dopamine": 0.003528562521809832,
+        "gaba": 0.4883328065155975,
+        "glutamate": 0.02304471366392869,
+        "histamine": 0.33138180610342627,
+        "octopamine": 0.06331403565690702,
+        "serotonin": 0.028889240843484237
+      },
+      "dominant": "gaba"
+    },
+    "807165": {
+      "role": "REVIEWED_MN",
+      "neuron_type": "Ti flexor MN",
+      "tbar_count": 10,
+      "mean_conf": 0.8525999665260315,
+      "mean_probabilities": {
+        "acetylcholine": 0.7005060873925686,
+        "dopamine": 3.4369610375506453e-07,
+        "gaba": 0.10440603606402873,
+        "glutamate": 0.18870403203181924,
+        "histamine": 0.0008862623362801969,
+        "octopamine": 0.005328365170862525,
+        "serotonin": 0.00016885152654140257
+      },
+      "dominant": "acetylcholine"
+    },
+    "906750": {
+      "role": "input_partner",
+      "neuron_type": "IN20A.22A004",
+      "tbar_count": 489,
+      "mean_conf": 0.9261063521381292,
+      "mean_probabilities": {
+        "acetylcholine": 0.9492113988823686,
+        "dopamine": 0.00027333750758630547,
+        "gaba": 0.022428466519198033,
+        "glutamate": 0.006247497441062365,
+        "histamine": 0.01556385877525652,
+        "octopamine": 0.0034758097490134835,
+        "serotonin": 0.0027995986973496983
+      },
+      "dominant": "acetylcholine"
+    }
+  },
+  "note": "Dominant transmitter of the largest premotor inputs constrains receptor hypotheses for the closed-loop review; unclear predictions stay unclear.",
+  "biological_acceptance": false,
+  "source_receipt": "data/raw/tbar-neurotransmitters-male-cns-v1.0.feather.receipt.json is authoritative"
+}

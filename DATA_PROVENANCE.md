@@ -29,3 +29,26 @@ are recorded in `selection.json`; full recurrence uses every published row.
 See `validation/graph_audit.json` for the generated graph inventory and checksums.
 Neurotransmitter signs, normalization, model kinetics, sensory encoding and motor
 interfaces are assumptions, not measured physiological synaptic parameters.
+
+## Synapse-level exports (added 2026-09-14, same bucket and CC-BY license)
+
+Downloaded via `download_data.py --profile all-tables` with resume + hash receipts
+(written next to each file as `*.receipt.json`):
+
+- `syn-points-male-cns-v1.0-minconf-0.5.feather` — every pre/post synapse site
+  with position (8 nm voxel units), body id, kind and encompassing ROI(s).
+- `syn-partners-male-cns-v1.0-minconf-0.5.feather` — partner pairs with
+  per-synapse confidences and `primary_post` neuropil.
+- `tbar-neurotransmitters-male-cns-v1.0.feather` — per-presynapse transmitter
+  prediction probabilities.
+- `body-stats-male-cns-v1.0-minconf-0.5.feather` — per-segment synapse statistics.
+
+Per-ROI synapse quality tables (precision/recall, traced-synapse capture) come
+from the paper repository
+`https://github.com/flyconnectome/2025malecns/tree/main/supplemental_data`
+(saved under `data/raw/quality/`).
+
+Literature-anchored physiology priors (`physiology/literature_priors.py`) cite
+Azevedo et al. 2020 eLife 9:e56754, Gu & O'Dowd 2006 J Neurosci and Zumstein et
+al. 2004 J Exp Biol; most values are female-preparation measurements and the
+male transfer is an explicit hypothesis recorded per record.

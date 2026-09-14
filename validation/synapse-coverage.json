@@ -1,0 +1,16 @@
+{
+  "scope": "per-ROI synapse-side coverage and loss for the compiled Traced identities",
+  "source": "data\\raw\\syn-points-male-cns-v1.0-minconf-0.5.feather",
+  "roi_column": "primary",
+  "totals": {
+    "known_pre": 42658913,
+    "known_post": 130413767,
+    "unknown_pre": 2997227,
+    "unknown_post": 181419476
+  },
+  "processed_sides": 357489383,
+  "roi_count_known": 146,
+  "roi_count_unknown": 146,
+  "biological_acceptance": false,
+  "note": "Coverage is of synapse sides, not weighted connectivity; cross-check against data/raw/quality CSVs (paper per-ROI precision/recall) before drawing conclusions."
+}

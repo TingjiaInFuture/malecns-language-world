@@ -1,0 +1,25 @@
+{
+  "scope": "passive properties from one verified Azevedo ephys session",
+  "created_at": "2026-09-14T12:48:50.032070+00:00",
+  "source": "data\\physiology_raw\\motor\\180222_F1_C1.zip",
+  "source_sha256": "c904f419a52f7993f4146e578a760168178b0dc9ea61c19e9708f2adc99a6e33",
+  "driver_tag": "22a08",
+  "cell_identity": "intermediate flexor MN (R22A08-Gal4, BDSC 47902)",
+  "identity_source": "Azevedo et al. 2020 eLife 9:e56754, Fig 4-fig supp 1 driver list",
+  "notes_file": "notes_180222_F1_C1.txt",
+  "n_trials": 121,
+  "n_excluded_by_author": 5,
+  "resting_mv": -44.87267776013749,
+  "subthreshold_slope_mv_per_pa": 0.1884446729792974,
+  "input_resistance_mohm": 188.4446729792974,
+  "seal_resistance_gohm": 14.15145118261555,
+  "rin_method": "single subthreshold step (62.5 pA, n=8 trials)",
+  "rheobase_pa": 100.0,
+  "units": "voltage_1 traces are in mV (session resting mean lands in the biological MN range), current in pA, 10000 Hz, sweep 0.42 s (pre 0.12, stim 0.2)",
+  "caveats": [
+    "Single animal/session of one driver-identified cell",
+    "Class means in the paper (intermediate Rin ~300 MOhm, Vrest ~-60 mV) differ from this single cell; per-cell variance is expected and reported as measured",
+    "SealAndLeak estimate is a pulse-median approximation, not the authors' full pipeline"
+  ],
+  "biological_acceptance": false
+}

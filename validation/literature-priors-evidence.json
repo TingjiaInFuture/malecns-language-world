@@ -1,0 +1,93 @@
+{
+  "scope": "literature-anchored priors sampled for reviewed motor candidates",
+  "created_at": "2026-09-13T17:15:57.377945+00:00",
+  "sampled_neurons": [
+    {
+      "body_id": 800636,
+      "neuron_type": "Ti extensor MN",
+      "capacitance_pf": 10.0,
+      "leak_ns": 2.262942711737611,
+      "resting_mv": -58.81584901593438,
+      "synapse_tau_ms": 5.0,
+      "adaptation_tau_ms": 100.0,
+      "adaptation_ns": 0.1
+    },
+    {
+      "body_id": 807165,
+      "neuron_type": "Ti flexor MN",
+      "capacitance_pf": 10.0,
+      "leak_ns": 5.370852405764559,
+      "resting_mv": -49.58580266135503,
+      "synapse_tau_ms": 5.0,
+      "adaptation_tau_ms": 100.0,
+      "adaptation_ns": 0.1
+    },
+    {
+      "body_id": 809912,
+      "neuron_type": "Ti flexor MN",
+      "capacitance_pf": 10.0,
+      "leak_ns": 4.6524223463899546,
+      "resting_mv": -56.069675542336626,
+      "synapse_tau_ms": 5.0,
+      "adaptation_tau_ms": 100.0,
+      "adaptation_ns": 0.1
+    },
+    {
+      "body_id": 815344,
+      "neuron_type": "Ti extensor MN",
+      "capacitance_pf": 10.0,
+      "leak_ns": 4.835958453595823,
+      "resting_mv": -61.335100069141824,
+      "synapse_tau_ms": 5.0,
+      "adaptation_tau_ms": 100.0,
+      "adaptation_ns": 0.1
+    },
+    {
+      "body_id": 818057,
+      "neuron_type": "Ti flexor MN",
+      "capacitance_pf": 10.0,
+      "leak_ns": 2.422993248625315,
+      "resting_mv": -62.14652580246428,
+      "synapse_tau_ms": 5.0,
+      "adaptation_tau_ms": 100.0,
+      "adaptation_ns": 0.1
+    },
+    {
+      "body_id": 819384,
+      "neuron_type": "Ti flexor MN",
+      "capacitance_pf": 10.0,
+      "leak_ns": 5.2238391538648,
+      "resting_mv": -58.445378868220345,
+      "synapse_tau_ms": 5.0,
+      "adaptation_tau_ms": 100.0,
+      "adaptation_ns": 0.1
+    },
+    {
+      "body_id": 909831,
+      "neuron_type": "Ti flexor MN",
+      "capacitance_pf": 10.0,
+      "leak_ns": 6.608225740811129,
+      "resting_mv": -54.186718667625236,
+      "synapse_tau_ms": 5.0,
+      "adaptation_tau_ms": 100.0,
+      "adaptation_ns": 0.1
+    }
+  ],
+  "evidence_class_counts": {
+    "('capacitance_pf', 'software_fixture')": 7,
+    "('leak_ns', 'inferred')": 2,
+    "('resting_mv', 'inferred')": 2,
+    "('synapse_tau_ms', 'software_fixture')": 7,
+    "('adaptation_tau_ms', 'software_fixture')": 7,
+    "('adaptation_ns', 'software_fixture')": 7,
+    "('leak_ns', 'measured')": 5,
+    "('resting_mv', 'measured')": 5
+  },
+  "records_sha256": "e6f6770a523e54f8e0136a390609ab66742d30f24816c346565fecef28f2b782",
+  "caveats": [
+    "Per-cell fast/intermediate/slow class assignment pending measured trials",
+    "Most source measurements are female; male transfer is an explicit hypothesis",
+    "Fixture-class parameters remain placeholders, not physiology"
+  ],
+  "biological_acceptance": false
+}

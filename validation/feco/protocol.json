@@ -1,0 +1,21 @@
+{
+  "dataset_sha256": "d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd",
+  "split": {
+    "8.0": "train",
+    "1.0": "train",
+    "10.0": "train",
+    "4.0": "train",
+    "9.0": "validation",
+    "11.0": "test",
+    "5.0": "test"
+  },
+  "created_at": "2026-09-14T12:16:19.579072+00:00",
+  "target": "calcium",
+  "forbidden_target": "predicted_calcium",
+  "angle_unit": "degree",
+  "time_unit": "second",
+  "model": "author hook_flex threshold=-50 deg/s; kernel rise=.03 s decay=.30 s; train-only affine calibration",
+  "scope": "retrospective held-out-animal sensory analysis, not prospective blinded physiology",
+  "acceptance_threshold": null,
+  "conditions": "Per-animal sex/strain/age/temperature require study metadata extraction"
+}

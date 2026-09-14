@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-09-14T12:52:24.333901+00:00",
+  "scope": "prospective held-out-animal test of modality-specific FeCO encoding models",
+  "split_rule": "per-animal hash split 60/20/20, identities read before targets (experiments.feco.split_animals)",
+  "calibration": "train-set-only affine fit (gain, offset) per dataset",
+  "datasets": {
+    "hook_flexion_01_magnet_Mamiya2018.parquet": {
+      "model": "hook-flexion phasic filter: flexion threshold -50 deg/s, kernel rise .03 s decay .30 s",
+      "kicker": "Mamiya 2018 Neuron 100:636, Fig 4C/5C: hook afferents are flexion-selective phasic",
+      "publisher_sha256": "ea61eee2d26a5e6fddb7aebaee06e13e11c9b87427d0f70b350760ab0ae545be"
+    },
+    "hook_extension_magnet.parquet": {
+      "model": "hook-extension phasic filter: extension threshold +50 deg/s, same kernel, mirrored",
+      "kicker": "same afferent class driven in the extension direction",
+      "publisher_sha256": "a1b84a54b0967e84ccc0dc5855493d7a53a8c71d67b820180eef164ad8d01afd"
+    },
+    "claw_magnet_Mamiya2018.parquet": {
+      "model": "claw tonic position: linear regression on femur-tibia angle",
+      "kicker": "Mamiya 2018, Fig 4A/5D-E: claw afferents are tonic position encoders",
+      "publisher_sha256": "7fc8a108258529d52815dc6e28b84958afffa073362ae41d75f551f2d83d01da"
+    },
+    "club_magnet_Mamiya2018.parquet": {
+      "model": "club bidirectional phasic: rectified angular speed |dtheta/dt| through the kernel",
+      "kicker": "Mamiya 2018, Fig 4B: club afferents respond to movement in both directions",
+      "publisher_sha256": "1b5c797ff3d3242b096530e9b881f1e09a296e4af99cbfc03a98c94fe0341fe1"
+    }
+  },
+  "thresholds": {
+    "majority_of_test_trials": 0.5,
+    "pooled_test_mse_below_baseline": true,
+    "justification": "Minimal a priori criterion for predictive content on unseen animals; not derived from any observed result."
+  },
+  "evaluation_rule": "For each dataset: model beats the per-animal constant calcium baseline on >50% of test trials AND pooled test MSE < pooled baseline MSE. A dataset passes only if both hold; anything else fails or is reported as schema_mismatch when columns differ from the FeCO adapter contract.",
+  "no_retrofit": "If any model form or threshold were changed after seeing data, the run must be labeled retrospective."
+}

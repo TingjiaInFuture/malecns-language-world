@@ -2,16 +2,43 @@
 
 Failed HTTP requests remain failures, with local_path=null. No credential lookup,
 synthetic substitution, or automatic download of the 48 GB motor dataset.
+
+Dryad policy (verified 2026-09-14): anonymous API users cannot download file
+bytes; a free self-service API account is required. Set DRYAD_API_TOKEN to a
+current bearer token (profile -> "Create a Dryad API account"; refresh via
+POST https://datadryad.org/oauth/token with client_id/client_secret,
+grant_type=client_credentials; tokens last 10 hours). The token is used only
+as a request header and is never written to receipts or reports.
 """
 from datetime import datetime, timezone
 import hashlib
 import json
+import os
 from pathlib import Path
 import urllib.request
 from urllib.parse import quote
 
 ROOT=Path('data/physiology_raw')
 DRYAD='https://datadryad.org'
+
+
+def dryad_auth_headers():
+    token=os.environ.get('DRYAD_API_TOKEN','').strip()
+    return {'Authorization':'Bearer '+token} if token else None
+
+
+class _AuthlessRedirect(urllib.request.HTTPRedirectHandler):
+    """Strip the bearer header when Dryad redirects to its asset store.
+
+    The presigned asset URL rejects requests carrying an Authorization header,
+    and forwarding the token to a third-party host would leak it.
+    """
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        request = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if request is not None:
+            for store in (request.headers, request.unredirected_hdrs):
+                store.pop('Authorization', None)
+        return request
 
 
 def get_json(url):
@@ -26,8 +53,10 @@ def sha256(path):
     return h.hexdigest()
 
 
-def retrieve(url,path,expected_sha=None,expected_size=None):
+def retrieve(url,path,expected_sha=None,expected_size=None,headers=None):
     record={'url':url,'local_path':None,'status':'not_downloaded','retrieved_at':datetime.now(timezone.utc).isoformat()}
+    if headers and 'Authorization' in headers:
+        record['token_authenticated']=True
     partial=path.with_suffix(path.suffix+'.part')
     try:
         path.parent.mkdir(parents=True,exist_ok=True)
@@ -39,7 +68,13 @@ def retrieve(url,path,expected_sha=None,expected_size=None):
             if expected_size is not None and path.stat().st_size!=expected_size:raise ValueError('Byte count mismatch')
             if previous.get('url',url)!=url:raise ValueError('Existing receipt belongs to another source')
         else:
-            with urllib.request.urlopen(url,timeout=45) as response,partial.open('wb') as stream:
+            request=urllib.request.Request(url,headers=headers or {})
+            if headers and 'Authorization' in headers:
+                opener=urllib.request.build_opener(_AuthlessRedirect())
+                response=opener.open(request,timeout=45)
+            else:
+                response=urllib.request.urlopen(request,timeout=45)
+            with response,partial.open('wb') as stream:
                 for block in iter(lambda:response.read(1024*1024),b''):stream.write(block)
             if expected_size is not None and partial.stat().st_size!=expected_size:raise ValueError('Byte count mismatch')
             if expected_sha is not None and sha256(partial)!=expected_sha:raise ValueError('Publisher SHA-256 mismatch')
@@ -99,12 +134,13 @@ def main():
             (ROOT/(key+'-catalog.json')).write_text(json.dumps(catalog,indent=2),encoding='utf-8')
             report['datasets'].append({'key':key,'doi':doi,'files':len(catalog['files']),
                 'version':catalog['version']['versionNumber'],'status':'metadata_retrieved'})
-            selected={'README.md','hook_flexion_01_magnet.parquet','manc_v1_classifications.csv'} if key=='feco' else {'README.txt'}
+            selected={'README.md','hook_flexion_01_magnet.parquet','manc_v1_classifications.csv',
+                      'manc_v1_connectivity.parquet','fanc_dn_information.csv','rna-seq.xlsx'} if key=='feco' else {'README.txt'}
             for file in catalog['files']:
                 if file['path'] not in selected:continue
-                file_id=file['_links']['self']['href'].rsplit('/',1)[-1]
-                record=retrieve(DRYAD+'/downloads/file_stream/'+file_id,ROOT/key/file['path'],
-                    file['digest'] if file['digestType']=='sha-256' else None,file['size'])
+                record=retrieve(DRYAD+file['_links']['stash:download']['href'],ROOT/key/file['path'],
+                    file['digest'] if file['digestType']=='sha-256' else None,file['size'],
+                    headers=dryad_auth_headers())
                 report['assets'].append(dict(record,dataset=doi,publisher_metadata=file))
                 print(key,file['path'],record['status'],flush=True)
         except Exception as error:

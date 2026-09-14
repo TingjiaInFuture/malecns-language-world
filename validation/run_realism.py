@@ -29,7 +29,27 @@ def main():
                        ('full_neuron_benchmark','validation/full-neuron-evidence.json'),
                        ('interface_research','validation/interface-research.json'),
                        ('public_data','validation/public-data-availability.json'),
-                       ('manc_crosswalk','validation/manc-crosswalk-evidence.json')]:
+                       ('manc_crosswalk','validation/manc-crosswalk-evidence.json'),
+                       ('mocap_diagnosis','validation/mocap-diagnosis.json'),
+                       ('interface_review','validation/interface-review.json'),
+                       ('literature_priors','validation/literature-priors-evidence.json'),
+                       ('male_mass_calibration','validation/male-mass-calibration.json'),
+                       ('motor_circuit_extract','validation/motor-circuit-extract.json'),
+                       ('motor_unit_prediction','validation/motor-unit-prediction.json'),
+                       ('six_leg_inventory','validation/six-leg-inventory.json'),
+                       ('receptor_hypotheses','validation/receptor-hypotheses.json'),
+                       ('synapse_coverage','validation/synapse-coverage.json'),
+                       ('synapse_roi_crosscheck','validation/synapse-roi-crosscheck.json'),
+                       ('partner_coverage','validation/partner-coverage.json'),
+                       ('motor_transmitters','validation/motor-transmitters.json'),
+                       ('lf_tibia_circuit','validation/lf-tibia-circuit.json'),
+                       ('feco_sensory','validation/feco/sensory-results.json'),
+                       ('feco_run_status','validation/feco-run-status.json'),
+                       ('motor_trial_acquisition','validation/motor-trial-acquisition.json'),
+                       ('motor_trial_analysis','validation/motor-trial-analysis.json'),
+                       ('feco_identity','validation/feco-identity.json'),
+                       ('mn_anatomy_classes','validation/mn-anatomy-classes.json'),
+                       ('feco_prospective','validation/feco/prospective-results.json')]:
         p = ROOT/path
         result[name] = json.loads(p.read_text()) if p.exists() else {'status':'MISSING'}
     result['source_hashes'] = {}

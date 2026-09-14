@@ -1,0 +1,33 @@
+{
+  "scope": "coordinate diagnosis of bundled FlyMimic mocap replay; no muscle control claim",
+  "model_root_dof_note": "clip stores only the seven left-front joint angles; the root free joint is absent from the clip",
+  "pinned_root_rmse_mm": 0.01960204149333498,
+  "pinned_root_max_abs_mm": 0.06500345281069403,
+  "rigid_aligned_rmse_mm_max": 0.0005914859307190897,
+  "rigid_aligned_rmse_mm_mean": 0.0003693005622048752,
+  "frame0_aligned_rmse_mm": 2.1705828920736226e-05,
+  "alignment_rotation_deg": {
+    "first": 0.21741181068258314,
+    "median": 2.2258811299361776,
+    "last": 2.9527725251725325,
+    "max": 3.460465080736805
+  },
+  "alignment_translation_mm": {
+    "max_abs": 0.20178290563070417
+  },
+  "conclusion": "Residual replay error is fully explained by root-pose drift during the reference recording: after per-frame rigid alignment the leg chain matches official MJCF forward kinematics to sub-micrometer numerical precision. No coordinate, unit, joint-order or kinematic-chain error is present.",
+  "still_open": [
+    "Root trajectory itself is not recoverable from the clip; full-pose replay would need the original recording",
+    "No male-specific mass/force calibration is implied",
+    "Muscle-controlled tracking remains untested by this diagnosis"
+  ],
+  "biological_acceptance": false,
+  "wall_seconds": 1.233522799999264,
+  "source_sha256": {
+    "qpos": "aa7e3e72325d7d76a17863057cbaba9259a346d66e41b7d820411570d5e00a42",
+    "xipos": "3f73c47ee4692b0ebf9a760869d1ea05af6c8bbd5795320fb2edb38f53c5c20c"
+  },
+  "executed_source_sha256": {
+    "body/mocap_diagnosis.py": "d78ed66171cae2923edda324ad07fe60cc32e180c3a5ba3a78875a485938d556"
+  }
+}

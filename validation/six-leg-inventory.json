@@ -1,0 +1,91 @@
+{
+  "scope": "per-leg capability audit of the pinned FlyGym 2.1.0 musculoskeletal model",
+  "legs": {
+    "LF": {
+      "joints": [
+        "joint_LFCoxa_yaw",
+        "joint_LFCoxa_pitch",
+        "joint_LFCoxa_roll",
+        "joint_LFTrochanter_yaw",
+        "joint_LFTrochanter_pitch",
+        "joint_LFTrochanter_roll",
+        "joint_LFTibia_pitch"
+      ],
+      "muscles": [
+        "LFC_tergopleural_promotor_a",
+        "LFC_tergopleural_promotor_b",
+        "LFC_pleural_remotor_and_abductor",
+        "LFC_pleural_promotor",
+        "LFC_sternal_anterior_rotator",
+        "LFC_sternal_posterior_rotator",
+        "LFC_sternal_adductor",
+        "LFF_trochanter_flexor_b",
+        "LFF_sterno-tergo-trochanter_extensor_a",
+        "LFF_sterno-tergo-trochanter_extensor_b",
+        "LFF_accesory_trochanter_flexor",
+        "LFF_trochanter_extensor",
+        "LFF_trochanter_flexor_a",
+        "LFTibia_flex_93434",
+        "LFTibia_extensor_93932"
+      ],
+      "muscle_actuated": true,
+      "position_actuated": false,
+      "status": "muscle_actuated"
+    },
+    "RF": {
+      "joints": [
+        "joint_RFCoxa_roll",
+        "joint_RFCoxa_yaw",
+        "joint_RFCoxa_pitch",
+        "joint_RFTrochanter_yaw",
+        "joint_RFTrochanter_pitch",
+        "joint_RFTrochanter_roll",
+        "joint_RFTibia_pitch"
+      ],
+      "muscles": [],
+      "muscle_actuated": false,
+      "position_actuated": false,
+      "status": "joints_passive_only"
+    },
+    "LM": {
+      "joints": [],
+      "muscles": [],
+      "muscle_actuated": false,
+      "position_actuated": false,
+      "status": "absent_from_model"
+    },
+    "RM": {
+      "joints": [],
+      "muscles": [],
+      "muscle_actuated": false,
+      "position_actuated": false,
+      "status": "absent_from_model"
+    },
+    "LH": {
+      "joints": [],
+      "muscles": [],
+      "muscle_actuated": false,
+      "position_actuated": false,
+      "status": "absent_from_model"
+    },
+    "RH": {
+      "joints": [],
+      "muscles": [],
+      "muscle_actuated": false,
+      "position_actuated": false,
+      "status": "absent_from_model"
+    }
+  },
+  "six_leg_muscle_actuation_available": false,
+  "blocking": [
+    "Middle and hind legs have no meshes/joints in the upstream model",
+    "Right-front leg has joints but no muscle actuators",
+    "A six-leg neuromuscular closed loop requires new anatomical data, not a software change on this model"
+  ],
+  "upstream_audit_2026_09_14": "FlyMimic repository (gizemozd/FlyMimic) and the Oezdil et al. supplement confirm: mid/hind-leg MTU reconstructions (7 and 8) exist only as supplement figures in OpenSim, never released as model files; the referenced OpenSim pipeline repo (gizemozd/neuromechfly-muscles) is a dead 404 link; only geometry STLs for all six legs are public, with no muscle attachments outside the left front leg. The upstream gap is final unless the authors release the models.",
+  "biological_acceptance": false,
+  "note": "Left-front leg remains the only muscle-actuated limb; expansion status is upstream-bound.",
+  "executed_source_sha256": {
+    "body/six_leg_inventory.py": "3cada84183531bc80ccfa15fa14274048d321392b02a674ad2796bfd5b45d370"
+  }
+}

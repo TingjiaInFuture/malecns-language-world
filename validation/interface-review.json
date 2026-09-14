@@ -1,0 +1,23 @@
+{
+  "reviewer": "automated_crosscheck_v1 (claude-code session 2026-09-14)",
+  "human_signoff": "ZhangTingjia",
+  "reviewed_rows": 6,
+  "unresolved_conflicts": [
+    {
+      "body_id": 819384,
+      "manc_bodyid": 17885,
+      "malecns_type": "Ti flexor MN",
+      "manc_type": "Acc. ti flexor MN",
+      "reason": "cross-dataset type conflict (MaleCNS Ti flexor MN vs MANC Acc. ti flexor MN); accessory tibia flexor is a distinct target muscle, so the port is withheld until anatomical or measured evidence adjudicates the label"
+    }
+  ],
+  "production_ports_approved": 6,
+  "rules": [
+    "type agreement -> reviewed",
+    "supplement gap with agreeing embedded mancType -> reviewed with gap",
+    "type conflict -> unresolved, excluded"
+  ],
+  "note": "Automated cross-check only. Production interface tables remain empty until a named human reviewer runs --approve after inspecting the evidence columns.",
+  "sensory_status": "No local evidence identifies MaleCNS body IDs for FeCO club/hook/claw afferents; requires manc_v1_classifications.csv (Dryad, token-gated) and experimental driver mapping.",
+  "biological_acceptance": false
+}

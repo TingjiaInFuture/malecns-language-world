@@ -1,0 +1,42 @@
+{
+  "protocol_sha256": "0f6c28f685ccff02e759625b5f44c63ff78b508cd5fd538ea0666acc5e4f4797",
+  "evaluated_at": "2026-09-14T14:33:23.082308+00:00",
+  "datasets": {
+    "hook_flexion_01_magnet_Mamiya2018.parquet": {
+      "status": "evaluated",
+      "gain": 74.97976873669282,
+      "offset": 1.9869998862921099,
+      "test_trials_won": 14,
+      "test_trials_total": 16,
+      "pooled_test_mse": 47.18192693970866,
+      "pooled_baseline_mse": 71.8898651504837,
+      "passed": true
+    },
+    "hook_extension_magnet.parquet": {
+      "status": "insufficient_animals_for_registered_split",
+      "animals": 4,
+      "error": "At least five animals required for this registered split"
+    },
+    "claw_magnet_Mamiya2018.parquet": {
+      "status": "evaluated",
+      "gain": 0.01775095045132,
+      "offset": 8.827499424738425,
+      "test_trials_won": 5,
+      "test_trials_total": 12,
+      "pooled_test_mse": 154.8031243541082,
+      "pooled_baseline_mse": 156.25934689416616,
+      "passed": false
+    },
+    "club_magnet_Mamiya2018.parquet": {
+      "status": "evaluated",
+      "gain": 0.3501954291169552,
+      "offset": 4.108027367616787,
+      "test_trials_won": 6,
+      "test_trials_total": 8,
+      "pooled_test_mse": 65.461025265942,
+      "pooled_baseline_mse": 75.60671594955132,
+      "passed": true
+    }
+  },
+  "biological_acceptance": false
+}

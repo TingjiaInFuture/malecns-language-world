@@ -1,0 +1,53 @@
+{
+  "scope": "independent per-ROI cross-check of the synapse export audit against the paper table",
+  "created_at": "2026-09-13T18:01:44.988266+00:00",
+  "paper_source": "flyconnectome/2025malecns supplemental_data traced-synapse-capture-by-roi.csv",
+  "summary": {
+    "matched_rois": 103,
+    "rois_above_threshold": 97,
+    "max_pre_count_relerr": 0.0,
+    "max_post_count_relerr": 3.6542954635283773e-08,
+    "max_presyn_frac_diff": 0.0023763539894312014,
+    "max_postsyn_frac_diff": 0.00447940897363408,
+    "median_presyn_frac_diff": 2.513470222131886e-05,
+    "median_postsyn_frac_diff": 0.00016429238826587422,
+    "largest_frac_disagreements": [
+      {
+        "roi": "PED(L)",
+        "my_postsyn_traced_frac": 0.736338009,
+        "postsyn_traced_frac": 0.740817418,
+        "postsyn_frac_diff": 0.004479409
+      },
+      {
+        "roi": "LA(R)",
+        "my_postsyn_traced_frac": 0.3596535973,
+        "postsyn_traced_frac": 0.3557716362,
+        "postsyn_frac_diff": 0.0038819611
+      },
+      {
+        "roi": "PED(R)",
+        "my_postsyn_traced_frac": 0.7312097268,
+        "postsyn_traced_frac": 0.7348906514,
+        "postsyn_frac_diff": 0.0036809245
+      },
+      {
+        "roi": "LA(L)",
+        "my_postsyn_traced_frac": 0.3285707774,
+        "postsyn_traced_frac": 0.3249334481,
+        "postsyn_frac_diff": 0.0036373293
+      },
+      {
+        "roi": "bL(R)",
+        "my_postsyn_traced_frac": 0.6870215704,
+        "postsyn_traced_frac": 0.6894253057,
+        "postsyn_frac_diff": 0.0024037352
+      }
+    ]
+  },
+  "interpretation": "Synapse-side counts reproduce the paper table exactly; small traced-fraction differences (<=0.5%) likely reflect the authors' per-fraction traced criteria (connection/synapse-weight denominators) rather than counting errors.",
+  "biological_acceptance": false,
+  "source_sha256": {
+    "data/graph_neurons/synapse_roi_coverage.parquet": "799781c66e4a87ef140e6c729747e4cbbae1081a9fabe089a26cd4b25c54ad6c",
+    "data/raw/quality/male-cns-v1.0-traced-synapse-capture-by-roi.csv": "b91253bcb26d3496b1ddcf17c05006384ee98bebb729ed7d62e3529131e28e64"
+  }
+}

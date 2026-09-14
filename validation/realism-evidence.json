@@ -17,9 +17,9 @@
         "-v"
       ],
       "returncode": 0,
-      "seconds": 11.09378939999442,
+      "seconds": 41.858607400004985,
       "stdout": "Resumed saved world without changing simulation state.\n",
-      "stderr": "test_controls_and_strict_vocabulary (test_model.ModelTests.test_controls_and_strict_vocabulary) ... ok\ntest_determinism_and_exact_resume (test_model.ModelTests.test_determinism_and_exact_resume) ... ok\ntest_false_hint_reduces_trust (test_model.ModelTests.test_false_hint_reduces_trust) ... ok\ntest_independent_neural_state_and_frozen_gains (test_model.ModelTests.test_independent_neural_state_and_frozen_gains) ... ok\ntest_locality_and_no_hidden_coordinates (test_model.ModelTests.test_locality_and_no_hidden_coordinates) ... ok\ntest_long_run_bounds (test_model.ModelTests.test_long_run_bounds) ... ok\ntest_runtime_save_archive_and_single_step (test_model.ModelTests.test_runtime_save_archive_and_single_step) ... ok\ntest_signal_investigation_and_contact_validation (test_model.ModelTests.test_signal_investigation_and_contact_validation) ... ok\ntest_closed_loop_and_exact_resume (test_neural_control.NeuralControlTests.test_closed_loop_and_exact_resume) ... ok\ntest_contact_requires_neural_mouth_and_pump (test_neural_control.NeuralControlTests.test_contact_requires_neural_mouth_and_pump) ... ok\ntest_environment_cannot_actuate_when_neural_output_clamped (test_neural_control.NeuralControlTests.test_environment_cannot_actuate_when_neural_output_clamped) ... ok\ntest_neural_motor_interventions (test_neural_control.NeuralControlTests.test_neural_motor_interventions) ... ok\ntest_no_behavioral_or_semantic_entry_points (test_neural_control.NeuralControlTests.test_no_behavioral_or_semantic_entry_points) ... ok\ntest_sensing_contains_no_identity_memory (test_neural_control.NeuralControlTests.test_sensing_contains_no_identity_memory) ... ok\ntest_signal_is_delayed_local_scalar_without_semantics (test_neural_control.NeuralControlTests.test_signal_is_delayed_local_scalar_without_semantics) ... ok\ntest_solid_boundary_does_not_steer (test_neural_control.NeuralControlTests.test_solid_boundary_does_not_steer) ... ok\ntest_stepping_does_not_draw_behavioral_randomness (test_neural_control.NeuralControlTests.test_stepping_does_not_draw_behavioral_randomness) ... ok\ntest_zero_output_cannot_choose_move_eat_or_signal (test_neural_control.NeuralControlTests.test_zero_output_cannot_choose_move_eat_or_signal) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 10.281s\n\nOK\n"
+      "stderr": "test_controls_and_strict_vocabulary (test_model.ModelTests.test_controls_and_strict_vocabulary) ... ok\ntest_determinism_and_exact_resume (test_model.ModelTests.test_determinism_and_exact_resume) ... ok\ntest_false_hint_reduces_trust (test_model.ModelTests.test_false_hint_reduces_trust) ... ok\ntest_independent_neural_state_and_frozen_gains (test_model.ModelTests.test_independent_neural_state_and_frozen_gains) ... ok\ntest_locality_and_no_hidden_coordinates (test_model.ModelTests.test_locality_and_no_hidden_coordinates) ... ok\ntest_long_run_bounds (test_model.ModelTests.test_long_run_bounds) ... ok\ntest_runtime_save_archive_and_single_step (test_model.ModelTests.test_runtime_save_archive_and_single_step) ... ok\ntest_signal_investigation_and_contact_validation (test_model.ModelTests.test_signal_investigation_and_contact_validation) ... ok\ntest_closed_loop_and_exact_resume (test_neural_control.NeuralControlTests.test_closed_loop_and_exact_resume) ... ok\ntest_contact_requires_neural_mouth_and_pump (test_neural_control.NeuralControlTests.test_contact_requires_neural_mouth_and_pump) ... ok\ntest_environment_cannot_actuate_when_neural_output_clamped (test_neural_control.NeuralControlTests.test_environment_cannot_actuate_when_neural_output_clamped) ... ok\ntest_neural_motor_interventions (test_neural_control.NeuralControlTests.test_neural_motor_interventions) ... ok\ntest_no_behavioral_or_semantic_entry_points (test_neural_control.NeuralControlTests.test_no_behavioral_or_semantic_entry_points) ... ok\ntest_sensing_contains_no_identity_memory (test_neural_control.NeuralControlTests.test_sensing_contains_no_identity_memory) ... ok\ntest_signal_is_delayed_local_scalar_without_semantics (test_neural_control.NeuralControlTests.test_signal_is_delayed_local_scalar_without_semantics) ... ok\ntest_solid_boundary_does_not_steer (test_neural_control.NeuralControlTests.test_solid_boundary_does_not_steer) ... ok\ntest_stepping_does_not_draw_behavioral_randomness (test_neural_control.NeuralControlTests.test_stepping_does_not_draw_behavioral_randomness) ... ok\ntest_zero_output_cannot_choose_move_eat_or_signal (test_neural_control.NeuralControlTests.test_zero_output_cannot_choose_move_eat_or_signal) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 39.323s\n\nOK\n"
     },
     {
       "argv": [
@@ -34,9 +34,9 @@
         "-v"
       ],
       "returncode": 0,
-      "seconds": 1.6739157999982126,
-      "stdout": "",
-      "stderr": "test_calibration_recovers_analytic_fixture (test_integration.IntegrationTests.test_calibration_recovers_analytic_fixture) ... ok\ntest_heterogeneous_membrane_analytic (test_integration.IntegrationTests.test_heterogeneous_membrane_analytic) ... ok\ntest_missing_metric_cannot_pass (test_integration.IntegrationTests.test_missing_metric_cannot_pass) ... ok\ntest_parameter_prior_provenance_and_reproducibility (test_integration.IntegrationTests.test_parameter_prior_provenance_and_reproducibility) ... ok\ntest_preregistration_and_leakage (test_integration.IntegrationTests.test_preregistration_and_leakage) ... ok\ntest_retroactive_registration_rejected (test_integration.IntegrationTests.test_retroactive_registration_rejected) ... ok\ntest_rewiring_degrees_and_uniqueness (test_integration.IntegrationTests.test_rewiring_degrees_and_uniqueness) ... ok\ntest_animal_split_order_invariant_and_disjoint (test_public_data.PublicDataTests.test_animal_split_order_invariant_and_disjoint) ... ok\ntest_crosswalk_preserves_conflicts_missing_and_unknown_confidence (test_public_data.PublicDataTests.test_crosswalk_preserves_conflicts_missing_and_unknown_confidence) ... ok\ntest_filter_direction_and_source_convolution (test_public_data.PublicDataTests.test_filter_direction_and_source_convolution) ... ok\ntest_measured_target_only (test_public_data.PublicDataTests.test_measured_target_only) ... ok\ntest_clock_and_physical_stimuli (test_realism.ReferenceTests.test_clock_and_physical_stimuli) ... ok\ntest_convergence (test_realism.ReferenceTests.test_convergence) ... ok\ntest_delay_and_restart (test_realism.ReferenceTests.test_delay_and_restart) ... ok\ntest_historical_full_dt_without_loading_large_graph (test_realism.ReferenceTests.test_historical_full_dt_without_loading_large_graph) ... ok\ntest_identity_rule_preserves_untyped (test_realism.ReferenceTests.test_identity_rule_preserves_untyped) ... ok\ntest_local_plasticity_mask (test_realism.ReferenceTests.test_local_plasticity_mask) ... ok\ntest_mass_balance_and_contact (test_realism.ReferenceTests.test_mass_balance_and_contact) ... ok\ntest_measurement_and_leakage (test_realism.ReferenceTests.test_measurement_and_leakage) ... ok\ntest_missing_receptor_rejected (test_realism.ReferenceTests.test_missing_receptor_rejected) ... ok\ntest_no_unreviewed_ports (test_realism.ReferenceTests.test_no_unreviewed_ports) ... ok\ntest_passive_analytic (test_realism.ReferenceTests.test_passive_analytic) ... ok\ntest_receptor_polarity (test_realism.ReferenceTests.test_receptor_polarity) ... ok\ntest_rest_and_individual_independence (test_realism.ReferenceTests.test_rest_and_individual_independence) ... ok\ntest_wrong_clock_checkpoint_rejected (test_realism.ReferenceTests.test_wrong_clock_checkpoint_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.109s\n\nOK\n"
+      "seconds": 15.495412799995393,
+      "stdout": "processed 6 synapse sides\n",
+      "stderr": "test_calibration_recovers_analytic_fixture (test_integration.IntegrationTests.test_calibration_recovers_analytic_fixture) ... ok\ntest_heterogeneous_membrane_analytic (test_integration.IntegrationTests.test_heterogeneous_membrane_analytic) ... ok\ntest_missing_metric_cannot_pass (test_integration.IntegrationTests.test_missing_metric_cannot_pass) ... ok\ntest_parameter_prior_provenance_and_reproducibility (test_integration.IntegrationTests.test_parameter_prior_provenance_and_reproducibility) ... ok\ntest_preregistration_and_leakage (test_integration.IntegrationTests.test_preregistration_and_leakage) ... ok\ntest_retroactive_registration_rejected (test_integration.IntegrationTests.test_retroactive_registration_rejected) ... ok\ntest_rewiring_degrees_and_uniqueness (test_integration.IntegrationTests.test_rewiring_degrees_and_uniqueness) ... ok\ntest_animal_split_order_invariant_and_disjoint (test_public_data.PublicDataTests.test_animal_split_order_invariant_and_disjoint) ... ok\ntest_crosswalk_preserves_conflicts_missing_and_unknown_confidence (test_public_data.PublicDataTests.test_crosswalk_preserves_conflicts_missing_and_unknown_confidence) ... ok\ntest_filter_direction_and_source_convolution (test_public_data.PublicDataTests.test_filter_direction_and_source_convolution) ... ok\ntest_measured_target_only (test_public_data.PublicDataTests.test_measured_target_only) ... ok\ntest_adex_fi_curve_and_checkpoint (test_realism.ExpansionTests.test_adex_fi_curve_and_checkpoint) ... ok\ntest_background_noise_is_reproducible_and_colored (test_realism.ExpansionTests.test_background_noise_is_reproducible_and_colored) ... ok\ntest_cable_matches_sealed_end_analytic (test_realism.ExpansionTests.test_cable_matches_sealed_end_analytic) ... ok\ntest_circadian_period_and_gate_bounds (test_realism.ExpansionTests.test_circadian_period_and_gate_bounds) ... ok\ntest_contact_and_feeding_schedule (test_realism.ExpansionTests.test_contact_and_feeding_schedule) ... ok\ntest_feco_identity_mapping_content (test_realism.ExpansionTests.test_feco_identity_mapping_content) ... ok\ntest_feco_preregister_models (test_realism.ExpansionTests.test_feco_preregister_models) ... ok\ntest_flight_scaffold_scaling (test_realism.ExpansionTests.test_flight_scaffold_scaling) ... ok\ntest_gap_junction_current_balance (test_realism.ExpansionTests.test_gap_junction_current_balance) ... ok\ntest_interface_review_adjudication (test_realism.ExpansionTests.test_interface_review_adjudication) ... ok\ntest_light_and_nutrient_fields (test_realism.ExpansionTests.test_light_and_nutrient_fields) ... ok\ntest_literature_priors_carry_evidence_classes (test_realism.ExpansionTests.test_literature_priors_carry_evidence_classes) ... ok\ntest_male_calibration_requires_male_measurement (test_realism.ExpansionTests.test_male_calibration_requires_male_measurement) ... ok\ntest_mb_plasticity_gated_and_bounded (test_realism.ExpansionTests.test_mb_plasticity_gated_and_bounded) ... ok\ntest_modulator_pool_and_bounded_gain (test_realism.ExpansionTests.test_modulator_pool_and_bounded_gain) ... ok\ntest_motor_trial_metrics_and_identity (test_realism.ExpansionTests.test_motor_trial_metrics_and_identity) ... ok\ntest_proprioceptive_channels (test_realism.ExpansionTests.test_proprioceptive_channels) ... ok\ntest_receptor_hypotheses_dual_glutamate_and_no_unclear (test_realism.ExpansionTests.test_receptor_hypotheses_dual_glutamate_and_no_unclear) ... ok\ntest_recruitment_order_and_force (test_realism.ExpansionTests.test_recruitment_order_and_force) ... ok\ntest_roi_audit_requires_roi_column (test_realism.ExpansionTests.test_roi_audit_requires_roi_column) ... ok\ntest_roi_crosscheck_detects_disagreement (test_realism.ExpansionTests.test_roi_crosscheck_detects_disagreement) ... ok\ntest_stimulus_protocol_is_frozen_data (test_realism.ExpansionTests.test_stimulus_protocol_is_frozen_data) ... ok\ntest_synapse_coverage_stream_counts (test_realism.ExpansionTests.test_synapse_coverage_stream_counts) ... ok\ntest_unit_conversions_and_perturbations (test_realism.ExpansionTests.test_unit_conversions_and_perturbations) ... ok\ntest_clock_and_physical_stimuli (test_realism.ReferenceTests.test_clock_and_physical_stimuli) ... ok\ntest_convergence (test_realism.ReferenceTests.test_convergence) ... ok\ntest_delay_and_restart (test_realism.ReferenceTests.test_delay_and_restart) ... ok\ntest_historical_full_dt_without_loading_large_graph (test_realism.ReferenceTests.test_historical_full_dt_without_loading_large_graph) ... ok\ntest_identity_rule_preserves_untyped (test_realism.ReferenceTests.test_identity_rule_preserves_untyped) ... ok\ntest_local_plasticity_mask (test_realism.ReferenceTests.test_local_plasticity_mask) ... ok\ntest_mass_balance_and_contact (test_realism.ReferenceTests.test_mass_balance_and_contact) ... ok\ntest_measurement_and_leakage (test_realism.ReferenceTests.test_measurement_and_leakage) ... ok\ntest_missing_receptor_rejected (test_realism.ReferenceTests.test_missing_receptor_rejected) ... ok\ntest_no_unreviewed_ports (test_realism.ReferenceTests.test_no_unreviewed_ports) ... ok\ntest_passive_analytic (test_realism.ReferenceTests.test_passive_analytic) ... ok\ntest_receptor_polarity (test_realism.ReferenceTests.test_receptor_polarity) ... ok\ntest_rest_and_individual_independence (test_realism.ReferenceTests.test_rest_and_individual_independence) ... ok\ntest_wrong_clock_checkpoint_rejected (test_realism.ReferenceTests.test_wrong_clock_checkpoint_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 49 tests in 6.622s\n\nOK\n"
     },
     {
       "argv": [
@@ -45,7 +45,7 @@
         "habitat3d/ui/scene.js"
       ],
       "returncode": 0,
-      "seconds": 0.04311210000014398,
+      "seconds": 0.40162549998785835,
       "stdout": "",
       "stderr": ""
     }
@@ -3435,7 +3435,7 @@
     "reason_not_approved": "No independently reviewed body-to-muscle mapping or recruitment curves. Numeric suffixes in muscle names are not MaleCNS IDs."
   },
   "public_data": {
-    "created_at": "2026-09-13T05:08:28.615671+00:00",
+    "created_at": "2026-09-14T12:12:30.895401+00:00",
     "biological_acceptance": false,
     "datasets": [
       {
@@ -3455,11 +3455,57 @@
     ],
     "assets": [
       {
-        "url": "https://datadryad.org/downloads/file_stream/4330030",
-        "local_path": null,
-        "status": "download_failed",
-        "retrieved_at": "2026-09-13T05:08:36.899813+00:00",
-        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "url": "https://datadryad.org/api/v2/files/4330044/download",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco\\fanc_dn_information.csv",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-14T12:12:59.036251+00:00",
+        "token_authenticated": true,
+        "sha256": "f206325bc3c9f6158e85814fb532d93d8460e299b42b7f8075d00a50d224f583",
+        "bytes": 2628,
+        "publisher_sha256_verified": true,
+        "dataset": "10.5061/dryad.gqnk98t16",
+        "publisher_metadata": {
+          "_links": {
+            "self": {
+              "href": "/api/v2/files/4330044"
+            },
+            "stash:dataset": {
+              "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+            },
+            "stash:version": {
+              "href": "/api/v2/versions/393607"
+            },
+            "stash:files": {
+              "href": "/api/v2/versions/393607/files"
+            },
+            "stash:download": {
+              "href": "/api/v2/files/4330044/download"
+            },
+            "curies": [
+              {
+                "name": "stash",
+                "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+                "templated": "true"
+              }
+            ]
+          },
+          "path": "fanc_dn_information.csv",
+          "size": 2628,
+          "mimeType": "text/csv",
+          "status": "copied",
+          "digest": "f206325bc3c9f6158e85814fb532d93d8460e299b42b7f8075d00a50d224f583",
+          "digestType": "sha-256"
+        }
+      },
+      {
+        "url": "https://datadryad.org/api/v2/files/4330030/download",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco\\hook_flexion_01_magnet.parquet",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-14T12:13:13.972165+00:00",
+        "token_authenticated": true,
+        "sha256": "d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd",
+        "bytes": 14993835,
+        "publisher_sha256_verified": true,
         "dataset": "10.5061/dryad.gqnk98t16",
         "publisher_metadata": {
           "_links": {
@@ -3495,11 +3541,14 @@
         }
       },
       {
-        "url": "https://datadryad.org/downloads/file_stream/4330045",
-        "local_path": null,
-        "status": "download_failed",
-        "retrieved_at": "2026-09-13T05:08:38.871885+00:00",
-        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "url": "https://datadryad.org/api/v2/files/4330045/download",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco\\manc_v1_classifications.csv",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-14T12:13:26.639156+00:00",
+        "token_authenticated": true,
+        "sha256": "f81572490e571e69eeaa625383f348bd48fbb5f0f75b2c29195aca4aa911357c",
+        "bytes": 548135,
+        "publisher_sha256_verified": true,
         "dataset": "10.5061/dryad.gqnk98t16",
         "publisher_metadata": {
           "_links": {
@@ -3535,11 +3584,57 @@
         }
       },
       {
-        "url": "https://datadryad.org/downloads/file_stream/4330056",
-        "local_path": null,
-        "status": "download_failed",
-        "retrieved_at": "2026-09-13T05:08:40.535795+00:00",
-        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "url": "https://datadryad.org/api/v2/files/4330041/download",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco\\manc_v1_connectivity.parquet",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-14T12:13:46.378364+00:00",
+        "token_authenticated": true,
+        "sha256": "dddb20a6f3145ca801ad75a9b3aa9fe2db61ad87c78acd4b8cab0025d3556c0f",
+        "bytes": 13234923,
+        "publisher_sha256_verified": true,
+        "dataset": "10.5061/dryad.gqnk98t16",
+        "publisher_metadata": {
+          "_links": {
+            "self": {
+              "href": "/api/v2/files/4330041"
+            },
+            "stash:dataset": {
+              "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+            },
+            "stash:version": {
+              "href": "/api/v2/versions/393607"
+            },
+            "stash:files": {
+              "href": "/api/v2/versions/393607/files"
+            },
+            "stash:download": {
+              "href": "/api/v2/files/4330041/download"
+            },
+            "curies": [
+              {
+                "name": "stash",
+                "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+                "templated": "true"
+              }
+            ]
+          },
+          "path": "manc_v1_connectivity.parquet",
+          "size": 13234923,
+          "mimeType": "",
+          "status": "copied",
+          "digest": "dddb20a6f3145ca801ad75a9b3aa9fe2db61ad87c78acd4b8cab0025d3556c0f",
+          "digestType": "sha-256"
+        }
+      },
+      {
+        "url": "https://datadryad.org/api/v2/files/4330056/download",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco\\README.md",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-14T12:14:09.159474+00:00",
+        "token_authenticated": true,
+        "sha256": "a4927a16b15524bf8342bf0109fe7188257be2eb1036f94493ae780f8fd7762a",
+        "bytes": 10086,
+        "publisher_sha256_verified": true,
         "dataset": "10.5061/dryad.gqnk98t16",
         "publisher_metadata": {
           "_links": {
@@ -3575,11 +3670,57 @@
         }
       },
       {
-        "url": "https://datadryad.org/downloads/file_stream/585475",
-        "local_path": null,
-        "status": "download_failed",
-        "retrieved_at": "2026-09-13T05:08:52.838579+00:00",
-        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "url": "https://datadryad.org/api/v2/files/4330043/download",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco\\rna-seq.xlsx",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-14T12:14:23.258823+00:00",
+        "token_authenticated": true,
+        "sha256": "75f0ceb6504e645a31cd2d3e44f11ad1d9c6c6b0dfe7fe242e2c140b0d48d1ce",
+        "bytes": 128694,
+        "publisher_sha256_verified": true,
+        "dataset": "10.5061/dryad.gqnk98t16",
+        "publisher_metadata": {
+          "_links": {
+            "self": {
+              "href": "/api/v2/files/4330043"
+            },
+            "stash:dataset": {
+              "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+            },
+            "stash:version": {
+              "href": "/api/v2/versions/393607"
+            },
+            "stash:files": {
+              "href": "/api/v2/versions/393607/files"
+            },
+            "stash:download": {
+              "href": "/api/v2/files/4330043/download"
+            },
+            "curies": [
+              {
+                "name": "stash",
+                "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+                "templated": "true"
+              }
+            ]
+          },
+          "path": "rna-seq.xlsx",
+          "size": 128694,
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "status": "copied",
+          "digest": "75f0ceb6504e645a31cd2d3e44f11ad1d9c6c6b0dfe7fe242e2c140b0d48d1ce",
+          "digestType": "sha-256"
+        }
+      },
+      {
+        "url": "https://datadryad.org/api/v2/files/585475/download",
+        "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor\\README.txt",
+        "status": "downloaded_verified",
+        "retrieved_at": "2026-09-14T12:14:56.627040+00:00",
+        "token_authenticated": true,
+        "sha256": "2b4e81cbd8486f0c535f27f9bca6871f0633ce3ab5bae6b9d965530be907f90d",
+        "bytes": 2484,
+        "publisher_sha256_verified": true,
         "dataset": "10.5061/dryad.76hdr7stb",
         "publisher_metadata": {
           "_links": {
@@ -3618,7 +3759,7 @@
         "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp3-v1.csv",
         "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\manc\\elife-96084-supp3-v1.csv",
         "status": "downloaded_verified",
-        "retrieved_at": "2026-09-13T05:08:59.834667+00:00",
+        "retrieved_at": "2026-09-14T12:15:07.129244+00:00",
         "sha256": "c46e3cec1a5114b8d981d5f0383012c8e7fcdebd6c4e3eaffe4ac3ba1def2e94",
         "bytes": 67297,
         "publisher_sha256_verified": false,
@@ -3629,7 +3770,7 @@
         "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp6-v1.csv",
         "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\manc\\elife-96084-supp6-v1.csv",
         "status": "downloaded_verified",
-        "retrieved_at": "2026-09-13T05:09:02.348628+00:00",
+        "retrieved_at": "2026-09-14T12:15:07.170088+00:00",
         "sha256": "b56b0563f6a6000b2a43fbc7ebec46297668e8e3b6c6d596843d5ad5aab83a65",
         "bytes": 24898,
         "publisher_sha256_verified": false,
@@ -3640,7 +3781,7 @@
         "url": "https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/data/README.md",
         "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco-author\\data\\README.md",
         "status": "downloaded_verified",
-        "retrieved_at": "2026-09-13T05:09:04.276864+00:00",
+        "retrieved_at": "2026-09-14T12:15:07.191244+00:00",
         "sha256": "0d7b24633d02bd06a5900ef2bb371a75609169f386a33766dea64941a399321d",
         "bytes": 3444,
         "publisher_sha256_verified": false,
@@ -3650,7 +3791,7 @@
         "url": "https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/code/utils/imaging_predict_gcamp.m",
         "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco-author\\code\\utils\\imaging_predict_gcamp.m",
         "status": "downloaded_verified",
-        "retrieved_at": "2026-09-13T05:09:05.394431+00:00",
+        "retrieved_at": "2026-09-14T12:15:07.218883+00:00",
         "sha256": "8ac8c133195570d44311437c46e6e10a939404b1258f5df45e307bd7ffaa742b",
         "bytes": 2558,
         "publisher_sha256_verified": false,
@@ -3660,7 +3801,7 @@
         "url": "https://raw.githubusercontent.com/chrisjdallmann/feco-inhibition/main/code/imaging_config.toml",
         "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\feco-author\\code\\imaging_config.toml",
         "status": "downloaded_verified",
-        "retrieved_at": "2026-09-13T05:09:06.624391+00:00",
+        "retrieved_at": "2026-09-14T12:15:07.271802+00:00",
         "sha256": "46245ab2999b8117d2031d27d0e4c080d9fc8c51408eff374d13a18f466b9c56",
         "bytes": 885,
         "publisher_sha256_verified": false,
@@ -3670,7 +3811,7 @@
         "url": "https://zenodo.org/api/records/4527659/files/README.txt/content",
         "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor-author\\README.txt",
         "status": "downloaded_verified",
-        "retrieved_at": "2026-09-13T05:15:56.911558+00:00",
+        "retrieved_at": "2026-09-14T12:15:20.063189+00:00",
         "sha256": "2b4e81cbd8486f0c535f27f9bca6871f0633ce3ab5bae6b9d965530be907f90d",
         "bytes": 2484,
         "publisher_sha256_verified": false,
@@ -3682,7 +3823,7 @@
         "url": "https://zenodo.org/api/records/4527659/files/Methods_ForceProbeCalibration.m/content",
         "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor-author\\Methods_ForceProbeCalibration.m",
         "status": "downloaded_verified",
-        "retrieved_at": "2026-09-13T05:15:56.921598+00:00",
+        "retrieved_at": "2026-09-14T12:15:20.096438+00:00",
         "sha256": "ee5ff14fc3b8c987b8f9adc6392c4fed039a9c1d0039de3ab9c4d06bdd2c8689",
         "bytes": 2823,
         "publisher_sha256_verified": false,
@@ -3694,7 +3835,7 @@
         "url": "https://zenodo.org/api/records/4527659/files/Dataset3_SlowInterFast_ForcePerSpike.m/content",
         "local_path": "C:\\Users\\77\\Desktop\\lab\\malecns-language-world\\data\\physiology_raw\\motor-author\\Dataset3_SlowInterFast_ForcePerSpike.m",
         "status": "downloaded_verified",
-        "retrieved_at": "2026-09-13T05:15:56.931373+00:00",
+        "retrieved_at": "2026-09-14T12:15:20.129363+00:00",
         "sha256": "0601cf950ba8e07734d100f6c4e111e9c555b8f5ae8948d5d5590be11185af42",
         "bytes": 8942,
         "publisher_sha256_verified": false,
@@ -3790,20 +3931,2849 @@
       }
     ]
   },
+  "mocap_diagnosis": {
+    "scope": "coordinate diagnosis of bundled FlyMimic mocap replay; no muscle control claim",
+    "model_root_dof_note": "clip stores only the seven left-front joint angles; the root free joint is absent from the clip",
+    "pinned_root_rmse_mm": 0.01960204149333498,
+    "pinned_root_max_abs_mm": 0.06500345281069403,
+    "rigid_aligned_rmse_mm_max": 0.0005914859307190897,
+    "rigid_aligned_rmse_mm_mean": 0.0003693005622048752,
+    "frame0_aligned_rmse_mm": 2.1705828920736226e-05,
+    "alignment_rotation_deg": {
+      "first": 0.21741181068258314,
+      "median": 2.2258811299361776,
+      "last": 2.9527725251725325,
+      "max": 3.460465080736805
+    },
+    "alignment_translation_mm": {
+      "max_abs": 0.20178290563070417
+    },
+    "conclusion": "Residual replay error is fully explained by root-pose drift during the reference recording: after per-frame rigid alignment the leg chain matches official MJCF forward kinematics to sub-micrometer numerical precision. No coordinate, unit, joint-order or kinematic-chain error is present.",
+    "still_open": [
+      "Root trajectory itself is not recoverable from the clip; full-pose replay would need the original recording",
+      "No male-specific mass/force calibration is implied",
+      "Muscle-controlled tracking remains untested by this diagnosis"
+    ],
+    "biological_acceptance": false,
+    "wall_seconds": 1.233522799999264,
+    "source_sha256": {
+      "qpos": "aa7e3e72325d7d76a17863057cbaba9259a346d66e41b7d820411570d5e00a42",
+      "xipos": "3f73c47ee4692b0ebf9a760869d1ea05af6c8bbd5795320fb2edb38f53c5c20c"
+    },
+    "executed_source_sha256": {
+      "body/mocap_diagnosis.py": "d78ed66171cae2923edda324ad07fe60cc32e180c3a5ba3a78875a485938d556"
+    }
+  },
+  "interface_review": {
+    "reviewer": "automated_crosscheck_v1 (claude-code session 2026-09-14)",
+    "human_signoff": "ZhangTingjia",
+    "reviewed_rows": 6,
+    "unresolved_conflicts": [
+      {
+        "body_id": 819384,
+        "manc_bodyid": 17885,
+        "malecns_type": "Ti flexor MN",
+        "manc_type": "Acc. ti flexor MN",
+        "reason": "cross-dataset type conflict (MaleCNS Ti flexor MN vs MANC Acc. ti flexor MN); accessory tibia flexor is a distinct target muscle, so the port is withheld until anatomical or measured evidence adjudicates the label"
+      }
+    ],
+    "production_ports_approved": 6,
+    "rules": [
+      "type agreement -> reviewed",
+      "supplement gap with agreeing embedded mancType -> reviewed with gap",
+      "type conflict -> unresolved, excluded"
+    ],
+    "note": "Automated cross-check only. Production interface tables remain empty until a named human reviewer runs --approve after inspecting the evidence columns.",
+    "sensory_status": "No local evidence identifies MaleCNS body IDs for FeCO club/hook/claw afferents; requires manc_v1_classifications.csv (Dryad, token-gated) and experimental driver mapping.",
+    "biological_acceptance": false
+  },
+  "literature_priors": {
+    "scope": "literature-anchored priors sampled for reviewed motor candidates",
+    "created_at": "2026-09-13T17:15:57.377945+00:00",
+    "sampled_neurons": [
+      {
+        "body_id": 800636,
+        "neuron_type": "Ti extensor MN",
+        "capacitance_pf": 10.0,
+        "leak_ns": 2.262942711737611,
+        "resting_mv": -58.81584901593438,
+        "synapse_tau_ms": 5.0,
+        "adaptation_tau_ms": 100.0,
+        "adaptation_ns": 0.1
+      },
+      {
+        "body_id": 807165,
+        "neuron_type": "Ti flexor MN",
+        "capacitance_pf": 10.0,
+        "leak_ns": 5.370852405764559,
+        "resting_mv": -49.58580266135503,
+        "synapse_tau_ms": 5.0,
+        "adaptation_tau_ms": 100.0,
+        "adaptation_ns": 0.1
+      },
+      {
+        "body_id": 809912,
+        "neuron_type": "Ti flexor MN",
+        "capacitance_pf": 10.0,
+        "leak_ns": 4.6524223463899546,
+        "resting_mv": -56.069675542336626,
+        "synapse_tau_ms": 5.0,
+        "adaptation_tau_ms": 100.0,
+        "adaptation_ns": 0.1
+      },
+      {
+        "body_id": 815344,
+        "neuron_type": "Ti extensor MN",
+        "capacitance_pf": 10.0,
+        "leak_ns": 4.835958453595823,
+        "resting_mv": -61.335100069141824,
+        "synapse_tau_ms": 5.0,
+        "adaptation_tau_ms": 100.0,
+        "adaptation_ns": 0.1
+      },
+      {
+        "body_id": 818057,
+        "neuron_type": "Ti flexor MN",
+        "capacitance_pf": 10.0,
+        "leak_ns": 2.422993248625315,
+        "resting_mv": -62.14652580246428,
+        "synapse_tau_ms": 5.0,
+        "adaptation_tau_ms": 100.0,
+        "adaptation_ns": 0.1
+      },
+      {
+        "body_id": 819384,
+        "neuron_type": "Ti flexor MN",
+        "capacitance_pf": 10.0,
+        "leak_ns": 5.2238391538648,
+        "resting_mv": -58.445378868220345,
+        "synapse_tau_ms": 5.0,
+        "adaptation_tau_ms": 100.0,
+        "adaptation_ns": 0.1
+      },
+      {
+        "body_id": 909831,
+        "neuron_type": "Ti flexor MN",
+        "capacitance_pf": 10.0,
+        "leak_ns": 6.608225740811129,
+        "resting_mv": -54.186718667625236,
+        "synapse_tau_ms": 5.0,
+        "adaptation_tau_ms": 100.0,
+        "adaptation_ns": 0.1
+      }
+    ],
+    "evidence_class_counts": {
+      "('capacitance_pf', 'software_fixture')": 7,
+      "('leak_ns', 'inferred')": 2,
+      "('resting_mv', 'inferred')": 2,
+      "('synapse_tau_ms', 'software_fixture')": 7,
+      "('adaptation_tau_ms', 'software_fixture')": 7,
+      "('adaptation_ns', 'software_fixture')": 7,
+      "('leak_ns', 'measured')": 5,
+      "('resting_mv', 'measured')": 5
+    },
+    "records_sha256": "e6f6770a523e54f8e0136a390609ab66742d30f24816c346565fecef28f2b782",
+    "caveats": [
+      "Per-cell fast/intermediate/slow class assignment pending measured trials",
+      "Most source measurements are female; male transfer is an explicit hypothesis",
+      "Fixture-class parameters remain placeholders, not physiology"
+    ],
+    "biological_acceptance": false
+  },
+  "male_mass_calibration": {
+    "measurement": {
+      "sex": "male",
+      "strain": "Canton-S",
+      "age_days": 2.0,
+      "body_mass_mg": 0.81,
+      "source": "Zumstein et al. 2004, J Exp Biol 207:3515-3522 (doi:10.1242/jeb.01181); male 0.81+-0.03 mg"
+    },
+    "model_total_mass_raw": 0.0024942714780000004,
+    "model_mass_unit": "g",
+    "model_total_mass_mg": 2.4942714780000004,
+    "uniform_scale_factor": 0.32474412153784005,
+    "scope": "uniform mass scaling only; geometry/inertia/muscle force calibration is separate",
+    "biological_acceptance": false,
+    "sha256": "e7069d1d509b3aceace0fe781c031095c451e95fa737ca8fdd7d64e0a532a7ff",
+    "finding": "FlyMimic model total mass is 2.494 mg in its gram/mm/uN unit system, i.e. 2.2x the measured 1.13+-0.03 mg female and 3.1x the 0.81 mg male (Zumstein 2004). The upstream body is not mass-calibrated to either sex; any force/statement normalized to model weight inherits this bias until recalibrated.",
+    "comparison": {
+      "measured_female_mg": 1.13,
+      "measured_male_mg": 0.81,
+      "model_mg": 2.4942714780000004
+    }
+  },
+  "motor_circuit_extract": {
+    "scope": "structural partner evidence for the reviewed LF tibia motor candidates",
+    "created_at": "2026-09-13T17:23:57.729287+00:00",
+    "totals": {
+      "input_partner_rows": 25,
+      "output_partner_rows": 25,
+      "input_structural_count_total": 20720,
+      "output_structural_count_total": 116,
+      "input_partners_traced_total": 844,
+      "output_partners_traced_total": 82
+    },
+    "reviewed_motor_ids": [
+      800636,
+      807165,
+      809912,
+      815344,
+      818057,
+      909831
+    ],
+    "unresolved_conflicts": [
+      {
+        "body_id": 819384,
+        "manc_bodyid": 17885,
+        "malecns_type": "Ti flexor MN",
+        "manc_type": "Acc. ti flexor MN",
+        "reason": "cross-dataset type conflict (MaleCNS Ti flexor MN vs MANC Acc. ti flexor MN); accessory tibia flexor is a distinct target muscle, so the port is withheld until anatomical or measured evidence adjudicates the label"
+      }
+    ],
+    "top_inputs": [
+      {
+        "pre_body_id": 800527,
+        "structural_count": 802,
+        "neuron_type": "IN19A005",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 931203,
+        "structural_count": 457,
+        "neuron_type": "IN08A007",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 852122,
+        "structural_count": 457,
+        "neuron_type": null,
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": null,
+        "nerve": null
+      },
+      {
+        "pre_body_id": 904707,
+        "structural_count": 367,
+        "neuron_type": "IN13A006",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 806368,
+        "structural_count": 321,
+        "neuron_type": "IN04B031",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 13130,
+        "structural_count": 297,
+        "neuron_type": "DNg105",
+        "superclass": "descending_neuron",
+        "side": null,
+        "somaNeuromere": "MX",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 802546,
+        "structural_count": 282,
+        "neuron_type": "IN13A014",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 800802,
+        "structural_count": 261,
+        "neuron_type": "IN21A004",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 800155,
+        "structural_count": 246,
+        "neuron_type": "IN03A004",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 801017,
+        "structural_count": 225,
+        "neuron_type": "IN21A002",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 800075,
+        "structural_count": 211,
+        "neuron_type": "IN19B003",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 903840,
+        "structural_count": 210,
+        "neuron_type": "IN04B037",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 909056,
+        "structural_count": 206,
+        "neuron_type": "IN04B031",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 803439,
+        "structural_count": 203,
+        "neuron_type": "IN04B014",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 905167,
+        "structural_count": 190,
+        "neuron_type": "IN08A005",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 906750,
+        "structural_count": 174,
+        "neuron_type": "IN20A.22A004",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 10717,
+        "structural_count": 164,
+        "neuron_type": "DNg93",
+        "superclass": "descending_neuron",
+        "side": null,
+        "somaNeuromere": null,
+        "nerve": null
+      },
+      {
+        "pre_body_id": 800270,
+        "structural_count": 163,
+        "neuron_type": "IN13A002",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 802041,
+        "structural_count": 149,
+        "neuron_type": "IN14A004",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 908560,
+        "structural_count": 146,
+        "neuron_type": "IN04B031",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 800286,
+        "structural_count": 144,
+        "neuron_type": "INXXX464",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 800099,
+        "structural_count": 140,
+        "neuron_type": "DNge079",
+        "superclass": "descending_neuron",
+        "side": null,
+        "somaNeuromere": null,
+        "nerve": null
+      },
+      {
+        "pre_body_id": 801772,
+        "structural_count": 132,
+        "neuron_type": "INXXX058",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "A5",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 809452,
+        "structural_count": 131,
+        "neuron_type": "IN01A063_a",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "pre_body_id": 800863,
+        "structural_count": 130,
+        "neuron_type": "INXXX466",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      }
+    ],
+    "top_outputs": [
+      {
+        "post_body_id": 905167,
+        "structural_count": 6,
+        "neuron_type": "IN08A005",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 803803,
+        "structural_count": 5,
+        "neuron_type": "Pleural remotor/abductor MN",
+        "superclass": "vnc_motor",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 802888,
+        "structural_count": 4,
+        "neuron_type": "IN17A028",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 806154,
+        "structural_count": 4,
+        "neuron_type": "IN04B094",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 807281,
+        "structural_count": 4,
+        "neuron_type": "Tergopleural/Pleural promotor MN",
+        "superclass": "vnc_motor",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 819384,
+        "structural_count": 3,
+        "neuron_type": "Ti flexor MN",
+        "superclass": "vnc_motor",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 904989,
+        "structural_count": 3,
+        "neuron_type": "IN08A003",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 800527,
+        "structural_count": 2,
+        "neuron_type": "IN19A005",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 852122,
+        "structural_count": 2,
+        "neuron_type": null,
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": null,
+        "nerve": null
+      },
+      {
+        "post_body_id": 815344,
+        "structural_count": 2,
+        "neuron_type": "Ti extensor MN",
+        "superclass": "vnc_motor",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 806605,
+        "structural_count": 2,
+        "neuron_type": "IN16B061",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 800636,
+        "structural_count": 2,
+        "neuron_type": "Ti extensor MN",
+        "superclass": "vnc_motor",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 804941,
+        "structural_count": 2,
+        "neuron_type": "Fe reductor MN",
+        "superclass": "vnc_motor",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 802361,
+        "structural_count": 2,
+        "neuron_type": "Sternotrochanter MN",
+        "superclass": "vnc_motor",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 903834,
+        "structural_count": 2,
+        "neuron_type": "IN13A005",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 812963,
+        "structural_count": 2,
+        "neuron_type": "GFC4",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 801026,
+        "structural_count": 2,
+        "neuron_type": "IN21A012",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 800136,
+        "structural_count": 2,
+        "neuron_type": "IN06B035",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T2",
+        "nerve": null
+      },
+      {
+        "post_body_id": 802638,
+        "structural_count": 2,
+        "neuron_type": "IN19A016",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 800701,
+        "structural_count": 1,
+        "neuron_type": "IN13A008",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 800931,
+        "structural_count": 1,
+        "neuron_type": "IN13A009",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 800256,
+        "structural_count": 1,
+        "neuron_type": "IN08A002",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 800374,
+        "structural_count": 1,
+        "neuron_type": "IN19A007",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      },
+      {
+        "post_body_id": 525454,
+        "structural_count": 1,
+        "neuron_type": "DNg74_b",
+        "superclass": "descending_neuron",
+        "side": null,
+        "somaNeuromere": "MX",
+        "nerve": null
+      },
+      {
+        "post_body_id": 800694,
+        "structural_count": 1,
+        "neuron_type": "IN19A029",
+        "superclass": "vnc_intrinsic",
+        "side": null,
+        "somaNeuromere": "T1",
+        "nerve": null
+      }
+    ],
+    "note": "Structural counts are not conductances; no partner is approved as a production port here.",
+    "biological_acceptance": false,
+    "source_sha256": {
+      "data/graph_neurons/edges.parquet": "00187df576644325d26128bcb1e13f84fe758eac9328b32d3dd4897cb17041b9",
+      "data/graph_neurons/neurons.parquet": "b6b3486069792b7e3025a159e09f08e9631dd79d26bbc5d2e25b39dd477bc1a8"
+    }
+  },
+  "motor_unit_prediction": {
+    "scope": "software stack check against female literature class values; not male physiology",
+    "created_at": "2026-09-13T17:25:47.473590+00:00",
+    "source": "Azevedo et al. 2020, eLife 9:e56754 (female 1-4 dpe); Rin 150-700 MOhm, Vrest -68..-48 mV, force/spike 10/1/0.013 uN",
+    "drive_pa": 45.0,
+    "duration_ms": 1500.0,
+    "class_traces": {
+      "slow": {
+        "spikes": 88,
+        "rate_hz": 58.666666666666664,
+        "rheobase_offset_mv": -38.0
+      },
+      "intermediate": {
+        "spikes": 58,
+        "rate_hz": 38.666666666666664,
+        "rheobase_offset_mv": -50.0
+      },
+      "fast": {
+        "spikes": 0,
+        "rate_hz": 0.0,
+        "rheobase_offset_mv": -58.0
+      }
+    },
+    "steady_force_un": 1.6243857030719138,
+    "force_range_un": [
+      0.003942933333333333,
+      1.6243857030719138
+    ],
+    "predictions": {
+      "slow_units_recruit_first": true,
+      "slow_tonic_activity": true,
+      "fast_larger_per_spike_force": true
+    },
+    "caveats": [
+      "Female-measured parameters; male transfer is a hypothesis",
+      "Rheobase offsets, capacitance, refractory period and recruitment thresholds (10/30/60 Hz) are engineering fixtures; measured thresholds and per-body-id class assignment are pending"
+    ],
+    "biological_acceptance": false,
+    "executed_source_sha256": {
+      "experiments/motor_unit_prediction.py": "ca3d37f724c22c46055cc7399ce61e6bc9929e4d21a0b2ec80f093957b4b2416"
+    }
+  },
+  "six_leg_inventory": {
+    "scope": "per-leg capability audit of the pinned FlyGym 2.1.0 musculoskeletal model",
+    "legs": {
+      "LF": {
+        "joints": [
+          "joint_LFCoxa_yaw",
+          "joint_LFCoxa_pitch",
+          "joint_LFCoxa_roll",
+          "joint_LFTrochanter_yaw",
+          "joint_LFTrochanter_pitch",
+          "joint_LFTrochanter_roll",
+          "joint_LFTibia_pitch"
+        ],
+        "muscles": [
+          "LFC_tergopleural_promotor_a",
+          "LFC_tergopleural_promotor_b",
+          "LFC_pleural_remotor_and_abductor",
+          "LFC_pleural_promotor",
+          "LFC_sternal_anterior_rotator",
+          "LFC_sternal_posterior_rotator",
+          "LFC_sternal_adductor",
+          "LFF_trochanter_flexor_b",
+          "LFF_sterno-tergo-trochanter_extensor_a",
+          "LFF_sterno-tergo-trochanter_extensor_b",
+          "LFF_accesory_trochanter_flexor",
+          "LFF_trochanter_extensor",
+          "LFF_trochanter_flexor_a",
+          "LFTibia_flex_93434",
+          "LFTibia_extensor_93932"
+        ],
+        "muscle_actuated": true,
+        "position_actuated": false,
+        "status": "muscle_actuated"
+      },
+      "RF": {
+        "joints": [
+          "joint_RFCoxa_roll",
+          "joint_RFCoxa_yaw",
+          "joint_RFCoxa_pitch",
+          "joint_RFTrochanter_yaw",
+          "joint_RFTrochanter_pitch",
+          "joint_RFTrochanter_roll",
+          "joint_RFTibia_pitch"
+        ],
+        "muscles": [],
+        "muscle_actuated": false,
+        "position_actuated": false,
+        "status": "joints_passive_only"
+      },
+      "LM": {
+        "joints": [],
+        "muscles": [],
+        "muscle_actuated": false,
+        "position_actuated": false,
+        "status": "absent_from_model"
+      },
+      "RM": {
+        "joints": [],
+        "muscles": [],
+        "muscle_actuated": false,
+        "position_actuated": false,
+        "status": "absent_from_model"
+      },
+      "LH": {
+        "joints": [],
+        "muscles": [],
+        "muscle_actuated": false,
+        "position_actuated": false,
+        "status": "absent_from_model"
+      },
+      "RH": {
+        "joints": [],
+        "muscles": [],
+        "muscle_actuated": false,
+        "position_actuated": false,
+        "status": "absent_from_model"
+      }
+    },
+    "six_leg_muscle_actuation_available": false,
+    "blocking": [
+      "Middle and hind legs have no meshes/joints in the upstream model",
+      "Right-front leg has joints but no muscle actuators",
+      "A six-leg neuromuscular closed loop requires new anatomical data, not a software change on this model"
+    ],
+    "upstream_audit_2026_09_14": "FlyMimic repository (gizemozd/FlyMimic) and the Oezdil et al. supplement confirm: mid/hind-leg MTU reconstructions (7 and 8) exist only as supplement figures in OpenSim, never released as model files; the referenced OpenSim pipeline repo (gizemozd/neuromechfly-muscles) is a dead 404 link; only geometry STLs for all six legs are public, with no muscle attachments outside the left front leg. The upstream gap is final unless the authors release the models.",
+    "biological_acceptance": false,
+    "note": "Left-front leg remains the only muscle-actuated limb; expansion status is upstream-bound.",
+    "executed_source_sha256": {
+      "body/six_leg_inventory.py": "3cada84183531bc80ccfa15fa14274048d321392b02a674ad2796bfd5b45d370"
+    }
+  },
+  "receptor_hypotheses": {
+    "scope": "transmitter-level receptor polarity hypotheses; not per-synapse physiology",
+    "created_at": "2026-09-13T17:28:42.163591+00:00",
+    "rows": 8,
+    "transmitter_counts_in_source": {
+      "unclear": 1684226,
+      "acetylcholine": 95420,
+      "glutamate": 28199,
+      "gaba": 20358,
+      "dopamine": 4447,
+      "histamine": 2259,
+      "serotonin": 483,
+      "octopamine": 126
+    },
+    "unclear_policy": "No hypothesis row for unclear transmitters; the conductance core rejects unspecified reversal, so unclear cannot default to excitation",
+    "glutamate_policy": "Dual hypothesis kept at p=.5/.5 until post-type/expression data resolves the sign per target",
+    "amine_policy": "Dopamine/serotonin/octopamine act through the neuromodulation layer; no fast reversal potential asserted",
+    "source_sha256": {
+      "table": "466a7580cec50823a60fcec8e2b45d9ba85a36af392ecb0f8c1a3b5a0d17ecfd"
+    },
+    "biological_acceptance": false
+  },
+  "synapse_coverage": {
+    "scope": "per-ROI synapse-side coverage and loss for the compiled Traced identities",
+    "source": "data\\raw\\syn-points-male-cns-v1.0-minconf-0.5.feather",
+    "roi_column": "primary",
+    "totals": {
+      "known_pre": 42658913,
+      "known_post": 130413767,
+      "unknown_pre": 2997227,
+      "unknown_post": 181419476
+    },
+    "processed_sides": 357489383,
+    "roi_count_known": 146,
+    "roi_count_unknown": 146,
+    "biological_acceptance": false,
+    "note": "Coverage is of synapse sides, not weighted connectivity; cross-check against data/raw/quality CSVs (paper per-ROI precision/recall) before drawing conclusions."
+  },
+  "synapse_roi_crosscheck": {
+    "scope": "independent per-ROI cross-check of the synapse export audit against the paper table",
+    "created_at": "2026-09-13T18:01:44.988266+00:00",
+    "paper_source": "flyconnectome/2025malecns supplemental_data traced-synapse-capture-by-roi.csv",
+    "summary": {
+      "matched_rois": 103,
+      "rois_above_threshold": 97,
+      "max_pre_count_relerr": 0.0,
+      "max_post_count_relerr": 3.6542954635283773e-08,
+      "max_presyn_frac_diff": 0.0023763539894312014,
+      "max_postsyn_frac_diff": 0.00447940897363408,
+      "median_presyn_frac_diff": 2.513470222131886e-05,
+      "median_postsyn_frac_diff": 0.00016429238826587422,
+      "largest_frac_disagreements": [
+        {
+          "roi": "PED(L)",
+          "my_postsyn_traced_frac": 0.736338009,
+          "postsyn_traced_frac": 0.740817418,
+          "postsyn_frac_diff": 0.004479409
+        },
+        {
+          "roi": "LA(R)",
+          "my_postsyn_traced_frac": 0.3596535973,
+          "postsyn_traced_frac": 0.3557716362,
+          "postsyn_frac_diff": 0.0038819611
+        },
+        {
+          "roi": "PED(R)",
+          "my_postsyn_traced_frac": 0.7312097268,
+          "postsyn_traced_frac": 0.7348906514,
+          "postsyn_frac_diff": 0.0036809245
+        },
+        {
+          "roi": "LA(L)",
+          "my_postsyn_traced_frac": 0.3285707774,
+          "postsyn_traced_frac": 0.3249334481,
+          "postsyn_frac_diff": 0.0036373293
+        },
+        {
+          "roi": "bL(R)",
+          "my_postsyn_traced_frac": 0.6870215704,
+          "postsyn_traced_frac": 0.6894253057,
+          "postsyn_frac_diff": 0.0024037352
+        }
+      ]
+    },
+    "interpretation": "Synapse-side counts reproduce the paper table exactly; small traced-fraction differences (<=0.5%) likely reflect the authors' per-fraction traced criteria (connection/synapse-weight denominators) rather than counting errors.",
+    "biological_acceptance": false,
+    "source_sha256": {
+      "data/graph_neurons/synapse_roi_coverage.parquet": "799781c66e4a87ef140e6c729747e4cbbae1081a9fabe089a26cd4b25c54ad6c",
+      "data/raw/quality/male-cns-v1.0-traced-synapse-capture-by-roi.csv": "b91253bcb26d3496b1ddcf17c05006384ee98bebb729ed7d62e3529131e28e64"
+    }
+  },
+  "partner_coverage": {
+    "scope": "connection-level ROI partition of the syn-partners export",
+    "source": "data\\raw\\syn-partners-male-cns-v1.0-minconf-0.5.feather",
+    "totals": {
+      "internal": 124025046,
+      "incoming_boundary": 6388721,
+      "outgoing_boundary": 170769707,
+      "unmapped": 10649769
+    },
+    "partner_confidences": {
+      "internal": {
+        "mean_conf_pre": 0.9129230849388591,
+        "mean_conf_post": 0.8984429327878082,
+        "pairs": 124025046
+      },
+      "incoming_boundary": {
+        "mean_conf_pre": 0.882710447914801,
+        "mean_conf_post": 0.9162953422774537,
+        "pairs": 6388721
+      },
+      "outgoing_boundary": {
+        "mean_conf_pre": 0.911495820661414,
+        "mean_conf_post": 0.8773359660306681,
+        "pairs": 170769707
+      },
+      "unmapped": {
+        "mean_conf_pre": 0.8791548779983642,
+        "mean_conf_post": 0.8787078317793483,
+        "pairs": 10649769
+      }
+    },
+    "processed_pairs": 311833243,
+    "biological_acceptance": false,
+    "note": "Pairs are synapse-level partner records; primary_post is the postsynaptic ROI. Confidence means are per-partition summaries, not per-connection quality."
+  },
+  "motor_transmitters": {
+    "scope": "per-T-bar transmitter prediction profiles for the reviewed LF tibia motor circuit",
+    "created_at": "2026-09-13T18:28:34.096905+00:00",
+    "source": "tbar-neurotransmitters-male-cns-v1.0.feather (predictions, not measurements)",
+    "processed_tbars": 45656140,
+    "bodies": 51,
+    "profiles": {
+      "909056": {
+        "role": "input_partner",
+        "neuron_type": "IN04B031",
+        "tbar_count": 332,
+        "mean_conf": 0.9135993781937174,
+        "mean_probabilities": {
+          "acetylcholine": 0.9480987505381366,
+          "dopamine": 2.041068999838121e-07,
+          "gaba": 0.009805091765094885,
+          "glutamate": 0.031615282168874166,
+          "histamine": 0.0009935693156816101,
+          "octopamine": 0.009387854885303623,
+          "serotonin": 9.9261117594868e-05
+        },
+        "dominant": "acetylcholine"
+      },
+      "800256": {
+        "role": "output_partner",
+        "neuron_type": "IN08A002",
+        "tbar_count": 2720,
+        "mean_conf": 0.9275970432688209,
+        "mean_probabilities": {
+          "acetylcholine": 0.12446015180835007,
+          "dopamine": 1.6997493109434626e-05,
+          "gaba": 0.016942621855174794,
+          "glutamate": 0.8562603859340443,
+          "histamine": 0.0011048087940948522,
+          "octopamine": 0.0006801951505590362,
+          "serotonin": 0.0005348256458188751
+        },
+        "dominant": "glutamate"
+      },
+      "801026": {
+        "role": "output_partner",
+        "neuron_type": "IN21A012",
+        "tbar_count": 935,
+        "mean_conf": 0.9111786326622581,
+        "mean_probabilities": {
+          "acetylcholine": 0.9815272120868459,
+          "dopamine": 1.839460594571251e-06,
+          "gaba": 0.005801120624045797,
+          "glutamate": 0.004320475920962598,
+          "histamine": 0.001785280240247061,
+          "octopamine": 0.006354707263797312,
+          "serotonin": 0.00020937288063189218
+        },
+        "dominant": "acetylcholine"
+      },
+      "931203": {
+        "role": "input_partner",
+        "neuron_type": "IN08A007",
+        "tbar_count": 1048,
+        "mean_conf": 0.9267528389246409,
+        "mean_probabilities": {
+          "acetylcholine": 0.19359036277666802,
+          "dopamine": 2.3759991342917635e-05,
+          "gaba": 0.02804591048878568,
+          "glutamate": 0.7735006521448834,
+          "histamine": 0.004153183614413026,
+          "octopamine": 0.0005786182864106104,
+          "serotonin": 0.00010750871509304585
+        },
+        "dominant": "glutamate"
+      },
+      "904707": {
+        "role": "input_partner",
+        "neuron_type": "IN13A006",
+        "tbar_count": 1677,
+        "mean_conf": 0.9267758061364071,
+        "mean_probabilities": {
+          "acetylcholine": 0.1917481845423588,
+          "dopamine": 5.117374088161713e-06,
+          "gaba": 0.8004523342298694,
+          "glutamate": 0.003870084596054765,
+          "histamine": 0.0013564695541707658,
+          "octopamine": 0.0017653988165872777,
+          "serotonin": 0.0008024138844406166
+        },
+        "dominant": "gaba"
+      },
+      "909831": {
+        "role": "REVIEWED_MN",
+        "neuron_type": "Ti flexor MN",
+        "tbar_count": 1,
+        "mean_conf": 0.796999990940094,
+        "mean_probabilities": {
+          "acetylcholine": 0.6051486134529114,
+          "dopamine": 4.895405436400324e-05,
+          "gaba": 0.256022185087204,
+          "glutamate": 0.019343573600053787,
+          "histamine": 0.11223207414150238,
+          "octopamine": 0.00429085548967123,
+          "serotonin": 0.0029137020464986563
+        },
+        "dominant": "acetylcholine"
+      },
+      "800136": {
+        "role": "output_partner",
+        "neuron_type": "IN06B035",
+        "tbar_count": 2371,
+        "mean_conf": 0.8745727517945713,
+        "mean_probabilities": {
+          "acetylcholine": 0.05462317581090939,
+          "dopamine": 0.0006330682203663453,
+          "gaba": 0.9046804664608599,
+          "glutamate": 0.028409925893190847,
+          "histamine": 0.006708128784367353,
+          "octopamine": 0.0006980923927393357,
+          "serotonin": 0.004247143541515919
+        },
+        "dominant": "gaba"
+      },
+      "818057": {
+        "role": "REVIEWED_MN",
+        "neuron_type": "Ti flexor MN",
+        "tbar_count": 6,
+        "mean_conf": 0.7384999891122183,
+        "mean_probabilities": {
+          "acetylcholine": 0.17368299700319767,
+          "dopamine": 0.00017560255976907987,
+          "gaba": 0.24564523979400596,
+          "glutamate": 0.06966989471887548,
+          "histamine": 0.4947107632954915,
+          "octopamine": 0.005310297972755507,
+          "serotonin": 0.010805218519332508
+        },
+        "dominant": "histamine"
+      },
+      "806154": {
+        "role": "output_partner",
+        "neuron_type": "IN04B094",
+        "tbar_count": 322,
+        "mean_conf": 0.9247546455134517,
+        "mean_probabilities": {
+          "acetylcholine": 0.9616538200365461,
+          "dopamine": 2.2472953573466657e-06,
+          "gaba": 0.004690809904414038,
+          "glutamate": 0.023561196025173176,
+          "histamine": 0.003245465640626343,
+          "octopamine": 0.00642149765482025,
+          "serotonin": 0.00042495725664797284
+        },
+        "dominant": "acetylcholine"
+      },
+      "800270": {
+        "role": "input_partner",
+        "neuron_type": "IN13A002",
+        "tbar_count": 2370,
+        "mean_conf": 0.9290708922132661,
+        "mean_probabilities": {
+          "acetylcholine": 0.012633135275058606,
+          "dopamine": 4.825330294887506e-06,
+          "gaba": 0.9801637206902484,
+          "glutamate": 0.002332258910650018,
+          "histamine": 0.0043862291637580654,
+          "octopamine": 0.00032426901487093263,
+          "serotonin": 0.00015557442795382595
+        },
+        "dominant": "gaba"
+      },
+      "800527": {
+        "role": "input_partner",
+        "neuron_type": "IN19A005",
+        "tbar_count": 1769,
+        "mean_conf": 0.9180955396930399,
+        "mean_probabilities": {
+          "acetylcholine": 0.04919180726351342,
+          "dopamine": 1.2842012061741344e-05,
+          "gaba": 0.9331564004303979,
+          "glutamate": 0.007929999313126131,
+          "histamine": 0.0036056158729323353,
+          "octopamine": 0.005784756469573137,
+          "serotonin": 0.00031853862317519053
+        },
+        "dominant": "gaba"
+      },
+      "908560": {
+        "role": "input_partner",
+        "neuron_type": "IN04B031",
+        "tbar_count": 250,
+        "mean_conf": 0.9112399930953979,
+        "mean_probabilities": {
+          "acetylcholine": 0.9707449016571045,
+          "dopamine": 4.071827685407925e-07,
+          "gaba": 0.00357868610881269,
+          "glutamate": 0.007598496660590172,
+          "histamine": 0.0004796343940834049,
+          "octopamine": 0.01720736078475602,
+          "serotonin": 0.0003905323152466735
+        },
+        "dominant": "acetylcholine"
+      },
+      "525454": {
+        "role": "output_partner",
+        "neuron_type": "DNg74_b",
+        "tbar_count": 5319,
+        "mean_conf": 0.8955653316097435,
+        "mean_probabilities": {
+          "acetylcholine": 0.03737853308120565,
+          "dopamine": 0.0014841476243994585,
+          "gaba": 0.9454915393441551,
+          "glutamate": 0.007059152512934661,
+          "histamine": 0.004944913202304575,
+          "octopamine": 0.0013876430950515086,
+          "serotonin": 0.0022540777802568398
+        },
+        "dominant": "gaba"
+      },
+      "852122": {
+        "role": "input_partner",
+        "neuron_type": NaN,
+        "tbar_count": 1232,
+        "mean_conf": 0.9068344213165246,
+        "mean_probabilities": {
+          "acetylcholine": 0.9656973842337921,
+          "dopamine": 1.9068612427869032e-05,
+          "gaba": 0.013209574087069357,
+          "glutamate": 0.011507946535243422,
+          "histamine": 0.003998982469434472,
+          "octopamine": 0.005259259734081646,
+          "serotonin": 0.00030781384406828373
+        },
+        "dominant": "acetylcholine"
+      },
+      "800155": {
+        "role": "input_partner",
+        "neuron_type": "IN03A004",
+        "tbar_count": 1685,
+        "mean_conf": 0.9243436147268165,
+        "mean_probabilities": {
+          "acetylcholine": 0.977776292169837,
+          "dopamine": 3.2841412532740648e-06,
+          "gaba": 0.008745681462486107,
+          "glutamate": 0.006012867614587158,
+          "histamine": 0.0013123501567496902,
+          "octopamine": 0.005956248914849352,
+          "serotonin": 0.00019326840196844756
+        },
+        "dominant": "acetylcholine"
+      },
+      "903834": {
+        "role": "output_partner",
+        "neuron_type": "IN13A005",
+        "tbar_count": 1542,
+        "mean_conf": 0.9141809239925578,
+        "mean_probabilities": {
+          "acetylcholine": 0.0310352775527964,
+          "dopamine": 1.4767304001403365e-05,
+          "gaba": 0.9427277939792736,
+          "glutamate": 0.013604745659817145,
+          "histamine": 0.008756969294624932,
+          "octopamine": 0.002730045270663519,
+          "serotonin": 0.0011304048397512618
+        },
+        "dominant": "gaba"
+      },
+      "904989": {
+        "role": "output_partner",
+        "neuron_type": "IN08A003",
+        "tbar_count": 1802,
+        "mean_conf": 0.9281054389860469,
+        "mean_probabilities": {
+          "acetylcholine": 0.14212816819103102,
+          "dopamine": 7.882078329172533e-05,
+          "gaba": 0.03726261397244845,
+          "glutamate": 0.8178524331300293,
+          "histamine": 0.0009625248758139897,
+          "octopamine": 0.001572684789626267,
+          "serotonin": 0.00014275520606134805
+        },
+        "dominant": "glutamate"
+      },
+      "800286": {
+        "role": "input_partner",
+        "neuron_type": "INXXX464",
+        "tbar_count": 2444,
+        "mean_conf": 0.930170650397307,
+        "mean_probabilities": {
+          "acetylcholine": 0.9841038206692804,
+          "dopamine": 1.5564292508909627e-05,
+          "gaba": 0.0032050356954037413,
+          "glutamate": 0.004538394961831557,
+          "histamine": 0.0016844664075525795,
+          "octopamine": 0.006069813016125683,
+          "serotonin": 0.0003829151860156966
+        },
+        "dominant": "acetylcholine"
+      },
+      "903840": {
+        "role": "input_partner",
+        "neuron_type": "IN04B037",
+        "tbar_count": 472,
+        "mean_conf": 0.9023771159729715,
+        "mean_probabilities": {
+          "acetylcholine": 0.9446122767561573,
+          "dopamine": 1.943161406907156e-06,
+          "gaba": 0.024211281704345434,
+          "glutamate": 0.01308123076184637,
+          "histamine": 0.00816064340977977,
+          "octopamine": 0.009051260011909694,
+          "serotonin": 0.0008813672332708246
+        },
+        "dominant": "acetylcholine"
+      },
+      "800802": {
+        "role": "input_partner",
+        "neuron_type": "IN21A004",
+        "tbar_count": 641,
+        "mean_conf": 0.9092839217967065,
+        "mean_probabilities": {
+          "acetylcholine": 0.08534447349863658,
+          "dopamine": 2.80357160578368e-06,
+          "gaba": 0.8992187198536259,
+          "glutamate": 0.004525677912998687,
+          "histamine": 0.0006761610358035826,
+          "octopamine": 0.010053220676220885,
+          "serotonin": 0.00017896172994511295
+        },
+        "dominant": "gaba"
+      },
+      "812963": {
+        "role": "output_partner",
+        "neuron_type": "GFC4",
+        "tbar_count": 231,
+        "mean_conf": 0.9095108227812366,
+        "mean_probabilities": {
+          "acetylcholine": 0.9508869836340735,
+          "dopamine": 7.15913688184498e-05,
+          "gaba": 0.00793838583525609,
+          "glutamate": 0.015867491108083137,
+          "histamine": 0.02136516675264353,
+          "octopamine": 0.0018552567885603527,
+          "serotonin": 0.0020151134819346448
+        },
+        "dominant": "acetylcholine"
+      },
+      "800931": {
+        "role": "output_partner",
+        "neuron_type": "IN13A009",
+        "tbar_count": 1726,
+        "mean_conf": 0.9016755396631888,
+        "mean_probabilities": {
+          "acetylcholine": 0.02650792043664744,
+          "dopamine": 2.2236752661826895e-05,
+          "gaba": 0.9306161415052027,
+          "glutamate": 0.00472995754156525,
+          "histamine": 0.03677579047032941,
+          "octopamine": 0.00031523837310039684,
+          "serotonin": 0.0010326988803185545
+        },
+        "dominant": "gaba"
+      },
+      "800694": {
+        "role": "output_partner",
+        "neuron_type": "IN19A029",
+        "tbar_count": 852,
+        "mean_conf": 0.9183943503899193,
+        "mean_probabilities": {
+          "acetylcholine": 0.03227046947104271,
+          "dopamine": 3.366129188403015e-06,
+          "gaba": 0.9608057356776206,
+          "glutamate": 0.003531462456615633,
+          "histamine": 0.0028528333488896055,
+          "octopamine": 0.000455835463643878,
+          "serotonin": 8.027745382994208e-05
+        },
+        "dominant": "gaba"
+      },
+      "809912": {
+        "role": "REVIEWED_MN",
+        "neuron_type": "Ti flexor MN",
+        "tbar_count": 1,
+        "mean_conf": 0.7350000143051147,
+        "mean_probabilities": {
+          "acetylcholine": 0.003956930246204138,
+          "dopamine": 0.0019040261395275593,
+          "gaba": 0.009891659952700138,
+          "glutamate": 0.002391217276453972,
+          "histamine": 0.022123118862509727,
+          "octopamine": 0.049151644110679626,
+          "serotonin": 0.9105813503265381
+        },
+        "dominant": "serotonin"
+      },
+      "819384": {
+        "role": "output_partner",
+        "neuron_type": "Ti flexor MN",
+        "tbar_count": 3,
+        "mean_conf": 0.7883333365122477,
+        "mean_probabilities": {
+          "acetylcholine": 0.18164653579394022,
+          "dopamine": 0.0014987816988044262,
+          "gaba": 0.3383621374766032,
+          "glutamate": 0.04069301082442204,
+          "histamine": 0.34647703170776367,
+          "octopamine": 0.062329114822205156,
+          "serotonin": 0.02899341215379536
+        },
+        "dominant": "histamine"
+      },
+      "802361": {
+        "role": "output_partner",
+        "neuron_type": "Sternotrochanter MN",
+        "tbar_count": 39,
+        "mean_conf": 0.8360512669269855,
+        "mean_probabilities": {
+          "acetylcholine": 0.17629368340548796,
+          "dopamine": 0.01653573518289547,
+          "gaba": 0.11410619607434058,
+          "glutamate": 0.3348823969031517,
+          "histamine": 0.30977053560304624,
+          "octopamine": 0.020067152947003473,
+          "serotonin": 0.02834429779357332
+        },
+        "dominant": "glutamate"
+      },
+      "800701": {
+        "role": "output_partner",
+        "neuron_type": "IN13A008",
+        "tbar_count": 1179,
+        "mean_conf": 0.8966463008505293,
+        "mean_probabilities": {
+          "acetylcholine": 0.020724493271036926,
+          "dopamine": 0.00010563927803797327,
+          "gaba": 0.9400910979312188,
+          "glutamate": 0.023438156383946234,
+          "histamine": 0.014263300846645224,
+          "octopamine": 0.0009601286578564492,
+          "serotonin": 0.0004172100735197278
+        },
+        "dominant": "gaba"
+      },
+      "802041": {
+        "role": "input_partner",
+        "neuron_type": "IN14A004",
+        "tbar_count": 1394,
+        "mean_conf": 0.9281614191049825,
+        "mean_probabilities": {
+          "acetylcholine": 0.12979100522728185,
+          "dopamine": 4.079735286680436e-05,
+          "gaba": 0.04913495008538409,
+          "glutamate": 0.8079830881854896,
+          "histamine": 0.012409119675713598,
+          "octopamine": 0.00043367456147414284,
+          "serotonin": 0.0002073771172291531
+        },
+        "dominant": "glutamate"
+      },
+      "802888": {
+        "role": "output_partner",
+        "neuron_type": "IN17A028",
+        "tbar_count": 817,
+        "mean_conf": 0.9072680441956771,
+        "mean_probabilities": {
+          "acetylcholine": 0.9840165965414106,
+          "dopamine": 1.1932590803939934e-06,
+          "gaba": 0.0018750979417819311,
+          "glutamate": 0.008213211002404405,
+          "histamine": 0.0021946164798331423,
+          "octopamine": 0.003639168239262001,
+          "serotonin": 6.013141530852515e-05
+        },
+        "dominant": "acetylcholine"
+      },
+      "13130": {
+        "role": "input_partner",
+        "neuron_type": "DNg105",
+        "tbar_count": 4613,
+        "mean_conf": 0.9075441036672983,
+        "mean_probabilities": {
+          "acetylcholine": 0.03418542839574217,
+          "dopamine": 0.0026811844304188135,
+          "gaba": 0.9432673266788619,
+          "glutamate": 0.005435754617700185,
+          "histamine": 0.006469526863256881,
+          "octopamine": 0.004273247520111709,
+          "serotonin": 0.003687518216477205
+        },
+        "dominant": "gaba"
+      },
+      "800075": {
+        "role": "input_partner",
+        "neuron_type": "IN19B003",
+        "tbar_count": 2822,
+        "mean_conf": 0.9385868313885344,
+        "mean_probabilities": {
+          "acetylcholine": 0.9845739383168629,
+          "dopamine": 8.51126729947367e-05,
+          "gaba": 0.0023890300820536073,
+          "glutamate": 0.004492291031025144,
+          "histamine": 0.0020682313249846995,
+          "octopamine": 0.0055971227602027935,
+          "serotonin": 0.0007942719377827987
+        },
+        "dominant": "acetylcholine"
+      },
+      "806605": {
+        "role": "output_partner",
+        "neuron_type": "IN16B061",
+        "tbar_count": 267,
+        "mean_conf": 0.9108089833670341,
+        "mean_probabilities": {
+          "acetylcholine": 0.12737392290924374,
+          "dopamine": 2.895861661012674e-07,
+          "gaba": 0.022044330051392037,
+          "glutamate": 0.8452861230918084,
+          "histamine": 0.0044864658305274535,
+          "octopamine": 0.0007790372090613339,
+          "serotonin": 2.981420459321029e-05
+        },
+        "dominant": "glutamate"
+      },
+      "804941": {
+        "role": "output_partner",
+        "neuron_type": "Fe reductor MN",
+        "tbar_count": 13,
+        "mean_conf": 0.7593076825141907,
+        "mean_probabilities": {
+          "acetylcholine": 0.06646096881908867,
+          "dopamine": 0.001018049648057338,
+          "gaba": 0.07214616994874981,
+          "glutamate": 0.030072932704710044,
+          "histamine": 0.7694883782130021,
+          "octopamine": 0.006680496784750945,
+          "serotonin": 0.05413300215821856
+        },
+        "dominant": "histamine"
+      },
+      "905167": {
+        "role": "input_partner",
+        "neuron_type": "IN08A005",
+        "tbar_count": 1201,
+        "mean_conf": 0.9365761832432584,
+        "mean_probabilities": {
+          "acetylcholine": 0.1355367556216659,
+          "dopamine": 2.1827605731127464e-05,
+          "gaba": 0.0339514614159643,
+          "glutamate": 0.8248328789882517,
+          "histamine": 0.003859691732599137,
+          "octopamine": 0.0014588016917148367,
+          "serotonin": 0.00033858850340964927
+        },
+        "dominant": "glutamate"
+      },
+      "802638": {
+        "role": "output_partner",
+        "neuron_type": "IN19A016",
+        "tbar_count": 706,
+        "mean_conf": 0.9106133090537939,
+        "mean_probabilities": {
+          "acetylcholine": 0.035326616091273785,
+          "dopamine": 1.213207552748079e-05,
+          "gaba": 0.9398069277025822,
+          "glutamate": 0.02063407853346568,
+          "histamine": 0.003027542261236732,
+          "octopamine": 0.0007687108468971078,
+          "serotonin": 0.0004239877696112486
+        },
+        "dominant": "gaba"
+      },
+      "803803": {
+        "role": "output_partner",
+        "neuron_type": "Pleural remotor/abductor MN",
+        "tbar_count": 29,
+        "mean_conf": 0.8188620476887144,
+        "mean_probabilities": {
+          "acetylcholine": 0.16374916410683815,
+          "dopamine": 0.0031357988262843495,
+          "gaba": 0.3482448774678954,
+          "glutamate": 0.061509577652533814,
+          "histamine": 0.3982630033268939,
+          "octopamine": 0.013565467522437695,
+          "serotonin": 0.01153212033175115
+        },
+        "dominant": "histamine"
+      },
+      "10717": {
+        "role": "input_partner",
+        "neuron_type": "DNg93",
+        "tbar_count": 5113,
+        "mean_conf": 0.8835182902562555,
+        "mean_probabilities": {
+          "acetylcholine": 0.03593392015027519,
+          "dopamine": 0.0014896205983143617,
+          "gaba": 0.9488049080726885,
+          "glutamate": 0.00762456253889168,
+          "histamine": 0.0022065163701849005,
+          "octopamine": 0.0017159135376587017,
+          "serotonin": 0.002224554124818387
+        },
+        "dominant": "gaba"
+      },
+      "800863": {
+        "role": "input_partner",
+        "neuron_type": "INXXX466",
+        "tbar_count": 1492,
+        "mean_conf": 0.9229048100617232,
+        "mean_probabilities": {
+          "acetylcholine": 0.9911805471210633,
+          "dopamine": 4.067882161691687e-06,
+          "gaba": 0.0016899099528237718,
+          "glutamate": 0.0027228466542681116,
+          "histamine": 0.0017083558705882323,
+          "octopamine": 0.0026578965449911554,
+          "serotonin": 3.637914911339991e-05
+        },
+        "dominant": "acetylcholine"
+      },
+      "806368": {
+        "role": "input_partner",
+        "neuron_type": "IN04B031",
+        "tbar_count": 411,
+        "mean_conf": 0.9056666663093288,
+        "mean_probabilities": {
+          "acetylcholine": 0.9680760991544329,
+          "dopamine": 1.0926497136089976e-06,
+          "gaba": 0.008308207251385325,
+          "glutamate": 0.01458531486010972,
+          "histamine": 0.004319887424107083,
+          "octopamine": 0.004455369835792544,
+          "serotonin": 0.00025401636157058795
+        },
+        "dominant": "acetylcholine"
+      },
+      "800099": {
+        "role": "input_partner",
+        "neuron_type": "DNge079",
+        "tbar_count": 4860,
+        "mean_conf": 0.8927767544248958,
+        "mean_probabilities": {
+          "acetylcholine": 0.022412477624401406,
+          "dopamine": 0.0029321420981203066,
+          "gaba": 0.9618773095798391,
+          "glutamate": 0.003970123901702138,
+          "histamine": 0.00396751889969773,
+          "octopamine": 0.002013906501309631,
+          "serotonin": 0.0028265242741506453
+        },
+        "dominant": "gaba"
+      },
+      "801772": {
+        "role": "input_partner",
+        "neuron_type": "INXXX058",
+        "tbar_count": 1743,
+        "mean_conf": 0.8881795746255591,
+        "mean_probabilities": {
+          "acetylcholine": 0.047321289556446405,
+          "dopamine": 0.000617258259849387,
+          "gaba": 0.9314782551702965,
+          "glutamate": 0.009468621364826606,
+          "histamine": 0.006945694597247534,
+          "octopamine": 0.0010581400914740787,
+          "serotonin": 0.0031107500765083815
+        },
+        "dominant": "gaba"
+      },
+      "809452": {
+        "role": "input_partner",
+        "neuron_type": "IN01A063_a",
+        "tbar_count": 308,
+        "mean_conf": 0.8826558601546597,
+        "mean_probabilities": {
+          "acetylcholine": 0.9485355580781961,
+          "dopamine": 0.00016755603632362466,
+          "gaba": 0.007182362580304518,
+          "glutamate": 0.020637675132730963,
+          "histamine": 0.009130286859934651,
+          "octopamine": 0.012877145251062662,
+          "serotonin": 0.0014694421238707698
+        },
+        "dominant": "acetylcholine"
+      },
+      "803439": {
+        "role": "input_partner",
+        "neuron_type": "IN04B014",
+        "tbar_count": 846,
+        "mean_conf": 0.9096678391134203,
+        "mean_probabilities": {
+          "acetylcholine": 0.9546102398112593,
+          "dopamine": 2.3546547971690723e-05,
+          "gaba": 0.004101256224003138,
+          "glutamate": 0.007663225155129993,
+          "histamine": 0.003473366327786347,
+          "octopamine": 0.029534164662021554,
+          "serotonin": 0.0005941815344581956
+        },
+        "dominant": "acetylcholine"
+      },
+      "815344": {
+        "role": "REVIEWED_MN",
+        "neuron_type": "Ti extensor MN",
+        "tbar_count": 30,
+        "mean_conf": 0.8136999984582265,
+        "mean_probabilities": {
+          "acetylcholine": 0.3438943359690408,
+          "dopamine": 0.016645564536641663,
+          "gaba": 0.1097464778771003,
+          "glutamate": 0.2024720346244673,
+          "histamine": 0.3014087338000536,
+          "octopamine": 0.011567704802534233,
+          "serotonin": 0.01426518585261268
+        },
+        "dominant": "acetylcholine"
+      },
+      "807281": {
+        "role": "output_partner",
+        "neuron_type": "Tergopleural/Pleural promotor MN",
+        "tbar_count": 17,
+        "mean_conf": 0.7791764771237093,
+        "mean_probabilities": {
+          "acetylcholine": 0.07339947889832889,
+          "dopamine": 0.003788205346020678,
+          "gaba": 0.07735251525745672,
+          "glutamate": 0.032636690063073355,
+          "histamine": 0.7380625062129077,
+          "octopamine": 0.010857463269905351,
+          "serotonin": 0.06390316561138366
+        },
+        "dominant": "histamine"
+      },
+      "802546": {
+        "role": "input_partner",
+        "neuron_type": "IN13A014",
+        "tbar_count": 501,
+        "mean_conf": 0.914031935785107,
+        "mean_probabilities": {
+          "acetylcholine": 0.02264232148682167,
+          "dopamine": 4.519649352963273e-05,
+          "gaba": 0.9316798798338382,
+          "glutamate": 0.008174030185526537,
+          "histamine": 0.02793990311021368,
+          "octopamine": 0.008938554600626232,
+          "serotonin": 0.0005801067586462831
+        },
+        "dominant": "gaba"
+      },
+      "800374": {
+        "role": "output_partner",
+        "neuron_type": "IN19A007",
+        "tbar_count": 2064,
+        "mean_conf": 0.9193294658217319,
+        "mean_probabilities": {
+          "acetylcholine": 0.04398690093879032,
+          "dopamine": 3.008362352477346e-06,
+          "gaba": 0.9223700489184653,
+          "glutamate": 0.025220228034448847,
+          "histamine": 0.004780046309727107,
+          "octopamine": 0.003481812016292143,
+          "serotonin": 0.00015797629710632041
+        },
+        "dominant": "gaba"
+      },
+      "801017": {
+        "role": "input_partner",
+        "neuron_type": "IN21A002",
+        "tbar_count": 1354,
+        "mean_conf": 0.915935018125982,
+        "mean_probabilities": {
+          "acetylcholine": 0.23293426755246222,
+          "dopamine": 0.00022784153789928124,
+          "gaba": 0.04913393561583854,
+          "glutamate": 0.7025892468007003,
+          "histamine": 0.011785743296236413,
+          "octopamine": 0.0006879755374634166,
+          "serotonin": 0.002640985511548568
+        },
+        "dominant": "glutamate"
+      },
+      "800636": {
+        "role": "REVIEWED_MN",
+        "neuron_type": "Ti extensor MN",
+        "tbar_count": 31,
+        "mean_conf": 0.8344516061967419,
+        "mean_probabilities": {
+          "acetylcholine": 0.061508855872577234,
+          "dopamine": 0.003528562521809832,
+          "gaba": 0.4883328065155975,
+          "glutamate": 0.02304471366392869,
+          "histamine": 0.33138180610342627,
+          "octopamine": 0.06331403565690702,
+          "serotonin": 0.028889240843484237
+        },
+        "dominant": "gaba"
+      },
+      "807165": {
+        "role": "REVIEWED_MN",
+        "neuron_type": "Ti flexor MN",
+        "tbar_count": 10,
+        "mean_conf": 0.8525999665260315,
+        "mean_probabilities": {
+          "acetylcholine": 0.7005060873925686,
+          "dopamine": 3.4369610375506453e-07,
+          "gaba": 0.10440603606402873,
+          "glutamate": 0.18870403203181924,
+          "histamine": 0.0008862623362801969,
+          "octopamine": 0.005328365170862525,
+          "serotonin": 0.00016885152654140257
+        },
+        "dominant": "acetylcholine"
+      },
+      "906750": {
+        "role": "input_partner",
+        "neuron_type": "IN20A.22A004",
+        "tbar_count": 489,
+        "mean_conf": 0.9261063521381292,
+        "mean_probabilities": {
+          "acetylcholine": 0.9492113988823686,
+          "dopamine": 0.00027333750758630547,
+          "gaba": 0.022428466519198033,
+          "glutamate": 0.006247497441062365,
+          "histamine": 0.01556385877525652,
+          "octopamine": 0.0034758097490134835,
+          "serotonin": 0.0027995986973496983
+        },
+        "dominant": "acetylcholine"
+      }
+    },
+    "note": "Dominant transmitter of the largest premotor inputs constrains receptor hypotheses for the closed-loop review; unclear predictions stay unclear.",
+    "biological_acceptance": false,
+    "source_receipt": "data/raw/tbar-neurotransmitters-male-cns-v1.0.feather.receipt.json is authoritative"
+  },
+  "lf_tibia_circuit": {
+    "scope": "real MaleCNS LF tibia circuit on the FlyGym body; anatomical hypothesis, not acceptance",
+    "created_at": "2026-09-14T13:10:16.171813+00:00",
+    "nodes": 98,
+    "motors": [
+      800636,
+      807165,
+      809912,
+      815344,
+      818057,
+      909831
+    ],
+    "sensory_ports": [
+      817697,
+      935383,
+      815843,
+      821306,
+      908487,
+      817680,
+      816645,
+      912317,
+      812784,
+      817969,
+      810843,
+      908734,
+      814154,
+      818335
+    ],
+    "published_hook_ports": [
+      809437,
+      809543,
+      810043
+    ],
+    "identity_nodes": [
+      805450,
+      804940,
+      809102,
+      802115,
+      805777,
+      803114,
+      805004,
+      10131,
+      13964,
+      10247,
+      10056,
+      10045,
+      31932,
+      37406,
+      40361,
+      226016,
+      809437,
+      809543,
+      809853,
+      809898,
+      810043,
+      908037
+    ],
+    "identity_source": "Dallmann 2025 Nature Supp Table 2 via interfaces.feco_identity",
+    "muscles": [
+      "LFTibia_extensor_93932",
+      "LFTibia_flex_93434",
+      "LFTibia_flex_93434",
+      "LFTibia_extensor_93932",
+      "LFTibia_flex_93434",
+      "LFTibia_flex_93434"
+    ],
+    "edges_kept": 741,
+    "edges_excluded_unsigned": 100,
+    "excluded_transmitter_counts": {
+      "glutamate": 83,
+      "unclear": 17
+    },
+    "mn_parameters": "literature priors (Azevedo 2020 female flexor pool), seed 20260914",
+    "other_parameters": "declared software fixtures",
+    "synapse_scale": 0.01,
+    "edge_delay_ms": 2.0,
+    "static_gain_pa_per_rad": 200.0,
+    "dynamic_gain_pa_per_rad_s": 40.0,
+    "rest_angle_rad": 1.5,
+    "npz_sha256": "482bf53dcf263968bbd6ca66a10dbf5ec6714fe554fbaa1f2067b61a1537e0a1",
+    "duration_ms": 400.0,
+    "conditions": {
+      "full": {
+        "final_voltage_mv": [
+          -54.2963,
+          -33.5998,
+          -39.3443,
+          -48.6723,
+          -48.3538,
+          -52.9514,
+          -148.5267,
+          -147.894,
+          -147.8941,
+          -147.8936,
+          -147.8899,
+          -149.2303,
+          -149.2299,
+          -149.2303,
+          -149.2386,
+          -149.2306,
+          -149.2401,
+          -148.3123,
+          -149.23,
+          -148.9983,
+          -14.8626,
+          -34.1095,
+          -29.8904,
+          -51.2251,
+          -57.519,
+          -55.0643,
+          -27.7366,
+          -61.3432,
+          -27.9767,
+          -46.8182,
+          -21.7221,
+          -50.7174,
+          -60.2668,
+          -53.7519,
+          -26.4235,
+          -63.5892,
+          -56.3475,
+          -53.3025,
+          -53.5645,
+          -61.9409,
+          -32.4318,
+          -55.2997,
+          -58.9586,
+          -60.9012,
+          -46.3899,
+          -60.0018,
+          -60.0,
+          -65.0258,
+          -60.0006,
+          -60.0,
+          -60.0006,
+          -60.0615,
+          -60.0009,
+          -60.0,
+          -60.0,
+          -35.9924,
+          -60.0002,
+          -60.0,
+          -60.0376,
+          -60.0,
+          -60.0012,
+          -60.0,
+          -34.5196,
+          -60.0,
+          -60.0603,
+          -60.0303,
+          -60.0,
+          -60.0001,
+          -60.0,
+          -60.0,
+          -56.8808,
+          -60.0,
+          -59.4609,
+          -60.0,
+          -60.0611,
+          -60.0,
+          -40.477,
+          -42.0584,
+          -65.77,
+          -36.3773,
+          -41.9978,
+          -41.378,
+          -37.9662,
+          -56.6849,
+          -40.4801,
+          -58.0223,
+          -29.2674,
+          -29.0411,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -149.2292,
+          -149.2296,
+          -60.0,
+          -60.0,
+          -149.2288,
+          -60.0
+        ],
+        "joint_qpos_rad": [
+          -0.20551,
+          0.38072,
+          0.50087,
+          -0.26047,
+          -2.45551,
+          0.07389,
+          1.00292
+        ],
+        "muscle_commands": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.8252,
+          0.1331
+        ],
+        "depolarized_neurons": 8,
+        "wall_seconds": 2.3210831000033068
+      },
+      "no_proprioception": {
+        "final_voltage_mv": [
+          -58.8158,
+          -49.5858,
+          -56.0697,
+          -61.3351,
+          -62.1465,
+          -58.4454,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0
+        ],
+        "joint_qpos_rad": [
+          -0.20658,
+          0.37946,
+          0.50208,
+          -0.25681,
+          -2.47666,
+          0.07121,
+          1.61055
+        ],
+        "muscle_commands": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "depolarized_neurons": 0,
+        "wall_seconds": 2.328093700009049
+      },
+      "motor_clamp": {
+        "final_voltage_mv": [
+          -41.811,
+          -34.6809,
+          -38.6627,
+          -38.5219,
+          -48.105,
+          -52.658,
+          -38.5352,
+          -38.6041,
+          -39.3095,
+          -38.261,
+          -39.3081,
+          -39.6692,
+          -37.8862,
+          -39.6692,
+          -37.4942,
+          -39.6399,
+          -38.0539,
+          -38.7621,
+          -37.5377,
+          -39.5643,
+          -14.5139,
+          -31.9841,
+          -32.0543,
+          -42.2266,
+          -50.0427,
+          -55.0725,
+          -29.8249,
+          -43.7122,
+          -36.0944,
+          -37.9956,
+          -21.7984,
+          -41.8629,
+          -41.3601,
+          -51.3016,
+          -33.3513,
+          -56.9755,
+          -56.2903,
+          -24.5657,
+          -53.2461,
+          -46.7784,
+          -33.9059,
+          -54.3833,
+          -59.024,
+          -60.0107,
+          -46.8827,
+          -58.3964,
+          -60.0,
+          -65.0679,
+          -59.4559,
+          -59.9989,
+          -59.4538,
+          -59.1147,
+          -59.2426,
+          -60.0,
+          -60.0,
+          -35.7951,
+          -59.8287,
+          -60.0,
+          -53.7545,
+          -60.0,
+          -58.9215,
+          -60.0,
+          -34.5189,
+          -60.0,
+          -60.1656,
+          -60.0425,
+          -59.9999,
+          -59.9375,
+          -59.9606,
+          -60.0,
+          -56.8806,
+          -60.0,
+          -56.878,
+          -60.0,
+          -60.1058,
+          -60.0,
+          -40.1469,
+          -42.0645,
+          -65.7691,
+          -36.3854,
+          -41.9995,
+          -41.3785,
+          -37.9667,
+          -56.7067,
+          -40.6007,
+          -58.0219,
+          -29.2856,
+          -29.0437,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -37.593,
+          -38.2601,
+          -60.0,
+          -60.0,
+          -35.7204,
+          -60.0
+        ],
+        "joint_qpos_rad": [
+          -0.20658,
+          0.37946,
+          0.50208,
+          -0.25681,
+          -2.47666,
+          0.07121,
+          1.61055
+        ],
+        "muscle_commands": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.8177,
+          0.991
+        ],
+        "depolarized_neurons": 6,
+        "wall_seconds": 2.184221100003924
+      },
+      "rewired": {
+        "final_voltage_mv": [
+          -28.837,
+          -36.4202,
+          -35.4756,
+          -27.7932,
+          -38.9653,
+          -45.6193,
+          -146.0593,
+          -125.1017,
+          -212.259,
+          -111.3224,
+          -167.9305,
+          -212.1664,
+          -75.4483,
+          -212.1664,
+          -91.0066,
+          -212.1664,
+          -144.6901,
+          -66.5323,
+          -91.0167,
+          -212.3173,
+          -26.9503,
+          -26.7172,
+          -31.839,
+          -25.8265,
+          -35.3774,
+          -26.8143,
+          -25.6358,
+          -33.6602,
+          -23.7394,
+          -31.3061,
+          -32.2011,
+          -36.1816,
+          -30.4888,
+          -24.8468,
+          -22.6901,
+          -30.8623,
+          -47.4919,
+          -24.3646,
+          -38.5434,
+          -20.426,
+          -23.5981,
+          -26.5187,
+          -48.0817,
+          -38.8338,
+          -31.3947,
+          -45.9348,
+          -63.1294,
+          -41.2243,
+          -63.129,
+          -37.7528,
+          -64.7771,
+          -38.8282,
+          -65.0295,
+          -63.1291,
+          -48.8004,
+          -31.3993,
+          -32.6802,
+          -60.0,
+          -21.2637,
+          -60.0,
+          -47.8065,
+          -60.0,
+          -31.8626,
+          -60.0,
+          -32.8883,
+          -54.1224,
+          -31.8665,
+          -41.2233,
+          -48.0835,
+          -63.1299,
+          -32.9116,
+          -60.0,
+          -64.2239,
+          -60.0,
+          -32.9123,
+          -60.0174,
+          -31.5117,
+          -38.8731,
+          -41.2247,
+          -40.3268,
+          -36.1722,
+          -45.9354,
+          -63.5749,
+          -20.6026,
+          -41.2335,
+          -46.683,
+          -38.4604,
+          -43.8597,
+          -60.0,
+          -48.0828,
+          -60.0,
+          -41.2256,
+          -146.0314,
+          -128.0002,
+          -31.3986,
+          -31.3984,
+          -122.6807,
+          -41.2247
+        ],
+        "joint_qpos_rad": [
+          -0.20671,
+          0.37947,
+          0.50194,
+          -0.2659,
+          -2.45066,
+          0.07736,
+          0.65845
+        ],
+        "muscle_commands": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "depolarized_neurons": 16,
+        "wall_seconds": 2.435378000009223
+      },
+      "shuffled_io": {
+        "final_voltage_mv": [
+          -32.2503,
+          -31.4864,
+          -37.8285,
+          -28.8549,
+          -51.1524,
+          -53.2076,
+          -159.4297,
+          -137.5265,
+          -176.732,
+          -176.7337,
+          -140.1374,
+          -199.7007,
+          -199.7297,
+          -199.7007,
+          -199.7238,
+          -199.717,
+          -199.7224,
+          -127.5132,
+          -199.7311,
+          -134.4377,
+          -24.0852,
+          -24.6279,
+          -54.2477,
+          -18.8693,
+          -31.1433,
+          -34.6012,
+          -22.2357,
+          -22.355,
+          -26.0466,
+          -19.6681,
+          -32.3968,
+          -24.4967,
+          -33.8779,
+          -37.1775,
+          -26.4603,
+          -33.527,
+          -56.731,
+          -36.2339,
+          -41.4788,
+          -41.8123,
+          -24.1385,
+          -30.8159,
+          -57.917,
+          -39.2494,
+          -40.4746,
+          -60.0031,
+          -60.0,
+          -63.1295,
+          -60.0017,
+          -25.3473,
+          -31.3915,
+          -48.0791,
+          -43.9303,
+          -60.0,
+          -60.0,
+          -41.2175,
+          -25.349,
+          -60.0,
+          -63.1321,
+          -60.0,
+          -60.0015,
+          -60.0,
+          -31.8514,
+          -60.0,
+          -32.5562,
+          -32.5557,
+          -31.3904,
+          -43.9286,
+          -27.4846,
+          -60.0,
+          -31.8514,
+          -60.0,
+          -41.2267,
+          -60.0,
+          -64.7669,
+          -60.0,
+          -33.3016,
+          -52.278,
+          -61.4959,
+          -48.1417,
+          -57.1849,
+          -52.2249,
+          -52.2249,
+          -41.9816,
+          -44.9748,
+          -56.5845,
+          -54.5449,
+          -52.3026,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -199.7032,
+          -199.7053,
+          -60.0,
+          -60.0,
+          -199.7053,
+          -60.0
+        ],
+        "joint_qpos_rad": [
+          -0.20652,
+          0.37976,
+          0.50188,
+          -0.26478,
+          -2.45116,
+          0.07652,
+          0.72545
+        ],
+        "muscle_commands": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.4121
+        ],
+        "depolarized_neurons": 14,
+        "wall_seconds": 2.585756100001163
+      }
+    },
+    "note": "The rewired variant keeps degree but not transmitter-specific polarity pairs; controls are recorded as run, never selected by outcome.",
+    "sign_off": "motor_map.parquet approved by ZhangTingjia on top of automated_crosscheck_v1",
+    "biological_acceptance": false,
+    "executed_source_sha256": {
+      "experiments/lf_tibia_circuit.py": "10c0b82cb65df2ba2943933ed58349dfcccc0361f29596f7705d2f8a1545c8f6"
+    }
+  },
+  "feco_sensory": {
+    "dataset_sha256": "d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd",
+    "protocol_sha256": "8464ad34072888a584b4b27fea7dbefb6b1de9799011eaa97f87d987a08bd531",
+    "gain": 40.477453542756535,
+    "offset": -1.2304172518165017,
+    "trial_metrics": [
+      {
+        "animal_id": "1.0",
+        "trial": "R21D12_01_walkingreplay01_L1_medial",
+        "split": "train",
+        "n": 40694,
+        "mse": 48.54371300115502,
+        "constant_baseline_mse": 76.81695243010006
+      },
+      {
+        "animal_id": "4.0",
+        "trial": "R21D12_04_walkingreplay01_L1_medial",
+        "split": "train",
+        "n": 40171,
+        "mse": 28.90040916758862,
+        "constant_baseline_mse": 72.70486651141469
+      },
+      {
+        "animal_id": "5.0",
+        "trial": "R21D12_05_groomingreplay02_L1_medial",
+        "split": "test",
+        "n": 7214,
+        "mse": 49.635735925917835,
+        "constant_baseline_mse": 98.08294455848784
+      },
+      {
+        "animal_id": "5.0",
+        "trial": "R21D12_05_walkingreplay01_L1_medial",
+        "split": "test",
+        "n": 40249,
+        "mse": 33.51713946444669,
+        "constant_baseline_mse": 59.93247324038385
+      },
+      {
+        "animal_id": "8.0",
+        "trial": "R21D12_08_groomingreplay01_L1_medial",
+        "split": "train",
+        "n": 7231,
+        "mse": 27.81007268570207,
+        "constant_baseline_mse": 116.77706096957533
+      },
+      {
+        "animal_id": "8.0",
+        "trial": "R21D12_08_walkingreplay02_L1_medial",
+        "split": "train",
+        "n": 40245,
+        "mse": 33.810572235804614,
+        "constant_baseline_mse": 64.50587147973876
+      },
+      {
+        "animal_id": "9.0",
+        "trial": "R21D12_09_groomingreplay01_L1_medial",
+        "split": "validation",
+        "n": 7231,
+        "mse": 142.17935739082685,
+        "constant_baseline_mse": 140.83666749155785
+      },
+      {
+        "animal_id": "9.0",
+        "trial": "R21D12_09_walkingreplay01_L1_medial",
+        "split": "validation",
+        "n": 40349,
+        "mse": 43.595219040750436,
+        "constant_baseline_mse": 78.59586599442808
+      },
+      {
+        "animal_id": "10.0",
+        "trial": "R21D12_10_groomingreplay01_L1_medial",
+        "split": "train",
+        "n": 7231,
+        "mse": 16.164325182515924,
+        "constant_baseline_mse": 30.019074148754864
+      },
+      {
+        "animal_id": "10.0",
+        "trial": "R21D12_10_walkingreplay01_L1_medial",
+        "split": "train",
+        "n": 40225,
+        "mse": 18.204320565228958,
+        "constant_baseline_mse": 50.81293882960207
+      },
+      {
+        "animal_id": "11.0",
+        "trial": "R21D12_11_groomingreplay01_L1_medial",
+        "split": "test",
+        "n": 7231,
+        "mse": 64.70316752815293,
+        "constant_baseline_mse": 93.24337997695616
+      },
+      {
+        "animal_id": "11.0",
+        "trial": "R21D12_11_walkingreplay01_L1_medial",
+        "split": "test",
+        "n": 40357,
+        "mse": 29.184790807339443,
+        "constant_baseline_mse": 53.14488188627205
+      }
+    ],
+    "biological_acceptance": false,
+    "closed_loop_validation": false,
+    "note": "Measured calcium only; model takes recorded kinematics; no MaleCNS cell identity claim"
+  },
+  "feco_run_status": {
+    "biological_acceptance": false,
+    "closed_loop_validation": false,
+    "status": "run_retrospective_sensory_analysis",
+    "dataset": "data/physiology_raw/feco/hook_flexion_01_magnet.parquet",
+    "dataset_sha256": "d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd",
+    "publisher_sha256_verified": true,
+    "animals": 7,
+    "trials": 12,
+    "sampling_hz": 200,
+    "driver": "R21D12 (hook flexion afferents)",
+    "results": "validation/feco/sensory-results.json",
+    "held_out_test_vs_constant_baseline": "4/4 trials lower MSE",
+    "notes": [
+      "Retrospective held-out-animal analysis with frozen per-animal split and train-only affine calibration",
+      "No preregistered physiological threshold; biological acceptance not claimed",
+      "predicted_calcium column present but never read as target",
+      "Not a closed loop; recorded kinematics drive the model"
+    ],
+    "executed_utc": "2026-09-14"
+  },
+  "motor_trial_acquisition": {
+    "biological_acceptance": false,
+    "status": "acquired_and_structure_verified",
+    "dataset": "10.5061/dryad.76hdr7stb (Azevedo et al. 2020, eLife 9:e56754)",
+    "file": "data/physiology_raw/motor/180222_F1_C1.zip",
+    "bytes": 199758273,
+    "sha256": "c904f419a52f7993f4146e578a760168178b0dc9ea61c19e9708f2adc99a6e33",
+    "publisher_sha256_verified": true,
+    "token_authenticated": true,
+    "zip_entries": 338,
+    "structure_verified": {
+      "protocol_file": "CurrentStep2T_180222_F1_C1.mat",
+      "mode": "IClamp (with VClamp secondary channel)",
+      "sampling_hz": 10000,
+      "current_steps_pa": [
+        62.5,
+        125.0,
+        250.0
+      ],
+      "sweep_s": 0.42,
+      "pre/stim/post_s": [
+        0.12,
+        0.2,
+        0.1
+      ],
+      "amplifier_gain": 50,
+      "trace_files": "CurrentStep2T_keimograph_*_<trial>.mat",
+      "trace_format": "plain numeric matrix (samples x sweeps), scipy-readable",
+      "example_trace_shape": [
+        1240,
+        70
+      ]
+    },
+    "notes": [
+      "One animal/session zip (smallest of 60); remaining zips selectable on demand with the same token flow",
+      "Cell-notes Table.mat is a MATLAB MCOS table: needs mat73/h5py or MATLAB to read; traces themselves are plain matrices",
+      "No calibration numbers extracted yet; per-cell class assignment and recruitment curves are the next analysis step",
+      "Publisher SHA-256 verified; no credentials written to disk"
+    ],
+    "executed_utc": "2026-09-14"
+  },
+  "motor_trial_analysis": {
+    "scope": "passive properties from one verified Azevedo ephys session",
+    "created_at": "2026-09-14T12:48:50.032070+00:00",
+    "source": "data\\physiology_raw\\motor\\180222_F1_C1.zip",
+    "source_sha256": "c904f419a52f7993f4146e578a760168178b0dc9ea61c19e9708f2adc99a6e33",
+    "driver_tag": "22a08",
+    "cell_identity": "intermediate flexor MN (R22A08-Gal4, BDSC 47902)",
+    "identity_source": "Azevedo et al. 2020 eLife 9:e56754, Fig 4-fig supp 1 driver list",
+    "notes_file": "notes_180222_F1_C1.txt",
+    "n_trials": 121,
+    "n_excluded_by_author": 5,
+    "resting_mv": -44.87267776013749,
+    "subthreshold_slope_mv_per_pa": 0.1884446729792974,
+    "input_resistance_mohm": 188.4446729792974,
+    "seal_resistance_gohm": 14.15145118261555,
+    "rin_method": "single subthreshold step (62.5 pA, n=8 trials)",
+    "rheobase_pa": 100.0,
+    "units": "voltage_1 traces are in mV (session resting mean lands in the biological MN range), current in pA, 10000 Hz, sweep 0.42 s (pre 0.12, stim 0.2)",
+    "caveats": [
+      "Single animal/session of one driver-identified cell",
+      "Class means in the paper (intermediate Rin ~300 MOhm, Vrest ~-60 mV) differ from this single cell; per-cell variance is expected and reported as measured",
+      "SealAndLeak estimate is a pulse-median approximation, not the authors' full pipeline"
+    ],
+    "biological_acceptance": false
+  },
+  "feco_identity": {
+    "scope": "published FeCO identities wired into MaleCNS",
+    "created_at": "2026-09-14T13:04:56.526179+00:00",
+    "source": "Dallmann et al. 2025, Nature 647:445-453, Supplementary Table 2 (41586_2025_9554_MOESM4_ESM.xlsx)",
+    "rows": 22,
+    "counts": {
+      "mapped_type_consistent": 15,
+      "mapped_via_published_type": 6,
+      "mapped_type_inconsistent_manual_review": 1
+    },
+    "roles": {
+      "hook afferent (SNpp38)": 6,
+      "chief 9A T2L": 2,
+      "DNg74 (web) left": 2,
+      "chief 9A T1L": 1,
+      "chief 9A T3L": 1,
+      "chief 9A T1R": 1,
+      "chief 9A T2R": 1,
+      "chief 9A T3R": 1,
+      "DNg74 (web) right": 1,
+      "DNg100 (BDN2) left": 1,
+      "DNg100 (BDN2) right": 1,
+      "DNg12 a": 1,
+      "DNg12 b": 1,
+      "DNg12 c": 1,
+      "DNg12 d": 1
+    },
+    "blocked": [
+      "Per-cell club afferent IDs: club axons were imaged but never reconstructed in any connectome (Dallmann 2025 states this); only driver-line identity exists",
+      "Per-cell MANC claw IDs: not in Supp Table 2; FANC claw pt_root_ids exist but cross-connectome mapping to MaleCNS is not established"
+    ],
+    "caveats": [
+      "MANC 13157 maps to two MaleCNS rows (804940 IN09A012 and 809102 SNpp41); the IN09A012 row is the 9A by type consistency and the SNpp41 row is flagged for manual review",
+      "Identity flows through the annotation mancBodyid/mancType fields; version equivalence beyond the publication supplements is not independently verified"
+    ],
+    "graph_confirmation": "In the compiled graph the top inputs to chief 9A T1L (MaleCNS 805450) are DNg100 (10056, 58 synapses) and DNg74 (10131, 31), reproducing the paper descending control chain.",
+    "biological_acceptance": false,
+    "source_sha256": {
+      "table": "efbc77f223e1431ea5673b2af88f08f64e26214e5aba40af4c6a4941f10234f0",
+      "supp": "c6b03dce6f563bcc82d22268ed690c3d1d95bdd57834f89885f67c7580cde92e"
+    }
+  },
+  "mn_anatomy_classes": {
+    "scope": "per-class MN anatomy from the Azevedo confocal workbook (paper Fig 3A source)",
+    "source": "MN_anatomy_confocal_measurements.xlsx (Dryad 76hdr7stb, publisher SHA-256 verified)",
+    "classes": [
+      {
+        "class": "slow",
+        "soma_diameter_um_mean": 7.106083333333334,
+        "soma_sd": 2.3288496363629574,
+        "primary_neurite_um_mean": 0.6271875,
+        "primary_neurite_sd": 0.09529478387264084,
+        "axon_in_neuropil_um_mean": 0.6899166666666666,
+        "axon_in_neuropil_sd": 0.07410736478347826,
+        "n_soma": 6,
+        "n_neurite_measurements": 8,
+        "n_axon": 6
+      },
+      {
+        "class": "intermediate",
+        "soma_diameter_um_mean": 11.368166666666667,
+        "soma_sd": 3.4244783203674496,
+        "primary_neurite_um_mean": 0.9005624999999999,
+        "primary_neurite_sd": 0.12381705254123924,
+        "axon_in_neuropil_um_mean": 1.29975,
+        "axon_in_neuropil_sd": 0.23189736170046518,
+        "n_soma": 3,
+        "n_neurite_measurements": 8,
+        "n_axon": 6
+      },
+      {
+        "class": "fast",
+        "soma_diameter_um_mean": 15.8385,
+        "soma_sd": 4.412810037048606,
+        "primary_neurite_um_mean": 1.447642857142857,
+        "primary_neurite_sd": 0.40316204170051995,
+        "axon_in_neuropil_um_mean": 2.452083333333334,
+        "axon_in_neuropil_sd": 0.3117981451730161,
+        "n_soma": 6,
+        "n_neurite_measurements": 7,
+        "n_axon": 6
+      }
+    ],
+    "units": "micrometers",
+    "ordering": "soma diameter slow < intermediate < fast (size principle)",
+    "biological_acceptance": false
+  },
+  "feco_prospective": {
+    "protocol_sha256": "0f6c28f685ccff02e759625b5f44c63ff78b508cd5fd538ea0666acc5e4f4797",
+    "evaluated_at": "2026-09-14T14:33:23.082308+00:00",
+    "datasets": {
+      "hook_flexion_01_magnet_Mamiya2018.parquet": {
+        "status": "evaluated",
+        "gain": 74.97976873669282,
+        "offset": 1.9869998862921099,
+        "test_trials_won": 14,
+        "test_trials_total": 16,
+        "pooled_test_mse": 47.18192693970866,
+        "pooled_baseline_mse": 71.8898651504837,
+        "passed": true
+      },
+      "hook_extension_magnet.parquet": {
+        "status": "insufficient_animals_for_registered_split",
+        "animals": 4,
+        "error": "At least five animals required for this registered split"
+      },
+      "claw_magnet_Mamiya2018.parquet": {
+        "status": "evaluated",
+        "gain": 0.01775095045132,
+        "offset": 8.827499424738425,
+        "test_trials_won": 5,
+        "test_trials_total": 12,
+        "pooled_test_mse": 154.8031243541082,
+        "pooled_baseline_mse": 156.25934689416616,
+        "passed": false
+      },
+      "club_magnet_Mamiya2018.parquet": {
+        "status": "evaluated",
+        "gain": 0.3501954291169552,
+        "offset": 4.108027367616787,
+        "test_trials_won": 6,
+        "test_trials_total": 8,
+        "pooled_test_mse": 65.461025265942,
+        "pooled_baseline_mse": 75.60671594955132,
+        "passed": true
+      }
+    },
+    "biological_acceptance": false
+  },
   "source_hashes": {
     "connectome\\audit.py": "d480393a629eca4b4d9fcad753b3c463a55562fcaef9c6a2d3646a5bfaef333d",
     "connectome\\compiler.py": "4e49e4dd658e93a91cb64cf22dac5f315c9eaec677a23607316152d0939c7dcc",
+    "connectome\\partner_coverage.py": "4af177e5cf93d47f306a4823ef52877cc778eda3f40c2039a2d8446dd6f26cdf",
+    "connectome\\receptor_hypotheses.py": "e67a7335752a3d878d7cb6766ddc119f1ee96041e67e2aecf66e360ad3de4e42",
+    "connectome\\roi_audit.py": "24916a93593a835d6d8f629f0e85eaaf36f2d74697bd5c5b2585f31e0bb97e07",
+    "connectome\\roi_crosscheck.py": "c920f1d59cb5508daa810abf9b0b13c58126bab7bdc1530ade4e38af69b844f9",
+    "connectome\\synapse_coverage.py": "d56e5f7af366903ec711c454a3a6107943b478916dc77705ba21f8ba57a35624",
     "connectome\\__init__.py": "13a723e7dd1eb001cf26c3d555fd771e41c30da582189edbadfd4354359bb3b2",
+    "physiology\\background.py": "557725c5c5d32bb4217f40663eb1ecceed9e3f0da8bb20f3f26e10937c3d0450",
+    "physiology\\cable.py": "087b240c9006aab104f40341da8d554c467d88bd0fad7d661d6eaed8fb7cd48b",
+    "physiology\\circadian.py": "c5e5e607a59370facae6a8796232504f4e98239e65a85ca91a00de492405512f",
     "physiology\\clock.py": "596f977152f333ea847ad7a393045312a75311a19c5b81ae68f6c56d31a00d65",
+    "physiology\\gap_junctions.py": "3be5a46c81b6e1608d34bfee046ce978a7aa6ee1b9c8826310af6b968f2b3b2a",
     "physiology\\homeostasis.py": "1671bba17fe6663d11680fb20f9985ed40a42dd08a23131b23fd37c6c42b4c3f",
+    "physiology\\literature_priors.py": "e340c3f9d8529e24a63df2435003c4e80427cc4d0ab44ac2ce665a3118ef0dac",
+    "physiology\\mb_learning.py": "4c618dbe59a7f54df156aea2a2dc1545e100c9569be88a67d1c875083ad19230",
+    "physiology\\neuromodulation.py": "0aed3c9c19d14645990dcf2fce950618fc15e3b0f9efd723a66218d7e409e3b7",
     "physiology\\parameter_tables.py": "c5befa663b1c07b120c37637e24e4a9281c62380d6027b4f7c9fead1a0c81320",
     "physiology\\plasticity.py": "5beea7f272c2abb966f27936d10379e186eb3dc966028a13cf3586fbdea2b2c0",
     "physiology\\reference.py": "9b56c127ee23ac230e93210fd2fb3a037969b46010fbd69cf79ef87e441d145b",
+    "physiology\\spiking.py": "eb250f88f78c3a4a7af7119b94f9058e52b14268273352370aaa13b7d93ee574",
     "physiology\\__init__.py": "91aa05c539da3688d8553fe774beba1542b24d4663f1704d40146c49acd78a2a",
     "interfaces\\evidence_inventory.py": "681f5530d9ea920ed5c500feb4f8374a4f5b5018bd8e61987df20feaa32bd42d",
+    "interfaces\\feco_identity.py": "a1e3008b25cb66bcddcee111fb2a0fc4fdaa3bfcd361769c24c24b787aed4f98",
     "interfaces\\manc_crosswalk.py": "f5b9c44cb1ce2f44a66e4b601bf4678bcee387376fdfa886580c2a4830930c58",
     "interfaces\\registry.py": "732d68a148ca41cbff8f89aecceee68da655a2e5e70b2003be5ffeedd389b63d",
+    "interfaces\\review.py": "620e6747db8867e23aa8c13e32197dc1db1b930fd987a8eeb5fbc36665ed1197",
+    "interfaces\\unit_conversions.py": "ba3ebc2e3d2111b52f77cd2443ae005247b7ba32fcc47cf88f5b9282b958f5a9",
     "interfaces\\__init__.py": "c2ebf954451e4e3b1f4230e98b5e9ccfdd0967fe225db872969fe7fce44d7e74",
+    "world\\contact.py": "60c31d001a7f75bec7feed74d5c9435df1381b3c65f02ee75646007fa82c57f2",
+    "world\\light.py": "2e4f56eb18b67d219cc11800301e5b71b8ae090eabea5ba873b12a771a19f2f6",
+    "world\\nutrients.py": "d0ef6c4b531605d6722ce7b54a8a5d5ad8863e2d9af37a1144634db5a942f65b",
     "world\\stimuli.py": "78d8e79a095deaf2b2e788f39719132c3672009db217746d53aa6127a8330585",
     "world\\__init__.py": "af77b5f8d8c433026a77b5e49690509fbafc0595cac58a9753dbbb9d2e33a443",
     "experiments\\calibration.py": "febf66b6d8fa53bdb6ae6aa3ba451860d1d6d69335cbf67169dbabc93d9db015",
@@ -3811,17 +6781,32 @@
     "experiments\\controls.py": "3bdd3404befe3e06acd8a544e085d354acf94b32e1732099d16c0f1413418cca",
     "experiments\\embodied.py": "94352f2526d996102992eff133ef4556a63fbbc7cef3252ca1eda18c63be3b0a",
     "experiments\\feco.py": "8b28e3f1951b1a81309be90d27f60f105dad8535429bd3149ac44b2c0182ccdc",
+    "experiments\\feco_preregister.py": "05297641e07b77b5f320b8f0d8717613482d707e9392df2db17692c2f6bf2b0e",
+    "experiments\\feeding.py": "ce5a8583c5122a6c4337ce724b2ce108bc7468184988a654004acfa9bb46f6a1",
+    "experiments\\lf_tibia_circuit.py": "10c0b82cb65df2ba2943933ed58349dfcccc0361f29596f7705d2f8a1545c8f6",
     "experiments\\measurement.py": "862cf9cad22e2913242e55bee0d786d4a442105f6719837e1a8e3a5cfd795dfe",
-    "experiments\\public_data.py": "200a2022577d3f5a9f256f5bd26c7914600b25d2f8f44ae584ce4e32085d3310",
+    "experiments\\motor_circuit_extract.py": "0ef49b579f357ab3c3b97f601171c18252dc05a9d93f6084663a0087cb37cf09",
+    "experiments\\motor_transmitters.py": "002dbc1bce6cb07117cf6c955a132c465502f7271e524b435ef1f2b12408c9e9",
+    "experiments\\motor_trials.py": "9712aca92f2398f819ff7fcaedafa54571521b2b3de9c1f5594fb460be8b9fc4",
+    "experiments\\motor_unit_prediction.py": "ca3d37f724c22c46055cc7399ce61e6bc9929e4d21a0b2ec80f093957b4b2416",
+    "experiments\\perturbations.py": "53f29ad2ac929d8361d436d70ba6d4f4ada8c1d2e7825d7197e0eee76762ff3b",
+    "experiments\\public_data.py": "c4188c47057cd4a2088ca604c7814a2da289605ab8c861e8c5d4ce07d4325adb",
+    "experiments\\stimulus_protocols.py": "cebe982685037631f5ce6f8be48ae41261a21a1375b1539bc49e1d22a7fa8d9e",
     "experiments\\__init__.py": "2094320073b9629f5c3cc1f0e7e0cda5f517a1fe8a2acec32964568d72de591b",
     "body\\benchmark.py": "0c5be7272617fb8716c4801a70492b37b387cc96582da48847de4b70a7d866b0",
+    "body\\flight.py": "3f97beacbd2625480d6524988b60bdd220f1e5a17a5602717d75e0f0b6562dbe",
     "body\\flygym_adapter.py": "f58456e9e464dc94b37784115c866f9e6b07b4ff691708b1cc4aa7c9d1e91721",
+    "body\\male_calibration.py": "20f59c798ec974e86eadfd6a7b05070a926e9c79d604b6143a9288b4e0e1cf30",
+    "body\\mocap_diagnosis.py": "d78ed66171cae2923edda324ad07fe60cc32e180c3a5ba3a78875a485938d556",
+    "body\\proprioception.py": "feb0adc22271b30d694e0d5d92b4500b9ee541ff2f94a697c997d8cec1f800a2",
+    "body\\recruitment.py": "f849c0e78e03d874c05df31f647e47ab4e6ee708c466609e4951e67a196950f5",
+    "body\\six_leg_inventory.py": "3cada84183531bc80ccfa15fa14274048d321392b02a674ad2796bfd5b45d370",
     "body\\__init__.py": "dac605e06870d845d7648f93efd1c1aa08336fdb351b2591a19a58146f079d49",
     "validation\\full_neuron_benchmark.py": "608fc0702e5fceff815476030d506740c60f1cda22c00f14385f3abd2eb9de17",
-    "validation\\run_realism.py": "822ab4e136a2e5c9f3bc254392e583dc2ab486900e3b68491b4559000522981a",
+    "validation\\run_realism.py": "df04a2452c420494de265aca7bc365e444b2fbdcf78d5e32570539763da30559",
     "validation\\test_integration.py": "f3ca3470c2f676b075c59746fecaa759077d8ad03cf9b64561d809ef810a4c45",
     "validation\\test_public_data.py": "dcad23e6e5b690a996a83dcfa688c09b5206af025e896cc2a90df1372eb0d2ae",
-    "validation\\test_realism.py": "45115ca40ff62985c9d66c009fd1363106b288449ced446eb0575e655a19c989",
+    "validation\\test_realism.py": "0004a222626390676e7c9ba8dc1bfb642d3b461b1efc76ec6328085429f04269",
     "habitat3d\\accept_full.py": "64a5cf1d7acddd828911ca141fd8fba72ebf9aa3f85e265105a9a42da6e9dde4",
     "habitat3d\\brain.py": "4709f0df242f01d6b3c1517448f065cd03ed1b4121fe4c03be51dcb2a561e347",
     "habitat3d\\ecology.py": "49a42b93fdfd8b1c2a34a0eb7aff1414474d833895ebdbb689492e77826f1217",

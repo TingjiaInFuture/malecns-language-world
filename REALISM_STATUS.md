@@ -1,7 +1,40 @@
-# 路线图执行记录（2026-09-13）
+# 路线图执行记录（2026-09-14 更新）
 
 **总体状态：部分实施，未完成全部路线图，未通过生理生产验收。**
 这里的 PASS 只适用于明确运行过的软件检查；没有真实动物盲测或经人工审核的神经—肌肉映射，不能把单回路/全身数字雄蝇标为完成。
+
+## 第六轮：开放项收尾（2026-09-14）
+
+- **FeCO 逐细胞身份已发表并接入**（`interfaces/feco_identity.py`，证据 `validation/feco-identity.json`）：Dallmann 2025 Nature 补充表 2（开放 URL，已落库校验）给出 MANC chief 9A 六个 bodyId、DNg74/DNg100/DNg12、hook=SNpp38 类型。经官方注释 mancBodyid/mancType 映射：chief 9A T1L→**MaleCNS 805450**（IN09A012，六例类型全一致）、DNg74→10131/10247、DNg100→10056/10045、DNg12→31932/37406/40361/226016、**左 hook 传入 809437/809543/810043（SNpp38，Traced）**。**论文链路在 MaleCNS 图中精确复现**：chief 9A 的前两大输入正是 DNg100（58 突触）与 DNg74（31）。映射含一处需人工复核的双重映射（MANC 13157→804940/809102）。逐细胞 club ID 任何连接组中都未发表（club 从未被重建）——该缺口定案。
+- **真实回路升级为含已发表身份链**：98 节点/741 边；3 个左 hook 传入为**已发表身份感觉端口**（SNpp38），chief 9A 与 DNg100/74/12 共 22 个身份节点入图。五条件复跑：full 8 去极化/胫节 1.003 rad、无本体感觉 0 去极化回静息、rewired 0.658、shuffled_io 0.725。
+- **运动试次标定（实测）**（`experiments/motor_trials.py`，证据 `validation/motor-trial-analysis.json`）：180222_F1_C1 会话（R22A08 驱动 = **中间类屈肌 MN**，笔记解析）121 个电流阶跃试次 → **Rin 188.4 MΩ（62.5 pA 档 ΔV=11.78±0.23 mV，n=8）、rheobase 100 pA、静息 −44.9 mV、封接 14.2 GΩ**；逐试次表入 `current_step_trials_180222_F1_C1.parquet`。单细胞与论文类均值（中间类 ~300 MΩ/−60 mV）的差异如实记录为细胞间变异。
+- **逐类解剖（实测）**（`validation/mn-anatomy-classes.json`）：MN 共聚焦工作簿 Sheet2 → 胞体 7.1/11.4/15.8 µm（慢/中/快，n=6/3/6）、初突起 0.63/0.90/1.45 µm、神经索内轴突 0.69/1.30/2.45 µm——尺寸原理解剖排序确认。
+- **前瞻预注册感觉编码测试**（`experiments/feco_preregister.py`，协议 SHA `0f6c28…` 先冻结后下载数据）：四数据集各按 Mamiya 2018 生理学预设定模型（hook 屈曲/伸展选择位相、claw 张力位置、club 双向位相），先验阈值 = test 试次多数胜恒定基线且合并 MSE 更低。结果：**hook_flexion 通过（14/16）、club 通过（6/8）、claw 未通过（5/12，如实报告——线性位置模型不足，提示需非线性/迟滞模型）**、hook_extension 数据已下载校验但其动物数不足冻结划分规则（<5），状态如实记录为 insufficient_animals_for_registered_split。协议契约内的列选择修正已注明；模型与阈值零改动。
+- **六足上游缺口定案**（`validation/six-leg-inventory.json` 更新）：FlyMimic 仓库与 Özdil 补充材料核实——中/后腿 MTU 重建只存在于论文补充图，从未发布模型文件；引用的 OpenSim 管线仓库（neuromechfly-muscles）404；仅六足几何 STL 公开而无肌肉附着。除非作者发布，该缺口为最终。
+- 运动侧继续开放：其余 59 个试次 zip 按需选拉；逐细胞类别→MaleCNS 身体 ID 的对应仍无发表依据（驱动系→类别有，连接组 ID 无）。
+
+## 第五轮：数据解锁、生产签核与真实回路闭环（2026-09-14）
+
+- **FeCO 原始实测数据已取得并首次运行**：用户 Dryad token 经环境变量传入（不落盘），6 个 FeCO 资产全部下载并通过发布者 SHA-256 校验（含此前阻塞的 `hook_flexion_01_magnet.parquet`，SHA-256 `d4a8c10f…` 精确匹配）。结构核实：320,154 行 × 14 列、7 只动物 12 试次、200 Hz、R21D12 驱动（hook flexion 传入）、角度单位度；`predicted_calcium` 存在但从未读取。`experiments.feco` 实跑：按动物冻结划分、训练集仿射校准 gain=40.48/offset=−1.23，**保留集 test 动物 4/4 试次 MSE 低于恒定基线**（如动物 5：49.6 vs 98.1）；无预注册阈值，`biological_acceptance=false` 保持。`validation/feco-run-status.json` 已更新。**运动侧试次包同步开拉**：`180222_F1_C1.zip`（200 MB）SHA-256 校验通过，IClamp 电流阶跃协议结构核实（`validation/motor-trial-acquisition.json`）。
+- **生产端口 0 → 6**：用户 ZhangTingjia 执行具名人工签核（`interfaces.review --approve`），6 个左前腿胫节运动端口写入生产 `motor_map.parquet`，审核链 = 人工签核（叠加）automated_crosscheck_v1 自动交叉审核。
+- **真实 MaleCNS 左前腿回路首次闭环**（`experiments/lf_tibia_circuit.py` prepare/run 两相入口，证据 `validation/lf-tibia-circuit.json`）：76 个真实节点（6 生产 MN + 12 个直接感觉伙伴端口 + top-25 premotor 中间神经元 + 其余感觉伙伴）、574 条诱导边（递质→受体极性映射；谷氨酸/unclear 的 100 条边**如实剔除**不赋符号）、MN 参数用文献先验、其余声明夹具。五条件实跑：full（胫节 0.974 rad，5 去极化）、no_proprioception（0 去极化，回静息——**感觉通路是此配置下运动输出的必要条件**）、motor_clamp（被动姿态，4 去极化）、rewired（0.658 rad，16 去极化）、shuffled_io（0.771 rad，14 去极化）。两个因果对照终点明显偏离 full；无预注册阈值，仅记录，不宣称显著。scope=anatomical_hypothesis。
+- 其余第四轮成果见下节。
+
+## 第四轮：缺失模块补齐、mocap 偏差解释与突触级数据接入（2026-09-14）
+
+- **mocap 重放偏差已解释**（`body/mocap_diagnosis.py`，`validation/mocap-diagnosis.json`）：官方 clip 只存 7 个左前腿关节角；其参考轨迹录制时根（胸部自由关节）位姿漂移（旋转最高约 3.5°、平移约 0.16 mm）。逐帧刚体（Kabsch）对齐后残差从 0.0196 mm RMSE / 0.065 mm 最大值塌缩到 ≤0.0006 mm（数值精度级），第 0 帧对齐后仅 2e-5 mm。结论：坐标、单位、关节顺序、运动链与官方 XML 全部一致，偏差完全由录制根位姿漂移解释，不是下载损坏或建模错误。
+- **Dryad 访问障碍已定性为政策而非故障**：Dryad API v2 现要求免费自助 API 账户 Bearer token（10 小时有效）才能下载文件字节；匿名用户明确禁止下载文件；`file_stream` 网页路由受 Anubis 质询保护；无 Zenodo/OSF/figshare 镜像。`experiments/public_data.py` 增加 `DRYAD_API_TOKEN` 环境变量支持（token 只作请求头、绝不写入回执），下载 URL 改为官方 `stash:download` 链接。FeCO 与运动原始文件仍在等待用户提供 token 后下载。
+- **发现 MaleCNS 官方突触级公开数据**（此前未知）：`gs://flyem-male-cns` 桶内 `syn-points`（12.7 GB，逐突触 ROI）、`syn-partners`（6.8 GB，伙伴对+置信度+primary_post）、`tbar-neurotransmitters`（2.7 GB，逐突触前递质概率）无需认证即可下载（`download_data.py --profile all-tables`，哈希回执含发布者 MD5）。论文仓库 `flyconnectome/2025malecns` 的逐 ROI 精度/召回与 traced-synapse-capture CSV 已下载到 `data/raw/quality/`。
+- **P0 逐 ROI 突触覆盖审计已实跑**（`connectome/synapse_coverage.py` + `roi_crosscheck.py`，证据 `validation/synapse-coverage.json`、`validation/synapse-roi-crosscheck.json`）：流式处理 syn-points 全部 **357,696,383 个突触侧**（165,122 Traced 身份按 146 个 primary ROI 分区；产出 `synapse_roi_coverage.parquet` 与逐细胞 `cell_synapse_counts.parquet`）。全局覆盖：突触前 42,658,913/45,655,140 = **93.4%**、突触后 130,413,767/311,833,234 = **41.8%**。**独立交叉核对**：103 个 ROI 与论文官方逐 ROI 表比对，突触侧计数完全一致（pre 相对误差 0.0、post ≤3.7e-8），traced 分数最大差 ≤0.0045（中位 3e-5~1.6e-4）。另量化：333 个 Traced 身份在导出中零突触位点（0.2%）、1,026 个仅有突触后、67 个仅有突触前。
+- **运动候选自动证据审核**（`interfaces/review.py`，`validation/interface-review.json`）：7 个左前腿胫节候选中 6 个通过跨源类型一致或"补充表缺行但官方内嵌 mancType 一致"规则进入 `motor_map_reviewed_automated.parquet`（审核者记录为 automated_crosscheck_v1，含证据链、文献募集/延迟引用）；819384 因 MaleCNS 'Ti flexor MN' 与 MANC 'Acc. ti flexor MN' 跨源冲突（附属胫骨屈肌是独立靶肌肉）被明确排除并单列。**正式批准生产端口仍为 0**：人工签核须显式运行 `--approve "姓名"` 才写入生产 `motor_map.parquet`。
+- **真实回路结构证据**（`experiments/motor_circuit_extract.py`）：6 个审核 MN 在已编译图中接收来自 844 个 Traced 伙伴的 20,720 结构突触、输出 116 到 82 个伙伴；最大输入包括 VNC 中间神经元 IN19A005、IN08A007 和下行神经元 DNg105。结构计数不是电导；该表用于接通前审核。
+- **文献先验落地**（`physiology/literature_priors.py`）：胫骨屈肌 MN 的漏电导（Rin 150–900 MΩ 换算）与静息电位（−68…−48 mV，Azevedo 2020）、KC 漏电导/静息/mEPSC τ（Gu & O'Dowd 2006）以 measured 类登记；伸肌参数以 inferred（从屈肌池转移）登记；其余以 software_fixture 登记。7 个候选已按 seed 采样并全链留痕。**系统性警告：多数电生理为雌性测量，雄性迁移本身是显式假设。**
+- **雄性质量校准回执**（`validation/male-mass-calibration.json`，Zumstein 2004 雄 0.81 mg / 雌 1.13 mg）：FlyMimic 模型在其 g/mm/µN 单位制下总质量 2.49 mg，为实测雌蝇 2.2 倍、雄蝇 3.1 倍——上游身体并未按真实果蝇质量标定，任何以模型体重归一的力/结论都继承该偏差；雄性均匀缩放因子 0.325。
+- **缺失模块补齐**：`physiology/spiking.py`（AdEx 脉冲层，单位/不应期/快照）、`physiology/cable.py`（多室无源电缆参考，解析解一致性测试）、`physiology/gap_junctions.py`、`physiology/neuromodulation.py`（显式受体映射的饱和调制）、`physiology/mb_learning.py`（蘑菇体分区多巴胺门控局部可塑性，分区异质）、`physiology/circadian.py`（昼夜钟+唤醒门）、`world/light.py`、`world/nutrients.py`、`world/contact.py`、`body/recruitment.py`（尺寸原理运动单元池）、`body/male_calibration.py`、`body/flight.py`（单位正确的摆动气动脚手架，未验证声明）、`body/six_leg_inventory.py`（逐腿能力审计：LF 肌肉驱动、RF 仅关节、中/后腿缺失）、`connectome/roi_audit.py`（严格输入契约的 ROI 审计工具）、`connectome/receptor_hypotheses.py`（路线图 §2.3 产品：逐递质受体极性假设表，谷氨酸双假设、unclear 无条目、胺类走调质层）、`connectome/synapse_coverage.py`（syn-points 流式逐 ROI 覆盖/损失审计，12.7 GB 不入内存）、`experiments/stimulus_protocols.py`、`experiments/feeding.py`、`experiments/motor_unit_prediction.py`、`experiments/perturbations.py`（激活/沉默/消融干预）、`interfaces/unit_conversions.py`、`body/proprioception.py`（关节态→本体感受器格式，FeCO 风格静/动分路假设）。
+- **连接级 ROI 审计与守恒验证**（`connectome/partner_coverage.py`，证据 `validation/partner-coverage.json`）：流式处理 syn-partners 全部 **311,833,243 对伙伴记录**。internal 124,025,046 对——与编译图内部结构计数**逐位一致**；总数 311,833,243 与官方发布结构计数总和**完全一致**（独立突触级导出与权重表编译互证）。另含 incoming 6,388,721 / outgoing 170,769,707 / unmapped 10,649,769 及各分区伙伴置信度均值，产出 `partner_roi_partition.parquet`。
+- **运动回路递质剖析**（`experiments/motor_transmitters.py`，证据 `validation/motor-transmitters.json`）：流式处理 tbar 全部 45.7M T 杆。6 个审核 MN 的最大 premotor 输入为混合递质：GABA 能下行神经元（DNg93/DNge079/DNg105，p≈0.94–0.96）与中间神经元 IN19A005（gaba=0.93，与 Dallmann 2025 的 GABA 能传入抑制结论方向一致）、胆碱能 IN19B003/IN03A004（≈0.98）、谷氨酸能 IN14A004（glu=0.81，符号依靶细胞未知——受体假设表的双假设即为此保留）。MN 本体中枢内仅 1–31 个 T 杆（输出主要在外周 NMJ），其自身预测标签不具判别力。
+- **运动单元预测实验**（`experiments/motor_unit_prediction.py`）：文献类别参数下慢 MN 先募集并紧张发放、中 MN 次之、快 MN 在中等驱动下不发放而单脉冲力约为慢单元 1000 倍——尺寸原理定性预测在软件栈内复现；属女性测量参数的栈检查，非雄性生理验证。
+- 软件测试现为 64 项通过（18 历史 habitat3d + 46 validation，其中 21 项为本轮新增），JavaScript 语法检查通过；全部新增模块含严格输入校验、单位声明与拒绝语义。
 
 ## 第三轮：公开数据接入
 
@@ -45,17 +78,17 @@
 | 工作包 | 状态 | 尚缺的交付/退出条件 |
 |---|---|---|
 | P0 逐神经元图 | 部分 | 外周/边界身份人工核验、可信片段合并清单、官方独立查询抽样；当前 Traced-only 集合不是最终身份规则 |
-| P0 ROI 审计 | 部分 | 带 ROI 的突触伙伴/点数据及按突触脑区的覆盖与损失 |
-| P0 感觉/运动接口 | 部分 | 审核者、器官/肌肉、单位、募集/传递函数、侧别和来源齐全的非空接口表及打乱对应对照 |
-| P0/P1 神经动力学 | 全规模软件参考已运行 | 缺实测膜/突触参数、输入输出/适应/时延独立对照；全图资源基准是工程参数夹具；脉冲/多室机制仍需按实验需要实现 |
-| P0/P1 左前腿 | 软件/身体基线已运行，校准未通过 | 15 肌肉刺激、被动对照、精确续跑和三步长已运行；225 帧重放仍有 0.0650 mm 最大位置误差；缺雄性质量/力单位校准及负载/能量实验 |
-| P1 神经—肌肉闭环 | 软件夹具闭环已运行；生理闭环未完成 | 仍缺审核后的本体细胞—VNC—运动细胞—肌肉链路、募集曲线及独立生物干预数据 |
-| P1/P2 可塑性与内稳态 | 软件参考 | 蘑菇体局部机制实验约束、能量/水分参数、睡眠/唤醒/昼夜节律与神经调质连接 |
-| 数据与校准 | 校准/协议工具已实现；缺真实实验输入 | 明确品系、性别、日龄、温度、光照与营养的训练/验证/盲测数据；由重测可靠性决定的预注册容差 |
+| P0 ROI 审计 | **已完成（syn-points + syn-partners 双侧）** | 3.58 亿突触侧按 146 ROI 分区、全局 93.4% 前/41.8% 后覆盖、103 ROI 与论文表交叉核对一致；3.12 亿伙伴对连接级分区，internal 计数与编译图**逐位一致**；tbar 递质概率已入 MN 回路剖析 |
+| P0 感觉/运动接口 | **运动侧已生产（6 端口，ZhangTingjia 签核）**；感觉侧为结构假设端口 | 感觉侧直接伙伴（12 个 SNpp/SNta 传入）以声明假设端口接入，FeCO club/hook/claw 与 MaleCNS 的具体身份对应仍缺（manc_v1_classifications 只有粗类；需论文补充表或逐细胞证据）；外周侧别/募集曲线实测仍缺 |
+| P0/P1 神经动力学 | 全规模软件参考已运行；脉冲/电缆/电突触/调质层已补 | 屈肌 MN、KC 的实测膜参数已入先验（雌性来源）；缺独立输入输出/适应/时延对照、雄性参数、逐细胞快/中/慢类别指派 |
+| P0/P1 左前腿 | mocap 偏差已解释；质量校准回执已出 | 15 肌肉刺激、被动对照、精确续跑、三步长已运行；重放残差归因于录制根位姿漂移（刚体对齐后 ≤0.6 µm）；模型总质量 2.49 mg 与实测 0.81 mg（雄）不匹配已量化；仍缺力/负载/能量实验与按质量的重新标定模型验证 |
+| P1 神经—肌肉闭环 | **真实回路五条件闭环已实跑（anatomical_hypothesis）** | 已用生产端口 + 真实子图 + 结构感觉端口闭环；感觉传递/募集参数仍是声明夹具，FeCO 具体细胞身份、募集曲线实测与独立生物干预数据仍缺；生通过未宣称 |
+| P1/P2 可塑性与内稳态 | 软件参考（MB 分区异质规则、昼夜钟、调质池、摄食内稳态已实现） | 蘑菇体逐分区速率/界限的实验数值、能量/水分参数、睡眠/唤醒阈值标定 |
+| 数据与校准 | FeCO 实测已取得并运行；文献先验已入库 | 运动侧原始 MAT 试次包（Dryad 48 GB，token 已可用）尚未选拉；品系/性别/日龄/温度条件提取与预注册容差仍缺 |
 | 生理/行为/因果矩阵 | 未通过 | 未拟合刺激与细胞干预、真实运动行为分布、度数保持重连/无连接组/反馈消融等完整对照 |
 | 性能 | 软件规模/闭环基准已运行 | 已记录软件夹具闭环的每模拟秒耗时、峰值工作集和子系统计数；校准后的真实生理模型性能仍未知 |
-| 六足、摄食、飞行、求偶 | 未完成 | 各工作包独立解剖/物理/实验数据；不能用当前 8 维推力和匿名信号顶替 |
-| 全身/长期/遗传/多室 | 未完成 | 路线图明确属于后续按实验误差驱动的独立研究工作包 |
+| 六足、摄食、飞行、求偶 | 摄食内稳态与飞行单位脚手架已实现；六足受上游限制 | LF 肌肉驱动、RF 仅无执行器关节、中/后腿缺失（见 six-leg-inventory）；各工作包仍需独立解剖/物理/实验数据 |
+| 全身/长期/遗传/多室 | 电缆参考已实现 | 路线图明确属于后续按实验误差驱动的独立研究工作包 |
 
 ## 复现
 
@@ -64,12 +97,43 @@
 .venv/Scripts/python.exe -m connectome.compiler --out data/graph_neurons_new
 .venv/Scripts/python.exe -m connectome.audit --graph data/graph_neurons_new
 .venv/Scripts/python.exe -m validation.run_realism
+# 突触级表（官方公开桶，无需认证；首次 20+ GB）
+.venv/Scripts/python.exe download_data.py --profile all-tables
+# 逐 ROI 突触覆盖 + 论文表交叉核对 + 连接级分区 + MN 回路递质剖析
+.venv/Scripts/python.exe -m connectome.synapse_coverage --points data/raw/syn-points-male-cns-v1.0-minconf-0.5.feather
+.venv/Scripts/python.exe -m connectome.roi_crosscheck
+.venv/Scripts/python.exe -m connectome.partner_coverage --partners data/raw/syn-partners-male-cns-v1.0-minconf-0.5.feather
+.venv/Scripts/python.exe -m experiments.motor_transmitters
+# 通用 ROI 审计工具（输入须含 pre/post/roi 列）
+.venv/Scripts/python.exe -m connectome.roi_audit --synapses data/raw/<synapse-export>.feather
+# 第四轮新增入口
+.venv/Scripts/python.exe -m interfaces.review           # 自动证据审核；--approve "姓名" 才写入生产端口
+.venv/Scripts/python.exe -m experiments.motor_circuit_extract
+.venv/Scripts/python.exe -m physiology.literature_priors
+.venv/Scripts/python.exe -m connectome.receptor_hypotheses
+.venv/Scripts/python.exe -m experiments.motor_unit_prediction
 # 身体独立环境；完整依赖已锁定，避免影响旧虚拟环境
 .venv-body/Scripts/python.exe -m pip install -r requirements-body.lock.txt
 .venv-body/Scripts/python.exe -m body.benchmark
+.venv-body/Scripts/python.exe -m body.mocap_diagnosis
+.venv-body/Scripts/python.exe -m body.six_leg_inventory
 .venv-body/Scripts/python.exe -m experiments.closed_loop_benchmark
 .venv/Scripts/python.exe -m validation.full_neuron_benchmark
 .venv/Scripts/python.exe -m interfaces.evidence_inventory
+# Dryad 原始数据（需免费 API token；见 PUBLIC_DATA_STATUS.md）
+$env:DRYAD_API_TOKEN = '<token>'; .venv/Scripts/python.exe -m experiments.public_data
+.venv/Scripts/python.exe -m experiments.feco
+# 前瞻预注册感觉编码测试（register 必须先于任何数据下载）
+.venv/Scripts/python.exe -m experiments.feco_preregister register
+$env:DRYAD_API_TOKEN = '<token>'; .venv/Scripts/python.exe -m experiments.feco_preregister download
+.venv/Scripts/python.exe -m experiments.feco_preregister evaluate
+# FeCO 逐细胞身份与运动试次实测标定
+.venv/Scripts/python.exe -m interfaces.feco_identity
+.venv/Scripts/python.exe -m experiments.motor_trials
+# 生产签核（具名人工审核者）与真实回路闭环
+.venv/Scripts/python.exe -m interfaces.review --approve "<姓名>"
+.venv/Scripts/python.exe -m experiments.lf_tibia_circuit prepare
+.venv-body/Scripts/python.exe -m experiments.lf_tibia_circuit run
 # 历史 3D 工程对照，非生理生产模型
 .venv/Scripts/python.exe habitat3d/server.py --engineering-sandbox --brain-mode full
 ```

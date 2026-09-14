@@ -1,0 +1,107 @@
+{
+  "dataset_sha256": "d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd",
+  "protocol_sha256": "8464ad34072888a584b4b27fea7dbefb6b1de9799011eaa97f87d987a08bd531",
+  "gain": 40.477453542756535,
+  "offset": -1.2304172518165017,
+  "trial_metrics": [
+    {
+      "animal_id": "1.0",
+      "trial": "R21D12_01_walkingreplay01_L1_medial",
+      "split": "train",
+      "n": 40694,
+      "mse": 48.54371300115502,
+      "constant_baseline_mse": 76.81695243010006
+    },
+    {
+      "animal_id": "4.0",
+      "trial": "R21D12_04_walkingreplay01_L1_medial",
+      "split": "train",
+      "n": 40171,
+      "mse": 28.90040916758862,
+      "constant_baseline_mse": 72.70486651141469
+    },
+    {
+      "animal_id": "5.0",
+      "trial": "R21D12_05_groomingreplay02_L1_medial",
+      "split": "test",
+      "n": 7214,
+      "mse": 49.635735925917835,
+      "constant_baseline_mse": 98.08294455848784
+    },
+    {
+      "animal_id": "5.0",
+      "trial": "R21D12_05_walkingreplay01_L1_medial",
+      "split": "test",
+      "n": 40249,
+      "mse": 33.51713946444669,
+      "constant_baseline_mse": 59.93247324038385
+    },
+    {
+      "animal_id": "8.0",
+      "trial": "R21D12_08_groomingreplay01_L1_medial",
+      "split": "train",
+      "n": 7231,
+      "mse": 27.81007268570207,
+      "constant_baseline_mse": 116.77706096957533
+    },
+    {
+      "animal_id": "8.0",
+      "trial": "R21D12_08_walkingreplay02_L1_medial",
+      "split": "train",
+      "n": 40245,
+      "mse": 33.810572235804614,
+      "constant_baseline_mse": 64.50587147973876
+    },
+    {
+      "animal_id": "9.0",
+      "trial": "R21D12_09_groomingreplay01_L1_medial",
+      "split": "validation",
+      "n": 7231,
+      "mse": 142.17935739082685,
+      "constant_baseline_mse": 140.83666749155785
+    },
+    {
+      "animal_id": "9.0",
+      "trial": "R21D12_09_walkingreplay01_L1_medial",
+      "split": "validation",
+      "n": 40349,
+      "mse": 43.595219040750436,
+      "constant_baseline_mse": 78.59586599442808
+    },
+    {
+      "animal_id": "10.0",
+      "trial": "R21D12_10_groomingreplay01_L1_medial",
+      "split": "train",
+      "n": 7231,
+      "mse": 16.164325182515924,
+      "constant_baseline_mse": 30.019074148754864
+    },
+    {
+      "animal_id": "10.0",
+      "trial": "R21D12_10_walkingreplay01_L1_medial",
+      "split": "train",
+      "n": 40225,
+      "mse": 18.204320565228958,
+      "constant_baseline_mse": 50.81293882960207
+    },
+    {
+      "animal_id": "11.0",
+      "trial": "R21D12_11_groomingreplay01_L1_medial",
+      "split": "test",
+      "n": 7231,
+      "mse": 64.70316752815293,
+      "constant_baseline_mse": 93.24337997695616
+    },
+    {
+      "animal_id": "11.0",
+      "trial": "R21D12_11_walkingreplay01_L1_medial",
+      "split": "test",
+      "n": 40357,
+      "mse": 29.184790807339443,
+      "constant_baseline_mse": 53.14488188627205
+    }
+  ],
+  "biological_acceptance": false,
+  "closed_loop_validation": false,
+  "note": "Measured calcium only; model takes recorded kinematics; no MaleCNS cell identity claim"
+}

@@ -1,0 +1,489 @@
+{
+  "scope": "structural partner evidence for the reviewed LF tibia motor candidates",
+  "created_at": "2026-09-13T17:23:57.729287+00:00",
+  "totals": {
+    "input_partner_rows": 25,
+    "output_partner_rows": 25,
+    "input_structural_count_total": 20720,
+    "output_structural_count_total": 116,
+    "input_partners_traced_total": 844,
+    "output_partners_traced_total": 82
+  },
+  "reviewed_motor_ids": [
+    800636,
+    807165,
+    809912,
+    815344,
+    818057,
+    909831
+  ],
+  "unresolved_conflicts": [
+    {
+      "body_id": 819384,
+      "manc_bodyid": 17885,
+      "malecns_type": "Ti flexor MN",
+      "manc_type": "Acc. ti flexor MN",
+      "reason": "cross-dataset type conflict (MaleCNS Ti flexor MN vs MANC Acc. ti flexor MN); accessory tibia flexor is a distinct target muscle, so the port is withheld until anatomical or measured evidence adjudicates the label"
+    }
+  ],
+  "top_inputs": [
+    {
+      "pre_body_id": 800527,
+      "structural_count": 802,
+      "neuron_type": "IN19A005",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 931203,
+      "structural_count": 457,
+      "neuron_type": "IN08A007",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 852122,
+      "structural_count": 457,
+      "neuron_type": null,
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": null,
+      "nerve": null
+    },
+    {
+      "pre_body_id": 904707,
+      "structural_count": 367,
+      "neuron_type": "IN13A006",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 806368,
+      "structural_count": 321,
+      "neuron_type": "IN04B031",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 13130,
+      "structural_count": 297,
+      "neuron_type": "DNg105",
+      "superclass": "descending_neuron",
+      "side": null,
+      "somaNeuromere": "MX",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 802546,
+      "structural_count": 282,
+      "neuron_type": "IN13A014",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 800802,
+      "structural_count": 261,
+      "neuron_type": "IN21A004",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 800155,
+      "structural_count": 246,
+      "neuron_type": "IN03A004",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 801017,
+      "structural_count": 225,
+      "neuron_type": "IN21A002",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 800075,
+      "structural_count": 211,
+      "neuron_type": "IN19B003",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 903840,
+      "structural_count": 210,
+      "neuron_type": "IN04B037",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 909056,
+      "structural_count": 206,
+      "neuron_type": "IN04B031",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 803439,
+      "structural_count": 203,
+      "neuron_type": "IN04B014",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 905167,
+      "structural_count": 190,
+      "neuron_type": "IN08A005",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 906750,
+      "structural_count": 174,
+      "neuron_type": "IN20A.22A004",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 10717,
+      "structural_count": 164,
+      "neuron_type": "DNg93",
+      "superclass": "descending_neuron",
+      "side": null,
+      "somaNeuromere": null,
+      "nerve": null
+    },
+    {
+      "pre_body_id": 800270,
+      "structural_count": 163,
+      "neuron_type": "IN13A002",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 802041,
+      "structural_count": 149,
+      "neuron_type": "IN14A004",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 908560,
+      "structural_count": 146,
+      "neuron_type": "IN04B031",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 800286,
+      "structural_count": 144,
+      "neuron_type": "INXXX464",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 800099,
+      "structural_count": 140,
+      "neuron_type": "DNge079",
+      "superclass": "descending_neuron",
+      "side": null,
+      "somaNeuromere": null,
+      "nerve": null
+    },
+    {
+      "pre_body_id": 801772,
+      "structural_count": 132,
+      "neuron_type": "INXXX058",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "A5",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 809452,
+      "structural_count": 131,
+      "neuron_type": "IN01A063_a",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "pre_body_id": 800863,
+      "structural_count": 130,
+      "neuron_type": "INXXX466",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    }
+  ],
+  "top_outputs": [
+    {
+      "post_body_id": 905167,
+      "structural_count": 6,
+      "neuron_type": "IN08A005",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 803803,
+      "structural_count": 5,
+      "neuron_type": "Pleural remotor/abductor MN",
+      "superclass": "vnc_motor",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 802888,
+      "structural_count": 4,
+      "neuron_type": "IN17A028",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 806154,
+      "structural_count": 4,
+      "neuron_type": "IN04B094",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 807281,
+      "structural_count": 4,
+      "neuron_type": "Tergopleural/Pleural promotor MN",
+      "superclass": "vnc_motor",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 819384,
+      "structural_count": 3,
+      "neuron_type": "Ti flexor MN",
+      "superclass": "vnc_motor",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 904989,
+      "structural_count": 3,
+      "neuron_type": "IN08A003",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 800527,
+      "structural_count": 2,
+      "neuron_type": "IN19A005",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 852122,
+      "structural_count": 2,
+      "neuron_type": null,
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": null,
+      "nerve": null
+    },
+    {
+      "post_body_id": 815344,
+      "structural_count": 2,
+      "neuron_type": "Ti extensor MN",
+      "superclass": "vnc_motor",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 806605,
+      "structural_count": 2,
+      "neuron_type": "IN16B061",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 800636,
+      "structural_count": 2,
+      "neuron_type": "Ti extensor MN",
+      "superclass": "vnc_motor",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 804941,
+      "structural_count": 2,
+      "neuron_type": "Fe reductor MN",
+      "superclass": "vnc_motor",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 802361,
+      "structural_count": 2,
+      "neuron_type": "Sternotrochanter MN",
+      "superclass": "vnc_motor",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 903834,
+      "structural_count": 2,
+      "neuron_type": "IN13A005",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 812963,
+      "structural_count": 2,
+      "neuron_type": "GFC4",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 801026,
+      "structural_count": 2,
+      "neuron_type": "IN21A012",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 800136,
+      "structural_count": 2,
+      "neuron_type": "IN06B035",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T2",
+      "nerve": null
+    },
+    {
+      "post_body_id": 802638,
+      "structural_count": 2,
+      "neuron_type": "IN19A016",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 800701,
+      "structural_count": 1,
+      "neuron_type": "IN13A008",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 800931,
+      "structural_count": 1,
+      "neuron_type": "IN13A009",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 800256,
+      "structural_count": 1,
+      "neuron_type": "IN08A002",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 800374,
+      "structural_count": 1,
+      "neuron_type": "IN19A007",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    },
+    {
+      "post_body_id": 525454,
+      "structural_count": 1,
+      "neuron_type": "DNg74_b",
+      "superclass": "descending_neuron",
+      "side": null,
+      "somaNeuromere": "MX",
+      "nerve": null
+    },
+    {
+      "post_body_id": 800694,
+      "structural_count": 1,
+      "neuron_type": "IN19A029",
+      "superclass": "vnc_intrinsic",
+      "side": null,
+      "somaNeuromere": "T1",
+      "nerve": null
+    }
+  ],
+  "note": "Structural counts are not conductances; no partner is approved as a production port here.",
+  "biological_acceptance": false,
+  "source_sha256": {
+    "data/graph_neurons/edges.parquet": "00187df576644325d26128bcb1e13f84fe758eac9328b32d3dd4897cb17041b9",
+    "data/graph_neurons/neurons.parquet": "b6b3486069792b7e3025a159e09f08e9631dd79d26bbc5d2e25b39dd477bc1a8"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "scope": "software stack check against female literature class values; not male physiology",
+  "created_at": "2026-09-13T17:25:47.473590+00:00",
+  "source": "Azevedo et al. 2020, eLife 9:e56754 (female 1-4 dpe); Rin 150-700 MOhm, Vrest -68..-48 mV, force/spike 10/1/0.013 uN",
+  "drive_pa": 45.0,
+  "duration_ms": 1500.0,
+  "class_traces": {
+    "slow": {
+      "spikes": 88,
+      "rate_hz": 58.666666666666664,
+      "rheobase_offset_mv": -38.0
+    },
+    "intermediate": {
+      "spikes": 58,
+      "rate_hz": 38.666666666666664,
+      "rheobase_offset_mv": -50.0
+    },
+    "fast": {
+      "spikes": 0,
+      "rate_hz": 0.0,
+      "rheobase_offset_mv": -58.0
+    }
+  },
+  "steady_force_un": 1.6243857030719138,
+  "force_range_un": [
+    0.003942933333333333,
+    1.6243857030719138
+  ],
+  "predictions": {
+    "slow_units_recruit_first": true,
+    "slow_tonic_activity": true,
+    "fast_larger_per_spike_force": true
+  },
+  "caveats": [
+    "Female-measured parameters; male transfer is a hypothesis",
+    "Rheobase offsets, capacitance, refractory period and recruitment thresholds (10/30/60 Hz) are engineering fixtures; measured thresholds and per-body-id class assignment are pending"
+  ],
+  "biological_acceptance": false,
+  "executed_source_sha256": {
+    "experiments/motor_unit_prediction.py": "ca3d37f724c22c46055cc7399ce61e6bc9929e4d21a0b2ec80f093957b4b2416"
+  }
+}

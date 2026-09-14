@@ -1,0 +1,35 @@
+{
+  "scope": "connection-level ROI partition of the syn-partners export",
+  "source": "data\\raw\\syn-partners-male-cns-v1.0-minconf-0.5.feather",
+  "totals": {
+    "internal": 124025046,
+    "incoming_boundary": 6388721,
+    "outgoing_boundary": 170769707,
+    "unmapped": 10649769
+  },
+  "partner_confidences": {
+    "internal": {
+      "mean_conf_pre": 0.9129230849388591,
+      "mean_conf_post": 0.8984429327878082,
+      "pairs": 124025046
+    },
+    "incoming_boundary": {
+      "mean_conf_pre": 0.882710447914801,
+      "mean_conf_post": 0.9162953422774537,
+      "pairs": 6388721
+    },
+    "outgoing_boundary": {
+      "mean_conf_pre": 0.911495820661414,
+      "mean_conf_post": 0.8773359660306681,
+      "pairs": 170769707
+    },
+    "unmapped": {
+      "mean_conf_pre": 0.8791548779983642,
+      "mean_conf_post": 0.8787078317793483,
+      "pairs": 10649769
+    }
+  },
+  "processed_pairs": 311833243,
+  "biological_acceptance": false,
+  "note": "Pairs are synapse-level partner records; primary_post is the postsynaptic ROI. Confidence means are per-partition summaries, not per-connection quality."
+}

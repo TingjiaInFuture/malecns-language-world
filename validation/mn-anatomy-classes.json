@@ -1,0 +1,45 @@
+{
+  "scope": "per-class MN anatomy from the Azevedo confocal workbook (paper Fig 3A source)",
+  "source": "MN_anatomy_confocal_measurements.xlsx (Dryad 76hdr7stb, publisher SHA-256 verified)",
+  "classes": [
+    {
+      "class": "slow",
+      "soma_diameter_um_mean": 7.106083333333334,
+      "soma_sd": 2.3288496363629574,
+      "primary_neurite_um_mean": 0.6271875,
+      "primary_neurite_sd": 0.09529478387264084,
+      "axon_in_neuropil_um_mean": 0.6899166666666666,
+      "axon_in_neuropil_sd": 0.07410736478347826,
+      "n_soma": 6,
+      "n_neurite_measurements": 8,
+      "n_axon": 6
+    },
+    {
+      "class": "intermediate",
+      "soma_diameter_um_mean": 11.368166666666667,
+      "soma_sd": 3.4244783203674496,
+      "primary_neurite_um_mean": 0.9005624999999999,
+      "primary_neurite_sd": 0.12381705254123924,
+      "axon_in_neuropil_um_mean": 1.29975,
+      "axon_in_neuropil_sd": 0.23189736170046518,
+      "n_soma": 3,
+      "n_neurite_measurements": 8,
+      "n_axon": 6
+    },
+    {
+      "class": "fast",
+      "soma_diameter_um_mean": 15.8385,
+      "soma_sd": 4.412810037048606,
+      "primary_neurite_um_mean": 1.447642857142857,
+      "primary_neurite_sd": 0.40316204170051995,
+      "axon_in_neuropil_um_mean": 2.452083333333334,
+      "axon_in_neuropil_sd": 0.3117981451730161,
+      "n_soma": 6,
+      "n_neurite_measurements": 7,
+      "n_axon": 6
+    }
+  ],
+  "units": "micrometers",
+  "ordering": "soma diameter slow < intermediate < fast (size principle)",
+  "biological_acceptance": false
+}

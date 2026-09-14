@@ -1,0 +1,30 @@
+{
+  "biological_acceptance": false,
+  "status": "acquired_and_structure_verified",
+  "dataset": "10.5061/dryad.76hdr7stb (Azevedo et al. 2020, eLife 9:e56754)",
+  "file": "data/physiology_raw/motor/180222_F1_C1.zip",
+  "bytes": 199758273,
+  "sha256": "c904f419a52f7993f4146e578a760168178b0dc9ea61c19e9708f2adc99a6e33",
+  "publisher_sha256_verified": true,
+  "token_authenticated": true,
+  "zip_entries": 338,
+  "structure_verified": {
+    "protocol_file": "CurrentStep2T_180222_F1_C1.mat",
+    "mode": "IClamp (with VClamp secondary channel)",
+    "sampling_hz": 10000,
+    "current_steps_pa": [62.5, 125.0, 250.0],
+    "sweep_s": 0.42,
+    "pre/stim/post_s": [0.12, 0.2, 0.1],
+    "amplifier_gain": 50,
+    "trace_files": "CurrentStep2T_keimograph_*_<trial>.mat",
+    "trace_format": "plain numeric matrix (samples x sweeps), scipy-readable",
+    "example_trace_shape": [1240, 70]
+  },
+  "notes": [
+    "One animal/session zip (smallest of 60); remaining zips selectable on demand with the same token flow",
+    "Cell-notes Table.mat is a MATLAB MCOS table: needs mat73/h5py or MATLAB to read; traces themselves are plain matrices",
+    "No calibration numbers extracted yet; per-cell class assignment and recruitment curves are the next analysis step",
+    "Publisher SHA-256 verified; no credentials written to disk"
+  ],
+  "executed_utc": "2026-09-14"
+}

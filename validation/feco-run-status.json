@@ -1,6 +1,21 @@
 {
   "biological_acceptance": false,
   "closed_loop_validation": false,
-  "status": "not_run_missing_experimental_file",
-  "error": "Measured FeCO file not downloaded: data\\physiology_raw\\feco\\hook_flexion_01_magnet.parquet"
+  "status": "run_retrospective_sensory_analysis",
+  "dataset": "data/physiology_raw/feco/hook_flexion_01_magnet.parquet",
+  "dataset_sha256": "d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd",
+  "publisher_sha256_verified": true,
+  "animals": 7,
+  "trials": 12,
+  "sampling_hz": 200,
+  "driver": "R21D12 (hook flexion afferents)",
+  "results": "validation/feco/sensory-results.json",
+  "held_out_test_vs_constant_baseline": "4/4 trials lower MSE",
+  "notes": [
+    "Retrospective held-out-animal analysis with frozen per-animal split and train-only affine calibration",
+    "No preregistered physiological threshold; biological acceptance not claimed",
+    "predicted_calcium column present but never read as target",
+    "Not a closed loop; recorded kinematics drive the model"
+  ],
+  "executed_utc": "2026-09-14"
 }

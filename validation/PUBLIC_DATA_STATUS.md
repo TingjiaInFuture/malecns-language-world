@@ -1,6 +1,28 @@
-# 公开数据接入实录（2026-09-13）
+# 公开数据接入实录（2026-09-14 第六轮更新）
 
 本记录基于当前 Windows 工作区的实际下载与检查。总体为部分完成；生理闭环未验收。另一会话的 `/mnt/data/` 路径不是本机资产。
+
+## 2026-09-14 第六轮：开放项收尾
+
+- **Dallmann 2025 补充表 2**（`41586_2025_9554_MOESM4_ESM.xlsx`，Springer 开放 URL）已落库（`data/physiology_raw/feco-author/`，含 SHA-256 回执）：MANC chief 9A/DNg74/DNg100/DNg12 逐细胞 ID 与 hook=SNpp38 类型 → 经官方注释映射到 22 个 MaleCNS 身份（见 `validation/feco-identity.json`）。逐细胞 club ID 未发表于任何连接组（定案）。
+- **Azevedo 逐类解剖工作簿** `MN_anatomy_confocal_measurements.xlsx` 已下载校验（发布者 SHA-256 匹配），逐类解剖汇总入 `validation/mn-anatomy-classes.json`。
+- **前瞻预注册评估数据**：Mamiya2018 系 hook_flexion/claw/club parquet 均下载校验；hook_extension_magnet.parquet 已下载校验但其动物数 <5 不满足冻结划分规则。协议（SHA `0f6c28…`）先于数据冻结；评估结果 2 过 1 败 1 不可评（见 `validation/feco/prospective-results.json`），失败如实保留。
+- 运动试次首包 `180222_F1_C1.zip` 已完成实测标定（中间类细胞 Rin 188.4 MΩ 等，见 `validation/motor-trial-analysis.json`）。
+
+## 2026-09-14 第五轮：Dryad token 投入使用，FeCO 原始数据取得并运行
+
+- 用户 Dryad token 经环境变量 `DRYAD_API_TOKEN` 传入（仅作请求头；重定向到资产存储时自动剥离 Authorization，避免向第三方主机泄漏）。6 个 FeCO 资产全部 `downloaded_verified`：`hook_flexion_01_magnet.parquet`（15 MB，发布者 SHA-256 `d4a8c10f…` 精确匹配）、`manc_v1_classifications.csv`、`manc_v1_connectivity.parquet`、`fanc_dn_information.csv`、`rna-seq.xlsx`、Dryad `README.md`。
+- 实测结构核实（运行适配器前）：320,154 行 × 14 列；7 只动物、12 试次；200 Hz；驱动 R21D12（hook flexion 传入）；`L1C_flex` 单位度（2.5–179.7）；`analyze` 0/1；`predicted_calcium` 列存在但从未读取。
+- `experiments.feco` 首次实跑（`validation/feco/sensory-results.json`、`feco-run-status.json`）：按动物冻结划分（动物身份先于目标读取）、训练集仿射校准 gain=40.48/offset=−1.23；**保留集 test 动物 4/4 试次 MSE 低于恒定基线**（例：动物 5 为 49.6 vs 98.1）。无预注册阈值，回溯性分析，`biological_acceptance=false`；不称盲测。
+- `manc_v1_classifications.csv` 只有粗类（intrinsic/sensory/…），不含 FeCO 亚型名；FeCO club/hook/claw→MaleCNS 逐细胞身份仍开放。**运动侧试次包已开始选拉**：最小 zip `180222_F1_C1.zip`（200 MB）已下载并通过发布者 SHA-256（`c904f41…6e33`）；结构核实：IClamp 电流阶跃协议、10 kHz、62.5/125/250 pA、0.42 s 扫描、338 个条目，轨迹为 scipy 可读的纯数值矩阵（1240×70），细胞笔记 Table 为 MCOS（需 mat73/MATLAB）。见 `validation/motor-trial-acquisition.json`；其余 59 个 zip 按需选拉。
+
+## 2026-09-14 第四轮：Dryad 障碍定性与突触级官方数据
+
+- **Dryad 403/401 的根因是政策，不是故障**：Dryad API v2（服务器 `x-api-version: 2.1.0`）对匿名用户明确禁止下载文件字节（官方 API 页声明"Anonymous users ... are not allowed to download data files"）；`/api/v2/files/{id}/download` 返回 401"must have current bearer token"；网页端 `/downloads/file_stream/{id}` 受 Anubis 质询保护。第三方下载器（datahugger-ng 等）同样要求 token。
+- **合法获取路径（已核实）**：在 datadryad.org 用 ORCID 免费注册 → 个人资料页 "Create a Dryad API account" 获得 client_id/secret → `POST https://datadryad.org/oauth/token`（grant_type=client_credentials）换取 10 小时有效的 access token → 携带 `Authorization: Bearer <token>` 访问 `stash:download` 链接。`experiments/public_data.py` 已支持 `DRYAD_API_TOKEN` 环境变量（token 不写入任何回执/报告）。没有镜像（Zenodo/OSF/figshare 均无；作者仓库明确 Dryad 为唯一分发点）。
+- **MaleCNS 突触级数据公开存在**（此前未接入）：官方桶 `gs://flyem-male-cns/v1.0/connectome-data/flat-connectome/` 下 `syn-points`（12.7 GB，逐突触 x/y/z/body/kind/ROI）、`syn-partners`（6.8 GB，伙伴对+conf_pre/conf_post/primary_post）、`tbar-neurotransmitters`（2.7 GB）与 `body-stats`（780 MB）可经 HTTPS 免认证下载；本轮以 `download_data.py --profile all-tables` 启动（校验与断点续传内建）。neuPrint `male-cns:v1.0` 实例存在但 API 需另行注册 token。
+- 论文仓库 `flyconnectome/2025malecns/supplemental_data` 的三份逐 ROI 质量 CSV（tbar 精度/召回、连接精度/召回、traced-synapse-capture）已下载到 `data/raw/quality/`，例如 ME(R) 0.823/0.902、LegNp(T1)(R) 0.706/0.907——这将用于交叉核对自算 ROI 审计。
+- 论文定位修正：FeCO 数据集对应 Dallmann 等 2025, Nature 647:445–453（doi:10.1038/s41586-025-09554-2）；运动数据集为 Azevedo 等 2020, eLife 9:e56754（此前误记 2022/Nature 系）。FeCO 首选文件发布者 SHA-256 不变（`d4a8c10f…80abd`），等待 token 后下载验证。
 
 ## 已取得的资产
 
@@ -30,11 +52,11 @@
 
 结果：`data/graph_neurons/interfaces/manc_lf_tibia_crosswalk.parquet`；逐行审核材料及源哈希：`validation/manc-crosswalk-evidence.json`。
 
-## 原始记录的访问障碍
+## 原始记录的访问障碍（已于第五轮解除 FeCO 侧）
 
-[FeCO Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.gqnk98t16)及[运动 Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.76hdr7stb)的元数据可访问，但本次公开下载请求返回 HTTP 403，API 文件下载返回 401。页面访问、正常 Referer/cookie 会话和旧公开路径亦未解决。没有使用凭据或绕过访问控制。
+[FeCO Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.gqnk98t16)：已凭用户 token 下载并校验全部所选资产。[运动 Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.76hdr7stb)：48 GB 试次包未选拉，token 已可用、按需执行。没有使用凭据绕过或规避任何访问控制。
 
-FeCO 首选文件 `hook_flexion_01_magnet.parquet` 的发布者字节数为 14,993,835，SHA-256 为 `d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd`。当前没有这个文件，`validation/feco-run-status.json` 记录实际入口检查结果 `not_run_missing_experimental_file`。未生成实测分数或保留集协议。
+FeCO 首选文件 `hook_flexion_01_magnet.parquet` 的发布者字节数为 14,993,835，SHA-256 为 `d4a8c10f2700fe06f142da438e52797c99636fbbad2e1c04c1cc29c9fe080abd`，本地校验精确匹配；`validation/feco-run-status.json` 现记录 `run_retrospective_sensory_analysis`。
 
 ## 已实现的后续运行入口
 

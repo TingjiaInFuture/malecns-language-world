@@ -1,0 +1,42 @@
+{
+  "scope": "published FeCO identities wired into MaleCNS",
+  "created_at": "2026-09-14T13:04:56.526179+00:00",
+  "source": "Dallmann et al. 2025, Nature 647:445-453, Supplementary Table 2 (41586_2025_9554_MOESM4_ESM.xlsx)",
+  "rows": 22,
+  "counts": {
+    "mapped_type_consistent": 15,
+    "mapped_via_published_type": 6,
+    "mapped_type_inconsistent_manual_review": 1
+  },
+  "roles": {
+    "hook afferent (SNpp38)": 6,
+    "chief 9A T2L": 2,
+    "DNg74 (web) left": 2,
+    "chief 9A T1L": 1,
+    "chief 9A T3L": 1,
+    "chief 9A T1R": 1,
+    "chief 9A T2R": 1,
+    "chief 9A T3R": 1,
+    "DNg74 (web) right": 1,
+    "DNg100 (BDN2) left": 1,
+    "DNg100 (BDN2) right": 1,
+    "DNg12 a": 1,
+    "DNg12 b": 1,
+    "DNg12 c": 1,
+    "DNg12 d": 1
+  },
+  "blocked": [
+    "Per-cell club afferent IDs: club axons were imaged but never reconstructed in any connectome (Dallmann 2025 states this); only driver-line identity exists",
+    "Per-cell MANC claw IDs: not in Supp Table 2; FANC claw pt_root_ids exist but cross-connectome mapping to MaleCNS is not established"
+  ],
+  "caveats": [
+    "MANC 13157 maps to two MaleCNS rows (804940 IN09A012 and 809102 SNpp41); the IN09A012 row is the 9A by type consistency and the SNpp41 row is flagged for manual review",
+    "Identity flows through the annotation mancBodyid/mancType fields; version equivalence beyond the publication supplements is not independently verified"
+  ],
+  "graph_confirmation": "In the compiled graph the top inputs to chief 9A T1L (MaleCNS 805450) are DNg100 (10056, 58 synapses) and DNg74 (10131, 31), reproducing the paper descending control chain.",
+  "biological_acceptance": false,
+  "source_sha256": {
+    "table": "efbc77f223e1431ea5673b2af88f08f64e26214e5aba40af4c6a4941f10234f0",
+    "supp": "c6b03dce6f563bcc82d22268ed690c3d1d95bdd57834f89885f67c7580cde92e"
+  }
+}
