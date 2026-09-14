@@ -14,7 +14,7 @@
 - 用户 Dryad token 经环境变量 `DRYAD_API_TOKEN` 传入（仅作请求头；重定向到资产存储时自动剥离 Authorization，避免向第三方主机泄漏）。6 个 FeCO 资产全部 `downloaded_verified`：`hook_flexion_01_magnet.parquet`（15 MB，发布者 SHA-256 `d4a8c10f…` 精确匹配）、`manc_v1_classifications.csv`、`manc_v1_connectivity.parquet`、`fanc_dn_information.csv`、`rna-seq.xlsx`、Dryad `README.md`。
 - 实测结构核实（运行适配器前）：320,154 行 × 14 列；7 只动物、12 试次；200 Hz；驱动 R21D12（hook flexion 传入）；`L1C_flex` 单位度（2.5–179.7）；`analyze` 0/1；`predicted_calcium` 列存在但从未读取。
 - `experiments.feco` 首次实跑（`validation/feco/sensory-results.json`、`feco-run-status.json`）：按动物冻结划分（动物身份先于目标读取）、训练集仿射校准 gain=40.48/offset=−1.23；**保留集 test 动物 4/4 试次 MSE 低于恒定基线**（例：动物 5 为 49.6 vs 98.1）。无预注册阈值，回溯性分析，`biological_acceptance=false`；不称盲测。
-- `manc_v1_classifications.csv` 只有粗类（intrinsic/sensory/…），不含 FeCO 亚型名；FeCO club/hook/claw→MaleCNS 逐细胞身份仍开放。**运动侧试次包已开始选拉**：最小 zip `180222_F1_C1.zip`（200 MB）已下载并通过发布者 SHA-256（`c904f41…6e33`）；结构核实：IClamp 电流阶跃协议、10 kHz、62.5/125/250 pA、0.42 s 扫描、338 个条目，轨迹为 scipy 可读的纯数值矩阵（1240×70），细胞笔记 Table 为 MCOS（需 mat73/MATLAB）。见 `validation/motor-trial-acquisition.json`；其余 59 个 zip 按需选拉。
+- `manc_v1_classifications.csv` 只有粗类（intrinsic/sensory/…），不含 FeCO 亚型名；FeCO club/hook/claw→MaleCNS 逐细胞身份仍开放。**运动侧试次包已开始选拉**：最小 zip `180222_F1_C1.zip`（200 MB）已下载并通过发布者 SHA-256（`c904f41…6e33`）；结构核实：IClamp 电流阶跃协议、10 kHz、62.5/125/250 pA、0.42 s 扫描、338 个条目，轨迹为 scipy 可读的纯数值矩阵（1240×70），细胞笔记 Table 为 MCOS（需 mat73/MATLAB）。见 `validation/motor-trial-acquisition.json`。**其余 49 个 zip（~48 GB）的批量选拉在 v1.0.0 定版时中止**：Merritt 资产主机对所有连接施加约 12 KB/s 的服务端限速（并发 Range 请求各自同速，单连接需 ~10 小时/包）；未保留任何部分下载。token 流程不变，日后可重试。
 
 ## 2026-09-14 第四轮：Dryad 障碍定性与突触级官方数据
 

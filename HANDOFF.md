@@ -1,5 +1,10 @@
 # MaleCNS 路线图交接（2026-09-14 第六轮更新）
 
+> **v1.0.0 定版**：本仓库以当前状态作为 v1.0.0 归档——六轮路线图执行、67 项软件测试全绿、
+> 27 份验证证据、6 个经签核的生产运动端口、含已发表身份 FeCO 链的真实回路五条件闭环。
+> 生理验收（biological_acceptance）按证据边界保持 false；剩余开放项见文末。
+> 未完成的批量选拉代码与部分下载已于定版前清除，工作树干净。
+
 ## 接手先读
 
 目标是执行完整的 `MaleCNS_realism_roadmap.md`，不是仅完成软件演示。当前为六轮部分实现：缺失模块已补齐、突触级审计完成、FeCO 实测已运行、生产端口已签核、真实回路五条件闭环已实跑（含**已发表身份的 hook 感觉端口与 9A/DN 链**）、运动试次实测校准落地、前瞻预注册测试完成（2 过 1 败 1 不可评）、六足上游缺口定案。整份路线图仍未完成：生理验收未通过，剩余边界均为需要新数据或新实验的项（见文末）。
@@ -26,7 +31,7 @@
 
 `validation/public-data-availability.json` 保存实际 URL、下载状态、哈希及本机路径。
 
-- **Dryad**：用户 token 已投入使用（仅经环境变量，绝不落盘），6 个 FeCO 资产全部下载并通过发布者 SHA-256 校验；`hook_flexion_01_magnet.parquet` 实测结构已核实（14 列/7 动物/200 Hz/R21D12），FeCO 离线分析已实跑。运动侧 48 GB 试次包按需选拉（单 zip 数百 MB–2.5 GB）。
+- **Dryad**：用户 token 已投入使用（仅经环境变量，绝不落盘），6 个 FeCO 资产全部下载并通过发布者 SHA-256 校验；`hook_flexion_01_magnet.parquet` 实测结构已核实（14 列/7 动物/200 Hz/R21D12），FeCO 离线分析已实跑。运动侧试次包：50 个 zip 中 1 个（180222_F1_C1）已取得校准；其余 49 个（约 48 GB）在 v1.0.0 定版时选拉中止——Merritt 资产主机出现每连接约 12 KB/s 的服务端限速（并发 Range 分段可部分缓解但仍不可行），token 流程保持可用，可日后重试。
 - **MaleCNS 突触级数据全部本地就位并审计完成**：syn-points（3.58 亿侧）、syn-partners（3.12 亿对，internal 与编译图逐位一致）、tbar（45.7M T 杆递质概率）、body-stats；论文仓库逐 ROI 质量 CSV 已交叉核对一致。
 - MANC 补充表 3/6 已下载。7 个左前腿候选：6 个已生产（ZhangTingjia 签核）；819384 的 MaleCNS↔MANC 跨源类型冲突仍排除。
 - FeCO 细胞（club/hook/claw、9A、DNg74/DNg100）驱动系已核实；**逐细胞身份已接入**（第六轮）：Dallmann 2025 补充表 2 → MANC ID/类型 → MaleCNS（chief 9A T1L=805450、左 hook=809437/809543/810043 等 22 个）；club 逐细胞 ID 未发表（定案）。真实回路感觉端口 = 3 个已发表身份 hook + 12 个结构直连伙伴（声明假设）。
@@ -73,7 +78,7 @@ $env:DRYAD_API_TOKEN = '<token>'; .venv/Scripts/python.exe -m experiments.public
 
 ## 下一步顺序与退出条件
 
-1. **运动侧扩展标定**：其余 59 个试次 zip 按需选拉（token 流程已验证）；逐驱动类别汇总 Rin/rheobase/力-脉冲；用 Piezo/force 通道做感觉-运动响应标定；替换 lf_tibia_circuit 中声明的感觉/募集夹具。逐细胞类别→MaleCNS body ID 对应仍无发表依据，需新实验。
+1. **运动侧扩展标定**：其余 49 个试次 zip（~48 GB）待资产主机限速解除后选拉（token 流程已验证；单连接已观察到 ~12 KB/s 限速，需并发分段策略）；逐驱动类别汇总 Rin/rheobase/力-脉冲；用 Piezo/force 通道做感觉-运动响应标定；替换 lf_tibia_circuit 中声明的感觉/募集夹具。逐细胞类别→MaleCNS body ID 对应仍无发表依据，需新实验。
 2. **FeCO 深化**：claw 前瞻测试失败提示需非线性/迟滞位置模型——注册 v2 协议（模型变更需重新预注册）；club 逐细胞 ID 任何连接组均未发表（定案）；`rna-seq.xlsx` 受体表达可接入 receptor_hypotheses。
 3. **回路扩展**：lf_tibia_circuit 扩到 844 个 premotor 伙伴、加调质/学习层长期实验；接入 calibration.py 的预注册盲测流程。
 4. 身体侧：按 0.325 质量因子生成标定模型副本并重跑被动/负载/能量实验；力/负载单位校准仍缺。
