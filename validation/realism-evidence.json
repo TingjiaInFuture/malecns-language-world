@@ -17,9 +17,9 @@
         "-v"
       ],
       "returncode": 0,
-      "seconds": 15.089893299998948,
+      "seconds": 16.98860300000524,
       "stdout": "Resumed saved world without changing simulation state.\n",
-      "stderr": "test_controls_and_strict_vocabulary (test_model.ModelTests.test_controls_and_strict_vocabulary) ... ok\ntest_determinism_and_exact_resume (test_model.ModelTests.test_determinism_and_exact_resume) ... ok\ntest_false_hint_reduces_trust (test_model.ModelTests.test_false_hint_reduces_trust) ... ok\ntest_independent_neural_state_and_frozen_gains (test_model.ModelTests.test_independent_neural_state_and_frozen_gains) ... ok\ntest_locality_and_no_hidden_coordinates (test_model.ModelTests.test_locality_and_no_hidden_coordinates) ... ok\ntest_long_run_bounds (test_model.ModelTests.test_long_run_bounds) ... ok\ntest_runtime_save_archive_and_single_step (test_model.ModelTests.test_runtime_save_archive_and_single_step) ... ok\ntest_signal_investigation_and_contact_validation (test_model.ModelTests.test_signal_investigation_and_contact_validation) ... ok\ntest_closed_loop_and_exact_resume (test_neural_control.NeuralControlTests.test_closed_loop_and_exact_resume) ... ok\ntest_contact_requires_neural_mouth_and_pump (test_neural_control.NeuralControlTests.test_contact_requires_neural_mouth_and_pump) ... ok\ntest_environment_cannot_actuate_when_neural_output_clamped (test_neural_control.NeuralControlTests.test_environment_cannot_actuate_when_neural_output_clamped) ... ok\ntest_neural_motor_interventions (test_neural_control.NeuralControlTests.test_neural_motor_interventions) ... ok\ntest_no_behavioral_or_semantic_entry_points (test_neural_control.NeuralControlTests.test_no_behavioral_or_semantic_entry_points) ... ok\ntest_sensing_contains_no_identity_memory (test_neural_control.NeuralControlTests.test_sensing_contains_no_identity_memory) ... ok\ntest_signal_is_delayed_local_scalar_without_semantics (test_neural_control.NeuralControlTests.test_signal_is_delayed_local_scalar_without_semantics) ... ok\ntest_solid_boundary_does_not_steer (test_neural_control.NeuralControlTests.test_solid_boundary_does_not_steer) ... ok\ntest_stepping_does_not_draw_behavioral_randomness (test_neural_control.NeuralControlTests.test_stepping_does_not_draw_behavioral_randomness) ... ok\ntest_zero_output_cannot_choose_move_eat_or_signal (test_neural_control.NeuralControlTests.test_zero_output_cannot_choose_move_eat_or_signal) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 13.998s\n\nOK\n"
+      "stderr": "test_controls_and_strict_vocabulary (test_model.ModelTests.test_controls_and_strict_vocabulary) ... ok\ntest_determinism_and_exact_resume (test_model.ModelTests.test_determinism_and_exact_resume) ... ok\ntest_false_hint_reduces_trust (test_model.ModelTests.test_false_hint_reduces_trust) ... ok\ntest_independent_neural_state_and_frozen_gains (test_model.ModelTests.test_independent_neural_state_and_frozen_gains) ... ok\ntest_locality_and_no_hidden_coordinates (test_model.ModelTests.test_locality_and_no_hidden_coordinates) ... ok\ntest_long_run_bounds (test_model.ModelTests.test_long_run_bounds) ... ok\ntest_runtime_save_archive_and_single_step (test_model.ModelTests.test_runtime_save_archive_and_single_step) ... ok\ntest_signal_investigation_and_contact_validation (test_model.ModelTests.test_signal_investigation_and_contact_validation) ... ok\ntest_closed_loop_and_exact_resume (test_neural_control.NeuralControlTests.test_closed_loop_and_exact_resume) ... ok\ntest_contact_requires_neural_mouth_and_pump (test_neural_control.NeuralControlTests.test_contact_requires_neural_mouth_and_pump) ... ok\ntest_environment_cannot_actuate_when_neural_output_clamped (test_neural_control.NeuralControlTests.test_environment_cannot_actuate_when_neural_output_clamped) ... ok\ntest_neural_motor_interventions (test_neural_control.NeuralControlTests.test_neural_motor_interventions) ... ok\ntest_no_behavioral_or_semantic_entry_points (test_neural_control.NeuralControlTests.test_no_behavioral_or_semantic_entry_points) ... ok\ntest_sensing_contains_no_identity_memory (test_neural_control.NeuralControlTests.test_sensing_contains_no_identity_memory) ... ok\ntest_signal_is_delayed_local_scalar_without_semantics (test_neural_control.NeuralControlTests.test_signal_is_delayed_local_scalar_without_semantics) ... ok\ntest_solid_boundary_does_not_steer (test_neural_control.NeuralControlTests.test_solid_boundary_does_not_steer) ... ok\ntest_stepping_does_not_draw_behavioral_randomness (test_neural_control.NeuralControlTests.test_stepping_does_not_draw_behavioral_randomness) ... ok\ntest_zero_output_cannot_choose_move_eat_or_signal (test_neural_control.NeuralControlTests.test_zero_output_cannot_choose_move_eat_or_signal) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 15.910s\n\nOK\n"
     },
     {
       "argv": [
@@ -34,9 +34,9 @@
         "-v"
       ],
       "returncode": 0,
-      "seconds": 3.4232446999958484,
+      "seconds": 3.380068200000096,
       "stdout": "processed 6 synapse sides\n",
-      "stderr": "test_calibration_recovers_analytic_fixture (test_integration.IntegrationTests.test_calibration_recovers_analytic_fixture) ... ok\ntest_heterogeneous_membrane_analytic (test_integration.IntegrationTests.test_heterogeneous_membrane_analytic) ... ok\ntest_missing_metric_cannot_pass (test_integration.IntegrationTests.test_missing_metric_cannot_pass) ... ok\ntest_parameter_prior_provenance_and_reproducibility (test_integration.IntegrationTests.test_parameter_prior_provenance_and_reproducibility) ... ok\ntest_preregistration_and_leakage (test_integration.IntegrationTests.test_preregistration_and_leakage) ... ok\ntest_retroactive_registration_rejected (test_integration.IntegrationTests.test_retroactive_registration_rejected) ... ok\ntest_rewiring_degrees_and_uniqueness (test_integration.IntegrationTests.test_rewiring_degrees_and_uniqueness) ... ok\ntest_animal_split_order_invariant_and_disjoint (test_public_data.PublicDataTests.test_animal_split_order_invariant_and_disjoint) ... ok\ntest_crosswalk_preserves_conflicts_missing_and_unknown_confidence (test_public_data.PublicDataTests.test_crosswalk_preserves_conflicts_missing_and_unknown_confidence) ... ok\ntest_filter_direction_and_source_convolution (test_public_data.PublicDataTests.test_filter_direction_and_source_convolution) ... ok\ntest_measured_target_only (test_public_data.PublicDataTests.test_measured_target_only) ... ok\ntest_adex_fi_curve_and_checkpoint (test_realism.ExpansionTests.test_adex_fi_curve_and_checkpoint) ... ok\ntest_background_noise_is_reproducible_and_colored (test_realism.ExpansionTests.test_background_noise_is_reproducible_and_colored) ... ok\ntest_cable_matches_sealed_end_analytic (test_realism.ExpansionTests.test_cable_matches_sealed_end_analytic) ... ok\ntest_circadian_period_and_gate_bounds (test_realism.ExpansionTests.test_circadian_period_and_gate_bounds) ... ok\ntest_contact_and_feeding_schedule (test_realism.ExpansionTests.test_contact_and_feeding_schedule) ... ok\ntest_feco_identity_mapping_content (test_realism.ExpansionTests.test_feco_identity_mapping_content) ... ok\ntest_feco_preregister_models (test_realism.ExpansionTests.test_feco_preregister_models) ... ok\ntest_flight_scaffold_scaling (test_realism.ExpansionTests.test_flight_scaffold_scaling) ... ok\ntest_gap_junction_current_balance (test_realism.ExpansionTests.test_gap_junction_current_balance) ... ok\ntest_interface_review_adjudication (test_realism.ExpansionTests.test_interface_review_adjudication) ... ok\ntest_light_and_nutrient_fields (test_realism.ExpansionTests.test_light_and_nutrient_fields) ... ok\ntest_literature_priors_carry_evidence_classes (test_realism.ExpansionTests.test_literature_priors_carry_evidence_classes) ... ok\ntest_male_calibration_requires_male_measurement (test_realism.ExpansionTests.test_male_calibration_requires_male_measurement) ... ok\ntest_mb_plasticity_gated_and_bounded (test_realism.ExpansionTests.test_mb_plasticity_gated_and_bounded) ... ok\ntest_modulator_pool_and_bounded_gain (test_realism.ExpansionTests.test_modulator_pool_and_bounded_gain) ... ok\ntest_motor_trial_metrics_and_identity (test_realism.ExpansionTests.test_motor_trial_metrics_and_identity) ... ok\ntest_proprioceptive_channels (test_realism.ExpansionTests.test_proprioceptive_channels) ... ok\ntest_public_data_sealed_sources (test_realism.ExpansionTests.test_public_data_sealed_sources) ... ok\ntest_receptor_hypotheses_dual_glutamate_and_no_unclear (test_realism.ExpansionTests.test_receptor_hypotheses_dual_glutamate_and_no_unclear) ... ok\ntest_recruitment_order_and_force (test_realism.ExpansionTests.test_recruitment_order_and_force) ... ok\ntest_roi_audit_requires_roi_column (test_realism.ExpansionTests.test_roi_audit_requires_roi_column) ... ok\ntest_roi_crosscheck_detects_disagreement (test_realism.ExpansionTests.test_roi_crosscheck_detects_disagreement) ... ok\ntest_stimulus_protocol_is_frozen_data (test_realism.ExpansionTests.test_stimulus_protocol_is_frozen_data) ... ok\ntest_synapse_coverage_stream_counts (test_realism.ExpansionTests.test_synapse_coverage_stream_counts) ... ok\ntest_unit_conversions_and_perturbations (test_realism.ExpansionTests.test_unit_conversions_and_perturbations) ... ok\ntest_clock_and_physical_stimuli (test_realism.ReferenceTests.test_clock_and_physical_stimuli) ... ok\ntest_convergence (test_realism.ReferenceTests.test_convergence) ... ok\ntest_delay_and_restart (test_realism.ReferenceTests.test_delay_and_restart) ... ok\ntest_historical_full_dt_without_loading_large_graph (test_realism.ReferenceTests.test_historical_full_dt_without_loading_large_graph) ... ok\ntest_identity_rule_preserves_untyped (test_realism.ReferenceTests.test_identity_rule_preserves_untyped) ... ok\ntest_local_plasticity_mask (test_realism.ReferenceTests.test_local_plasticity_mask) ... ok\ntest_mass_balance_and_contact (test_realism.ReferenceTests.test_mass_balance_and_contact) ... ok\ntest_measurement_and_leakage (test_realism.ReferenceTests.test_measurement_and_leakage) ... ok\ntest_missing_receptor_rejected (test_realism.ReferenceTests.test_missing_receptor_rejected) ... ok\ntest_no_unreviewed_ports (test_realism.ReferenceTests.test_no_unreviewed_ports) ... ok\ntest_passive_analytic (test_realism.ReferenceTests.test_passive_analytic) ... ok\ntest_receptor_polarity (test_realism.ReferenceTests.test_receptor_polarity) ... ok\ntest_rest_and_individual_independence (test_realism.ReferenceTests.test_rest_and_individual_independence) ... ok\ntest_wrong_clock_checkpoint_rejected (test_realism.ReferenceTests.test_wrong_clock_checkpoint_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 50 tests in 1.297s\n\nOK\n"
+      "stderr": "test_calibration_recovers_analytic_fixture (test_integration.IntegrationTests.test_calibration_recovers_analytic_fixture) ... ok\ntest_heterogeneous_membrane_analytic (test_integration.IntegrationTests.test_heterogeneous_membrane_analytic) ... ok\ntest_missing_metric_cannot_pass (test_integration.IntegrationTests.test_missing_metric_cannot_pass) ... ok\ntest_parameter_prior_provenance_and_reproducibility (test_integration.IntegrationTests.test_parameter_prior_provenance_and_reproducibility) ... ok\ntest_preregistration_and_leakage (test_integration.IntegrationTests.test_preregistration_and_leakage) ... ok\ntest_retroactive_registration_rejected (test_integration.IntegrationTests.test_retroactive_registration_rejected) ... ok\ntest_rewiring_degrees_and_uniqueness (test_integration.IntegrationTests.test_rewiring_degrees_and_uniqueness) ... ok\ntest_animal_split_order_invariant_and_disjoint (test_public_data.PublicDataTests.test_animal_split_order_invariant_and_disjoint) ... ok\ntest_crosswalk_preserves_conflicts_missing_and_unknown_confidence (test_public_data.PublicDataTests.test_crosswalk_preserves_conflicts_missing_and_unknown_confidence) ... ok\ntest_filter_direction_and_source_convolution (test_public_data.PublicDataTests.test_filter_direction_and_source_convolution) ... ok\ntest_measured_target_only (test_public_data.PublicDataTests.test_measured_target_only) ... ok\ntest_adex_fi_curve_and_checkpoint (test_realism.ExpansionTests.test_adex_fi_curve_and_checkpoint) ... ok\ntest_background_noise_is_reproducible_and_colored (test_realism.ExpansionTests.test_background_noise_is_reproducible_and_colored) ... ok\ntest_cable_matches_sealed_end_analytic (test_realism.ExpansionTests.test_cable_matches_sealed_end_analytic) ... ok\ntest_circadian_period_and_gate_bounds (test_realism.ExpansionTests.test_circadian_period_and_gate_bounds) ... ok\ntest_contact_and_feeding_schedule (test_realism.ExpansionTests.test_contact_and_feeding_schedule) ... ok\ntest_feco_identity_mapping_content (test_realism.ExpansionTests.test_feco_identity_mapping_content) ... ok\ntest_feco_preregister_models (test_realism.ExpansionTests.test_feco_preregister_models) ... ok\ntest_flight_scaffold_scaling (test_realism.ExpansionTests.test_flight_scaffold_scaling) ... ok\ntest_gap_junction_current_balance (test_realism.ExpansionTests.test_gap_junction_current_balance) ... ok\ntest_interface_review_adjudication (test_realism.ExpansionTests.test_interface_review_adjudication) ... ok\ntest_light_and_nutrient_fields (test_realism.ExpansionTests.test_light_and_nutrient_fields) ... ok\ntest_literature_priors_carry_evidence_classes (test_realism.ExpansionTests.test_literature_priors_carry_evidence_classes) ... ok\ntest_male_calibration_requires_male_measurement (test_realism.ExpansionTests.test_male_calibration_requires_male_measurement) ... ok\ntest_mb_plasticity_gated_and_bounded (test_realism.ExpansionTests.test_mb_plasticity_gated_and_bounded) ... ok\ntest_modulator_pool_and_bounded_gain (test_realism.ExpansionTests.test_modulator_pool_and_bounded_gain) ... ok\ntest_motor_trial_metrics_and_identity (test_realism.ExpansionTests.test_motor_trial_metrics_and_identity) ... ok\ntest_proprioceptive_channels (test_realism.ExpansionTests.test_proprioceptive_channels) ... ok\ntest_public_data_sealed_sources (test_realism.ExpansionTests.test_public_data_sealed_sources) ... ok\ntest_receptor_hypotheses_dual_glutamate_and_no_unclear (test_realism.ExpansionTests.test_receptor_hypotheses_dual_glutamate_and_no_unclear) ... ok\ntest_recruitment_order_and_force (test_realism.ExpansionTests.test_recruitment_order_and_force) ... ok\ntest_roi_audit_requires_roi_column (test_realism.ExpansionTests.test_roi_audit_requires_roi_column) ... ok\ntest_roi_crosscheck_detects_disagreement (test_realism.ExpansionTests.test_roi_crosscheck_detects_disagreement) ... ok\ntest_stimulus_protocol_is_frozen_data (test_realism.ExpansionTests.test_stimulus_protocol_is_frozen_data) ... ok\ntest_synapse_coverage_stream_counts (test_realism.ExpansionTests.test_synapse_coverage_stream_counts) ... ok\ntest_unit_conversions_and_perturbations (test_realism.ExpansionTests.test_unit_conversions_and_perturbations) ... ok\ntest_clock_and_physical_stimuli (test_realism.ReferenceTests.test_clock_and_physical_stimuli) ... ok\ntest_convergence (test_realism.ReferenceTests.test_convergence) ... ok\ntest_delay_and_restart (test_realism.ReferenceTests.test_delay_and_restart) ... ok\ntest_historical_full_dt_without_loading_large_graph (test_realism.ReferenceTests.test_historical_full_dt_without_loading_large_graph) ... ok\ntest_identity_rule_preserves_untyped (test_realism.ReferenceTests.test_identity_rule_preserves_untyped) ... ok\ntest_local_plasticity_mask (test_realism.ReferenceTests.test_local_plasticity_mask) ... ok\ntest_mass_balance_and_contact (test_realism.ReferenceTests.test_mass_balance_and_contact) ... ok\ntest_measurement_and_leakage (test_realism.ReferenceTests.test_measurement_and_leakage) ... ok\ntest_missing_receptor_rejected (test_realism.ReferenceTests.test_missing_receptor_rejected) ... ok\ntest_no_unreviewed_ports (test_realism.ReferenceTests.test_no_unreviewed_ports) ... ok\ntest_passive_analytic (test_realism.ReferenceTests.test_passive_analytic) ... ok\ntest_receptor_polarity (test_realism.ReferenceTests.test_receptor_polarity) ... ok\ntest_rest_and_individual_independence (test_realism.ReferenceTests.test_rest_and_individual_independence) ... ok\ntest_wrong_clock_checkpoint_rejected (test_realism.ReferenceTests.test_wrong_clock_checkpoint_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 50 tests in 1.290s\n\nOK\n"
     },
     {
       "argv": [
@@ -45,7 +45,7 @@
         "habitat3d/ui/scene.js"
       ],
       "returncode": 0,
-      "seconds": 0.16974800000025425,
+      "seconds": 0.15298039998742752,
       "stdout": "",
       "stderr": ""
     }
@@ -5481,7 +5481,7 @@
   },
   "lf_tibia_circuit": {
     "scope": "real MaleCNS LF tibia circuit on the FlyGym body; anatomical hypothesis, not acceptance",
-    "created_at": "2026-09-14T13:10:16.171813+00:00",
+    "created_at": "2026-09-14T16:18:02.423521+00:00",
     "nodes": 98,
     "motors": [
       800636,
@@ -5689,7 +5689,7 @@
           0.1331
         ],
         "depolarized_neurons": 8,
-        "wall_seconds": 2.3210831000033068
+        "wall_seconds": 0.7839998999988893
       },
       "no_proprioception": {
         "final_voltage_mv": [
@@ -5819,7 +5819,7 @@
           0.0
         ],
         "depolarized_neurons": 0,
-        "wall_seconds": 2.328093700009049
+        "wall_seconds": 0.777966000008746
       },
       "motor_clamp": {
         "final_voltage_mv": [
@@ -5949,7 +5949,137 @@
           0.991
         ],
         "depolarized_neurons": 6,
-        "wall_seconds": 2.184221100003924
+        "wall_seconds": 1.0964805999974487
+      },
+      "no_connectome": {
+        "final_voltage_mv": [
+          -58.8158,
+          -49.5858,
+          -56.0697,
+          -61.3351,
+          -62.1465,
+          -58.4454,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -39.6692,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -60.0,
+          -39.6692,
+          -39.6692,
+          -60.0,
+          -60.0,
+          -39.6692,
+          -60.0
+        ],
+        "joint_qpos_rad": [
+          -0.20658,
+          0.37946,
+          0.50208,
+          -0.25681,
+          -2.47666,
+          0.07121,
+          1.61055
+        ],
+        "muscle_commands": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "depolarized_neurons": 0,
+        "wall_seconds": 0.9599941000051331
       },
       "rewired": {
         "final_voltage_mv": [
@@ -6079,7 +6209,7 @@
           1.0
         ],
         "depolarized_neurons": 16,
-        "wall_seconds": 2.435378000009223
+        "wall_seconds": 0.9714720000047237
       },
       "shuffled_io": {
         "final_voltage_mv": [
@@ -6209,14 +6339,14 @@
           0.4121
         ],
         "depolarized_neurons": 14,
-        "wall_seconds": 2.585756100001163
+        "wall_seconds": 0.9843354999902658
       }
     },
     "note": "The rewired variant keeps degree but not transmitter-specific polarity pairs; controls are recorded as run, never selected by outcome.",
     "sign_off": "motor_map.parquet approved by ZhangTingjia on top of automated_crosscheck_v1",
     "biological_acceptance": false,
     "executed_source_sha256": {
-      "experiments/lf_tibia_circuit.py": "10c0b82cb65df2ba2943933ed58349dfcccc0361f29596f7705d2f8a1545c8f6"
+      "experiments/lf_tibia_circuit.py": "7579d67586f356f4e03dd5972d31f3678101f2469d9371e7c7a1d25b007df937"
     }
   },
   "feco_sensory": {
@@ -6585,7 +6715,7 @@
     "experiments\\feco.py": "8b28e3f1951b1a81309be90d27f60f105dad8535429bd3149ac44b2c0182ccdc",
     "experiments\\feco_preregister.py": "05297641e07b77b5f320b8f0d8717613482d707e9392df2db17692c2f6bf2b0e",
     "experiments\\feeding.py": "ce5a8583c5122a6c4337ce724b2ce108bc7468184988a654004acfa9bb46f6a1",
-    "experiments\\lf_tibia_circuit.py": "10c0b82cb65df2ba2943933ed58349dfcccc0361f29596f7705d2f8a1545c8f6",
+    "experiments\\lf_tibia_circuit.py": "7579d67586f356f4e03dd5972d31f3678101f2469d9371e7c7a1d25b007df937",
     "experiments\\measurement.py": "862cf9cad22e2913242e55bee0d786d4a442105f6719837e1a8e3a5cfd795dfe",
     "experiments\\mn_anatomy.py": "c6647a4a16e7a47fee9a7d88d4542db4324999d9132ca1dc87ab5a1c197fa30c",
     "experiments\\motor_circuit_extract.py": "0ef49b579f357ab3c3b97f601171c18252dc05a9d93f6084663a0087cb37cf09",

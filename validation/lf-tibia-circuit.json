@@ -1,6 +1,6 @@
 {
   "scope": "real MaleCNS LF tibia circuit on the FlyGym body; anatomical hypothesis, not acceptance",
-  "created_at": "2026-09-14T13:10:16.171813+00:00",
+  "created_at": "2026-09-14T16:18:02.423521+00:00",
   "nodes": 98,
   "motors": [
     800636,
@@ -208,7 +208,7 @@
         0.1331
       ],
       "depolarized_neurons": 8,
-      "wall_seconds": 2.3210831000033068
+      "wall_seconds": 0.7839998999988893
     },
     "no_proprioception": {
       "final_voltage_mv": [
@@ -338,7 +338,7 @@
         0.0
       ],
       "depolarized_neurons": 0,
-      "wall_seconds": 2.328093700009049
+      "wall_seconds": 0.777966000008746
     },
     "motor_clamp": {
       "final_voltage_mv": [
@@ -468,7 +468,137 @@
         0.991
       ],
       "depolarized_neurons": 6,
-      "wall_seconds": 2.184221100003924
+      "wall_seconds": 1.0964805999974487
+    },
+    "no_connectome": {
+      "final_voltage_mv": [
+        -58.8158,
+        -49.5858,
+        -56.0697,
+        -61.3351,
+        -62.1465,
+        -58.4454,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -39.6692,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -60.0,
+        -39.6692,
+        -39.6692,
+        -60.0,
+        -60.0,
+        -39.6692,
+        -60.0
+      ],
+      "joint_qpos_rad": [
+        -0.20658,
+        0.37946,
+        0.50208,
+        -0.25681,
+        -2.47666,
+        0.07121,
+        1.61055
+      ],
+      "muscle_commands": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "depolarized_neurons": 0,
+      "wall_seconds": 0.9599941000051331
     },
     "rewired": {
       "final_voltage_mv": [
@@ -598,7 +728,7 @@
         1.0
       ],
       "depolarized_neurons": 16,
-      "wall_seconds": 2.435378000009223
+      "wall_seconds": 0.9714720000047237
     },
     "shuffled_io": {
       "final_voltage_mv": [
@@ -728,13 +858,13 @@
         0.4121
       ],
       "depolarized_neurons": 14,
-      "wall_seconds": 2.585756100001163
+      "wall_seconds": 0.9843354999902658
     }
   },
   "note": "The rewired variant keeps degree but not transmitter-specific polarity pairs; controls are recorded as run, never selected by outcome.",
   "sign_off": "motor_map.parquet approved by ZhangTingjia on top of automated_crosscheck_v1",
   "biological_acceptance": false,
   "executed_source_sha256": {
-    "experiments/lf_tibia_circuit.py": "10c0b82cb65df2ba2943933ed58349dfcccc0361f29596f7705d2f8a1545c8f6"
+    "experiments/lf_tibia_circuit.py": "7579d67586f356f4e03dd5972d31f3678101f2469d9371e7c7a1d25b007df937"
   }
 }

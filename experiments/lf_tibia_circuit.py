@@ -161,6 +161,10 @@ def make_experiment(data, manifest, variant='full'):
         reversal = data['node_reversal_mv'].astype(float)[pre]
         keep = np.isfinite(reversal)
         pre, post, reversal = pre[keep], post[keep], reversal[keep]
+    if variant == 'no_connectome':
+        pre = np.empty(0, dtype=np.int64)
+        post = np.empty(0, dtype=np.int64)
+        reversal = np.empty(0, dtype=float)
     if variant == 'full':
         conductance = np.minimum(data['count'].astype(float)*GAIN_NS_PER_SYNAPSE, 20.)
     else:
@@ -227,7 +231,7 @@ def run(duration_ms=400.):
                             'muscle_commands': final['muscle_commands'].round(4).tolist(),
                             'depolarized_neurons': int((final['voltage_mv'] > -30).sum()),
                             'wall_seconds': time.perf_counter()-t0}
-    for variant in ['rewired', 'shuffled_io']:
+    for variant in ['no_connectome', 'rewired', 'shuffled_io']:
         experiment = make_experiment(data, manifest, variant=variant)
         t0 = time.perf_counter()
         final = experiment.run(duration_ms, proprioception=True)
