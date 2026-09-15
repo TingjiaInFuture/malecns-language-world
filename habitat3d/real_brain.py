@@ -132,7 +132,8 @@ class RealCircuitBrains:
 
     def dump(self):
         state = self.network.snapshot()
-        return {'sha': self.sha, 'fingerprint': state['fingerprint'], 'ticks': state['ticks'],
+        return {'mode': self.mode, 'sha': self.sha, 'fingerprint': state['fingerprint'],
+                'ticks': state['ticks'],
                 'v': state['v'].tolist(), 'g': state['g'].tolist(),
                 'efficacy': state['efficacy'].tolist(), 'adaptation': state['adaptation'].tolist(),
                 'history': state['history'].tolist(),

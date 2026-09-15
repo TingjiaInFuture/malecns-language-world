@@ -154,6 +154,16 @@ def make_handler(runtime):
                     return self.reply(200,data,extra={'Content-Disposition':'attachment; filename="micro-habitat-state.json"'})
                 if parsed.path=='/api/topology':
                     b=runtime.world.brains
+                    if b.mode=='real':
+                        sign=[1 if r>-60. else -1 for r in b.network.reversal.tolist()]
+                        inputs=[[0]*b.n for _ in range(24)]
+                        outputs=[[0]*8 for _ in range(b.n)]
+                        for pos in b.flexor.tolist(): outputs[int(pos)]=[0,0,0,.3,1.5,0,0,0]
+                        for pos in b.extensor.tolist(): outputs[int(pos)]=[0,0,0,.3,0,1.5,0,0]
+                        return self.reply(200,{'ids':b.node_ids.tolist(),'pre':b.network.pre.tolist(),'post':b.network.post.tolist(),
+                            'sign':sign,'inputs':inputs,'outputs':outputs,'display_only':True,
+                            'total_nodes':b.n,'total_edges':b.edge_count,
+                            'note':'real MaleCNS circuit; outputs are the declared observation projection'})
                     if b.mode=='full':
                         from brain import Brains
                         probe=Brains(1,runtime.world.seed)
