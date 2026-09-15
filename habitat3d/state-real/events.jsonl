@@ -1,5 +1,0 @@
-{"id": 1, "t": 0.0, "kind": "system", "title": "神经自主世界初始化", "detail": "动作仅来自神经输出；感觉与身体模型未生理校准。", "world_seed": 20260913}
-{"id": 2, "t": 0.25, "kind": "weather", "title": "晴 · 微风", "detail": "环境改变，通过感觉通道进入神经模型。", "world_seed": 20260913}
-{"id": 3, "t": 51.75, "kind": "weather", "title": "午后偏热", "detail": "环境改变，通过感觉通道进入神经模型。", "world_seed": 20260913}
-{"id": 1, "t": 0.0, "kind": "system", "title": "神经自主世界初始化", "detail": "动作仅来自神经输出；感觉与身体模型未生理校准。", "world_seed": 20260913}
-{"id": 2, "t": 0.25, "kind": "weather", "title": "晴 · 微风", "detail": "环境改变，通过感觉通道进入神经模型。", "world_seed": 20260913}
