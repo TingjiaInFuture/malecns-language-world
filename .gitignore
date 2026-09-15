@@ -22,3 +22,4 @@ habitat3d/evidence/
 credentials*
 *.pid
 validation/gui-export.json
+HANDOFF.md
