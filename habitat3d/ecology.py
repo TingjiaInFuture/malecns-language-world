@@ -152,8 +152,11 @@ class Habitat(Environment):
 
     def public(self,selected='F01'):
         data=super().public(selected);data['schema']=SCHEMA
+        text = ('真实 MaleCNS 98 节点左前胫节回路（生产端口+已发表 hook 身份）；被动 FeCO 式磁刺激协议；'
+                '输出为观察投影；生态身体未生理校准' if self.brains.mode == 'real' else
+                '完整结构图和假设神经动力学；感觉/动作端口与身体参数尚未生理校准')
         data['provenance'].update(controller='neural-only-actuation-v1',language='两路连续无语义信号；无预设词义、指令或语言能力证据',
-            biology='完整结构图和假设神经动力学；感觉/动作端口与身体参数尚未生理校准')
+            biology=text)
         data['brain']['outputs']=dict(zip(MOTORS,self.brains.last_output[int(data['selected'][1:])-1].tolist()))
         for row,f in zip(data['flies'],self.flies):row.update(motors=list(f['motors']),signal=list(f['signal']))
         return data

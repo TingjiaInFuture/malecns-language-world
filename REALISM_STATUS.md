@@ -3,6 +3,12 @@
 **总体状态：部分实施，未完成全部路线图，未通过生理生产验收。**
 这里的 PASS 只适用于明确运行过的软件检查；没有真实动物盲测或经人工审核的神经—肌肉映射，不能把单回路/全身数字雄蝇标为完成。
 
+## v1.0.1 后续：GUI 接入真实回路（2026-09-15）
+
+- **habitat3d 新增 `real` 脑模式**（`habitat3d/real_brain.py`）：每蝇独立运行真实 98 节点/741 边 MaleCNS 左前胫节回路（生产端口+已发表 hook 身份，来自 `experiments.lf_tibia_circuit prepare` 的 npz；文献先验参数、递质极性、0.5 ms 神经 dt）。感觉驱动为被动 FeCO 式磁刺激协议（施加胫骨角正弦，增益与已验证电路配置一致）；**24 维生态语义观察被明确拒绝**（新增测试断言不同观察向量产生逐位相同的输出）。8 维输出为屈/伸肌肉激活的观察投影（声明，非生理声明）；无全局奖励学习（plasticity 关闭）。断点续走 ConductanceNetwork 快照（指纹校验）。实测 ~0.85 s/tick（full 历史模式的 1/35，含生态与发布开销）。
+- `start.ps1` 支持 `-Mode full|real|mbon`，各模式独立 `state-<mode>` 存档目录互不污染；full 模式 5 GB 级存档问题已确认（88M 节点×12 蝇 dump），旧档归档为 `world_state.full-archive.json` 留存。
+- 软件测试 19+49=68 项通过（新增 real 脑回归测试：语义无关性、快照一致性、无学习不变性）。
+
 ## 第六轮：开放项收尾（2026-09-14）
 
 - **FeCO 逐细胞身份已发表并接入**（`interfaces/feco_identity.py`，证据 `validation/feco-identity.json`）：Dallmann 2025 Nature 补充表 2（开放 URL，已落库校验）给出 MANC chief 9A 六个 bodyId、DNg74/DNg100/DNg12、hook=SNpp38 类型。经官方注释 mancBodyid/mancType 映射：chief 9A T1L→**MaleCNS 805450**（IN09A012，六例类型全一致）、DNg74→10131/10247、DNg100→10056/10045、DNg12→31932/37406/40361/226016、**左 hook 传入 809437/809543/810043（SNpp38，Traced）**。**论文链路在 MaleCNS 图中精确复现**：chief 9A 的前两大输入正是 DNg100（58 突触）与 DNg74（31）。映射含一处需人工复核的双重映射（MANC 13157→804940/809102）。逐细胞 club ID 任何连接组中都未发表（club 从未被重建）——该缺口定案。
@@ -139,6 +145,8 @@ $env:DRYAD_API_TOKEN = '<token>'; .venv/Scripts/python.exe -m experiments.feco_p
 .venv-body/Scripts/python.exe -m experiments.lf_tibia_circuit run
 # 历史 3D 工程对照，非生理生产模型
 .venv/Scripts/python.exe habitat3d/server.py --engineering-sandbox --brain-mode full
+# real 脑模式：真实 98 节点回路（先运行 experiments.lf_tibia_circuit prepare 生成 npz）
+powershell -File habitat3d/start.ps1 -Mode real
 ```
 
 当前软件证据输出 `validation/realism-evidence.json`。历史 `full-acceptance.json` 的源码哈希已不对应改后的文件，不冒充当前全图复验。

@@ -36,12 +36,15 @@ class Environment:
         if brain_mode == 'full':
             from full_brain import FullBrains
             self.brains = FullBrains(count, seed)
+        elif brain_mode == 'real':
+            from real_brain import RealCircuitBrains
+            self.brains = RealCircuitBrains(count, seed)
         elif brain_mode == 'mbon':
             self.brains = Brains(count, seed)
         else:
             raise ValueError('Unknown brain mode')
         self.communication, self.plasticity, self.neural_enabled = (True, True, True)
-        if brain_mode == 'full':
+        if brain_mode in ('full', 'real'):
             self.plasticity = False
         self.events = deque(maxlen=100)
         self.pending_events = []
@@ -119,11 +122,15 @@ class Environment:
             copy_fields = ['id', 'color', 'x', 'y', 'z', 'heading', 'energy', 'hydration', 'fatigue', 'age', 'alive', 'state', 'speed', 'trail', 'experience', 'helped', 'last_word', 'last_signal_t', 'travel', 'sheltered', 'hint', 'target']
             row = {k: copy.deepcopy(f[k]) for k in copy_fields}
             row['known'] = len(f['memory'])
-            row['gain_change'] = float(np.mean(np.abs(self.brains.theta[int(f['id'][1:]) - 1])))
+            row['gain_change'] = float(np.mean(np.abs(self.brains.theta[int(f['id'][1:]) - 1]))) \
+                if hasattr(self.brains, 'theta') else 0.0
             row['neural_rms'] = self.brains.rms(int(f['id'][1:]) - 1)
             flies.append(row)
         index = next((i for i, f in enumerate(self.flies) if f['id'] == selected), 0)
-        return {'schema': SCHEMA, 'seed': self.seed, 't': self.t, 'tick': self.tick, 'day': int(self.t // DAY) + 1, 'day_phase': self.t % DAY / DAY, 'weather': copy.deepcopy(self.weather), 'flies': flies, 'resources': copy.deepcopy(self.resources), 'rocks': self.rocks, 'metrics': dict(self.metrics), 'events': list(self.events)[-45:], 'history': list(self.history), 'messages': [copy.deepcopy(m) for m in self.messages if self.t - m['t'] < 8], 'communication': self.communication, 'plasticity': self.plasticity, 'neural_enabled': self.neural_enabled, 'brain': self.brains.inspect(index), 'selected': self.flies[index]['id'], 'provenance': {'dataset': 'male-cns:v1.0', 'mode': self.brains.mode, 'nodes': self.brains.n, 'edges': getattr(self.brains, 'edge_count', 1606), 'graph_sha256': self.brains.sha, 'controller': 'neural-only-actuation-v1', 'language': '连续无语义信号，未验证语言能力', 'biology': '全量公开分割连接图；结构计数不等于生理权重' if self.brains.mode == 'full' else '真实连接数据子图；未生理校准的身体与生态模型；非完整果蝇仿真'}}
+        return {'schema': SCHEMA, 'seed': self.seed, 't': self.t, 'tick': self.tick, 'day': int(self.t // DAY) + 1, 'day_phase': self.t % DAY / DAY, 'weather': copy.deepcopy(self.weather), 'flies': flies, 'resources': copy.deepcopy(self.resources), 'rocks': self.rocks, 'metrics': dict(self.metrics), 'events': list(self.events)[-45:], 'history': list(self.history), 'messages': [copy.deepcopy(m) for m in self.messages if self.t - m['t'] < 8], 'communication': self.communication, 'plasticity': self.plasticity, 'neural_enabled': self.neural_enabled, 'brain': self.brains.inspect(index), 'selected': self.flies[index]['id'], 'provenance': {'dataset': 'male-cns:v1.0', 'mode': self.brains.mode, 'nodes': self.brains.n, 'edges': getattr(self.brains, 'edge_count', 1606), 'graph_sha256': self.brains.sha, 'controller': 'neural-only-actuation-v1', 'language': '连续无语义信号，未验证语言能力', 'biology': '全量公开分割连接图；结构计数不等于生理权重' if self.brains.mode == 'full' else
+               ('真实 MaleCNS 98 节点左前胫节回路（生产端口+已发表 hook 身份）；被动 FeCO 式磁刺激协议；'
+                '输出为观察投影；未生理校准的生态身体' if self.brains.mode == 'real' else
+                '真实连接数据子图；未生理校准的身体与生态模型；非完整果蝇仿真')}}
 
     def dump(self):
         attributes = ['seed', 'count', 't', 'tick', 'communication', 'plasticity', 'neural_enabled', 'event_id', 'metrics', 'weather_override', 'weather', 'last_weather', 'resources', 'rocks', 'flies']

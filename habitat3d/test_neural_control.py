@@ -81,4 +81,27 @@ class NeuralControlTests(unittest.TestCase):
         self.assertEqual(f['heading'],heading);self.assertLessEqual(math.hypot(f['x']/27.5,f['z']/17.5),1.000001)
         self.assertEqual(f['touch'],1.)
 
+    def test_real_circuit_brain(self):
+        from real_brain import RealCircuitBrains
+        brain = RealCircuitBrains(2, 7)
+        self.assertEqual(brain.mode, 'real')
+        self.assertEqual(brain.n, 98)
+        outputs = brain.forward(np.zeros((2, 24), np.float32), 0.25)
+        self.assertEqual(outputs.shape, (2, 8))
+        self.assertTrue(np.isfinite(outputs).all())
+        # Semantic observations must not reach the circuit: identical protocol state
+        # produces identical outputs regardless of the observation vector.
+        state = brain.dump()
+        a = brain.forward(np.ones((2, 24), np.float32), 0.25).copy()
+        brain.restore(state)
+        b = brain.forward(np.zeros((2, 24), np.float32), 0.25).copy()
+        np.testing.assert_array_equal(a, b)
+        # Passive protocol must depolarize motor neurons above rest on some phase.
+        voltages = brain.network.v[0]
+        self.assertGreater(float(voltages.max()), -60.)
+        # No global reward learning modifies the circuit.
+        before = brain.dump()
+        brain.learn(np.ones(2), True)
+        self.assertEqual(brain.dump(), before)
+
 if __name__=='__main__':unittest.main(verbosity=2)

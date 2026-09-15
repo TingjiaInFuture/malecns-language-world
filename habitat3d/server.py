@@ -83,7 +83,7 @@ class Runtime:
                 self.paused=True
                 print(self.error,flush=True)
                 return
-            period=DT/self.speed if self.world.brains.mode=='full' else DT
+            period=DT/self.speed if self.world.brains.mode in ('full','real') else DT
             self.stop.wait(max(.001,period-(time.monotonic()-start)))
 
     def command(self,data):
@@ -212,7 +212,7 @@ if __name__=='__main__':
     p.add_argument('--flies',type=int,default=12)
     p.add_argument('--data-dir',type=Path,default=HERE/'state')
     p.add_argument('--no-resume',action='store_true')
-    p.add_argument('--brain-mode',choices=['full','mbon'],default='full')
+    p.add_argument('--brain-mode',choices=['full','real','mbon'],default='full')
     p.add_argument('--engineering-sandbox',action='store_true',help='Explicitly run the historical artificial-port/body controller')
     args=p.parse_args()
     if not args.engineering_sandbox:
